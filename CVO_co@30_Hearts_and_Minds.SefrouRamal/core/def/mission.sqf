@@ -106,27 +106,6 @@ private _p_city_free_trigger = "btc_p_city_free_trigger" call BIS_fnc_getParamVa
 btc_p_flag = "btc_p_flag" call BIS_fnc_getParamValue;
 btc_p_debug = "btc_p_debug" call BIS_fnc_getParamValue;
 
-//<< Custom CVO Parameters >>
-cvo_p_acre_unconcious = "cvo_p_acre_unconcious" call BIS_fnc_getParamValue isEqualTo 1;
-
-cvo_p_medical_fullHeal = "cvo_p_medical_fullHeal" call BIS_fnc_getParamValue isEqualTo 1;
-
-cvo_p_csc = "cvo_p_csc" call BIS_fnc_getParamValue isEqualTo 1;
-cvo_p_logistics_fortify = "cvo_p_logistics_fortify" call BIS_fnc_getParamValue isEqualTo 1;
-cvo_p_logistics_custom_construction_array = "cvo_p_logistics_custom_construction_array" call BIS_fnc_getParamValue isEqualTo 1;
-
-cvo_p_arsenal = "cvo_p_arsenal" call BIS_fnc_getParamValue isEqualTo 1;
-cvo_p_arsenal_Tab_custom = "cvo_p_arsenal_Tab_custom" call BIS_fnc_getParamValue isEqualTo 1;
-cvo_p_arsenal_loadout = "cvo_p_arsenal_loadout" call BIS_fnc_getParamValue isEqualTo 1;
-
-cvo_p_env_fastnight = "cvo_p_env_fastnight" call BIS_fnc_getParamValue isEqualTo 1;
-cvo_p_env_fastnightmulti = "cvo_p_env_fastnightmulti" call BIS_fnc_getParamValue;
-
-cvo_p_intel_flags = "cvo_p_intel_flags" call BIS_fnc_getParamValue isEqualTo 1;
-
-cvo_p_side_distance = "cvo_p_side_distance" call BIS_fnc_getParamValue;
-
-
 switch (btc_p_debug) do {
     case 0 : {
         btc_debug_log = false;
@@ -171,7 +150,7 @@ if (isServer) then {
     btc_civ_veh_active = [];
 
     //Database
-    btc_db_serverCommandPassword = "cvo_password"; //Define the same password in server.cfg like this: serverCommandPassword = "btc_password";
+    btc_db_serverCommandPassword = "btc_password"; //Define the same password in server.cfg like this: serverCommandPassword = "btc_password";
     btc_db_warningTimeAutoRestart = 5;
 
     //Hideout
@@ -235,7 +214,7 @@ if (isServer) then {
         _x isKindOf "Scrapyard_base_F" &&
         {!("scrap" in toLower _x)}
     };
-    btc_type_bigbox = ["SFIA_Box_Ammo_lxWS", "Box_East_AmmoVeh_F", "CargoNet_01_box_F", "O_CargoNet_01_ammo_F"] + btc_type_Scrapyard;
+    btc_type_bigbox = ["Box_FIA_Ammo_F", "Box_East_AmmoVeh_F", "CargoNet_01_box_F", "O_CargoNet_01_ammo_F"] + btc_type_Scrapyard;
     btc_type_seat = ["Land_WoodenLog_F", "Land_CampingChair_V2_F", "Land_CampingChair_V1_folded_F", "Land_CampingChair_V1_F"];
     btc_type_sleepingbag = _allClassSorted select {_x isKindOf "Land_Sleeping_bag_F"};
     btc_type_tent = ["Land_TentA_F", "Land_TentDome_F"] + (_allClassSorted select {
@@ -564,8 +543,6 @@ btc_construction_array =
     ]
 ];
 
-if (cvo_p_logistics_custom_construction_array) then {execVM "cvo\logistics\cvo_logistics_init_construction.sqf"};
-
 (btc_construction_array select 1) params [
     "_cFortifications", "_cStatics", "_cAmmobox",
     "_cContainers", "_cSupplies", "_cFOB",
@@ -655,40 +632,16 @@ _p_en = _allfaction select _p_en; //Select faction selected from mission paramet
 _allclasse = [[_p_en], _p_en_AA, _p_en_tank] call btc_mil_fnc_class; //Create classes from factions, you can combine factions like that: [[_p_en , "IND_F"], _p_en_AA, _p_en_tank] call btc_mil_fnc_class;
 
 //Save class name to global variable
-btc_enemy_side = east;
-btc_type_units = ["O_Tura_defector_lxWS", 
-"O_Tura_deserter_lxWS", 
-"O_Tura_enforcer_lxWS", 
-"O_Tura_hireling_lxWS", 
-"O_Tura_HeavyGunner_lxWS", 
-"O_Tura_scout_lxWS", 
-"O_Tura_medic2_lxWS", 
-"O_Tura_thug_lxWS", 
-"O_Tura_soldier_UAV_lxWS", 
-"O_Tura_watcher_lxWS"];
-btc_type_divers = ["O_Tura_watcher_lxWS"];
-btc_type_crewmen = ["O_Tura_defector_lxWS", 
-"O_Tura_deserter_lxWS", 
-"O_Tura_enforcer_lxWS", 
-"O_Tura_hireling_lxWS", 
-"O_Tura_HeavyGunner_lxWS", 
-"O_Tura_scout_lxWS", 
-"O_Tura_medic2_lxWS", 
-"O_Tura_thug_lxWS", 
-"O_Tura_soldier_UAV_lxWS", 
-"O_Tura_watcher_lxWS"];
-btc_type_boats = [];
-btc_type_motorized = ["O_Tura_Offroad_armor_lxWS", 
-"C_Offroad_lxWS", 
-"C_Truck_02_covered_F", 
-"C_Truck_02_transport_F"];
-btc_type_motorized_armed = ["O_Tura_Truck_02_aa_lxWS", 
-"O_Tura_Offroad_armor_AT_lxWS", 
-"O_Tura_Offroad_armor_armed_lxWS"];
-btc_type_mg = ["O_Tura_HMG_02_lxWS", 
-"O_Tura_HMG_02_high_lxWS"];
-btc_type_gl = ["O_Tura_ZU23_lxWS"];
-/*
+btc_enemy_side = _allclasse select 0;
+btc_type_units = _allclasse select 1;
+btc_type_divers = _allclasse select 2;
+btc_type_crewmen = _allclasse select 3;
+btc_type_boats = _allclasse select 4;
+btc_type_motorized = _allclasse select 5;
+btc_type_motorized_armed = _allclasse select 6;
+btc_type_mg = _allclasse select 7;
+btc_type_gl = _allclasse select 8;
+
 //Sometimes you need to remove units: - ["Blabla","moreBlabla"];
 //Sometimes you need to add units: + ["Blabla","moreBlabla"];
 switch (_p_en) do {
@@ -700,7 +653,7 @@ switch (_p_en) do {
         btc_type_motorized = btc_type_motorized;
         btc_type_mg = btc_type_mg;
         btc_type_gl = btc_type_gl;
-    };
+    };*/
     case "OPF_G_F" : {
         btc_type_motorized = btc_type_motorized + ["I_Truck_02_transport_F", "I_Truck_02_covered_F"];
         btc_type_motorized_armed = btc_type_motorized_armed + ["I_Heli_light_03_F"];
@@ -711,7 +664,7 @@ switch (_p_en) do {
         btc_type_units = btc_type_units - ["I_C_Soldier_Camo_F"];
     };
 };
-*/
+
 //Chem
 btc_chem_range = 3;
 
@@ -760,9 +713,7 @@ btc_flag_textures = [
     "\A3\Data_F\Flags\flag_green_CO.paa",
     "\A3\Data_F\Flags\flag_blue_CO.paa",
     '#(argb,8,8,3)color(0.9,0.9,0,1)',
-    "\A3\Data_F\Flags\flag_NATO_CO.paa",
-    "cvo\img\voron_flag_olive.paa",
-    "cvo\img\voron_flag_red.paa"
+    "\A3\Data_F\Flags\flag_NATO_CO.paa"
 ];
 
 //Respawn
