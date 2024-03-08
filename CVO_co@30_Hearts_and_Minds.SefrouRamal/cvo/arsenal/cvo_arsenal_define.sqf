@@ -69,6 +69,7 @@ diag_log ("[CVO] [Arsenal_Define] - start");
 
 CVO_Arsenal_boxes = [];
 
+/*
 CVO_arsenal_boxes append [
 	cvo_arsenal_1,
 	cvo_arsenal_2,
@@ -82,10 +83,10 @@ CVO_arsenal_boxes append [
 	cvo_arsenal_10,
 	cvo_arsenal_11
 ];
+*/
 
-
-/*private _layerArray = getMissionLayerEntities "cvo_arsenal_boxes";
-if (!(_layerArray isEqualTo [])) then {CVO_Arsenal_boxes append getMissionLayerEntities "cvo_arsenal_boxes" # 0;};*/
+private _layerArray = (getMissionLayerEntities "CVO_Arsenal_Boxes")#0 ;
+CVO_Arsenal_boxes append _layerArray;
 
 
 // #####################################################
