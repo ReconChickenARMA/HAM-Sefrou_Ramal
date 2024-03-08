@@ -18,11 +18,15 @@ class RscTitles {
         fadeout = 0;
         duration = 0;
     };
-    #include "core\fnc\lift\rsc.hpp"
-    #include "core\fnc\debug\dlg.hpp"
-    #include "HG\UI\Dialogs\HG_HUD.h"
-    #include "HG\UI\Dialogs\HG_Tags.h"
 };
+
+#include "core\fnc\lift\rsc.hpp"
+#include "core\fnc\debug\dlg.hpp"
+
+
+#include "HG\UI\Dialogs\HG_HUD.h"
+#include "HG\UI\Dialogs\HG_Tags.h"
+
 
 #include "core\def\param.hpp"
 
