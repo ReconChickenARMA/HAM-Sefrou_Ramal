@@ -9,7 +9,6 @@ enabledebugconsole = 1;
 #include "core\fnc\fob\dlg.hpp"
 #include "core\fnc\log\dlg.hpp"
 #include "core\fnc\debug\defines.hpp"
-#include "HG\UI\HG_DialogsMaster.h"
 
 class RscTitles {
     class Default {
@@ -24,8 +23,6 @@ class RscTitles {
 #include "core\fnc\debug\dlg.hpp"
 
 
-#include "HG\UI\Dialogs\HG_HUD.h"
-#include "HG\UI\Dialogs\HG_Tags.h"
 
 
 #include "core\def\param.hpp"
@@ -72,13 +69,11 @@ class CfgFunctions {
     // add your own functions below
     #include "cvo\cbrn\CfgFunctions.hpp"
     #include "cvo\logistics\functions.hpp"
-    #include "HG\Functions\HG_Functions.h"
 };
 
 class CfgSounds {
     sounds[] = {};
     #include "cvo\cbrn\CfgSounds.hpp"
-    #include "HG\Sounds\HG_Sounds.h"
 };
 
 
@@ -90,11 +85,4 @@ class zen_context_menu_actions {
 
         #include "cvo\cbrn\CfgContext.hpp"
     };
-};
-//Simple Shop Script
-
-
-class CfgClient
-{
-    #include "HG\Config\HG_Config.h"
 };

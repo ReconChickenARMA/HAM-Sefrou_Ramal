@@ -169,7 +169,7 @@ cvo_fnc_airlift = {
 /////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////
 // adds the action to every client and JIP, but also adds it when it was already removed. E.g., Laptop has already been hacked by a player
-
+/*
 {
 	[
 		_x#0,																	// Object the action is attached to
@@ -190,21 +190,4 @@ cvo_fnc_airlift = {
 	] remoteExec ["BIS_fnc_holdActionAdd", 0, _x#0];							// MP-compatible implementation
    
 } forEach [ [missile_launcher_1, DZ_1, LZ, airlift_heli_1_grp], [missile_launcher_2, DZ_2, LZ, airlift_heli_1_grp] ];
-
-
-
-
-/*
-_cargoObj = cursorObject;
-_helperObj = createVehicle ["Land_CargoBox_V1_F", [0,0,0]];
-_helperObj allowDamage false;
-//_helperObj hideObjectGlobal true;
-_helperObj disableCollisionWith _cargoObj;
-
-_offset = getCenterOfMass _cargoObj;
-
-_helperObj setPos getPos _cargoObj;
-
-_offset = _cargoObj get
-_cargoObj attachTo [_helperObj, _offset];
 */

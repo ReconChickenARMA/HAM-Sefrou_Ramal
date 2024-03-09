@@ -240,7 +240,7 @@ CVO_A_BASE append [
 	"B_AssaultPack_khk",
 	"B_Carryall_blk",
 	"B_Carryall_cbr",
-	"B_Carryall_khk"
+	"B_Carryall_khk",
 	"B_FieldPack_blk",
 	"B_FieldPack_cbr",
 	"B_FieldPack_khk",
