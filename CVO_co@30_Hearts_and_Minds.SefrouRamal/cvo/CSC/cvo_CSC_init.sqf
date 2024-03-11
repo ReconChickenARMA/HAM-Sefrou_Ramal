@@ -43,7 +43,7 @@ cvo_CSC_fnc_spawnCSC_old = 		compileScript ["cvo\CSC\cvo_CSC_fnc_spawnCSC.sqf", 
 
 
 
-_cvo_csc_source = "ACM_APD_Unimog";
+_cvo_csc_source = "Land_Cargo20_grey_F";
 
 
 [

@@ -171,6 +171,7 @@ CVO_A_BASE append [
 	"ACE_Chemlight_Shield",
 	"acex_intelitems_notepad",
 	"ACE_Flashlight_KSF1",
+	
 
 	"ACE_WaterBottle",
 
@@ -263,6 +264,8 @@ CVO_A_BASE append [
 	"PLP_UNA_H_HelmetHBK_ear_F",
 	"PLP_UNA_H_HelmetHBK_chops_F",	
 	"lxWS_H_turban_04_blue_una",
+	"lxWS_H_turban_02_blue_una",
+	"lxWS_H_turban_01_blue_una",
 	"lxWS_H_PASGT_goggles_UN_F",
 	"lxWS_H_PASGT_basic_UN_F",
 	"lxWS_H_turban_03_blue_una"
@@ -282,27 +285,18 @@ CVO_A_BASE append  [
 	"arifle_Velko_lxWS",
 	"arifle_VelkoR5_lxWS",
 	"arifle_VelkoR5_snake_lxWS",
-	
+	"optic_ACO_grn",
+	"optic_ACO",
+	"optic_r1_high_arid_lxWS",
+	"optic_r1_high_lxWS",
+	"optic_r1_high_sand_lxWS",
+	"optic_r1_high_snake_lxWS",
+	"optic_r1_low_arid_lxWS",
+	"optic_r1_low_lxWS",
+	"optic_r1_low_sand_lxWS",
+	"optic_r1_low_snake_lxWS",	
 	"35Rnd_556x45_Velko_reload_tracer_green_lxWS",
-	"35Rnd_556x45_Velko_snake_reload_tracer_green_lxWS",
-	//SS-77 Vektor
-	"LMG_S77_lxWS",
-	"LMG_S77_Desert_lxWS",
-	"100Rnd_762x51_S77_Green_lxWS",
-	// Shotguns
-	"sgun_HunterShotgun_01_F",
-	"sgun_HunterShotgun_01_sawedoff_F",
-	"ACE_2Rnd_12Gauge_Pellets_No0_Buck",
-	"ACE_2Rnd_12Gauge_Pellets_No1_Buck",
-	"ACE_2Rnd_12Gauge_Pellets_No2_Buck",
-	"ACE_2Rnd_12Gauge_Pellets_No3_Buck",
-	"ACE_2Rnd_12Gauge_Pellets_No4_Bird",
-	"ACE_2Rnd_12Gauge_Pellets_No4_Buck",
-	"2Rnd_12Gauge_Pellets",
-	"2Rnd_12Gauge_Slug",
-	"2rnd_HE_Mag_lxWS",
-	"2rnd_Smoke_Mag_lxWS"
-	
+	"35Rnd_556x45_Velko_snake_reload_tracer_green_lxWS"
 	];
 
 // Pistols
@@ -391,9 +385,28 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 
 		"tsp_frameCharge_mag",
 		"tsp_stickCharge_mag",
-		"tsp_stickCharge_auto_mag"
-
-], 
+		"tsp_stickCharge_auto_mag"], 
+		{}]],
+	["Machinegunner", [[
+	//SS-77 Vektor
+		"LMG_S77_lxWS",
+		"LMG_S77_Desert_lxWS",
+		"100Rnd_762x51_S77_Green_lxWS"
+		], 
+		{}]],
+	["Anti-Tank", [[
+		//RPG-7
+		"launch_RPG7_F",
+		"RPG7_F"
+		], 
+		{}]],
+	["Marksman", [[
+		//Marksman Optics
+		"optic_Hamr_arid_lxWS",
+		"optic_Hamr_sand_lxWS",
+		"optic_Hamr_snake_lxWS",
+		"optic_Hamr"
+		], 
 		{}]],
 	["Officer", [
 		["arifle_VelkoR5_GL_lxWS",
@@ -403,7 +416,12 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"ACE_40mm_Flare_white",
 		"U_lxWS_UN_Camo1",
 		"H_Beret_blk",
-		"ACRE_PRC148"
+		"ACE_HuntIR_monitor",
+		"ACRE_PRC148",
+		"optic_Hamr_arid_lxWS",
+		"optic_Hamr_sand_lxWS",
+		"optic_Hamr_snake_lxWS",
+		"optic_Hamr"
 		],
 		{}]]
 ];

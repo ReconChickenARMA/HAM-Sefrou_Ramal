@@ -150,7 +150,7 @@ if (isServer) then {
     btc_civ_veh_active = [];
 
     //Database
-    btc_db_serverCommandPassword = "btc_password"; //Define the same password in server.cfg like this: serverCommandPassword = "btc_password";
+    btc_db_serverCommandPassword = "cvo_password"; //Define the same password in server.cfg like this: serverCommandPassword = "btc_password";
     btc_db_warningTimeAutoRestart = 5;
 
     //Hideout
@@ -394,10 +394,10 @@ btc_civ_type_veh = _allclasse select 2;
 btc_civ_type_boats = _allclasse select 1;
 
 btc_w_civs = [
-    ["srifle_DMR_06_hunter_F", "sgun_HunterShotgun_01_F", "srifle_DMR_06_hunter_khs_F", "sgun_HunterShotgun_01_Sawedoff_F", "Hgun_PDW2000_F", "arifle_AKM_F", "arifle_AKS_F"],
+    ["arifle_Galat_worn_lxWS", "sgun_HunterShotgun_01_F", "sgun_HunterShotgun_01_Sawedoff_F"],
     ["hgun_Pistol_heavy_02_F", "hgun_Rook40_F", "hgun_Pistol_01_F"]
 ];
-btc_g_civs = ["HandGrenade", "MiniGrenade", "ACE_M84", "ACE_M84"];
+btc_g_civs = ["MiniGrenade", "ACE_M84", "ACE_M84"];
 
 // ANIMALS
 btc_animals_type = ["Hen_random_F", "Cock_random_F", "Fin_random_F", "Alsatian_Random_F", "Goat_random_F", "Sheep_random_F"];
@@ -632,20 +632,30 @@ _p_en = _allfaction select _p_en; //Select faction selected from mission paramet
 _allclasse = [[_p_en], _p_en_AA, _p_en_tank] call btc_mil_fnc_class; //Create classes from factions, you can combine factions like that: [[_p_en , "IND_F"], _p_en_AA, _p_en_tank] call btc_mil_fnc_class;
 
 //Save class name to global variable
-btc_enemy_side = _allclasse select 0;
-btc_type_units = _allclasse select 1;
-btc_type_divers = _allclasse select 2;
-btc_type_crewmen = _allclasse select 3;
-btc_type_boats = _allclasse select 4;
-btc_type_motorized = _allclasse select 5;
-btc_type_motorized_armed = _allclasse select 6;
-btc_type_mg = _allclasse select 7;
-btc_type_gl = _allclasse select 8;
-
+btc_enemy_side = east;//_allclasse select 0;
+btc_type_units = ["O_Tura_enforcer_lxWS", 
+"O_Tura_hireling_lxWS", 
+"O_Tura_scout_lxWS", 
+"O_Tura_medic2_lxWS", 
+"O_Tura_thug_lxWS", 
+"O_Tura_soldier_UAV_lxWS", 
+"O_Tura_watcher_lxWS"];//_allclasse select 1;
+btc_type_divers =["O_Tura_scout_lxWS"]; //_allclasse select 2;
+btc_type_crewmen = selectRandom btc_type_units; //_allclasse select 3;
+btc_type_boats = []; //_allclasse select 4;
+btc_type_motorized = ["O_Tura_Offroad_armor_lxWS", 
+"O_SFIA_Truck_02_covered_lxWS"]; //_allclasse select 5;
+btc_type_motorized_armed = ["O_Tura_Offroad_armor_AT_lxWS", 
+"O_Tura_Offroad_armor_armed_lxWS", 
+"O_Tura_Truck_02_aa_lxWS"];//_allclasse select 6;
+btc_type_mg = ["O_Tura_HMG_02_high_lxWS", 
+"O_Tura_HMG_02_lxWS"];//_allclasse select 7;
+btc_type_gl = ["O_Tura_ZU23_lxWS"];//_allclasse select 8;
+/*
 //Sometimes you need to remove units: - ["Blabla","moreBlabla"];
 //Sometimes you need to add units: + ["Blabla","moreBlabla"];
 switch (_p_en) do {
-    /*case "Myfactionexemple" : {
+    case "Myfactionexemple" : {
         btc_type_units = btc_type_units - ["Blabla","moreBlabla"];
         btc_type_divers = btc_type_divers + ["Blabla","moreBlabla"];
         btc_type_crewmen = "Blabla";
@@ -653,7 +663,7 @@ switch (_p_en) do {
         btc_type_motorized = btc_type_motorized;
         btc_type_mg = btc_type_mg;
         btc_type_gl = btc_type_gl;
-    };*/
+    };
     case "OPF_G_F" : {
         btc_type_motorized = btc_type_motorized + ["I_Truck_02_transport_F", "I_Truck_02_covered_F"];
         btc_type_motorized_armed = btc_type_motorized_armed + ["I_Heli_light_03_F"];
@@ -664,7 +674,7 @@ switch (_p_en) do {
         btc_type_units = btc_type_units - ["I_C_Soldier_Camo_F"];
     };
 };
-
+*/
 //Chem
 btc_chem_range = 3;
 
