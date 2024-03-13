@@ -43,31 +43,32 @@ cvo_CSC_fnc_spawnCSC_old = 		compileScript ["cvo\CSC\cvo_CSC_fnc_spawnCSC.sqf", 
 
 
 
-_cvo_csc_source = "Land_Cargo20_grey_F";
+_cvo_csc_source = "Land_Cargo10_military_green_F";
 
 
 [
 	_cvo_csc_source, 
 	"Basic Ammo Package",
 	[
-		["gm_30Rnd_9x19mm_AP_DM91_mp5a3_blk",5],
-		["gm_20Rnd_556x45mm_B_T_M856_stanag_gry",20],
-		["gm_20Rnd_762x51mm_B_DM111_g3_blk",20],
+		["35Rnd_556x45_Velko_reload_tracer_red_lxWS",20],
+		["1Rnd_HE_Grenade_shell",10],
+		["ACE_40mm_Flare_white",10],
 
 		["greenmag_ammo_556x45_basic_60Rnd",10],
-		["greenmag_ammo_762x51_basic_60Rnd",15],
+		["greenmag_beltlinked_762x51_basic_100",10],
+		
 
-		["greenmag_ammo_545x39_basic_60Rnd",10],
-		["greenmag_ammo_762x39_basic_60Rnd",10],
-
-		["gm_handgrenade_frag_dm51a1",5],
-		["gm_smokeshell_grn_dm21",5],
-		["gm_smokeshell_red_dm23",5],
-		["gm_smokeshell_wht_dm25",5],
+		["HandGrenade",10],
+		["SmokeShell",10],
+		["ACE_HuntIR_M203",5],
+		["1Rnd_Smoke_Grenade_shell",10],
+		["100Rnd_762x51_S77_Red_lxWS",10],
+		["9Rnd_45ACP_Mag",10],
+		["greenmag_ammo_45ACP_basic_60Rnd",5],
 
 		["greenmag_item_speedloader", 4]
 	],
-	"gm_ammobox_aluminium_03_empty"
+	"Land_WoodenCrate_01_F"
 ] call cvo_CSC_fnc_addCSC_old;
 
 
@@ -113,14 +114,15 @@ _cvo_csc_source = "Land_Cargo20_grey_F";
 
 		["ACE_HandFlare_White", 20],
 
-		["gm_30Rnd_9x19mm_B_DM51_mp5a3_blk",20],
-		["gm_20Rnd_556x45mm_B_T_M856_stanag_gry", 20],
-		["gm_20Rnd_762x51mm_B_DM111_g3_blk", 20],
+		["100Rnd_762x51_S77_Red_lxWS",5],
+		["35Rnd_556x45_Velko_reload_tracer_red_lxWS",20],
+		["greenmag_ammo_556x45_basic_60Rnd",10],
+		["greenmag_beltlinked_762x51_basic_100",10],
 
 		["ACE_bodyBag", 10]
 
 	],
-	"gm_ammobox_aluminium_01_empty"
+	"Land_WoodenCrate_01_F"
 ] call cvo_CSC_fnc_addCSC_old;
 
 /*
