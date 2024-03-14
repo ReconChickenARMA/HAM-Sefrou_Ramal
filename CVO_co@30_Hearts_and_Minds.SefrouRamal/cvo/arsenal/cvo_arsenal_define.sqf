@@ -248,6 +248,28 @@ CVO_A_BASE append [
 
 // Vests
 CVO_A_BASE append [
+	"V_HarnessOSpec_gry",
+	"V_HarnessOSpec_brn",
+	"V_HarnessO_gry",
+	"V_HarnessO_brn",
+	"V_BandollierB_blk",
+	"V_BandollierB_cbr",
+	"V_BandollierB_khk",
+	"V_TacVest_blk",
+	"V_TacVest_brn",
+	"V_TacVest_khk",
+	"V_HarnessOSpec_blk",
+	"V_HarnessOSpec_oicamo",
+	"V_ChestrigF_blk",
+	"V_ChestrigF_khk",
+	"Aegis_V_ChestrigEast_khk_F",
+	"Aegis_V_ChestrigEast_tan_F",
+	"V_HarnessOSpec_tan",
+	"V_SmershVest_01_khaki_F",
+	"V_SmershVest_01_radio_khaki_F",
+	"V_HarnessO_tan",
+	"V_SmershVest_01_black_F",
+	"V_SmershVest_01_radio_black_F",
 	"V_CarrierRigKBT_01_light_DarkOlive_F",
 	"V_CarrierRigKBT_01_DarkOlive_F",
 	"Atlas_V_CarrierRigKBT_01_tac_UNRACS_F",
@@ -309,6 +331,8 @@ CVO_A_BASE append [
 
 // Facewear
 CVO_A_BASE append [
+	"Aegis_G_Armband_BLU_F",
+	"Aegis_G_Armband_BLU_alt_F",
 	"immersion_pops_pop0",
 	"murshun_cigs_cig0",
 	"immersion_cigs_cigar0"];
