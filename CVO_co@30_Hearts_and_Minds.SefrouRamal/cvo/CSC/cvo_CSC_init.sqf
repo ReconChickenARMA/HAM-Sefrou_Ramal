@@ -19,24 +19,20 @@ cvo_CSC_fnc_spawnCSC_old = 		compileScript ["cvo\CSC\cvo_CSC_fnc_spawnCSC.sqf", 
 // ################
 
 // ################
-// GM Ammo Crates
+// Vanilla Ammo Crates
 // ################
 /*
-"gm_ammobox_aluminium_01_empty", 
-"gm_ammobox_aluminium_02_empty", 
-"gm_ammobox_aluminium_03_empty", 
-"gm_ammobox_aluminium_04_empty", 
-"gm_ammobox_aluminium_05_empty",
-"gm_ammobox_aluminium_06_empty", 
-"gm_ammobox_aluminium_07_empty", 
-"gm_AmmoBox_wood_01_empty", 
-"gm_AmmoBox_wood_02_empty", 
-"gm_AmmoBox_wood_03_empty", 
-"gm_AmmoBox_wood_04_empty", 
-"gm_AmmoBox_wood_05_empty", 
-"gm_AmmoBox_wood_06_empty", 
-
-"gm_ammobox_pallet_01_empty", 
+"Box_NATO_Ammo_F", 
+"Box_NATO_Wps_F", 
+"Box_NATO_AmmoOrd_F", 
+"Box_NATO_Equip_F", 
+"Box_NATO_WpsSpecial_F", 
+"Box_NATO_WpsLaunch_F", 
+"Box_NATO_Uniforms_F", 
+"Box_NATO_Support_F", 
+"Box_NATO_AmmoVeh_F", 
+"B_CargoNet_01_ammo_F",
+"ACE_medicalSupplyCrate"
 */
 
 
@@ -68,7 +64,7 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 
 		["greenmag_item_speedloader", 4]
 	],
-	"Land_WoodenCrate_01_F"
+	"Box_NATO_Ammo_F"
 ] call cvo_CSC_fnc_addCSC_old;
 
 
@@ -122,40 +118,8 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 		["ACE_bodyBag", 10]
 
 	],
-	"Land_WoodenCrate_01_F"
+	"Box_NATO_Equip_F"
 ] call cvo_CSC_fnc_addCSC_old;
-
-/*
-[
-	_cvo_csc_source, 
-	"General Purpose Patrol Package",
-	[
-	
-		["ACE_personalAidKit", 5],
-		["ACE_salineIV_500", 5],
-		["ACE_fieldDressing", 30],
-		["ACE_packingBandage", 30],
-
-		["ACE_Humanitarian_Ration", 25],
-
-		["ace_marker_flags_red", 25],
-		["ace_marker_flags_green", 25],
-
-		["ACE_EarPlugs", 5],
-		["ACE_SpraypaintRed", 2],
-		["ACE_CableTie", 20],
-
-		["ACE_HandFlare_White", 10],
-
-		["gm_30Rnd_9x19mm_B_DM51_mp5a3_blk",20],
-
-
-		["ACE_bodyBag", 5]
-	],
-	"gm_ammobox_aluminium_01_empty"
-] call cvo_CSC_fnc_addCSC_old;
-*/
-
 
 /*
 [
@@ -168,7 +132,7 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 		["greenmag_beltlinked_762x54_basic_100",20],
 		["greenmag_item_speedloader",1]
 	],
-	"rhs_7ya37_1_single"
+	"Box_NATO_WpsSpecial_F"
 ] call cvo_CSC_fnc_addCSC_old;
 */
 
@@ -182,7 +146,7 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 		["ace_compat_rhs_afrf3_mag_9M131F", 3],
 		["ace_compat_rhs_afrf3_mag_9M131M", 7]
 	],
-	"Land_WoodenCrate_01_F"							 
+	"Box_NATO_WpsSpecial_F"						 
 ] call cvo_CSC_fnc_addCSC_old;
 */
 
@@ -195,7 +159,7 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 		["G_RegulatorMask_F", 4],
 		["ChemicalDetector_01_watch_F", 4]
 	],
-	"Land_PlasticCase_01_large_CBRN_F",									
+	"Box_NATO_Uniforms_F",									
 	[
 		["B_SCBA_01_F",4]
 	]

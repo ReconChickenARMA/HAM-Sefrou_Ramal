@@ -1,5 +1,5 @@
 
-loadScreen = "cvo\img\HAM-Altis90.paa";
+loadScreen = "cvo\img\HAMSefrouRamal.paa";
 author = "Giallustio - Adapted for CVO by Zorn";
 onLoadName = $STR_BTC_HAM_DESCR_NAME;
 onLoadMission = $STR_BTC_HAM_DESCR_MISSION;
@@ -10,14 +10,8 @@ enabledebugconsole = 1;
 #include "core\fnc\log\dlg.hpp"
 #include "core\fnc\debug\defines.hpp"
 
-class RscTitles {
-    class Default {
-        idd = -1;
-        fadein = 0;
-        fadeout = 0;
-        duration = 0;
-    };
-};
+
+
 
 #include "core\fnc\lift\rsc.hpp"
 #include "core\fnc\debug\dlg.hpp"

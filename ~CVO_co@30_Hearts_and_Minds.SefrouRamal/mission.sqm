@@ -31,7 +31,7 @@ class EditorData
 	};
 };
 binarizationWanted=0;
-sourceName="CVO_co@30_Hearts_and_Minds";
+sourceName="~CVO_co@30_Hearts_and_Minds";
 addons[]=
 {
 	"A3_Props_F_Enoch_Military_Decontamination",
