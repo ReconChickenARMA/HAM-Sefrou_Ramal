@@ -210,6 +210,7 @@ _actions pushBack ["FOB", localize "STR_BTC_HAM_ACTION_REDEPLOYFOB", "\A3\Ui_f\d
         [btc_fob_flag, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToClass;
     };
 } forEach _actions;
+
 {
     _x params ["_cardinal", "_degrees"];
 
@@ -221,6 +222,7 @@ _actions pushBack ["FOB", localize "STR_BTC_HAM_ACTION_REDEPLOYFOB", "\A3\Ui_f\d
 } forEach [["str_q_north_east", [0, 90]], ["str_q_south_east", [90, 180]], ["str_q_south_west", [180, 270]], ["str_q_north_west", [270, 360]]];
 
 //Arsenal
+/*
 //BIS
 /*
 if (btc_p_arsenal_Type < 3) then {
