@@ -210,6 +210,7 @@ _actions pushBack ["FOB", localize "STR_BTC_HAM_ACTION_REDEPLOYFOB", "\A3\Ui_f\d
         [btc_fob_flag, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToClass;
     };
 } forEach _actions;
+
 {
     _x params ["_cardinal", "_degrees"];
 
