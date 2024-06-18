@@ -26,6 +26,7 @@ Author:
 
     if (alive _suicider) then {
         private _array = _suicider nearEntities [btc_player_type, 30];
+        _array = _array select {side group _x isEqualTo btc_player_side};
         if (_array isNotEqualTo []) then {
             _suicider doMove (position (_array select 0));
         };

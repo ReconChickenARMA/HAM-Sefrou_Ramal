@@ -46,19 +46,20 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 	_cvo_csc_source, 
 	"Basic Ammo Package",
 	[
-		["35Rnd_556x45_Velko_reload_tracer_red_lxWS",20],
-		["1Rnd_HE_Grenade_shell",10],
-		["ACE_40mm_Flare_white",10],
+		["20Rnd_762x51_slr_reload_tracer_green_lxWS",10],
+		["1Rnd_40mm_HE_lxWS",10],
+		["3Rnd_UGL_FlareWhite_F",5],
+		["1Rnd_50mm_Smoke_lxWS",5],
+		["3Rnd_HE_Grenade_shell",5],
 
-		["greenmag_ammo_556x45_basic_60Rnd",10],
-		["greenmag_beltlinked_762x51_basic_100",10],
-		
+		["greenmag_ammo_762x51_basic_60Rnd",10],
+		["greenmag_beltlinked_762x51_basic_100",5],
+		["greenmag_ammo_556x45_basic_60Rnd",5],
 
 		["HandGrenade",10],
-		["SmokeShell",10],
-		["ACE_HuntIR_M203",5],
-		["1Rnd_Smoke_Grenade_shell",10],
-		["100Rnd_762x51_S77_Red_lxWS",10],
+		["SmokeShell",5],
+		["1Rnd_Smoke_Grenade_shell",5],
+		["100Rnd_762x51_S77_Green_lxWS",5],
 		["9Rnd_45ACP_Mag",10],
 		["greenmag_ammo_45ACP_basic_60Rnd",5],
 
@@ -109,10 +110,11 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 		["ACE_CableTie", 20],
 
 		["ACE_HandFlare_White", 20],
-
-		["100Rnd_762x51_S77_Red_lxWS",5],
-		["35Rnd_556x45_Velko_reload_tracer_red_lxWS",20],
+		
 		["greenmag_ammo_556x45_basic_60Rnd",10],
+		["100Rnd_762x51_S77_Red_lxWS",5],
+		["20Rnd_762x51_slr_reload_tracer_green_lxWS",20],
+		["greenmag_ammo_762x51_basic_60Rnd",10],
 		["greenmag_beltlinked_762x51_basic_100",10],
 
 		["ACE_bodyBag", 10]

@@ -40,6 +40,7 @@ _trigger setVariable ["suicider", _suicider];
 _trigger attachTo [_suicider, [0, 0, 0]];
 
 private _array = getPos _suicider nearEntities [btc_player_type, 30];
+_array = _array select {side group _x isEqualTo btc_player_side};
 
 if (_array isEqualTo []) exitWith {};
 

@@ -134,8 +134,7 @@ private _cfgVehicles = configFile >> "CfgVehicles";
 private _allClassVehicles = ("true" configClasses _cfgVehicles) apply {configName _x};
 private _allClassSorted = _allClassVehicles select {getNumber (_cfgVehicles >> _x >> "scope") isEqualTo 2};
 
-if (isServer) then {
-    btc_final_phase = false;
+if (isServer) then {    btc_final_phase = false;
     btc_delay_time = 0;
 
     //City
@@ -195,17 +194,10 @@ if (isServer) then {
 
     //Cache
     btc_cache_type = [
-        _allClassSorted select {
-            _x isKindOf "ReammoBox_F" &&
-            {getText(_cfgVehicles >> _x >> "model") isEqualTo "\A3\weapons_F\AmmoBoxes\AmmoBox_F"}
-        },
+        ["SFIA_Box_Ammo_lxWS", "SFIA_Box_Wps_lxWS", "Box_IED_Exp_F"],
         ["Land_PlasticCase_01_small_black_CBRN_F", "Land_PlasticCase_01_small_olive_CBRN_F", "Land_PlasticCase_01_small_CBRN_F"]
     ];
-    private _weapons_usefull = "true" configClasses (configFile >> "CfgWeapons") select {
-        getNumber (_x >> 'type') isEqualTo 1 &&
-        {getArray (_x >> 'magazines') isNotEqualTo []} &&
-        {getNumber (_x >> 'scope') isEqualTo 2}
-    };
+    private _weapons_usefull =["arifle_Galat_worn_lxWS","arifle_Galat_lxWS","arifle_SLR_lxWS","arifle_SLR_GL_lxWS"];
     btc_cache_weapons_type = _weapons_usefull apply {(toLower getText (_x >> "model")) select [1]};
 
     //Hideout classname
@@ -214,14 +206,11 @@ if (isServer) then {
         _x isKindOf "Scrapyard_base_F" &&
         {!("scrap" in toLower _x)}
     };
-    btc_type_bigbox = ["SFIA_Box_Ammo_lxWS", "SFIA_Box_Wps_lxWS", "Box_East_AmmoVeh_F", "CargoNet_01_box_F", "O_CargoNet_01_ammo_F"] + btc_type_Scrapyard;
+    btc_type_bigbox = ["SFIA_Box_Ammo_lxWS", "SFIA_Box_Wps_lxWS", "Box_IED_Exp_F", "Box_East_AmmoVeh_F", "CargoNet_01_box_F", "O_CargoNet_01_ammo_F"] + btc_type_Scrapyard;
     btc_type_seat = ["Land_WoodenLog_F", "Land_CampingChair_V2_F", "Land_CampingChair_V1_folded_F", "Land_CampingChair_V1_F"];
     btc_type_sleepingbag = _allClassSorted select {_x isKindOf "Land_Sleeping_bag_F"};
-    btc_type_tent = ["Land_TentA_F", "Land_TentDome_F"] + (_allClassSorted select {
-        _x isKindOf "Land_TentSolar_01_base_F" &&
-        {!(_x isKindOf "Land_TentSolar_01_folded_base_F")}
-    });
-    btc_type_camonet = ["CamoNet_Sand_big_lxWS", "CamoNet_Sand_lxWS", "CamoNet_Sand_open_lxWS"];
+    btc_type_tent = ["Land_Misc_Well_L_EP1_lxWS","Land_tent_desert_02_lxws", "Land_tent_desert_01_lxws", "Land_tent_desert_04_lxws", "Land_tent_desert_03_lxws"];
+    btc_type_camonet = ["CamoNet_Sand_open_lxWS", "CamoNet_Sand_lxWS", "CamoNet_Sand_big_lxWS"];
     btc_type_satelliteAntenna = _allClassSorted select {_x isKindOf "Land_SatelliteAntenna_01_F"};
 
     //Side
@@ -361,28 +350,7 @@ if (isServer) then {
             "offroad" in toLower _x
         })
     });
-    btc_type_ieds = _ieds - [
-            "Land_HayBlock_01_lxWS", 
-            "Land_HayBlock_02_lxWS", 
-            "Land_HayBlock_03_lxWS", 
-            "Land_Pottery_5_lxWS", 
-            "Land_Pottery_6_lxWS", 
-            "Land_Pottery_7_lxWS", 
-            "Land_Wicker_basket_EP1_lxWS", 
-            "Land_Pottery_1_lxWS", 
-            "Land_Pottery_2_lxWS", 
-            "Land_Pottery_3_lxWS", 
-            "Land_Pottery_4_lxWS", 
-            "Land_Dates_01_lxWS", 
-            "Land_Dates_02_lxWS", 
-            "Land_Dates_03_lxWS",
-            "Land_Garbage_line_F",
-            "Land_Garbage_square3_F",
-            "Land_Garbage_square5_F", 
-            "Land_MarketShelter_F",
-            "Land_ClothShelter_01_F",
-            "Land_ClothShelter_02_F"
-];
+    btc_type_ieds = _ieds - ["Land_Garbage_line_F","Land_Garbage_square3_F","Land_Garbage_square5_F", "Land_MarketShelter_F", "Land_ClothShelter_01_F", "Land_ClothShelter_02_F"];
     btc_model_ieds = btc_type_ieds apply {(toLower getText(_cfgVehicles >> _x >> "model")) select [1]};
     btc_type_blacklist = btc_type_tags + btc_type_flowers + ["UserTexture1m_F"]; publicVariable "btc_type_blacklist";
 
@@ -418,7 +386,7 @@ btc_w_civs = [
     ["arifle_Galat_worn_lxWS", "sgun_HunterShotgun_01_F", "sgun_HunterShotgun_01_Sawedoff_F"],
     ["hgun_Pistol_heavy_02_F", "hgun_Rook40_F", "hgun_Pistol_01_F"]
 ];
-btc_g_civs = ["HandGrenade", "MiniGrenade", "ACE_M84", "ACE_M84"];
+btc_g_civs = ["MiniGrenade", "ACE_M84", "ACE_M84"];
 
 // ANIMALS
 btc_animals_type = ["Dromedary_01_lxWS", "Dromedary_04_lxWS", "Dromedary_03_lxWS", "Dromedary_02_lxWS", "Hen_random_F", "Cock_random_F", "Fin_random_F", "Alsatian_Random_F", "Goat_random_F", "Sheep_random_F"];
@@ -496,6 +464,12 @@ btc_construction_array =
     [
         [
             //"Fortifications"
+            "Land_BagBunker_Small_F",
+            "Land_BagFence_Corner_F",
+            "Land_BagFence_End_F",
+            "Land_BagFence_Long_F",
+            "Land_BagFence_Round_F",
+            "Land_BagFence_Short_F",
             "Land_HBarrier_1_F",
             "Land_HBarrier_3_F",
             "Land_HBarrier_5_F",
@@ -648,7 +622,8 @@ _allclasse = [[_p_en], _p_en_AA, _p_en_tank] call btc_mil_fnc_class; //Create cl
 
 //Save class name to global variable
 btc_enemy_side = east;//_allclasse select 0;
-btc_type_units = [//SFIA 
+btc_type_units = [
+//SFIA 
 "O_SFIA_Soldier_AAA_lxWS", 
 "O_SFIA_Soldier_AAT_lxWS", 
 "O_SFIA_Soldier_AR_lxWS", 
@@ -675,11 +650,12 @@ btc_type_units = [//SFIA
 "O_Tura_medic2_lxWS", 
 "O_Tura_thug_lxWS", 
 "O_Tura_soldier_UAV_lxWS", 
-"O_Tura_watcher_lxWS"]; //_allclasse select 1;
-btc_type_divers = ["O_Tura_defector_lxWS"]; //_allclasse select 2;
+"O_Tura_watcher_lxWS"];//_allclasse select 1;
+btc_type_divers =["O_Tura_defector_lxWS"]; //_allclasse select 2;
 btc_type_crewmen = selectRandom btc_type_units; //_allclasse select 3;
 btc_type_boats = []; //_allclasse select 4;
-btc_type_motorized = [//SFIA Cars
+btc_type_motorized = [
+//SFIA Cars
 "O_SFIA_Truck_02_box_lxWS", 
 "O_SFIA_Truck_02_flatbed_lxWS", 
 "O_SFIA_Truck_02_cargo_lxWS", 
@@ -691,26 +667,25 @@ btc_type_motorized = [//SFIA Cars
 "O_Tura_Pickup_01_RF", 
 "O_Tura_Offroad_armor_lxWS", 
 "O_Tura_Pickup_01_fuel_RF"]; //_allclasse select 5;
-btc_type_motorized_armed =[
+btc_type_motorized_armed = [
 //SFIA APCs
-/*"O_SFIA_APC_Wheeled_02_unarmed_lxWS", 
+"O_SFIA_APC_Wheeled_02_unarmed_lxWS", 
 "O_SFIA_APC_Wheeled_02_hmg_lxWS", 
 "O_SFIA_APC_Tracked_02_30mm_lxWS", 
 "O_SFIA_APC_Tracked_02_cannon_lxWS", 
-*/
 //Tura Armed Trucks
 "O_Tura_Truck_02_aa_lxWS",
 "O_Tura_Pickup_01_hmg_RF", 
 "O_Tura_Offroad_armor_AT_lxWS", 
-"O_Tura_Offroad_armor_armed_lxWS"]; //_allclasse select 6;
+"O_Tura_Offroad_armor_armed_lxWS"];//_allclasse select 6;
 btc_type_mg = ["O_Tura_HMG_02_lxWS", 
-"O_Tura_HMG_02_high_lxWS"]; //_allclasse select 7;
-btc_type_gl = ["O_Tura_ZU23_lxWS"]; //_allclasse select 8;
-
-/*Sometimes you need to remove units: - ["Blabla","moreBlabla"];
+"O_Tura_HMG_02_high_lxWS"];//_allclasse select 7;
+btc_type_gl = ["O_Tura_ZU23_lxWS"];//_allclasse select 8;
+/*
+//Sometimes you need to remove units: - ["Blabla","moreBlabla"];
 //Sometimes you need to add units: + ["Blabla","moreBlabla"];
 switch (_p_en) do {
-    /*case "Myfactionexemple" : {
+    case "Myfactionexemple" : {
         btc_type_units = btc_type_units - ["Blabla","moreBlabla"];
         btc_type_divers = btc_type_divers + ["Blabla","moreBlabla"];
         btc_type_crewmen = "Blabla";
