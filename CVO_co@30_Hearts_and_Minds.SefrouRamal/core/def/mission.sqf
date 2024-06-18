@@ -201,11 +201,28 @@ if (isServer) then {
         },
         ["Land_PlasticCase_01_small_black_CBRN_F", "Land_PlasticCase_01_small_olive_CBRN_F", "Land_PlasticCase_01_small_CBRN_F"]
     ];
+/*
+// Solution 1
+//      Filters All weapons additionally by author, in this case: Rotator Collective
+//
     private _weapons_usefull = "true" configClasses (configFile >> "CfgWeapons") select {
         getNumber (_x >> 'type') isEqualTo 1 &&
         {getArray (_x >> 'magazines') isNotEqualTo []} &&
-        {getNumber (_x >> 'scope') isEqualTo 2}
+        {getNumber (_x >> 'scope') isEqualTo 2} &&
+        {getText (_x >> 'author') isEqualTo "Rotators Collective"}
     };
+*/
+
+/*
+// Solution 2
+//      Takes the Array (_weapons_usefull), creates an array of config paths - which are needed - instead of classnames
+
+    private _weapons_usefull = ["arifle_Galat_worn_lxWS","arifle_Galat_lxWS","arifle_SLR_lxWS","arifle_SLR_GL_lxWS"];
+
+    // Converts classnames to configPath 
+    _weapons_usefull = _weapons_usefull apply { configFile >> "CfgWeapons" >> _X };
+
+*/
     btc_cache_weapons_type = _weapons_usefull apply {(toLower getText (_x >> "model")) select [1]};
 
     //Hideout classname
