@@ -49,11 +49,10 @@ execVM "cvo\misc\JND_debugv2.sqf";
 execVM "cvo\misc\cvo_jobboard.sqf";
 
 // Init Support Drones
-// execVM "cvo\support\cvo_support_init.sqf";
+execVM "cvo\support\cvo_support_init.sqf";
 
 // Init Map Module
- execVM "cvo\map\cvo_map_init.sqf";
-
+execVM "cvo\map\cvo_map_init.sqf";
 
 // Init for CVO IED's
 execVM "cvo\IED\cvo_ied_init.sqf";
