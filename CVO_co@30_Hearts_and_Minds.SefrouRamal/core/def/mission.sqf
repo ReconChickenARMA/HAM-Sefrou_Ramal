@@ -213,7 +213,7 @@ if (isServer) then {
     };
 */
 
-/*
+
 // Solution 2
 //      Takes the Array (_weapons_usefull), creates an array of config paths - which are needed - instead of classnames
 
@@ -222,7 +222,7 @@ if (isServer) then {
     // Converts classnames to configPath 
     _weapons_usefull = _weapons_usefull apply { configFile >> "CfgWeapons" >> _X };
 
-*/
+
     btc_cache_weapons_type = _weapons_usefull apply {(toLower getText (_x >> "model")) select [1]};
 
     //Hideout classname
