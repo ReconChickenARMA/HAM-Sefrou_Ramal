@@ -113,11 +113,11 @@ if (CVO_A_modLoaded_GreenMag) then {
 			//"greenmag_ammo_762x39_basic_60Rnd",
 			//"greenmag_ammo_762x39_basic_30Rnd",
 			
-			//"greenmag_ammo_9x19_basic_60Rnd",
-			//"greenmag_ammo_9x19_basic_30Rnd",
+			"greenmag_ammo_9x19_basic_60Rnd",
+			"greenmag_ammo_9x19_basic_30Rnd",
 
-			"greenmag_ammo_45ACP_basic_30Rnd",
-			"greenmag_ammo_45ACP_basic_60Rnd",
+			//"greenmag_ammo_45ACP_basic_30Rnd",
+			//"greenmag_ammo_45ACP_basic_60Rnd",
 		
 			//"greenmag_ammo_762x54_basic_60Rnd",
 			//"greenmag_ammo_762x54_basic_30Rnd",
@@ -188,15 +188,8 @@ CVO_A_BASE append [
 
 // Binoculars
 CVO_A_BASE append [
-	"Hate_Smartphone_HUD", 
-	"Hate_Smartphone",
 	"Nikon_DSLR_HUD",
 	"Nikon_DSLR",
-	"Old_Camera_HUD",
-	"Old_Camera",
-	"Old_Camera_Color_HUD",
-	"Old_Camera_Color",
-	"Camera_lxWS",
 	"Binocular",
 	"Laserdesignator",
 	"LaserdesignatorGPS_01",
@@ -268,10 +261,13 @@ CVO_A_BASE append [
 
 // Backpacks
 CVO_A_BASE append [
+	"B_LegStrapBag_coyote_F",
 	"B_AssaultPack_cbr",
+	"B_AssaultPackSpec_cbr",
 	"B_Carryall_cbr",
 	"B_FieldPack_cbr",
-	"B_Kitbag_cbr"
+	"B_Kitbag_cbr",
+	"Aegis_B_patrolBackpack_cbr_F"
 	];
 
 // Headgear
@@ -375,23 +371,34 @@ CVO_A_BASE append  [
 	// FALs
 	"arifle_SLR_V_lxWS",	
 	"arifle_SLR_Para_lxWS",
+	"arifle_SLR_Para_snake_lxWS",
 	//20rnd magazines
 	"20Rnd_762x51_slr_reload_tracer_green_lxWS",
 	"20Rnd_762x51_slr_lxWS",
 	//supressor 
 	"suppressor_h_lxWS",
+	"suppressor_h_snake_lxWS",
 	//basic optics
+	"optic_r1_high_black_sand_lxWS",
+	"optic_r1_high_sand_lxWS",
+	"optic_r1_high_snake_lxWS",
 	"optic_r1_high_lxWS",
 	"optic_r1_low_lxWS",
+	"optic_r1_low_sand_lxWS",
+	"optic_r1_low_snake_lxWS",
 	"optic_VRCO_RF",
+	"optic_VRCO_tan_RF",
 	"saber_light_ir_lxWS",
 	"saber_light_lxWS",
 	"ACE_DBAL_A3_Red"	
 	];
 
 // Pistols
-CVO_A_BASE append ["hgun_ACPC2_black_F",
-"9Rnd_45ACP_Mag"];
+CVO_A_BASE append [
+	"hgun_Glock19_Tan_RF",
+	"17Rnd_9x19_green_Mag_RF",
+	"17Rnd_9x19_Mag_RF"
+	];
 
 // Handgrenades and Throwables
 CVO_A_BASE append   [
@@ -484,8 +491,10 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		{}]],
 	["Machinegunner", [[
 	//SS-77 Vektor
+		"LMG_S77_Desert_lxWS",
 		"LMG_S77_lxWS",
 		"LMG_S77_Compact_lxWS",
+		"LMG_S77_Compact_Snakeskin_lxWS",
 		//100 rnd belts
 		"100Rnd_762x51_S77_Green_lxWS",
 		"100Rnd_762x51_S77_lxWS",
@@ -507,15 +516,21 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		{}]],
 	["Marksman", [[
 		//HADES H6 rifle
+		"srifle_h6_blk_rf",
 		"srifle_h6_tan_rf",
 		//accessories
 		"optic_DMS",
+		"optic_DMS_snake_lxWS",
 		"suppressor_l_lxWS",
 		"suppressor_l_sand_lxWS",		
 		"bipod_02_F_arid",
 		"bipod_01_F_snd",
 		"bipod_02_F_tan",
+		"bipod_03_F_blk",
+		"bipod_02_F_blk",
+		"bipod_01_F_blk",
 		//ammo
+		"10Rnd_556x45_AP_Stanag_green_RF",
 		"10Rnd_556x45_AP_Stanag_green_Tan_RF"
 		], 
 		{}]],
@@ -534,6 +549,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 	["Officer", [
 		[
 		//GLX grenade launcher and ammo
+		"glaunch_GLX_snake_lxWS",
 		"glaunch_GLX_lxWS",
 		"glaunch_GLX_tan_lxWS",
 		"3Rnd_UGL_FlareGreen_F",
@@ -568,7 +584,8 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"H_Beret_blk",
 		//officer tech
 		"optic_Hamr",
-		
+		"optic_Hamr_snake_lxWS",
+		"optic_Hamr_sand_lxWS",
 		"ItemcTab",
 		"ACRE_PRC148"
 		],

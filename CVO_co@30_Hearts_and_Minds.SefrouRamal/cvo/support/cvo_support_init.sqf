@@ -6,7 +6,7 @@ cvo_support_fnc_spawnDrone = 		compileScript ["cvo\support\cvo_support_fnc_spawn
 
 // DEFINE
 #define VIC_CLASS "PLP_UNA_MRAP_03_F"
-#define UAV_CLASS "PLP_UNA_UAV_03_F"
+#define UAV_CLASS "PLP_UNA_UAV_04_F"
 #define START_POS [10200,10200,0]
 
 

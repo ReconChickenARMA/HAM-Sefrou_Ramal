@@ -60,8 +60,8 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 		["SmokeShell",5],
 		["1Rnd_Smoke_Grenade_shell",5],
 		["100Rnd_762x51_S77_Green_lxWS",5],
-		["9Rnd_45ACP_Mag",10],
-		["greenmag_ammo_45ACP_basic_60Rnd",5],
+		["17Rnd_9x19_Mag_RF",10],
+		["greenmag_ammo_9x19_basic_60Rnd",5],
 
 		["greenmag_item_speedloader", 4]
 	],

@@ -791,6 +791,8 @@ btc_door_breaking_time = 60;
 
 //Flag
 btc_flag_textures = [
+    //"\cvo\img\voron_flag_olive.paa", these are incorrect file paths
+    //"\cvo\img\voron_flag_red.paa",
     "\A3\Data_F\Flags\flag_red_CO.paa",
     "\A3\Data_F\Flags\flag_green_CO.paa",
     "\A3\Data_F\Flags\flag_blue_CO.paa",
