@@ -396,6 +396,11 @@ CVO_A_BASE append  [
 // Pistols
 CVO_A_BASE append [
 	"hgun_Glock19_Tan_RF",
+	"optic_MRD_tan_RF",
+	"acc_flashlight_pistol",
+	"acc_flashlight_IR_pistol_RF",
+	"acc_pointer_IR_pistol_RF",
+	"muzzle_snds_L",
 	"17Rnd_9x19_green_Mag_RF",
 	"17Rnd_9x19_Mag_RF"
 	];
