@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=26597;
+		nextID=26679;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=15227;
+		nextID=15314;
 	};
 	class Camera
 	{
-		pos[]={8039.7393,51.840206,8759.04};
-		dir[]={-0.85335571,-0.48666847,-0.18752575};
-		up[]={-0.47543693,0.87348479,-0.10447934};
-		aside[]={-0.21465297,5.4365955e-007,0.97681248};
+		pos[]={7971.7964,42.906933,8756.9063};
+		dir[]={-0.9110294,-0.27472961,0.30775848};
+		up[]={-0.26030868,0.96150208,0.087937295};
+		aside[]={0.32007641,2.8739305e-007,0.94747961};
 	};
 };
 binarizationWanted=0;
@@ -612,7 +612,7 @@ class CustomAttributes
 		};
 		nAttributes=2;
 	};
-	class Category2
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -641,7 +641,7 @@ class CustomAttributes
 		};
 		nAttributes=1;
 	};
-	class Category3
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -2598,8 +2598,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7992.8535,39.954132,8750.2695};
-								angles[]={0.0039536515,0.63982761,6.2826171};
+								position[]={7992.8281,39.954132,8750.2471};
+								angles[]={0.0038001942,0.18437657,0.0012298583};
 							};
 							side="Empty";
 							flags=4;
@@ -2609,7 +2609,7 @@ class Mission
 							};
 							id=24432;
 							type="Land_TripodScreen_01_dual_v1_sand_F";
-							atlOffset=0.0033340454;
+							atlOffset=0.0033302307;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -2743,7 +2743,7 @@ class Mission
 							};
 							id=24511;
 							type="Land_Laptop_03_sand_F";
-							atlOffset=0.27906418;
+							atlOffset=0.27885818;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -2915,8 +2915,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7986.9688,40.235687,8748.8809};
-								angles[]={0.0033346671,0.9121775,6.2828927};
+								position[]={7987.1592,40.234936,8748.7783};
+								angles[]={6.2561412,0.9121775,0.0009134906};
 							};
 							side="Empty";
 							flags=4;
@@ -2926,7 +2926,6 @@ class Mission
 							};
 							id=24597;
 							type="Land_TripodScreen_01_dual_v1_sand_F";
-							atlOffset=0.0012550354;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -3047,7 +3046,7 @@ class Mission
 						};
 					};
 					id=1076;
-					atlOffset=0.56354904;
+					atlOffset=0.56346512;
 				};
 				class Item2
 				{
@@ -3075,7 +3074,7 @@ class Mission
 							};
 							id=24195;
 							type="Land_PortableDesk_01_sand_F";
-							atlOffset=0.0014228821;
+							atlOffset=0.00075531006;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -6782,8 +6781,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={8026.4204,40.293636,8768.7852};
-								angles[]={0,1.8102577,0};
+								position[]={8029.1274,40.400585,8773.9346};
+								angles[]={0.011995304,1.8102577,0};
 							};
 							side="Empty";
 							flags=4;
@@ -6792,7 +6791,6 @@ class Mission
 							};
 							id=26036;
 							type="Land_PortableLight_02_quad_sand_F";
-							atlOffset=-0.039360046;
 						};
 						class Item84
 						{
@@ -6845,7 +6843,7 @@ class Mission
 						};
 					};
 					id=24218;
-					atlOffset=1.8140907;
+					atlOffset=1.8383827;
 				};
 				class Item3
 				{
@@ -11581,7 +11579,7 @@ class Mission
 									class PositionInfo
 									{
 										position[]={7990.6479,39.083691,8771.4551};
-										angles[]={6.2432079,1.9732233,3.8126018e-009};
+										angles[]={0.043971907,1.9732233,0.027993103};
 									};
 									side="Empty";
 									flags=5;
@@ -19965,6 +19963,7 @@ class Mission
 							};
 							id=25152;
 							type="B_UN_Pickup_mmg_rf";
+							atlOffset=-7.6293945e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -20295,6 +20294,7 @@ class Mission
 							};
 							id=25765;
 							type="B_UN_Pickup_mmg_rf";
+							atlOffset=-0.00012588501;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -21188,7 +21188,7 @@ class Mission
 						};
 					};
 					id=26054;
-					atlOffset=-0.059360504;
+					atlOffset=-0.059402466;
 				};
 				class Item13
 				{
@@ -21214,7 +21214,7 @@ class Mission
 					state=1;
 					class Entities
 					{
-						items=67;
+						items=66;
 						class Item0
 						{
 							dataType="Object";
@@ -23801,41 +23801,6 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={7986.707,39.413715,8748.0039};
-								angles[]={0.0019608396,4.1215992,0.0020352104};
-							};
-							side="Empty";
-							class Attributes
-							{
-								createAsLocalObject=1;
-								disableSimulation=1;
-							};
-							id=26404;
-							type="B_RadioBag_01_coyote_F";
-							atlOffset=1.0338478;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="allowDamage";
-									expression="_this allowdamage _value;";
-									class Value
-									{
-										class data
-										{
-											singleType="BOOL";
-											value=0;
-										};
-									};
-								};
-								nAttributes=1;
-							};
-						};
-						class Item58
-						{
-							dataType="Object";
-							class PositionInfo
-							{
 								position[]={7991.6069,39.217838,8749.6533};
 								angles[]={5.497787,2.7896471,0.0023736479};
 							};
@@ -23866,7 +23831,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item59
+						class Item58
 						{
 							dataType="Object";
 							class PositionInfo
@@ -23916,7 +23881,7 @@ class Mission
 								nAttributes=2;
 							};
 						};
-						class Item60
+						class Item59
 						{
 							dataType="Object";
 							class PositionInfo
@@ -23952,7 +23917,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item61
+						class Item60
 						{
 							dataType="Object";
 							class PositionInfo
@@ -23987,7 +23952,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item62
+						class Item61
 						{
 							dataType="Object";
 							class PositionInfo
@@ -24023,7 +23988,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item63
+						class Item62
 						{
 							dataType="Object";
 							class PositionInfo
@@ -24059,7 +24024,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item64
+						class Item63
 						{
 							dataType="Object";
 							class PositionInfo
@@ -24096,7 +24061,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item65
+						class Item64
 						{
 							dataType="Object";
 							class PositionInfo
@@ -24132,7 +24097,7 @@ class Mission
 								nAttributes=1;
 							};
 						};
-						class Item66
+						class Item65
 						{
 							dataType="Object";
 							class PositionInfo
@@ -24171,7 +24136,7 @@ class Mission
 						};
 					};
 					id=24475;
-					atlOffset=0.79727554;
+					atlOffset=0.79712296;
 				};
 				class Item15
 				{
@@ -28449,7 +28414,7 @@ class Mission
 							};
 							id=26579;
 							type="Land_Pliers_F";
-							atlOffset=0.50214767;
+							atlOffset=0.50214386;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29012,7 +28977,7 @@ class Mission
 				};
 			};
 			id=19476;
-			atlOffset=0.16465378;
+			atlOffset=0.16460419;
 		};
 		class Item1
 		{
@@ -29609,13 +29574,13 @@ class Mission
 									class PositionInfo
 									{
 										position[]={8033.2329,39.240692,8786.7861};
-										angles[]={6.2823701,2.7122664,0.0072330805};
+										angles[]={6.2823648,2.7122591,0.0072256629};
 									};
 									side="West";
 									flags=7;
 									class Attributes
 									{
-										init="this setVariable [""CVO_A_Roles"",[""Drone Operator""]];" \n "this setVariable [""interpreter"",true];";
+										init="this setVariable [""CVO_A_Roles"",[""Officer""]];" \n "this setVariable [""interpreter"",true];";
 										description="1-1 SL @Raven 1-1 Patrol Squad";
 										isPlayable=1;
 										class Inventory
@@ -29823,14 +29788,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="STRING";
-													value="AfricanHead_03";
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -29875,14 +29840,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="STRING";
+													value="AfricanHead_03";
 												};
 											};
 										};
@@ -29927,14 +29892,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="STRING";
-													value="lxWS_African_Head_01";
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -29979,14 +29944,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="STRING";
+													value="lxWS_African_Head_01";
 												};
 											};
 										};
@@ -30031,14 +29996,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="STRING";
-													value="lxWS_African_Head_03";
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -30083,14 +30048,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="STRING";
+													value="lxWS_African_Head_03";
 												};
 											};
 										};
@@ -30193,14 +30158,14 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={8037.5742,39.525814,8785.0391};
-										angles[]={6.2823701,3.3818567,0.0072330805};
+										position[]={8037.5742,39.52581,8785.0391};
+										angles[]={6.2823648,3.3818548,0.0072256629};
 									};
 									side="West";
 									flags=5;
 									class Attributes
 									{
-										init="this setVariable [""interpreter"",true];";
+										init="this setVariable [""interpreter"",true];" \n "this setVariable [""CVO_A_Roles"",[""Interpreter""]];";
 										description="1-1 Interpreter @Raven 1-1 Patrol Squad";
 										isPlayable=1;
 										class Inventory
@@ -30222,6 +30187,7 @@ class Mission
 									};
 									id=26064;
 									type="B_G_Survivor_F";
+									atlOffset=-3.8146973e-006;
 									class CustomAttributes
 									{
 										class Attribute0
@@ -30284,14 +30250,14 @@ class Mission
 									dataType="Object";
 									class PositionInfo
 									{
-										position[]={8037.8389,39.522049,8787.4785};
-										angles[]={6.2823701,3.3818567,0.0072330805};
+										position[]={8037.8389,39.522053,8787.4785};
+										angles[]={6.2823648,3.3818548,0.0072256629};
 									};
 									side="West";
 									flags=5;
 									class Attributes
 									{
-										init="this setVariable [""interpreter"",true];";
+										init="this setVariable [""interpreter"",true];" \n "this setVariable [""CVO_A_Roles"",[""Interpreter""]];";
 										description="1-1 Interpreter @Raven 1-1 Patrol Squad";
 										isPlayable=1;
 										class Inventory
@@ -30313,18 +30279,19 @@ class Mission
 									};
 									id=26065;
 									type="B_G_Survivor_F";
+									atlOffset=3.8146973e-006;
 									class CustomAttributes
 									{
 										class Attribute0
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="STRING";
-													value="AfricanHead_03";
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -30369,14 +30336,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="STRING";
+													value="AfricanHead_03";
 												};
 											};
 										};
@@ -30633,14 +30600,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="STRING";
-													value="AfricanHead_03";
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -30685,14 +30652,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="STRING";
+													value="AfricanHead_03";
 												};
 											};
 										};
@@ -30737,14 +30704,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="STRING";
-													value="lxWS_African_Head_01";
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -30789,14 +30756,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="STRING";
+													value="lxWS_African_Head_01";
 												};
 											};
 										};
@@ -30841,14 +30808,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="STRING";
-													value="lxWS_African_Head_03";
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -30893,14 +30860,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="STRING";
+													value="lxWS_African_Head_03";
 												};
 											};
 										};
@@ -31004,13 +30971,13 @@ class Mission
 									class PositionInfo
 									{
 										position[]={8041.7861,39.948105,8777.5635};
-										angles[]={6.2823701,5.9289193,0.0072330805};
+										angles[]={6.2823648,5.9289184,0.0072256629};
 									};
 									side="West";
 									flags=5;
 									class Attributes
 									{
-										init="this setVariable [""interpreter"",true];";
+										init="this setVariable [""interpreter"",true];" \n "this setVariable [""CVO_A_Roles"",[""Interpreter""]];";
 										description="1-2 Interpreter @Raven 1-2 Patrol Squad";
 										isPlayable=1;
 										class Inventory
@@ -31095,13 +31062,13 @@ class Mission
 									class PositionInfo
 									{
 										position[]={8042.9351,40.021626,8775.3887};
-										angles[]={6.2823701,5.9289193,0.0072330805};
+										angles[]={6.2823648,5.9289184,0.0072256629};
 									};
 									side="West";
 									flags=5;
 									class Attributes
 									{
-										init="this setVariable [""interpreter"",true];";
+										init="this setVariable [""interpreter"",true];" \n "this setVariable [""CVO_A_Roles"",[""Interpreter""]];";
 										description="1-2 Interpreter @Raven 1-2 Patrol Squad";
 										isPlayable=1;
 										class Inventory
@@ -31127,14 +31094,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="STRING";
-													value="AfricanHead_03";
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -31179,14 +31146,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="STRING";
+													value="AfricanHead_03";
 												};
 											};
 										};
@@ -32871,13 +32838,13 @@ class Mission
 								{
 									dataType="Trigger";
 									position[]={8057.2598,40.895588,8789.9268};
-									angle=0.1881941;
+									angle=0.18819879;
 									class Attributes
 									{
 										text="cvo Music when base empty 1-5 minutes";
-										onActivation="[""leaveBase""] call CVO_Music_fnc_playlist;";
-										sizeA=151.22089;
-										sizeB=142.2334;
+										onActivation="[""leave_base""] call CVO_Music_fnc_playlist;";
+										sizeA=151.22099;
+										sizeB=142.233;
 										timeout[]={60,120,300};
 										interuptable=1;
 										repeatable=1;
@@ -32893,14 +32860,14 @@ class Mission
 								class Item1
 								{
 									dataType="Trigger";
-									position[]={8058.1553,41.134861,8792.0684};
-									angle=0.1881941;
+									position[]={8058.1548,41.134834,8792.0684};
+									angle=0.18819879;
 									class Attributes
 									{
 										text="cvo Music when base empty 15-30 minutes";
-										onActivation="[""leaveBase""] call CVO_Music_fnc_playlist;";
-										sizeA=150.87051;
-										sizeB=141.72948;
+										onActivation="[""leave_base""] call CVO_Music_fnc_playlist;";
+										sizeA=150.871;
+										sizeB=141.729;
 										timeout[]={600,1200,1800};
 										interuptable=1;
 										repeatable=1;
@@ -32915,15 +32882,15 @@ class Mission
 								};
 							};
 							id=25675;
-							atlOffset=0.001953125;
+							atlOffset=0.0019607544;
 						};
 					};
 					id=25678;
-					atlOffset=0.001953125;
+					atlOffset=0.0019607544;
 				};
 			};
 			id=1170;
-			atlOffset=-8.8095093;
+			atlOffset=-8.8095169;
 		};
 		class Item2
 		{

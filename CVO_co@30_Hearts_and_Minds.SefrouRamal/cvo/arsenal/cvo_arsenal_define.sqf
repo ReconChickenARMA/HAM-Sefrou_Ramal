@@ -225,32 +225,6 @@ CVO_A_BASE append  ["ACRE_PRC343"];
 
 // Uniforms 
 CVO_A_BASE append [
-	/*
-	"WSLV_Black_gn_black_Camo",
-	"WSLV_Black_black_Camo",
-	"WSLV_Black_blue_stripes_Camo",
-	"WSLV_Black_blue_Camo",
-	"WSLV_Black_brown_Camo",
-	"WSLV_Black_gn_green_Camo",
-	"WSLV_Black_green_Camo",
-	"WSLV_Black_grey_Camo",
-	"WSLV_Black_sand_Camo",
-	"WSLV_Black_white_Camo",
-	"WSLV_Black_gn_wine_Camo",
-	"WSLV_Black_yellow_Camo",
-	*/
-	"WSLV_Brown_gn_black_Camo",
-	"WSLV_Brown_black_Camo",
-	"WSLV_Brown_blue_stripes_Camo",
-	"WSLV_Brown_blue_Camo",
-	"WSLV_Brown_brown_Camo",
-	"WSLV_Brown_gn_green_Camo",
-	"WSLV_Brown_green_Camo",
-	"WSLV_Brown_grey_Camo",
-	"WSLV_Brown_sand_Camo",
-	"WSLV_Brown_white_Camo",
-	"WSLV_Brown_gn_wine_Camo",
-	"WSLV_Brown_yellow_Camo",	
 	"U_lxWS_UN_Camo3",
 	"U_lxWS_UN_Camo2"];
 
@@ -277,12 +251,9 @@ CVO_A_BASE append [
 	"PLP_UNA_H_Cap",
 	"PLP_UNA_H_MilCap",
 	"PLP_UNA_H_Cap_headphones",
-	"lxWS_H_turban_04_blue_una",
-	"lxWS_H_turban_02_blue_una",
-	"lxWS_H_turban_01_blue_una",
+	
 	"lxWS_H_PASGT_goggles_UN_F",
-	"lxWS_H_PASGT_basic_UN_F",
-	"lxWS_H_turban_03_blue_una"
+	"lxWS_H_PASGT_basic_UN_F"
 	];
 
 // Facewear
@@ -508,7 +479,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"30Rnd_762x51_slr_lxWS"
 		
 		], 
-		{}]],
+	{}]],
 	["Anti-Tank", [[
 		//RPG-32
 		"launch_RPG32_tan_lxWS",
@@ -518,7 +489,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"launch_B_Titan_short_F",
 		"Titan_AT"
 		], 
-		{}]],
+	{}]],
 	["Marksman", [[
 		//HADES H6 rifle
 		"srifle_h6_blk_rf",
@@ -535,10 +506,10 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"bipod_02_F_blk",
 		"bipod_01_F_blk",
 		//ammo
-		"10Rnd_556x45_AP_Stanag_green_RF",
-		"10Rnd_556x45_AP_Stanag_green_Tan_RF"
+		"10Rnd_556x45_AP_Stanag_red_RF",
+		"10Rnd_556x45_AP_Stanag_red_Tan_RF"
 		], 
-		{}]],
+	{}]],
 	["Drone Operator", [[
 		//spectrum device
 		"hgun_esd_01_F",
@@ -550,6 +521,38 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"B_UavTerminal",
 		//LR radio
 		"ACRE_PRC148"],
+	{}]],
+	["Interpreter", [[
+		//Low Vis Clothing
+		"WSLV_Black_gn_black_Camo",
+		"WSLV_Black_black_Camo",
+		"WSLV_Black_blue_stripes_Camo",
+		"WSLV_Black_blue_Camo",
+		"WSLV_Black_brown_Camo",
+		"WSLV_Black_gn_green_Camo",
+		"WSLV_Black_green_Camo",
+		"WSLV_Black_grey_Camo",
+		"WSLV_Black_sand_Camo",
+		"WSLV_Black_white_Camo",
+		"WSLV_Black_gn_wine_Camo",
+		"WSLV_Black_yellow_Camo",
+		"WSLV_Brown_gn_black_Camo",
+		"WSLV_Brown_black_Camo",
+		"WSLV_Brown_blue_stripes_Camo",
+		"WSLV_Brown_blue_Camo",
+		"WSLV_Brown_brown_Camo",
+		"WSLV_Brown_gn_green_Camo",
+		"WSLV_Brown_green_Camo",
+		"WSLV_Brown_grey_Camo",
+		"WSLV_Brown_sand_Camo",
+		"WSLV_Brown_white_Camo",
+		"WSLV_Brown_gn_wine_Camo",
+		"WSLV_Brown_yellow_Camo",
+		//UNA Turbans
+		"lxWS_H_turban_04_blue_una",
+		"lxWS_H_turban_02_blue_una",
+		"lxWS_H_turban_01_blue_una",		
+		"lxWS_H_turban_03_blue_una"],
 	{}]],
 	["Officer", [
 		[

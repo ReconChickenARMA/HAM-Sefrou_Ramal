@@ -426,10 +426,37 @@ _p_civ_veh = _allfaction select _p_civ_veh; //Select faction selected from missi
 private _allclasse = [[_p_civ]] call btc_civ_fnc_class; //Create classes from factions, you can combine factions from the SAME side : [[_p_civ, "btc_ac","LOP_TAK_CIV"]] call btc_civ_fnc_class.
 
 //Save class name to global variable
-btc_civ_type_units = _allclasse select 0;
+btc_civ_type_units = ["C_Djella_01_lxWS",
+"C_Djella_02_lxWS", 
+"C_Djella_03_lxWS", 
+"C_Djella_04_lxWS", 
+"C_Djella_05_lxWS", 
+"C_Tak_02_A_lxWS", 
+"C_Tak_02_B_lxWS", 
+"C_Tak_02_C_lxWS", 
+"C_Tak_03_A_lxWS", 
+"C_Tak_03_B_lxWS", 
+"C_Tak_03_C_lxWS", 
+"C_Tak_01_A_lxWS", 
+"C_Tak_01_B_lxWS", 
+"C_Tak_01_C_lxWS"];//_allclasse select 0;
 _allclasse = [[_p_civ_veh]] call btc_civ_fnc_class;
-btc_civ_type_veh = _allclasse select 2;
-btc_civ_type_boats = _allclasse select 1;
+btc_civ_type_veh = ["C_Van_01_fuel_F", 
+"C_Offroad_02_unarmed_F", 
+"C_Truck_02_fuel_F", 
+"C_Truck_02_box_F", 
+"C_Truck_02_transport_F", 
+"C_Truck_02_covered_F", 
+"C_Offroad_lxWS", 
+"C_Pickup_rf", 
+"C_Pickup_covered_rf", 
+"C_Tractor_01_F", 
+"C_Van_01_transport_F", 
+"C_Van_01_box_F", 
+"C_Van_02_transport_F", 
+"C_Truck_02_flatbed_lxWS", 
+"C_Truck_02_cargo_lxWS"];//_allclasse select 2;
+btc_civ_type_boats = [];//_allclasse select 1;
 
 btc_w_civs = [
     ["arifle_Galat_worn_lxWS", "sgun_HunterShotgun_01_F", "sgun_HunterShotgun_01_Sawedoff_F"],
