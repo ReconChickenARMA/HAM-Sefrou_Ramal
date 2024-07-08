@@ -23,24 +23,25 @@ if (!hasInterface) exitWith {};
 //// ################# DEFINE #################
 
 // Init Languages
-["alt", "Altian"]       call acre_api_fnc_babelAddLanguageType;
+["arab", "Arabic"]       call acre_api_fnc_babelAddLanguageType;
 
 ["en", "English"]       call acre_api_fnc_babelAddLanguageType;
 
 ["un", "Unconscious"]   call acre_api_fnc_babelAddLanguageType;
 
-private _cvo_babel_playerDefault = "alt";
-cvo_babel_zeusLanguages = ["alt", "en"];
+private _cvo_babel_playerDefault = "en";
+private _cvo_babel_localLanguage = "arab";
+
+cvo_babel_zeusLanguages = ["arab", "en"];
 
 //// ################# CODE #################
 
 cvo_babel_localPlayerLanguages = [];
 // Local Language
-    _cvo_babel_localLanguage = "alt";
 
 
 // Player Languages
-    _cvo_babel_player getVariable ["CVO_Player_Languages", []];
+//    _cvo_babel_player getVariable ["CVO_Player_Languages", []];
 
 // Default Language for everyone
     cvo_babel_localPlayerLanguages pushBackUnique _cvo_babel_playerDefault;
@@ -50,14 +51,14 @@ cvo_babel_localPlayerLanguages = [];
         cvo_babel_localPlayerLanguages pushBackUnique _cvo_babel_localLanguage;
     };
 
-
+/*
 // Custom Languages via Custom Player
     {
         if (_x in _cvo_babel_player) then {
             cvo_babel_localPlayerLanguages pushBackUnique _x;
         };
     } forEach ["alt","en"];
-
+*/
 
 
 //// APPLY
