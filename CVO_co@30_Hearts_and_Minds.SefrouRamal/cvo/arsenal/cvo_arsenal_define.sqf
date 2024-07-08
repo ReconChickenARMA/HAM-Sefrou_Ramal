@@ -181,7 +181,7 @@ CVO_A_BASE append [
 	"ACE_Canteen",
 	
 
-	"tsp_paperclip",
+	//"tsp_paperclip",
 
 	"ItemWatch",
 	"ItemCompass"];
@@ -344,7 +344,7 @@ CVO_A_BASE append  [
 	"arifle_SLR_Para_lxWS",
 	"arifle_SLR_Para_snake_lxWS",
 	//20rnd magazines
-	"20Rnd_762x51_slr_reload_tracer_green_lxWS",
+	"20Rnd_762x51_slr_reload_tracer_red_lxWS",
 	"20Rnd_762x51_slr_lxWS",
 	//supressor 
 	"suppressor_h_lxWS",
@@ -372,7 +372,7 @@ CVO_A_BASE append [
 	"acc_flashlight_IR_pistol_RF",
 	"acc_pointer_IR_pistol_RF",
 	"muzzle_snds_L",
-	"17Rnd_9x19_green_Mag_RF",
+	"17Rnd_9x19_red_Mag_RF",
 	"17Rnd_9x19_Mag_RF"
 	];
 
@@ -405,8 +405,9 @@ CVO_A_BASE append   [
 
 // Explosives
 CVO_A_BASE append [
-	"tsp_popperCharge_auto_mag",
-	"tsp_popperCharge_mag"];
+	//"tsp_popperCharge_auto_mag",
+	//"tsp_popperCharge_mag"
+	];
 
 // CBRN KIT
 CVO_A_BASE append [
@@ -456,14 +457,17 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"ACE_VMM3","ACE_VMH3", 
 		"ACE_wirecutter", "ToolKit", 
 		"ACE_Fortify", "ACE_DefusalKit",
+
+		//"tsp_frameCharge_mag",
+		//"tsp_stickCharge_mag",
+		//"tsp_stickCharge_auto_mag",
 			
 		// Explosives
 		"DemoCharge_Remote_Mag",	"ACE_DemoCharge_Remote_Mag_Throwable",
-		"SatchelCharge_Remote_Mag",	"ACE_SatchelCharge_Remote_Mag_Throwable",
+		"SatchelCharge_Remote_Mag",	"ACE_SatchelCharge_Remote_Mag_Throwable"
 
-		"tsp_frameCharge_mag",
-		"tsp_stickCharge_mag",
-		"tsp_stickCharge_auto_mag"], 
+		
+		], 
 		{}]],
 	["Machinegunner", [[
 	//SS-77 Vektor
@@ -472,10 +476,10 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"LMG_S77_Compact_lxWS",
 		"LMG_S77_Compact_Snakeskin_lxWS",
 		//100 rnd belts
-		"100Rnd_762x51_S77_Green_lxWS",
+		"100Rnd_762x51_S77_Red_lxWS",
 		"100Rnd_762x51_S77_lxWS",
 		//30rnd FAL mags
-		"30Rnd_762x51_slr_tracer_green_lxWS",
+		"30Rnd_762x51_slr_tracer_red_lxWS",
 		"30Rnd_762x51_slr_lxWS"
 		
 		], 

@@ -46,7 +46,7 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 	_cvo_csc_source, 
 	"Basic Ammo Package",
 	[
-		["20Rnd_762x51_slr_reload_tracer_green_lxWS",10],
+		["20Rnd_762x51_slr_reload_tracer_red_lxWS",10],
 		["1Rnd_40mm_HE_lxWS",10],
 		["3Rnd_UGL_FlareWhite_F",5],
 		["1Rnd_50mm_Smoke_lxWS",5],
@@ -59,7 +59,7 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 		["HandGrenade",10],
 		["SmokeShell",5],
 		["1Rnd_Smoke_Grenade_shell",5],
-		["100Rnd_762x51_S77_Green_lxWS",5],
+		["100Rnd_762x51_S77_Red_lxWS",5],
 		["17Rnd_9x19_Mag_RF",10],
 		["greenmag_ammo_9x19_basic_60Rnd",5],
 
@@ -113,7 +113,7 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 		
 		["greenmag_ammo_556x45_basic_60Rnd",10],
 		["100Rnd_762x51_S77_Red_lxWS",5],
-		["20Rnd_762x51_slr_reload_tracer_green_lxWS",20],
+		["20Rnd_762x51_slr_reload_tracer_red_lxWS",20],
 		["greenmag_ammo_762x51_basic_60Rnd",10],
 		["greenmag_beltlinked_762x51_basic_100",10],
 
