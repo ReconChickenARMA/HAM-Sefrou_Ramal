@@ -224,6 +224,7 @@ _actions pushBack ["FOB", localize "STR_BTC_HAM_ACTION_REDEPLOYFOB", "\A3\Ui_f\d
 //Arsenal
 /*
 //BIS
+/*
 if (btc_p_arsenal_Type < 3) then {
     btc_gear_object addAction [localize "STR_BTC_HAM_ACTION_ARSENAL_OPEN_BIS", "['Open', [btc_p_arsenal_Restrict isNotEqualTo 1, _this select 0]] call bis_fnc_arsenal;"];
 };

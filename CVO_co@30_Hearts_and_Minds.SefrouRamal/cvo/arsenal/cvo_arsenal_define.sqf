@@ -69,6 +69,7 @@ diag_log ("[CVO] [Arsenal_Define] - start");
 
 CVO_Arsenal_boxes = [];
 
+/*
 CVO_arsenal_boxes append [
 	cvo_arsenal_1,
 	cvo_arsenal_2,
@@ -82,10 +83,10 @@ CVO_arsenal_boxes append [
 	cvo_arsenal_10,
 	cvo_arsenal_11
 ];
+*/
 
-
-/*private _layerArray = getMissionLayerEntities "cvo_arsenal_boxes";
-if (!(_layerArray isEqualTo [])) then {CVO_Arsenal_boxes append getMissionLayerEntities "cvo_arsenal_boxes" # 0;};*/
+private _layerArray = (getMissionLayerEntities "CVO_Arsenal_Boxes")#0 ;
+CVO_Arsenal_boxes append _layerArray;
 
 
 // #####################################################
@@ -106,17 +107,20 @@ if (CVO_A_modLoaded_GreenMag) then {
 			"greenmag_ammo_762x51_basic_60Rnd",
 			"greenmag_ammo_762x51_basic_30Rnd",
 
-			"greenmag_ammo_545x39_basic_60Rnd",
-			"greenmag_ammo_545x39_basic_30Rnd",
+			//"greenmag_ammo_545x39_basic_60Rnd",
+			//"greenmag_ammo_545x39_basic_30Rnd",
 
-			"greenmag_ammo_762x39_basic_60Rnd",
-			"greenmag_ammo_762x39_basic_30Rnd",
+			//"greenmag_ammo_762x39_basic_60Rnd",
+			//"greenmag_ammo_762x39_basic_30Rnd",
 			
 			"greenmag_ammo_9x19_basic_60Rnd",
 			"greenmag_ammo_9x19_basic_30Rnd",
-			
-			"greenmag_ammo_762x54_basic_60Rnd",
-			"greenmag_ammo_762x54_basic_30Rnd",
+
+			//"greenmag_ammo_45ACP_basic_30Rnd",
+			//"greenmag_ammo_45ACP_basic_60Rnd",
+		
+			//"greenmag_ammo_762x54_basic_60Rnd",
+			//"greenmag_ammo_762x54_basic_30Rnd",
 
 			"greenmag_item_speedloader"
 		];
@@ -141,6 +145,8 @@ CVO_A_BASE append [
 // Tools & Equipment
 CVO_A_BASE append [
 	"ChemicalDetector_01_watch_F",
+	"ItemAndroid",
+	"ItemcTabHCam",
 
 	"immersion_pops_poppack",
 	"murshun_cigs_cigpack",
@@ -170,8 +176,10 @@ CVO_A_BASE append [
 	"ACE_Chemlight_Shield",
 	"acex_intelitems_notepad",
 	"ACE_Flashlight_KSF1",
+	
 
-	"ACE_WaterBottle",
+	"ACE_Canteen",
+	
 
 	"tsp_paperclip",
 
@@ -180,21 +188,22 @@ CVO_A_BASE append [
 
 // Binoculars
 CVO_A_BASE append [
-	"Hate_Smartphone_HUD", 
-	"Hate_Smartphone",
 	"Nikon_DSLR_HUD",
 	"Nikon_DSLR",
-	"Old_Camera_HUD",
-	"Old_Camera",
-	"Old_Camera_Color_HUD",
-	"Old_Camera_Color",
-	"Camera_lxWS",
 	"Binocular",
 	"Laserdesignator",
-	"LaserdesignatorGPS_01"];
+	"LaserdesignatorGPS_01",
+	"Laserbatteries"];
 
 // NVGs
 CVO_A_BASE append [
+	//armbands
+	"Aegis_NV_G_Armband_Blu_Alt_F",
+	"Aegis_NV_G_Armband_Blu_F",
+	//cigs and lollipop
+	"immersion_cigs_cigar0_nv",
+	"murshun_cigs_cig0_nv",
+	//actual nvgs
 	"ACE_NVG_Gen4",
 	"ACE_NVG_Gen4_WP"
 ];
@@ -216,59 +225,112 @@ CVO_A_BASE append  ["ACRE_PRC343"];
 
 // Uniforms 
 CVO_A_BASE append [
-	"AU_lxWS_UN_Camo2",
-	"U_lxWS_UN_Camo3"];
+	"U_lxWS_UN_Camo3",
+	"U_lxWS_UN_Camo2"];
 
 // Vests
 CVO_A_BASE append [
-	"PLP_UNA_V_PlateCarrier1_F",
-	"PLP_UNA_V_PlateCarrier2_F",
-	"PLP_UNA_V_PlateCarrierIAGL",
-	"PLP_UNA_V_PlateCarrierIA1",
-	"PLP_UNA_V_CarrierRigKBT_01_heavy_F",
-	"PLP_UNA_V_CarrierRigKBT_01_light_F",
-	"PLP_UNA_V_CarrierRigKBT_01_F",
-	"PLP_UNA_V_TacVestIR",
-	"PLP_UNA_V_TacVest"
+	"PLP_UNA_V_CarrierRigKBT_01_light_F"	
 ];
 
 // Backpacks
 CVO_A_BASE append [
-	"B_AssaultPack_blk",
+	"B_LegStrapBag_coyote_F",
 	"B_AssaultPack_cbr",
-	"B_AssaultPack_khk",
-	"B_Carryall_blk",
+	"B_AssaultPackSpec_cbr",
 	"B_Carryall_cbr",
-	"B_Carryall_khk"
-	"B_FieldPack_blk",
 	"B_FieldPack_cbr",
-	"B_FieldPack_khk",
 	"B_Kitbag_cbr",
-	"B_Kitbag_tan",
-	"B_AssaultPack_desert_lxWS",
-	"B_Carryall_desert_lxWS",
-	"B_Kitbag_desert_lxWS",
-	"B_Kitbag_blk"
+	"Aegis_B_patrolBackpack_cbr_F"
 	];
 
 // Headgear
-CVO_A_BASE append [
-	"PLP_UNA_H_HelmetB",
+CVO_A_BASE append [	
+	"Aegis_H_Booniehat_UNO_hs_F",
+	"Aegis_H_Booniehat_UNO_F",
 	"PLP_UNA_H_Cap",
 	"PLP_UNA_H_MilCap",
 	"PLP_UNA_H_Cap_headphones",
-	"PLP_UNA_H_HelmetHBK_headset_F",
-	"PLP_UNA_H_HelmetHBK_F",
-	"PLP_UNA_H_HelmetHBK_ear_F",
-	"PLP_UNA_H_HelmetHBK_chops_F",	
-	"lxWS_H_turban_04_blue_una",
+	
 	"lxWS_H_PASGT_goggles_UN_F",
-	"lxWS_H_PASGT_basic_UN_F",
-	"lxWS_H_turban_03_blue_una"
+	"lxWS_H_PASGT_basic_UN_F"
 	];
 
 // Facewear
 CVO_A_BASE append [
+	//vanilla+ glasses
+	"G_Aviator",
+	"G_Glasses_black_RF",
+	"G_Glasses_white_RF",
+	"G_Spectacles",
+	"G_Tactical_Clear",
+	"G_Tactical_Yellow",
+	"G_Lady_Blue",
+	"G_Shades_Black",
+	"G_Shades_Blue",
+	"G_Shades_Green",
+	"G_Shades_Red",
+	"G_Tactical_Black",
+	"G_Shades_Yellowred",
+	"G_Shemag_shades",
+	"G_Tactical_Camo",
+	"G_Squares_Tinted",
+	"G_Shemag_tactical",
+	//milgear glasses
+	"milgp_f_tactical_khk",
+	"milgp_f_face_shield_shades_BLK",
+	"milgp_f_face_shield_shades_CB",
+	"milgp_f_face_shield_shades_khk",
+	"milgp_f_face_shield_shades_RGR",
+	"milgp_f_face_shield_shades_shemagh_BLK",
+	"milgp_f_face_shield_shades_shemagh_CB",
+	"milgp_f_face_shield_shades_shemagh_khk",
+	"milgp_f_face_shield_shades_shemagh_RGR",
+	//vanilla goggles
+	"G_Balaclava_combat",
+	"G_Balaclava_lowprofile",
+	"G_Combat",
+	"G_Combat_Goggles_blk_F",
+	"G_Combat_lxWS",
+	"G_Balaclava_light_G_blk_F",
+	"G_Lowprofile",
+	//milgear goggles
+	"milgp_f_face_shield_goggles_BLK",
+	"milgp_f_face_shield_goggles_CB",
+	"milgp_f_face_shield_goggles_khk",
+	"milgp_f_face_shield_goggles_RGR",
+	"milgp_f_face_shield_goggles_shemagh_BLK",
+	"milgp_f_face_shield_goggles_shemagh_CB",
+	"milgp_f_face_shield_goggles_shemagh_khk",
+	"milgp_f_face_shield_goggles_shemagh_RGR",
+	"milgp_f_goggles_khk",
+	//vanilla+ misc 
+	"G_Headset_light",
+	"G_Shemag_khk",
+	"G_Shemag_oli",
+	"G_Shemag_red",
+	"G_Shemag_tan",
+	"G_Shemag_white",
+	"Aegis_G_Condor_EyePro_F",
+	"G_Headset_Tactical",
+	"G_Headset_Tactical_khk",
+	"G_Headset_Tactical_grn",
+	"G_Balaclava_blk_lxWS",
+	"G_Balaclava_snd_lxWS",
+	"G_Headset_lxWS",
+	//milgear misc 
+	"milgp_f_face_shield_BLK",
+	"milgp_f_face_shield_CB",
+	"milgp_f_face_shield_khk",
+	"milgp_f_face_shield_RGR",
+	"milgp_f_face_shield_shemagh_BLK",
+	"milgp_f_face_shield_shemagh_CB",
+	"milgp_f_face_shield_shemagh_khk",
+	"milgp_f_face_shield_shemagh_RGR",
+	//vanilla+ armbands
+	"Aegis_G_Armband_BLU_F",
+	"Aegis_G_Armband_BLU_alt_F",
+	//cigs and lollipop
 	"immersion_pops_pop0",
 	"murshun_cigs_cig0",
 	"immersion_cigs_cigar0"];
@@ -277,36 +339,42 @@ CVO_A_BASE append [
 
 // Rifles
 CVO_A_BASE append  [
-	// R4/5 Vektors
-	"arifle_Velko_lxWS",
-	"arifle_VelkoR5_lxWS",
-	"arifle_VelkoR5_snake_lxWS",
-	
-	"35Rnd_556x45_Velko_reload_tracer_green_lxWS",
-	"35Rnd_556x45_Velko_snake_reload_tracer_green_lxWS",
-	//SS-77 Vektor
-	"LMG_S77_lxWS",
-	"LMG_S77_Desert_lxWS",
-	"100Rnd_762x51_S77_Green_lxWS",
-	// Shotguns
-	"sgun_HunterShotgun_01_F",
-	"sgun_HunterShotgun_01_sawedoff_F",
-	"ACE_2Rnd_12Gauge_Pellets_No0_Buck",
-	"ACE_2Rnd_12Gauge_Pellets_No1_Buck",
-	"ACE_2Rnd_12Gauge_Pellets_No2_Buck",
-	"ACE_2Rnd_12Gauge_Pellets_No3_Buck",
-	"ACE_2Rnd_12Gauge_Pellets_No4_Bird",
-	"ACE_2Rnd_12Gauge_Pellets_No4_Buck",
-	"2Rnd_12Gauge_Pellets",
-	"2Rnd_12Gauge_Slug",
-	"2rnd_HE_Mag_lxWS",
-	"2rnd_Smoke_Mag_lxWS"
-	
+	// FALs
+	"arifle_SLR_V_lxWS",	
+	"arifle_SLR_Para_lxWS",
+	"arifle_SLR_Para_snake_lxWS",
+	//20rnd magazines
+	"20Rnd_762x51_slr_reload_tracer_green_lxWS",
+	"20Rnd_762x51_slr_lxWS",
+	//supressor 
+	"suppressor_h_lxWS",
+	"suppressor_h_snake_lxWS",
+	//basic optics
+	"optic_r1_high_black_sand_lxWS",
+	"optic_r1_high_sand_lxWS",
+	"optic_r1_high_snake_lxWS",
+	"optic_r1_high_lxWS",
+	"optic_r1_low_lxWS",
+	"optic_r1_low_sand_lxWS",
+	"optic_r1_low_snake_lxWS",
+	"optic_VRCO_RF",
+	"optic_VRCO_tan_RF",
+	"saber_light_ir_lxWS",
+	"saber_light_lxWS",
+	"ACE_DBAL_A3_Red"	
 	];
 
 // Pistols
-CVO_A_BASE append ["hgun_Rook40_F",
-"16Rnd_9x21_Mag"];
+CVO_A_BASE append [
+	"hgun_Glock19_Tan_RF",
+	"optic_MRD_tan_RF",
+	"acc_flashlight_pistol",
+	"acc_flashlight_IR_pistol_RF",
+	"acc_pointer_IR_pistol_RF",
+	"muzzle_snds_L",
+	"17Rnd_9x19_green_Mag_RF",
+	"17Rnd_9x19_Mag_RF"
+	];
 
 // Handgrenades and Throwables
 CVO_A_BASE append   [
@@ -379,29 +447,154 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"ACE_suture"],
 	{}]],
 	["Engineer", [[
+		//Helmets and armor 
+		"H_HelmetHeavy_White_RF",
+		"H_HelmetHeavy_Simple_White_RF",
+		"H_HelmetHeavy_VisorUp_White_RF",
+		"PLP_UNA_V_CarrierRigKBT_01_heavy_F",
 		// Tools and Detectors
 		"ACE_VMM3","ACE_VMH3", 
 		"ACE_wirecutter", "ToolKit", 
 		"ACE_Fortify", "ACE_DefusalKit",
-		
+			
 		// Explosives
 		"DemoCharge_Remote_Mag",	"ACE_DemoCharge_Remote_Mag_Throwable",
 		"SatchelCharge_Remote_Mag",	"ACE_SatchelCharge_Remote_Mag_Throwable",
 
 		"tsp_frameCharge_mag",
 		"tsp_stickCharge_mag",
-		"tsp_stickCharge_auto_mag"
-
-], 
+		"tsp_stickCharge_auto_mag"], 
 		{}]],
+	["Machinegunner", [[
+	//SS-77 Vektor
+		"LMG_S77_Desert_lxWS",
+		"LMG_S77_lxWS",
+		"LMG_S77_Compact_lxWS",
+		"LMG_S77_Compact_Snakeskin_lxWS",
+		//100 rnd belts
+		"100Rnd_762x51_S77_Green_lxWS",
+		"100Rnd_762x51_S77_lxWS",
+		//30rnd FAL mags
+		"30Rnd_762x51_slr_tracer_green_lxWS",
+		"30Rnd_762x51_slr_lxWS"
+		
+		], 
+	{}]],
+	["Anti-Tank", [[
+		//RPG-32
+		"launch_RPG32_tan_lxWS",
+		"RPG32_F",
+		"RPG32_HE_F",
+		//MPRL Compact
+		"launch_B_Titan_short_F",
+		"Titan_AT"
+		], 
+	{}]],
+	["Marksman", [[
+		//HADES H6 rifle
+		"srifle_h6_blk_rf",
+		"srifle_h6_tan_rf",
+		//accessories
+		"optic_DMS",
+		"optic_DMS_snake_lxWS",
+		"suppressor_l_lxWS",
+		"suppressor_l_sand_lxWS",		
+		"bipod_02_F_arid",
+		"bipod_01_F_snd",
+		"bipod_02_F_tan",
+		"bipod_03_F_blk",
+		"bipod_02_F_blk",
+		"bipod_01_F_blk",
+		//ammo
+		"10Rnd_556x45_AP_Stanag_red_RF",
+		"10Rnd_556x45_AP_Stanag_red_Tan_RF"
+		], 
+	{}]],
+	["Drone Operator", [[
+		//spectrum device
+		"hgun_esd_01_F",
+		"acc_esd_01_flashlight",
+		"muzzle_antenna_01_f",
+		"muzzle_antenna_03_f",
+		"muzzle_antenna_02_f",
+		//drone terminal
+		"B_UavTerminal",
+		//LR radio
+		"ACRE_PRC148"],
+	{}]],
+	["Interpreter", [[
+		//Low Vis Clothing
+		"WSLV_Black_gn_black_Camo",
+		"WSLV_Black_black_Camo",
+		"WSLV_Black_blue_stripes_Camo",
+		"WSLV_Black_blue_Camo",
+		"WSLV_Black_brown_Camo",
+		"WSLV_Black_gn_green_Camo",
+		"WSLV_Black_green_Camo",
+		"WSLV_Black_grey_Camo",
+		"WSLV_Black_sand_Camo",
+		"WSLV_Black_white_Camo",
+		"WSLV_Black_gn_wine_Camo",
+		"WSLV_Black_yellow_Camo",
+		"WSLV_Brown_gn_black_Camo",
+		"WSLV_Brown_black_Camo",
+		"WSLV_Brown_blue_stripes_Camo",
+		"WSLV_Brown_blue_Camo",
+		"WSLV_Brown_brown_Camo",
+		"WSLV_Brown_gn_green_Camo",
+		"WSLV_Brown_green_Camo",
+		"WSLV_Brown_grey_Camo",
+		"WSLV_Brown_sand_Camo",
+		"WSLV_Brown_white_Camo",
+		"WSLV_Brown_gn_wine_Camo",
+		"WSLV_Brown_yellow_Camo",
+		//UNA Turbans
+		"lxWS_H_turban_04_blue_una",
+		"lxWS_H_turban_02_blue_una",
+		"lxWS_H_turban_01_blue_una",		
+		"lxWS_H_turban_03_blue_una"],
+	{}]],
 	["Officer", [
-		["arifle_VelkoR5_GL_lxWS",
-		"arifle_VelkoR5_GL_snake_lxWS",
-		"1Rnd_HE_Grenade_shell",
-		"ACE_HuntIR_M203",
-		"ACE_40mm_Flare_white",
+		[
+		//GLX grenade launcher and ammo
+		"glaunch_GLX_snake_lxWS",
+		"glaunch_GLX_lxWS",
+		"glaunch_GLX_tan_lxWS",
+		"3Rnd_UGL_FlareGreen_F",
+		"3Rnd_UGL_FlareCIR_F",
+		"3Rnd_UGL_FlareRed_F",
+		"3Rnd_UGL_FlareWhite_F",
+		"3Rnd_UGL_FlareYellow_F",
+		"3Rnd_SmokeBlue_Grenade_shell",
+		"3Rnd_SmokeGreen_Grenade_shell",
+		"3Rnd_SmokeOrange_Grenade_shell",
+		"3Rnd_SmokePurple_Grenade_shell",
+		"3Rnd_SmokeRed_Grenade_shell",
+		"3Rnd_Smoke_Grenade_shell",
+		"3Rnd_SmokeYellow_Grenade_shell",
+		"3Rnd_Pellets_Grenade_shell",
+		"3Rnd_HEDP_Grenade_shell",
+		"3Rnd_HE_Grenade_shell",
+		"1Rnd_RC40_HE_shell_RF",
+		"1Rnd_RC40_shell_RF",
+		"1Rnd_RC40_SmokeBlue_shell_RF",
+		"1Rnd_RC40_SmokeGreen_shell_RF",
+		"1Rnd_RC40_SmokeOrange_shell_RF",
+		"1Rnd_RC40_SmokeRed_shell_RF",
+		"1Rnd_RC40_SmokeWhite_shell_RF",
+		//FAL GL and ammo
+		"arifle_SLR_V_GL_lxWS",
+		"1Rnd_40mm_HE_lxWS",
+		"1Rnd_50mm_Smoke_lxWS",
+		"1Rnd_58mm_AT_lxWS",
+		//officer uniform
 		"U_lxWS_UN_Camo1",
 		"H_Beret_blk",
+		//officer tech
+		"optic_Hamr",
+		"optic_Hamr_snake_lxWS",
+		"optic_Hamr_sand_lxWS",
+		"ItemcTab",
 		"ACRE_PRC148"
 		],
 		{}]]

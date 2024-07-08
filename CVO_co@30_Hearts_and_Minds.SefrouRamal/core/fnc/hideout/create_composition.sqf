@@ -25,7 +25,7 @@ params [
     ["_pos", [0, 0, 0], [[]]]
 ];
 
-private _type_bigbox = selectRandom ["Box_FIA_Ammo_F", "C_supplyCrate_F", "Box_East_AmmoVeh_F"];
+private _type_bigbox = selectRandom ["SFIA_Box_Ammo_lxWS", "SFIA_Box_Wps_lxWS", "Box_East_AmmoVeh_F"];
 private _power = selectRandom btc_type_power;
 
 private _composition_hideout = [

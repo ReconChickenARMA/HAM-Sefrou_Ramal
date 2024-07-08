@@ -42,6 +42,10 @@ params [
 {	_x = 0.1 max (_x min 120);} forEach [_multiDay, _multiNight];
 
 
+if (_multiDay == 0) then {_multiDay = 5};
+if (_multiNight == 0) then {_multiNight = 25};
+
+
 /* // Modes of Operation
 _clearNight = false; 																// Removes/Reduces Cloud Cover during night to ensure certain visibility
 

@@ -9,7 +9,7 @@ class Params {
         title = __EVAL(format ["      %1", localize "STR_A3_CFGVEHICLES_MODULEDATE_F_ARGUMENTS_HOUR_0"]);
         values[]={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24};
         texts[]={"1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24"};
-        default = 12;
+        default = 5;
     };
     class btc_p_acctime { // Acceleration time multiplier:
         title = __EVAL(format ["      %1", localize "STR_USRACT_TIME_INC"]);
@@ -45,7 +45,7 @@ class Params {
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_DB_ASAVE"]);
         values[]={0,1};
         texts[]={$STR_DISABLED,$STR_ENABLED}; // texts[]={"Off","On"};
-        default = 0;
+        default = 1;
     };
     class btc_p_db_autoRestartTime { // Time before auto restart/shutdown server
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_DB_ARESTARTTIME"]);
@@ -99,7 +99,7 @@ class Params {
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_RESP_TICKETSATSTART"]);
         values[]={-1,0,1,2,3,4,5,10,15,20,25,30,50,70,100,150,200};
         texts[]={$STR_DISABLED,"0","1","2","3","4","5","10","15","20","25","30","50","70","100","150","200"};
-        default = 20;
+        default = 30;
     };
     class btc_p_respawn_ticketsLost { // Number of tickets lost per death:
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_RESP_TICKETSLOST"]);
@@ -111,7 +111,7 @@ class Params {
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_RESP_TICKETSHARE"]);
         values[]={0,1};
         texts[]={$STR_BTC_HAM_RESP_SAMEFACTION, $STR_BTC_HAM_RESP_NOTSHARE};
-        default = 1;
+        default = 0;
     };
     class btc_p_respawn_ticketsFromPrisoners { // Attribute tickets from prisoners to (Enable only if tickets are not share):
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_RESP_TICKETPRISONER"]);
@@ -213,19 +213,19 @@ class Params {
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_SPWAN_ANIMALS_DENSITY"]);
         values[]={0,10,20,30,40,50,60,70,80,90,100};
         texts[]={"0%","10%","20%","30%","40%","50%","60%","70%","80%","90%","100%"};
-        default = 100;
+        default = 30;
     };
     class btc_p_veh_armed_ho { // Add armed vehicles in Hideout:
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_SPAWN_ARMEDHIDEOUT"]);
         values[] = {0,1};
         texts[] = {$STR_DISABLED,$STR_ENABLED};
-        default = 0;
+        default = 1;
     };
     class btc_p_veh_armed_spawn_more { // Add armed vehicles in Side mission/Cache:
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_SPAWN_ARMEDOTHER"]);
         values[] = {0,1};
         texts[] = {$STR_DISABLED,$STR_ENABLED};
-        default = 0;
+        default = 1;
     };
     class btc_p_patrol_max { // Maximum number of military patrol:
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_SPWAN_PATROL_MAX"]);
@@ -357,13 +357,13 @@ class Params {
         title = __EVAL(format ["      %1, %2", localize "STR_A3_CFGVEHICLES_MODULESKILL_F_0", localize "STR_BTC_HAM_PARAM_SKILL_SPOTDIST"]);
         values[]={0,1,2,3,4,5,6,7,8,9,10};
         texts[]={"0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1"};
-        default = 9;
+        default = 8;
     };
     class btc_p_set_skill_spotTime { // Set skill, spotTime
         title = __EVAL(format ["      %1, %2", localize "STR_A3_CFGVEHICLES_MODULESKILL_F_0", localize "STR_BTC_HAM_PARAM_SKILL_SPOTTIME"]);
         values[]={0,1,2,3,4,5,6,7,8,9,10};
         texts[]={"0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1"};
-        default = 7;
+        default = 5;
     };
     class btc_p_set_skill_courage { // Set skill, courage
         title = __EVAL(format ["      %1, %2", localize "STR_A3_CFGVEHICLES_MODULESKILL_F_0", localize "STR_BTC_HAM_PARAM_SKILL_COURAGE"]);
@@ -375,7 +375,7 @@ class Params {
         title = __EVAL(format ["      %1, %2", localize "STR_A3_CFGVEHICLES_MODULESKILL_F_0", localize "STR_BTC_HAM_PARAM_SKILL_RELOAD"]);
         values[]={0,1,2,3,4,5,6,7,8,9,10};
         texts[]={"0","0.1","0.2","0.3","0.4","0.5","0.6","0.7","0.8","0.9","1"};
-        default = 10;
+        default = 5;
     };
     class btc_p_set_skill_commanding { // Set skill, commanding
         title = __EVAL(format ["      %1, %2", localize "STR_A3_CFGVEHICLES_MODULESKILL_F_0", localize "STR_A3_CFGHINTS0"]);
@@ -393,7 +393,7 @@ class Params {
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_GAMEPLAY_SEA"]);
         values[] = {0,1};
         texts[] = {$STR_DISABLED,$STR_ENABLED};
-        default = 1;
+        default = 0;
     };
     class btc_p_chem { // Chemical warfare
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_GAMEPLAY_CHEM"]);
@@ -459,7 +459,7 @@ class Params {
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_OTHER_SHOWREP"]);
         values[]={-1, 0, 1, 2, 3, 5, 10, 25, 50, 100, 200};
         texts[]={$STR_DISABLED, 0, 1, 2, 3, 5, 10, 25, 50, 100, 200};
-        default = 3;
+        default = -1;
     };
     class btc_p_city_radiusOffset { // Spawn city radius offset:
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_OTHER_SPAWNRAD"]);
@@ -477,7 +477,7 @@ class Params {
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_OTHER_CITYFREE"]);
         values[]={0,1,2,3};
         texts[]={$STR_DISABLED,"1","2","3"};
-        default = 0;
+        default = 3;
     };
     class btc_p_flag { // Allow the use of flag:
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_OTHER_ALLOWFLAG"]);

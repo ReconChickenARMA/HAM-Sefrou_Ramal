@@ -22,9 +22,11 @@ Author:
 ---------------------------------------------------------------------------- */
 
 params [
-    ["_item", objNull, [objNull]],
+    ["_item", objNull, [objNull, ""]],
     ["_vehicle", objNull, [objNull]]
 ];
+
+if (_item isEqualType "") exitWith {_this};
 
 if (_item in btc_chem_contaminated) then {
     if ((btc_chem_contaminated pushBackUnique _vehicle) > -1) then {

@@ -3,7 +3,7 @@
 
 // ################################################
 // Define:
-cvo_engineerVehicleClass = "UK3CB_KRG_B_MTLB_PKT";
+cvo_engineerVehicleClass = "PLP_UNA_APC_Tracked_01_CRV_F";
 cvo_refillObject = btc_create_object;
 cvo_maxBudget = 5000;
 cvo_refillBudget = 1000;

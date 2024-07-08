@@ -9,8 +9,8 @@ diag_log ("[CVO] [INIT] (cvo_init.sqf) - START");
 // cvo_side_fnc_distanceCondition = compile preprocessFile "core\fnc\side\cvo_side_fnc_distanceCondition.sqf";
 
 
-// Init CVO fullHeal at Unimog Medical
-["gm_ge_ff_u1300l_medic"] call CVO_Others_fnc_fullHeal;
+// Init CVO fullHeal at Medical Cabinet
+["Land_PortableCabinet_01_medical_F"] call CVO_Others_fnc_fullHeal;
 
 
 // Init CVO Foritfy Preset
@@ -49,11 +49,10 @@ execVM "cvo\misc\JND_debugv2.sqf";
 execVM "cvo\misc\cvo_jobboard.sqf";
 
 // Init Support Drones
-// execVM "cvo\support\cvo_support_init.sqf";
+execVM "cvo\support\cvo_support_init.sqf";
 
 // Init Map Module
- execVM "cvo\map\cvo_map_init.sqf";
-
+execVM "cvo\map\cvo_map_init.sqf";
 
 // Init for CVO IED's
 execVM "cvo\IED\cvo_ied_init.sqf";
