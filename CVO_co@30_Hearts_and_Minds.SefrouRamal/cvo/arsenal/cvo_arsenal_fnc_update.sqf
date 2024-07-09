@@ -23,8 +23,9 @@ _finalKit append CVO_A_BASE;
 private _roles = player getVariable ["CVO_A_Roles", []];
 
 // Detectes ACE MEDIC and ACE Engineer
-if (0 < player getVariable ["ace_medical_medicClass", 0]) 	then {_roles pushBackUnique "Medic"};
-if (0 < player getVariable ["ACE_IsEngineer",0]) 			then {_roles pushBackUnique "Engineer"};
+
+if ([player, 1] call ace_medical_treatment_fnc_isMedic) then {_roles pushBackUnique "Medic"};
+if ([player, 1] call ace_repair_fnc_isEngineer) 		then {_roles pushBackUnique "Engineer"};
 
 
 {// Retrieves Info from HASHMAP
