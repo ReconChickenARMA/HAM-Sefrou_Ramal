@@ -24,14 +24,14 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8005.5747,46.757706,8769.9004};
-		dir[]={-0.91086894,-0.37958539,-0.1627146};
-		up[]={-0.37377656,0.92507112,-0.066771165};
-		aside[]={-0.17588475,-2.835237e-006,0.9845472};
+		pos[]={8003.1523,43.24596,8762.2051};
+		dir[]={0.71509957,-0.47078189,-0.51695156};
+		up[]={0.38159841,0.88216048,-0.27585959};
+		aside[]={-0.5859285,-3.7830469e-006,-0.81052798};
 	};
 };
 binarizationWanted=0;
-sourceName="CVO_co@30_Hearts_and_Minds";
+sourceName="~CVO_co@30_Hearts_and_Minds";
 addons[]=
 {
 	"A3_Props_F_Enoch_Military_Decontamination",

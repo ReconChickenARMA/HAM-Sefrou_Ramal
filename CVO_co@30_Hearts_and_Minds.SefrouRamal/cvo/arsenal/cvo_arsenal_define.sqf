@@ -156,6 +156,14 @@ CVO_A_BASE append [
 	"immersion_cigs_cigar0_nv",
 
 	"ACE_Humanitarian_Ration",
+	"ACE_MRE_BeefStew",
+	"ACE_MRE_ChickenTikkaMasala",
+	"ACE_MRE_ChickenHerbDumplings",
+	"ACE_MRE_CreamChickenSoup",
+	"ACE_MRE_CreamTomatoSoup",
+	"ACE_MRE_LambCurry",
+	"ACE_MRE_MeatballsPasta",
+	"ACE_MRE_SteakVegetables",
 
 	"ACE_MapTools",
 	"ace_marker_flags_yellow",
@@ -177,11 +185,11 @@ CVO_A_BASE append [
 	"acex_intelitems_notepad",
 	"ACE_Flashlight_KSF1",
 	
-
+	"ACE_WaterBottle",
 	"ACE_Canteen",
 	
 
-	//"tsp_paperclip",
+	"tsp_paperclip",
 
 	"ItemWatch",
 	"ItemCompass"];
@@ -202,10 +210,10 @@ CVO_A_BASE append [
 	"Aegis_NV_G_Armband_Blu_F",
 	//cigs and lollipop
 	"immersion_cigs_cigar0_nv",
-	"murshun_cigs_cig0_nv",
+	"murshun_cigs_cig0_nv"
 	//actual nvgs
-	"ACE_NVG_Gen4",
-	"ACE_NVG_Gen4_WP"
+	//"ACE_NVG_Gen4",
+	//"ACE_NVG_Gen4_WP"
 ];
 
 
@@ -225,12 +233,40 @@ CVO_A_BASE append  ["ACRE_PRC343"];
 
 // Uniforms 
 CVO_A_BASE append [
+	//Low Vis Clothing
+	"WSLV_Black_gn_black_Camo",
+	"WSLV_Black_black_Camo",
+	"WSLV_Black_blue_stripes_Camo",
+	"WSLV_Black_blue_Camo",
+	"WSLV_Black_brown_Camo",
+	"WSLV_Black_gn_green_Camo",
+	"WSLV_Black_green_Camo",
+	"WSLV_Black_grey_Camo",
+	"WSLV_Black_sand_Camo",
+	"WSLV_Black_white_Camo",
+	"WSLV_Black_gn_wine_Camo",
+	"WSLV_Black_yellow_Camo",
+	"WSLV_Brown_gn_black_Camo",
+	"WSLV_Brown_black_Camo",
+	"WSLV_Brown_blue_stripes_Camo",
+	"WSLV_Brown_blue_Camo",
+	"WSLV_Brown_brown_Camo",
+	"WSLV_Brown_gn_green_Camo",
+	"WSLV_Brown_green_Camo",
+	"WSLV_Brown_grey_Camo",
+	"WSLV_Brown_sand_Camo",
+	"WSLV_Brown_white_Camo",
+	"WSLV_Brown_gn_wine_Camo",
+	"WSLV_Brown_yellow_Camo",
+	//UNA uniforms
 	"U_lxWS_UN_Camo3",
 	"U_lxWS_UN_Camo2"];
 
 // Vests
 CVO_A_BASE append [
-	"PLP_UNA_V_CarrierRigKBT_01_light_F"	
+	"PLP_UNA_V_TacVestIR",
+	"PLP_UNA_V_TacVest",
+	"PLP_UNA_V_CarrierRigKBT_01_light_F"
 ];
 
 // Backpacks
@@ -245,13 +281,18 @@ CVO_A_BASE append [
 	];
 
 // Headgear
-CVO_A_BASE append [	
+CVO_A_BASE append [
+	"PLP_UNA_H_HelmetB",
 	"Aegis_H_Booniehat_UNO_hs_F",
 	"Aegis_H_Booniehat_UNO_F",
 	"PLP_UNA_H_Cap",
 	"PLP_UNA_H_MilCap",
 	"PLP_UNA_H_Cap_headphones",
-	
+	//UNA Turbans
+	"lxWS_H_turban_04_blue_una",
+	"lxWS_H_turban_02_blue_una",
+	"lxWS_H_turban_01_blue_una",
+	"lxWS_H_turban_03_blue_una",
 	"lxWS_H_PASGT_goggles_UN_F",
 	"lxWS_H_PASGT_basic_UN_F"
 	];
@@ -340,15 +381,18 @@ CVO_A_BASE append [
 // Rifles
 CVO_A_BASE append  [
 	// FALs
+	"arifle_SLR_lxWS",
+	"arifle_SLR_D_lxWS",
 	"arifle_SLR_V_lxWS",	
 	"arifle_SLR_Para_lxWS",
 	"arifle_SLR_Para_snake_lxWS",
 	//20rnd magazines
-	"20Rnd_762x51_slr_reload_tracer_red_lxWS",
+	"Aegis_20Rnd_762x51_slr_reload_tracer_red_lxWS",
 	"20Rnd_762x51_slr_lxWS",
-	//supressor 
-	"suppressor_h_lxWS",
-	"suppressor_h_snake_lxWS",
+	"20Rnd_762x51_slr_desert_lxWS",
+	"20Rnd_762x51_slr_Snake_reload_tracer_Red_lxWS",
+	//flashlight 
+	"acc_flashlight",
 	//basic optics
 	"optic_r1_high_black_sand_lxWS",
 	"optic_r1_high_sand_lxWS",
@@ -359,9 +403,7 @@ CVO_A_BASE append  [
 	"optic_r1_low_snake_lxWS",
 	"optic_VRCO_RF",
 	"optic_VRCO_tan_RF",
-	"saber_light_ir_lxWS",
-	"saber_light_lxWS",
-	"ACE_DBAL_A3_Red"	
+	"saber_light_lxWS"
 	];
 
 // Pistols
@@ -369,8 +411,6 @@ CVO_A_BASE append [
 	"hgun_Glock19_Tan_RF",
 	"optic_MRD_tan_RF",
 	"acc_flashlight_pistol",
-	"acc_flashlight_IR_pistol_RF",
-	"acc_pointer_IR_pistol_RF",
 	"muzzle_snds_L",
 	"17Rnd_9x19_red_Mag_RF",
 	"17Rnd_9x19_Mag_RF"
@@ -405,8 +445,8 @@ CVO_A_BASE append   [
 
 // Explosives
 CVO_A_BASE append [
-	//"tsp_popperCharge_auto_mag",
-	//"tsp_popperCharge_mag"
+	"tsp_popperCharge_auto_mag",
+	"tsp_popperCharge_mag"
 	];
 
 // CBRN KIT
@@ -458,9 +498,9 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"ACE_wirecutter", "ToolKit", 
 		"ACE_Fortify", "ACE_DefusalKit",
 
-		//"tsp_frameCharge_mag",
-		//"tsp_stickCharge_mag",
-		//"tsp_stickCharge_auto_mag",
+		"tsp_frameCharge_mag",
+		"tsp_stickCharge_mag",
+		"tsp_stickCharge_auto_mag",
 			
 		// Explosives
 		"DemoCharge_Remote_Mag",	"ACE_DemoCharge_Remote_Mag_Throwable",
@@ -479,7 +519,8 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"100Rnd_762x51_S77_Red_lxWS",
 		"100Rnd_762x51_S77_lxWS",
 		//30rnd FAL mags
-		"30Rnd_762x51_slr_tracer_red_lxWS",
+		"30Rnd_762x51_slr_Snake_reload_tracer_Red_lxWS",
+		"Aegis_30Rnd_762x51_slr_reload_tracer_red_lxWS",
 		"30Rnd_762x51_slr_lxWS"
 		
 		], 
@@ -527,36 +568,8 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"ACRE_PRC148"],
 	{}]],
 	["Interpreter", [[
-		//Low Vis Clothing
-		"WSLV_Black_gn_black_Camo",
-		"WSLV_Black_black_Camo",
-		"WSLV_Black_blue_stripes_Camo",
-		"WSLV_Black_blue_Camo",
-		"WSLV_Black_brown_Camo",
-		"WSLV_Black_gn_green_Camo",
-		"WSLV_Black_green_Camo",
-		"WSLV_Black_grey_Camo",
-		"WSLV_Black_sand_Camo",
-		"WSLV_Black_white_Camo",
-		"WSLV_Black_gn_wine_Camo",
-		"WSLV_Black_yellow_Camo",
-		"WSLV_Brown_gn_black_Camo",
-		"WSLV_Brown_black_Camo",
-		"WSLV_Brown_blue_stripes_Camo",
-		"WSLV_Brown_blue_Camo",
-		"WSLV_Brown_brown_Camo",
-		"WSLV_Brown_gn_green_Camo",
-		"WSLV_Brown_green_Camo",
-		"WSLV_Brown_grey_Camo",
-		"WSLV_Brown_sand_Camo",
-		"WSLV_Brown_white_Camo",
-		"WSLV_Brown_gn_wine_Camo",
-		"WSLV_Brown_yellow_Camo",
-		//UNA Turbans
-		"lxWS_H_turban_04_blue_una",
-		"lxWS_H_turban_02_blue_una",
-		"lxWS_H_turban_01_blue_una",		
-		"lxWS_H_turban_03_blue_una"],
+		
+		],
 	{}]],
 	["Officer", [
 		[
@@ -587,6 +600,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"1Rnd_RC40_SmokeRed_shell_RF",
 		"1Rnd_RC40_SmokeWhite_shell_RF",
 		//FAL GL and ammo
+		"arifle_SLR_GL_lxWS",
 		"arifle_SLR_V_GL_lxWS",
 		"1Rnd_40mm_HE_lxWS",
 		"1Rnd_50mm_Smoke_lxWS",

@@ -694,13 +694,10 @@ _allclasse = [[_p_en], _p_en_AA, _p_en_tank] call btc_mil_fnc_class; //Create cl
 btc_enemy_side = east;//_allclasse select 0;
 btc_type_units = [//SFIA 
 "O_SFIA_medic_lxWS", 
-"O_SFIA_crew_lxWS", 
 "O_SFIA_exp_lxWS", 
 "O_SFIA_HeavyGunner_lxWS", 
 "O_SFIA_soldier_at_lxWS", 
-"O_SFIA_officer_lxWS", 
 "O_SFIA_soldier_lxWS", 
-"O_SFIA_soldier_lite_lxWS", 
 "O_SFIA_sharpshooter_lxWS", 
 "O_SFIA_Soldier_TL_lxWS",
 //Tura
