@@ -445,8 +445,8 @@ CVO_A_BASE append   [
 
 // Explosives
 CVO_A_BASE append [
-	"tsp_popperCharge_auto_mag",
-	"tsp_popperCharge_mag"
+	"tsp_breach_popper_mag",
+	"tsp_breach_popper_auto_mag"
 	];
 
 // CBRN KIT
@@ -498,9 +498,8 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"ACE_wirecutter", "ToolKit", 
 		"ACE_Fortify", "ACE_DefusalKit",
 
-		"tsp_frameCharge_mag",
-		"tsp_stickCharge_mag",
-		"tsp_stickCharge_auto_mag",
+		"tsp_breach_silhouette_mag",
+		"tsp_breach_stick_mag",
 			
 		// Explosives
 		"DemoCharge_Remote_Mag",	"ACE_DemoCharge_Remote_Mag_Throwable",
