@@ -526,12 +526,18 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 	{}]],
 	["Anti-Tank", [[
 		//RPG-32
-		"launch_RPG32_tan_lxWS",
-		"RPG32_F",
-		"RPG32_HE_F",
+		//"launch_RPG32_tan_lxWS",
+		//"RPG32_F",
+		//"RPG32_HE_F",
 		//MPRL Compact
-		"launch_B_Titan_short_F",
-		"Titan_AT"
+		//"launch_B_Titan_short_F",
+		//"Titan_AT",
+		//GM6 Lynx
+		"srifle_GM6_F",
+		"srifle_GM6_snake_lxWS",
+		"optic_DMS",
+		"optic_DMS_snake_lxWS",
+		"5Rnd_127x108_APDS_Mag"
 		], 
 	{}]],
 	["Marksman", [[
