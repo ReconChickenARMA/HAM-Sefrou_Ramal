@@ -537,6 +537,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"srifle_GM6_snake_lxWS",
 		"optic_DMS",
 		"optic_DMS_snake_lxWS",
+		"greenmag_ammo_127x108_basic_30Rnd",
 		"5Rnd_127x108_APDS_Mag"
 		], 
 	{}]],
