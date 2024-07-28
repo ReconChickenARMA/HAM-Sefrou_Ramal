@@ -139,7 +139,18 @@ if (isServer) then {
     btc_delay_time = 0;
 
     //City
-    btc_city_blacklist = [];//NAME FROM CFG
+    btc_city_blacklist = [
+        "Airfield_1",
+        "solar_2",
+        "comms_1",
+        "service",
+        "Military_1",
+        "Military_4",
+        "wasteland",
+        "construction_1",
+        "datte_1"
+    ];//NAME FROM CFG
+    
     btc_p_city_free_trigger_condition = if (_p_city_free_trigger isEqualTo 0) then {
         "thisList isEqualTo []"
     } else {
