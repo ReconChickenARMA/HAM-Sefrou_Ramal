@@ -6,8 +6,10 @@ cvo_support_fnc_spawnDrone = 		compileScript ["cvo\support\cvo_support_fnc_spawn
 
 // DEFINE
 #define VIC_CLASS "PLP_UNA_MRAP_03_F"
-#define UAV_CLASS "PLP_UNA_UAV_04_F"
+#define UAV_CLASS "PLP_UNA_UAV_03_F"
 #define START_POS [10200,10200,0]
+#define REMOVE_NVG true
+#define REMOVE_TI true
 
 
 // Creates Ace Interaction Node
@@ -23,7 +25,7 @@ _action = ["cvo_support_drone_cooldown","Fixed Wing UAV already active","\A3\ui_
 
 // Create Executive Action for Class Based interaction
 _action = ["cvo_support_drone","Fixed Wing UAV","\A3\ui_f\data\igui\cfg\simpleTasks\types\search_ca.paa",	{
-	[UAV_CLASS, START_POS, _target, btc_player_side, independent, btc_gear_object, true, true] remoteExec ["cvo_support_fnc_spawnDrone",2];
+	[UAV_CLASS, START_POS, _target, btc_player_side, independent, btc_gear_object, REMOVE_NVG, REMOVE_TI] remoteExec ["cvo_support_fnc_spawnDrone",2];
 },{(count cvo_support_drones) < 2}] call ace_interact_menu_fnc_createAction;
 
 [VIC_CLASS, 0, ["ACE_MainActions","cvo_support_node"], _action] call ace_interact_menu_fnc_addActionToClass;

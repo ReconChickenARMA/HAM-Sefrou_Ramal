@@ -1,8 +1,7 @@
 diag_log ("[CVO] [INIT] (cvo_init.sqf) - START");
 
 
-// Init CVO Arsenal
-[compileScript ["cvo\arsenal\cvo_arsenal_init.sqf"]] call CBA_fnc_directCall;
+
 
 
 // Init SideMission Condition
