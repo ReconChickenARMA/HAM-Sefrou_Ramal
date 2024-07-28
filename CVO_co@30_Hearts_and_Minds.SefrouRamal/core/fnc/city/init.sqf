@@ -61,7 +61,7 @@ for "_id" from 0 to (count _locations - 1) do {
         _cachingRadius = (_cachingRadius max 160) min 800;
 
 //        if (btc_city_blacklist find _name >= 0) exitWith {};
-        if (btc_city_blacklist find _current >= 0) exitWith {};
+        if ((configName _current) in btc_city_blacklist) exitWith {};
 
         
         if ((getMarkerPos "btc_base") inArea [_position, 500, 500, 0, false]) exitWith {};
