@@ -233,6 +233,21 @@ CVO_A_BASE append  ["ACRE_PRC343"];
 
 // Uniforms 
 CVO_A_BASE append [
+	//mgp g3 uniforms 
+	"milgp_u_g3_field_set_3cd",
+	"milgp_u_g3_field_set_aor1",
+	"milgp_u_g3_field_set_atacsau",
+	"milgp_u_g3_field_set_khk",
+	"milgp_u_g3_field_set_rolled_3cd",
+	"milgp_u_g3_field_set_rolled_aor1",
+	"milgp_u_g3_field_set_rolled_atacsau",
+	"milgp_u_g3_field_set_rolled_khk",
+	"milgp_u_g3_field_set_rolled_mcarid",
+	"milgp_u_tshirt_g3_field_pants_3CD",
+	"milgp_u_tshirt_g3_field_pants_aor1",
+	"milgp_u_tshirt_g3_field_pants_atacsau",
+	"milgp_u_tshirt_g3_field_pants_khk",
+	"milgp_u_tshirt_g3_field_pants_mcarid",
 	//Low Vis Clothing
 	"WSLV_Black_gn_black_Camo",
 	"WSLV_Black_black_Camo",
@@ -525,6 +540,11 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		], 
 	{}]],
 	["Anti-Tank", [[
+		//FAL GL and ammo
+		"arifle_SLR_GL_lxWS",
+		"arifle_SLR_V_GL_lxWS",
+		"1Rnd_50mm_Smoke_lxWS",
+		"1Rnd_58mm_AT_lxWS",
 		//RPG-32
 		//"launch_RPG32_tan_lxWS",
 		//"RPG32_F",
