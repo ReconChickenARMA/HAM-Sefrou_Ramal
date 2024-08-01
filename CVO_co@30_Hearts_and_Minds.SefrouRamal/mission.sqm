@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=30962;
+		nextID=30963;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=17628;
+		nextID=17784;
 	};
 	class Camera
 	{
-		pos[]={8003.2236,41.722942,8724.4209};
-		dir[]={0.52089167,-0.32953948,0.78758717};
-		up[]={0.18182787,0.94409943,0.27492496};
-		aside[]={0.83417386,-1.5660771e-007,-0.55171138};
+		pos[]={8049.1641,45.760029,8827.043};
+		dir[]={-0.92067134,-0.30864158,-0.23904404};
+		up[]={-0.29874191,0.95117444,-0.07756573};
+		aside[]={-0.2513127,3.943278e-007,0.96792328};
 	};
 };
 binarizationWanted=0;
@@ -158,6 +158,7 @@ addons[]=
 	"A3_Structures_F_Civ_Constructions",
 	"A3_Structures_F_EPA_Civ_Constructions",
 	"A3_Structures_F_Civ_InfoBoards",
+	"A3_Structures_F_Orange_Signs_Mines",
 	"vehicles_1_F_lxWS_APC_Wheeled_02",
 	"A3_Drones_F_Weapons_F_Gamma_Items",
 	"A3_Aegis_Weapons_F_Aegis_Items",
@@ -191,7 +192,6 @@ addons[]=
 	"A3_Props_F_Enoch_Infrastructure_Traffic",
 	"A3_Supplies_F_Heli_CargoNets",
 	"A3_Structures_F_Orange_Signs_Special",
-	"A3_Structures_F_Orange_Signs_Mines",
 	"A3_Air_F_Orange_UAV_06",
 	"A3_Structures_F_Bootcamp_Items_Electronics",
 	"A3_Structures_F_Kart_Civ_SportsGrounds",
@@ -1337,14 +1337,14 @@ class Mission
 	};
 	class Entities
 	{
-		items=33;
+		items=32;
 		class Item0
 		{
 			dataType="Layer";
 			name="Starting Base";
 			class Entities
 			{
-				items=21;
+				items=23;
 				class Item0
 				{
 					dataType="Layer";
@@ -47918,9 +47918,106 @@ class Mission
 					id=30683;
 					atlOffset=0.10788345;
 				};
+				class Item21
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8004.1729,39.8619,8726.2041};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						createAsLocalObject=1;
+						disableSimulation=1;
+					};
+					id=30961;
+					type="Land_Sign_WarningNoWeapon_F";
+					atlOffset=0.66892242;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ObjectTextureCustom0";
+							expression="_this setObjectTextureGlobal [0,_value]";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="cvo\img\campcoppertonesign.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
+				class Item22
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={8040.896,43.213528,8823.9951};
+						angles[]={0,4.5130892,-0};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+						createAsLocalObject=1;
+						disableSimulation=1;
+					};
+					id=30962;
+					type="Land_Sign_WarningNoWeapon_F";
+					atlOffset=-0.76347351;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ObjectTextureCustom0";
+							expression="_this setObjectTextureGlobal [0,_value]";
+							class Value
+							{
+								class data
+								{
+									singleType="STRING";
+									value="cvo\img\campcoppertonesign.paa";
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									singleType="BOOL";
+									value=0;
+								};
+							};
+						};
+						nAttributes=2;
+					};
+				};
 			};
 			id=19476;
-			atlOffset=0.15015411;
+			atlOffset=0.43873596;
 		};
 		class Item1
 		{
@@ -89765,39 +89862,6 @@ class Mission
 					};
 				};
 				nAttributes=2;
-			};
-		};
-		class Item32
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={8004.1733,40.619591,8726.2041};
-			};
-			side="Empty";
-			flags=1;
-			class Attributes
-			{
-			};
-			id=30961;
-			type="Land_Sign_WarningNoWeapon_F";
-			atlOffset=1.426609;
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ObjectTextureCustom0";
-					expression="_this setObjectTextureGlobal [0,_value]";
-					class Value
-					{
-						class data
-						{
-							singleType="STRING";
-							value="a3\structures_f_orange\signs\mines\data\signm_warningnoweapon_co.paa";
-						};
-					};
-				};
-				nAttributes=1;
 			};
 		};
 	};
