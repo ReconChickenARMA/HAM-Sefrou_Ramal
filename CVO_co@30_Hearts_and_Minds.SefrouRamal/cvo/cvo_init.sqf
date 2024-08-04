@@ -41,9 +41,6 @@ diag_log ("[CVO] [INIT] (cvo_init.sqf) - START");
 // Starts Server Restart Message + Save Script
 //execVM "cvo\misc\cvo_server_restart.sqf";
 
-// Init JND Debug Console
-execVM "cvo\misc\JND_debugv2.sqf";
-
 // Init Players Job Board
 execVM "cvo\misc\cvo_jobboard.sqf";
 
