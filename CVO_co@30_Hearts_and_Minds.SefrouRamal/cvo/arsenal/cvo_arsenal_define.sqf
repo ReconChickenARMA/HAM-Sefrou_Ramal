@@ -416,8 +416,6 @@ CVO_A_BASE append  [
 	"optic_r1_low_lxWS",
 	"optic_r1_low_sand_lxWS",
 	"optic_r1_low_snake_lxWS",
-	"optic_VRCO_RF",
-	"optic_VRCO_tan_RF",
 	"saber_light_lxWS"
 	];
 
@@ -540,6 +538,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		], 
 	{}]],
 	["Anti-Tank", [[
+		
 		//FAL GL and ammo
 		"arifle_SLR_GL_lxWS",
 		"arifle_SLR_V_GL_lxWS",
@@ -555,8 +554,11 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		//GM6 Lynx
 		"srifle_GM6_F",
 		"srifle_GM6_snake_lxWS",
-		"optic_DMS",
-		"optic_DMS_snake_lxWS",
+		"optic_VRCO_RF",
+		"optic_VRCO_tan_RF",
+		"optic_Hamr",
+		"optic_Hamr_snake_lxWS",
+		"optic_Hamr_sand_lxWS",
 		"greenmag_ammo_127x108_basic_30Rnd",
 		"5Rnd_127x108_APDS_Mag"
 		], 
@@ -635,6 +637,8 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"U_lxWS_UN_Camo1",
 		"H_Beret_blk",
 		//officer tech
+		"optic_VRCO_RF",
+		"optic_VRCO_tan_RF",
 		"optic_Hamr",
 		"optic_Hamr_snake_lxWS",
 		"optic_Hamr_sand_lxWS",
