@@ -44,7 +44,7 @@ PLAYER KIT gets updated each time the arsenal opens as it CAN be dependend on ot
 
 
 if (!hasInterface) exitWith {};
-diag_log ("[CVO] [Arsenal_Define] - start");
+systemChat ("[CVO] [Arsenal_Define] - start");
 
 
 // #####################################################
@@ -96,7 +96,7 @@ if (isClass (configfile >> "CfgPatches" >> "greenmag_main")) then {
 
 			"greenmag_item_speedloader"
 		];
-	diag_log "[CVO] [ARSENAL_DEFINE] - GreenMag added";
+	systemChat "[CVO] [ARSENAL_DEFINE] - GreenMag added";
 };
 
 
@@ -630,4 +630,4 @@ CVO_A_HASH_PlayerKit = createHashMapFromArray [
 	["76561198147307775", 	["Clone", 			[],	{[]}	]] 	
 ];
 
-diag_log ("[CVO] [Arsenal_Define] - completed");
+systemChat ("[CVO] [Arsenal_Define] - completed");
