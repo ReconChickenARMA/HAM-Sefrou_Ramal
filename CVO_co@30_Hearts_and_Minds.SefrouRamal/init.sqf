@@ -1,3 +1,4 @@
+[compileScript ["cvo\arsenal\cvo_arsenal_define.sqf"]] call CBA_fnc_directCall;
 
 [compileScript ["core\init.sqf"]] call CBA_fnc_directCall;
 

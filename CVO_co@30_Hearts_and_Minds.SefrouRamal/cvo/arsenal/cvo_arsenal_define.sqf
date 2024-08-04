@@ -43,21 +43,30 @@ PLAYER KIT gets updated each time the arsenal opens as it CAN be dependend on ot
 *=================================================*/  
 
 
-if (!hasInterface) exitWith {};
 systemChat ("[CVO] [Arsenal_Define] - start");
 
 
 // #####################################################
 // ###### DEFINE ARSENAL BOXES HERE - objects that give accesss to the CVO Arsenal
 // #####################################################
-// ###### Ether Define the CVO_Arsenal_Boxes directly via array or by putting all boxes in one layer called "CVO_ARSENAL_BOXES"
+// ######  Define the Editor Layername here
 // #####################################################
 
+#define EDITOR_LAYER_NAME "CVO_Arsenal_Boxes"
 
-private _arsenalBoxes = (getMissionLayerEntities "CVO_Arsenal_Boxes")#0;
+// #####################################################
+// ###### CODE - DONT CHANGE
+// #####################################################
 
-[_arsenalBoxes] call CVO_ARSENAL_fnc_addArsenalInteraction;
+if (isServer) then {
+	_array = (getMissionLayerEntities EDITOR_LAYER_NAME)#0;
+	[_array] remoteExecCall ["CVO_ARSENAL_fnc_addArsenalInteraction", [0,-2] select isDedicated, true];
+};
 
+
+
+
+if (!hasInterface) exitWith {};
 
 // #####################################################
 // ###### DEFINE BASE KIT HERE - AVAILABLE FOR EVERYONE
