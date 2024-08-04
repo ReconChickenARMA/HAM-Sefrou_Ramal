@@ -43,7 +43,7 @@ PLAYER KIT gets updated each time the arsenal opens as it CAN be dependend on ot
 *=================================================*/  
 
 
-systemChat ("[CVO] [Arsenal_Define] - start");
+diag_log ("[CVO] [Arsenal_Define] - start");
 
 
 // #####################################################
@@ -62,9 +62,6 @@ if (isServer) then {
 	_array = (getMissionLayerEntities EDITOR_LAYER_NAME)#0;
 	[_array] remoteExecCall ["CVO_ARSENAL_fnc_addArsenalInteraction", [0,-2] select isDedicated, true];
 };
-
-
-
 
 if (!hasInterface) exitWith {};
 
@@ -105,7 +102,7 @@ if (isClass (configfile >> "CfgPatches" >> "greenmag_main")) then {
 
 			"greenmag_item_speedloader"
 		];
-	systemChat "[CVO] [ARSENAL_DEFINE] - GreenMag added";
+	diag_log "[CVO] [ARSENAL_DEFINE] - GreenMag added";
 };
 
 
@@ -637,10 +634,10 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 
 
 CVO_A_HASH_PlayerKit = createHashMapFromArray [
-	["_SP_PLAYER_", 		["Editor Debug", 	["ACE_Banana"],		{systemChat "CVO_A_Playerkit test Successful - Banana Given"; 	["ACE_Banana"]}		]	],	
+	["_SP_PLAYER_", 		["Editor Debug", 	["ACE_Banana"],		{systemChat "CVO_A_Playerkit test Successful - ACE_Sandbag_empty Given"; 	["ACE_Sandbag_empty"]}		]	],	
 	["76561197970306509", 	["Zorn", 			["G_Spectacles_Tinted", "G_Balaclava_blk", "H_Beret_blk"],	{[]}	]],
 	["76561198090236234", 	["Recon", 			[],	{[]}	]],
 	["76561198147307775", 	["Clone", 			[],	{[]}	]] 	
 ];
 
-systemChat ("[CVO] [Arsenal_Define] - completed");
+diag_log ("[CVO] [Arsenal_Define] - completed");
