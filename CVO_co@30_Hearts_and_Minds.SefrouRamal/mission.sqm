@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=17098;
+		nextID=17172;
 	};
 	class Camera
 	{
 		pos[]={8014.5142,48.49596,8752.7754};
-		dir[]={-0.77836221,-0.50542432,0.37249517};
-		up[]={-0.45591682,0.86286354,0.21818429};
-		aside[]={0.43168789,1.8946594e-007,0.90205497};
+		dir[]={-0.77834123,-0.50541061,0.37248501};
+		up[]={-0.45589468,0.86287898,0.21817414};
+		aside[]={0.43167701,0,0.90202832};
 	};
 };
 binarizationWanted=0;
@@ -4095,7 +4095,7 @@ class Mission
 							};
 							id=24511;
 							type="Land_Laptop_03_sand_F";
-							atlOffset=0.27885818;
+							atlOffset=0.27906418;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -4488,7 +4488,7 @@ class Mission
 							};
 							id=24195;
 							type="Land_PortableDesk_01_sand_F";
-							atlOffset=0.00075531006;
+							atlOffset=0.0014228821;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -17136,7 +17136,7 @@ class Mission
 							};
 							id=24523;
 							type="Land_MobilePhone_smart_F";
-							atlOffset=0.96863174;
+							atlOffset=0.9685173;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -17185,7 +17185,7 @@ class Mission
 							};
 							id=24524;
 							type="Land_MobilePhone_smart_F";
-							atlOffset=0.97982025;
+							atlOffset=0.97970581;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -17234,7 +17234,7 @@ class Mission
 							};
 							id=24532;
 							type="Land_MobilePhone_smart_F";
-							atlOffset=0.8901329;
+							atlOffset=0.89001465;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -17283,7 +17283,7 @@ class Mission
 							};
 							id=24533;
 							type="Land_MobilePhone_smart_F";
-							atlOffset=0.88994598;
+							atlOffset=0.88982773;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -17700,7 +17700,7 @@ class Mission
 							};
 							id=24656;
 							type="Land_MobilePhone_smart_F";
-							atlOffset=2.4966812;
+							atlOffset=2.4965668;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -17749,7 +17749,7 @@ class Mission
 							};
 							id=24657;
 							type="Land_MobilePhone_smart_F";
-							atlOffset=2.4824829;
+							atlOffset=2.4823685;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -17968,7 +17968,7 @@ class Mission
 						};
 					};
 					id=24480;
-					atlOffset=2.178833;
+					atlOffset=2.1788177;
 				};
 				class Item5
 				{
@@ -18752,7 +18752,7 @@ class Mission
 							};
 							id=24693;
 							type="FirstAidKit_02";
-							atlOffset=0.73650742;
+							atlOffset=0.91491699;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33447,7 +33447,7 @@ class Mission
 							};
 							id=26579;
 							type="Land_Pliers_F";
-							atlOffset=0.50214386;
+							atlOffset=0.50214767;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -48294,14 +48294,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="STRING";
+													value="AfricanHead_03";
 												};
 											};
 										};
@@ -48346,14 +48346,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="STRING";
-													value="AfricanHead_03";
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -48399,14 +48399,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="STRING";
+													value="lxWS_African_Head_01";
 												};
 											};
 										};
@@ -48451,14 +48451,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="STRING";
-													value="lxWS_African_Head_01";
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -48504,14 +48504,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="STRING";
+													value="lxWS_African_Head_03";
 												};
 											};
 										};
@@ -48556,14 +48556,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="STRING";
-													value="lxWS_African_Head_03";
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -48793,14 +48793,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="STRING";
+													value="AfricanHead_03";
 												};
 											};
 										};
@@ -48845,14 +48845,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="STRING";
-													value="AfricanHead_03";
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -49110,14 +49110,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="STRING";
+													value="AfricanHead_03";
 												};
 											};
 										};
@@ -49162,14 +49162,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="STRING";
-													value="AfricanHead_03";
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -49214,14 +49214,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="STRING";
+													value="lxWS_African_Head_01";
 												};
 											};
 										};
@@ -49266,14 +49266,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="STRING";
-													value="lxWS_African_Head_01";
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -49318,14 +49318,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="STRING";
+													value="lxWS_African_Head_03";
 												};
 											};
 										};
@@ -49370,14 +49370,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="STRING";
-													value="lxWS_African_Head_03";
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -49604,14 +49604,14 @@ class Mission
 									{
 										class Attribute0
 										{
-											property="ENH_doStop";
-											expression="if (!is3DEN && _value) then {doStop _this}";
+											property="face";
+											expression="_this setface _value;";
 											class Value
 											{
 												class data
 												{
-													singleType="BOOL";
-													value=1;
+													singleType="STRING";
+													value="AfricanHead_03";
 												};
 											};
 										};
@@ -49656,14 +49656,14 @@ class Mission
 										};
 										class Attribute4
 										{
-											property="face";
-											expression="_this setface _value;";
+											property="ENH_doStop";
+											expression="if (!is3DEN && _value) then {doStop _this}";
 											class Value
 											{
 												class data
 												{
-													singleType="STRING";
-													value="AfricanHead_03";
+													singleType="BOOL";
+													value=1;
 												};
 											};
 										};
@@ -66563,7 +66563,7 @@ class Mission
 											};
 											id=30384;
 											type="Land_MobilePhone_smart_F";
-											atlOffset=0.00077819824;
+											atlOffset=0.00065612793;
 											class CustomAttributes
 											{
 												class Attribute0
