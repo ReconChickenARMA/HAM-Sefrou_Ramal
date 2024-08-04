@@ -1,17 +1,3 @@
-/*
-	Author: CVO - Mr. Zorn
-
-	Description:
-		Defines Equipment
-
-
-	Returns:
-		<>
-
-	Examples:
-*/
-
-
 /*=================================================*
 	CVO_ARSENAL_DEFINE
 *=================================================*
@@ -58,7 +44,7 @@ PLAYER KIT gets updated each time the arsenal opens as it CAN be dependend on ot
 
 
 if (!hasInterface) exitWith {};
-diag_log ("[CVO] [Arsenal_Define] - start");
+systemChat ("[CVO] [Arsenal_Define] - start");
 
 
 // #####################################################
@@ -67,26 +53,10 @@ diag_log ("[CVO] [Arsenal_Define] - start");
 // ###### Ether Define the CVO_Arsenal_Boxes directly via array or by putting all boxes in one layer called "CVO_ARSENAL_BOXES"
 // #####################################################
 
-CVO_Arsenal_boxes = [];
 
-/*
-CVO_arsenal_boxes append [
-	cvo_arsenal_1,
-	cvo_arsenal_2,
-	cvo_arsenal_3,
-	cvo_arsenal_4,
-	cvo_arsenal_5,
-	cvo_arsenal_6,
-	cvo_arsenal_7,
-	cvo_arsenal_8,
-	cvo_arsenal_9,
-	cvo_arsenal_10,
-	cvo_arsenal_11
-];
-*/
+private _arsenalBoxes = (getMissionLayerEntities "CVO_Arsenal_Boxes")#0;
 
-private _layerArray = (getMissionLayerEntities "CVO_Arsenal_Boxes")#0 ;
-CVO_Arsenal_boxes append _layerArray;
+[_arsenalBoxes] call CVO_ARSENAL_fnc_addArsenalInteraction;
 
 
 // #####################################################
@@ -98,7 +68,9 @@ CVO_A_BASE = [];
 // ###### Baseline Equipment ###### 
 // The Following can be mostly left as default
 
-if (CVO_A_modLoaded_GreenMag) then {
+
+
+if (isClass (configfile >> "CfgPatches" >> "greenmag_main")) then {
 
 		CVO_A_BASE append [
 			"greenmag_ammo_556x45_basic_60Rnd",
@@ -124,7 +96,7 @@ if (CVO_A_modLoaded_GreenMag) then {
 
 			"greenmag_item_speedloader"
 		];
-	diag_log "[CVO] [ARSENAL_DEFINE] - GreenMag added";
+	systemChat "[CVO] [ARSENAL_DEFINE] - GreenMag added";
 };
 
 
@@ -657,9 +629,9 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 
 CVO_A_HASH_PlayerKit = createHashMapFromArray [
 	["_SP_PLAYER_", 		["Editor Debug", 	["ACE_Banana"],		{systemChat "CVO_A_Playerkit test Successful - Banana Given"; 	["ACE_Banana"]}		]	],	
-	["76561197970306509", 	["Zorn", 			[	"G_Spectacles_Tinted", "G_Balaclava_blk", "H_Beret_blk"],	{[]}	]],
+	["76561197970306509", 	["Zorn", 			["G_Spectacles_Tinted", "G_Balaclava_blk", "H_Beret_blk"],	{[]}	]],
 	["76561198090236234", 	["Recon", 			[],	{[]}	]],
 	["76561198147307775", 	["Clone", 			[],	{[]}	]] 	
 ];
 
-diag_log ("[CVO] [Arsenal_Define] - completed");
+systemChat ("[CVO] [Arsenal_Define] - completed");
