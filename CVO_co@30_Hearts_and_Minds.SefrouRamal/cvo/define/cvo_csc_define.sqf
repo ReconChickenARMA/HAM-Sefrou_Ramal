@@ -1,7 +1,3 @@
-cvo_CSC_fnc_addCSC_old = 		compileScript ["cvo\CSC\cvo_CSC_fnc_addCSC.sqf", 	false, ""];
-cvo_CSC_fnc_spawnCSC_old = 		compileScript ["cvo\CSC\cvo_CSC_fnc_spawnCSC.sqf", 	false, ""];
-
- 
 // ################
 // EXAMPLE USAGE
 // 
@@ -14,7 +10,7 @@ cvo_CSC_fnc_spawnCSC_old = 		compileScript ["cvo\CSC\cvo_CSC_fnc_spawnCSC.sqf", 
 		["Ace_banana", 100]
 	],
 	"Land_WoodenCrate_01_F"
-] call cvo_CSC_fnc_addCSC_old;
+] call CVO_CSC_fnc_addCSC;
 */
 // ################
 
@@ -67,7 +63,7 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 		["greenmag_item_speedloader", 4]
 	],
 	"Box_NATO_Ammo_F"
-] call cvo_CSC_fnc_addCSC_old;
+] call CVO_CSC_fnc_addCSC;
 
 
 [
@@ -89,7 +85,7 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 
 	],
 	"ACE_medicalSupplyCrate_advanced"
-] call cvo_CSC_fnc_addCSC_old;
+] call CVO_CSC_fnc_addCSC;
 
 
 [
@@ -123,7 +119,7 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 
 	],
 	"Box_NATO_Equip_F"
-] call cvo_CSC_fnc_addCSC_old;
+] call CVO_CSC_fnc_addCSC;
 
 /*
 [
@@ -137,7 +133,7 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 		["greenmag_item_speedloader",1]
 	],
 	"Box_NATO_WpsSpecial_F"
-] call cvo_CSC_fnc_addCSC_old;
+] call CVO_CSC_fnc_addCSC;
 */
 
 /*
@@ -151,7 +147,7 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 		["ace_compat_rhs_afrf3_mag_9M131M", 7]
 	],
 	"Box_NATO_WpsSpecial_F"						 
-] call cvo_CSC_fnc_addCSC_old;
+] call CVO_CSC_fnc_addCSC;
 */
 
 
@@ -167,4 +163,4 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 	[
 		["B_SCBA_01_F",4]
 	]
-] call cvo_CSC_fnc_addCSC_old;
+] call CVO_CSC_fnc_addCSC;
