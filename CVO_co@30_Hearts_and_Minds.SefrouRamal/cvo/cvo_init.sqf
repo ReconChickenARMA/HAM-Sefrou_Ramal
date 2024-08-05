@@ -30,9 +30,6 @@ diag_log ("[CVO] [INIT] (cvo_init.sqf) - START");
 // Init CVO Environment Night Time Multiplyer
 [compileScript ["cvo\env\cvo_env_init.sqf"]] call CBA_fnc_directCall;
 
-// Init CVO Intel - Placeable Flag to Marker
-[compileScript ["cvo\intel\cvo_intel_flag_init.sqf"]] call CBA_fnc_directCall;
-
 
 // Starts Server Restart Message + Save Script
 //execVM "cvo\misc\cvo_server_restart.sqf";
