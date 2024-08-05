@@ -20,10 +20,6 @@ diag_log ("[CVO] [INIT] (cvo_init.sqf) - START");
 [compileScript ["cvo\logistics\init.sqf"]] call CBA_fnc_directCall;
 
 
-// Initialize CSC module
-[compileScript ["cvo\CSC\cvo_CSC_init.sqf"]] call CBA_fnc_directCall;
-
-
 // Init CVO Custom Spawnable Objects
 //cvo_p_logistics_custom_construction_array
 // init to be found in /core/def/mission.sqf
