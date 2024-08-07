@@ -1,6 +1,6 @@
 Time: Spring 2036
 Location:Sefrou Ramal Breakaway Province, Argana
-Player Faction: UNA/Raven Security
+Player Faction: UNA/24th CVO
 OPFOR Faction: Tura, SFIA
 INDFOR Factions: ION, Tura
 

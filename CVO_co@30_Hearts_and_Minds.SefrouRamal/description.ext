@@ -1,5 +1,5 @@
 
-loadScreen = "cvo\img\HAMSefrouRamal.paa";
+loadScreen = "cvo\img\HAMSplash.paa";
 author = "Giallustio - Adapted for CVO by Zorn";
 onLoadName = $STR_BTC_HAM_DESCR_NAME;
 onLoadMission = $STR_BTC_HAM_DESCR_MISSION;

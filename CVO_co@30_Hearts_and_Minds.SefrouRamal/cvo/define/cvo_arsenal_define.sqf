@@ -79,8 +79,8 @@ CVO_A_BASE = [];
 if (isClass (configfile >> "CfgPatches" >> "greenmag_main")) then {
 
 		CVO_A_BASE append [
-			"greenmag_ammo_556x45_basic_60Rnd",
-			"greenmag_ammo_556x45_basic_30Rnd",
+			//"greenmag_ammo_556x45_basic_60Rnd",
+			//"greenmag_ammo_556x45_basic_30Rnd",
 
 			"greenmag_ammo_762x51_basic_60Rnd",
 			"greenmag_ammo_762x51_basic_30Rnd",
@@ -164,8 +164,7 @@ CVO_A_BASE append [
 	"ACE_Flashlight_KSF1",
 	
 	"ACE_WaterBottle",
-	"ACE_Canteen",
-	
+	"ACE_Canteen",	
 
 	"tsp_paperclip",
 
@@ -182,16 +181,16 @@ CVO_A_BASE append [
 	"Laserbatteries"];
 
 // NVGs
-CVO_A_BASE append [
+CVO_A_BASE append [	
+	//actual nvgs
+	//"ACE_NVG_Gen4",
+	//"ACE_NVG_Gen4_WP",
 	//armbands
 	"Aegis_NV_G_Armband_Blu_Alt_F",
 	"Aegis_NV_G_Armband_Blu_F",
 	//cigs and lollipop
 	"immersion_cigs_cigar0_nv",
 	"murshun_cigs_cig0_nv"
-	//actual nvgs
-	//"ACE_NVG_Gen4",
-	//"ACE_NVG_Gen4_WP"
 ];
 
 
@@ -257,6 +256,7 @@ CVO_A_BASE append [
 
 // Vests
 CVO_A_BASE append [
+	"Aegis_V_OCarrierLuchnik_Lite_blk_F",
 	"PLP_UNA_V_TacVestIR",
 	"PLP_UNA_V_TacVest",
 	"PLP_UNA_V_CarrierRigKBT_01_light_F"
@@ -377,8 +377,6 @@ CVO_A_BASE append  [
 	"arifle_SLR_lxWS",
 	"arifle_SLR_D_lxWS",
 	"arifle_SLR_V_lxWS",	
-	"arifle_SLR_Para_lxWS",
-	"arifle_SLR_Para_snake_lxWS",
 	//20rnd magazines
 	"Aegis_20Rnd_762x51_slr_reload_tracer_red_lxWS",
 	"20Rnd_762x51_slr_lxWS",
@@ -436,8 +434,7 @@ CVO_A_BASE append   [
 
 // Explosives
 CVO_A_BASE append [
-	"tsp_breach_popper_mag",
-	"tsp_breach_popper_auto_mag"
+	
 	];
 
 // CBRN KIT
@@ -466,6 +463,8 @@ CVO_A_BASE append [
 
 CVO_A_HASH_RoleKit = createHashMapFromArray [
 	["Medic", [[
+		"arifle_SLR_Para_lxWS",
+		"arifle_SLR_Para_snake_lxWS",
 		"ACE_quikclot", 
 		"ACE_elasticBandage", 
 		"ACE_adenosine", 
@@ -479,7 +478,10 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"ACE_suture"],
 	{}]],
 	["Engineer", [[
+		"arifle_SLR_Para_lxWS",
+		"arifle_SLR_Para_snake_lxWS",
 		//Helmets and armor 
+		"Aegis_V_OCarrierLuchnik_CQB_blk_F",
 		"H_HelmetHeavy_White_RF",
 		"H_HelmetHeavy_Simple_White_RF",
 		"H_HelmetHeavy_VisorUp_White_RF",
@@ -488,11 +490,16 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"ACE_VMM3","ACE_VMH3", 
 		"ACE_wirecutter", "ToolKit", 
 		"ACE_Fortify", "ACE_DefusalKit",
-
-		"tsp_breach_silhouette_mag",
-		"tsp_breach_stick_mag",
-			
+		/*
+		"sgun_M4_F",
+		"8Rnd_12Gauge_Slug",
+		"8Rnd_12Gauge_Pellets",
+		*/
 		// Explosives
+		"tsp_breach_popper_mag",
+		"tsp_breach_popper_auto_mag",
+		//"tsp_breach_silhouette_mag",
+		//"tsp_breach_stick_mag",
 		"DemoCharge_Remote_Mag",	"ACE_DemoCharge_Remote_Mag_Throwable",
 		"SatchelCharge_Remote_Mag",	"ACE_SatchelCharge_Remote_Mag_Throwable"
 
@@ -503,8 +510,8 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 	//SS-77 Vektor
 		"LMG_S77_Desert_lxWS",
 		"LMG_S77_lxWS",
-		"LMG_S77_Compact_lxWS",
-		"LMG_S77_Compact_Snakeskin_lxWS",
+		//"LMG_S77_Compact_lxWS",
+		//"LMG_S77_Compact_Snakeskin_lxWS",
 		//100 rnd belts
 		"100Rnd_762x51_S77_Red_lxWS",
 		"100Rnd_762x51_S77_lxWS",
@@ -515,13 +522,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		
 		], 
 	{}]],
-	["Anti-Tank", [[
-		
-		//FAL GL and ammo
-		"arifle_SLR_GL_lxWS",
-		"arifle_SLR_V_GL_lxWS",
-		"1Rnd_50mm_Smoke_lxWS",
-		"1Rnd_58mm_AT_lxWS",
+	["Anti-Tank", [[		
 		//RPG-32
 		//"launch_RPG32_tan_lxWS",
 		//"RPG32_F",
@@ -530,38 +531,60 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		//"launch_B_Titan_short_F",
 		//"Titan_AT",
 		//GM6 Lynx
-		"srifle_GM6_F",
-		"srifle_GM6_snake_lxWS",
-		"optic_VRCO_RF",
-		"optic_VRCO_tan_RF",
-		"optic_Hamr",
-		"optic_Hamr_snake_lxWS",
-		"optic_Hamr_sand_lxWS",
-		"greenmag_ammo_127x108_basic_30Rnd",
-		"5Rnd_127x108_APDS_Mag"
+		//"srifle_GM6_F",
+		//"srifle_GM6_snake_lxWS",
+		//"optic_VRCO_RF",
+		//"optic_VRCO_tan_RF",
+		//"optic_Hamr",
+		//"optic_Hamr_snake_lxWS",
+		//"optic_Hamr_sand_lxWS",
+		//"greenmag_ammo_127x108_basic_30Rnd",
+		//"5Rnd_127x108_APDS_Mag,"
+		//FAL GL and ammo
+		"arifle_SLR_GL_lxWS",
+		"arifle_SLR_V_GL_lxWS",
+		"1Rnd_50mm_Smoke_lxWS",
+		"1Rnd_58mm_AT_lxWS"
 		], 
 	{}]],
 	["Marksman", [[
 		//HADES H6 rifle
-		"srifle_h6_blk_rf",
-		"srifle_h6_tan_rf",
+		//"srifle_h6_blk_rf",
+		//"srifle_h6_tan_rf",		
+		//"suppressor_l_lxWS",
+		//"suppressor_l_sand_lxWS",		
+		//"bipod_02_F_arid",
+		//"bipod_01_F_snd",
+		//"bipod_02_F_tan",
+		//"bipod_03_F_blk",
+		//"bipod_02_F_blk",
+		//"bipod_01_F_blk",
+		//ammo
+		//"greenmag_ammo_556x45_basic_60Rnd",
+		//"greenmag_ammo_556x45_basic_30Rnd",
+		//"10Rnd_556x45_AP_Stanag_red_RF",
+		//"10Rnd_556x45_AP_Stanag_red_Tan_RF",
 		//accessories
 		"optic_DMS",
 		"optic_DMS_snake_lxWS",
-		"suppressor_l_lxWS",
-		"suppressor_l_sand_lxWS",		
-		"bipod_02_F_arid",
-		"bipod_01_F_snd",
-		"bipod_02_F_tan",
-		"bipod_03_F_blk",
-		"bipod_02_F_blk",
-		"bipod_01_F_blk",
-		//ammo
-		"10Rnd_556x45_AP_Stanag_red_RF",
-		"10Rnd_556x45_AP_Stanag_red_Tan_RF"
+		"suppressor_h_lxWS",
+		"suppressor_h_sand_lxWS",
+		"suppressor_h_snake_lxWS"
 		], 
 	{}]],
-	["Drone Operator", [[
+	["Drone Operator", [
+		[
+		//GLX grenade launcher and ammo
+		"glaunch_GLX_snake_lxWS",
+		"glaunch_GLX_lxWS",
+		"glaunch_GLX_tan_lxWS",
+		"1Rnd_RC40_HE_shell_RF",
+		"1Rnd_RC40_shell_RF",
+		"1Rnd_RC40_SmokeBlue_shell_RF",
+		"1Rnd_RC40_SmokeGreen_shell_RF",
+		"1Rnd_RC40_SmokeOrange_shell_RF",
+		"1Rnd_RC40_SmokeRed_shell_RF",
+		"1Rnd_RC40_SmokeWhite_shell_RF",
 		//spectrum device
 		"hgun_esd_01_F",
 		"acc_esd_01_flashlight",
@@ -574,7 +597,8 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"ACRE_PRC148"],
 	{}]],
 	["Interpreter", [[
-		
+		"arifle_SLR_Para_lxWS",
+		"arifle_SLR_Para_snake_lxWS"		
 		],
 	{}]],
 	["Officer", [
@@ -584,7 +608,6 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"glaunch_GLX_lxWS",
 		"glaunch_GLX_tan_lxWS",
 		"3Rnd_UGL_FlareGreen_F",
-		"3Rnd_UGL_FlareCIR_F",
 		"3Rnd_UGL_FlareRed_F",
 		"3Rnd_UGL_FlareWhite_F",
 		"3Rnd_UGL_FlareYellow_F",
@@ -598,13 +621,6 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"3Rnd_Pellets_Grenade_shell",
 		"3Rnd_HEDP_Grenade_shell",
 		"3Rnd_HE_Grenade_shell",
-		"1Rnd_RC40_HE_shell_RF",
-		"1Rnd_RC40_shell_RF",
-		"1Rnd_RC40_SmokeBlue_shell_RF",
-		"1Rnd_RC40_SmokeGreen_shell_RF",
-		"1Rnd_RC40_SmokeOrange_shell_RF",
-		"1Rnd_RC40_SmokeRed_shell_RF",
-		"1Rnd_RC40_SmokeWhite_shell_RF",
 		//FAL GL and ammo
 		"arifle_SLR_GL_lxWS",
 		"arifle_SLR_V_GL_lxWS",
