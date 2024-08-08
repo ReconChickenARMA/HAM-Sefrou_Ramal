@@ -712,17 +712,12 @@ btc_type_units = [//SFIA
 "O_SFIA_sharpshooter_lxWS", 
 "O_SFIA_Soldier_TL_lxWS",
 //Tura
-"O_Tura_defector_lxWS", 
-"O_Tura_deserter_lxWS", 
-"O_Tura_enforcer_lxWS", 
 "O_Tura_hireling_lxWS", 
-"O_Tura_HeavyGunner_lxWS", 
-"O_Tura_scout_lxWS", 
 "O_Tura_medic2_lxWS", 
 "O_Tura_thug_lxWS", 
 "O_Tura_soldier_UAV_lxWS", 
 "O_Tura_watcher_lxWS"]; //_allclasse select 1;
-btc_type_divers = ["O_Tura_defector_lxWS"]; //_allclasse select 2;
+btc_type_divers = ["O_SFIA_soldier_lxWS"]; //_allclasse select 2;
 btc_type_crewmen = selectRandom btc_type_units; //_allclasse select 3;
 btc_type_boats = []; //_allclasse select 4;
 btc_type_motorized = [//SFIA Cars
@@ -733,6 +728,7 @@ btc_type_motorized = [//SFIA Cars
 "O_SFIA_Truck_02_covered_lxWS", 
 "O_SFIA_Truck_02_transport_lxWS", 
 "O_SFIA_Truck_02_fuel_lxWS",
+"O_SFIA_Offroad_lxWS",
 //Tura Cars
 "O_Tura_Pickup_01_RF", 
 "O_Tura_Offroad_armor_lxWS", 
@@ -744,6 +740,9 @@ btc_type_motorized_armed =[
 "O_SFIA_APC_Tracked_02_30mm_lxWS", 
 "O_SFIA_APC_Tracked_02_cannon_lxWS", 
 */
+//SFIA Armed Trucks
+"O_SFIA_Offroad_armed_lxWS", 
+"O_SFIA_Offroad_AT_lxWS",
 //Tura Armed Trucks
 "O_Tura_Truck_02_aa_lxWS",
 "O_Tura_Pickup_01_hmg_RF", 
@@ -751,7 +750,7 @@ btc_type_motorized_armed =[
 "O_Tura_Offroad_armor_armed_lxWS"]; //_allclasse select 6;
 btc_type_mg = ["O_Tura_HMG_02_lxWS", 
 "O_Tura_HMG_02_high_lxWS"]; //_allclasse select 7;
-btc_type_gl = ["O_Tura_ZU23_lxWS"]; //_allclasse select 8;
+btc_type_gl = ["O_SFIA_ZU23_lxWS"]; //_allclasse select 8;
 
 /*Sometimes you need to remove units: - ["Blabla","moreBlabla"];
 //Sometimes you need to add units: + ["Blabla","moreBlabla"];

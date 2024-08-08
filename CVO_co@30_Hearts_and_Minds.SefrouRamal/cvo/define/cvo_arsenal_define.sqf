@@ -91,8 +91,8 @@ if (isClass (configfile >> "CfgPatches" >> "greenmag_main")) then {
 			//"greenmag_ammo_762x39_basic_60Rnd",
 			//"greenmag_ammo_762x39_basic_30Rnd",
 			
-			"greenmag_ammo_9x19_basic_60Rnd",
-			"greenmag_ammo_9x19_basic_30Rnd",
+			"greenmag_ammo_9x21_basic_60Rnd",
+			"greenmag_ammo_9x21_basic_30Rnd",
 
 			//"greenmag_ammo_45ACP_basic_30Rnd",
 			//"greenmag_ammo_45ACP_basic_60Rnd",
@@ -397,12 +397,9 @@ CVO_A_BASE append  [
 
 // Pistols
 CVO_A_BASE append [
-	"hgun_Glock19_Tan_RF",
-	"optic_MRD_tan_RF",
-	"acc_flashlight_pistol",
-	"muzzle_snds_L",
-	"17Rnd_9x19_red_Mag_RF",
-	"17Rnd_9x19_Mag_RF"
+	"hgun_G17_F",
+	"17Rnd_9x21_Mag",
+	"hgun_Rook40_F"
 	];
 
 // Handgrenades and Throwables
@@ -574,6 +571,8 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 	{}]],
 	["Drone Operator", [
 		[
+		//AR-2 Darter 
+		"ION_UAV_01_backpack_lxWS",
 		//GLX grenade launcher and ammo
 		"glaunch_GLX_snake_lxWS",
 		"glaunch_GLX_lxWS",
@@ -604,7 +603,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 	["Officer", [
 		[
 		//GLX grenade launcher and ammo
-		"glaunch_GLX_snake_lxWS",
+		/*"glaunch_GLX_snake_lxWS",
 		"glaunch_GLX_lxWS",
 		"glaunch_GLX_tan_lxWS",
 		"3Rnd_UGL_FlareGreen_F",
@@ -621,6 +620,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"3Rnd_Pellets_Grenade_shell",
 		"3Rnd_HEDP_Grenade_shell",
 		"3Rnd_HE_Grenade_shell",
+		*/
 		//FAL GL and ammo
 		"arifle_SLR_GL_lxWS",
 		"arifle_SLR_V_GL_lxWS",
