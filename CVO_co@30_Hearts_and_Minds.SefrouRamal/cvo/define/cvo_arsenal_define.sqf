@@ -538,7 +538,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"optic_Hamr_snake_lxWS",
 		"optic_Hamr_sand_lxWS",
 		"greenmag_ammo_127x108_basic_30Rnd",
-		"5Rnd_127x108_APDS_Mag,"
+		"5Rnd_127x108_APDS_Mag",
 		//FAL GL and ammo
 		"arifle_SLR_GL_lxWS",
 		"arifle_SLR_V_GL_lxWS",
