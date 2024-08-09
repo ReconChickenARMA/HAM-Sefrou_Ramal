@@ -62,6 +62,8 @@ _code = {
 	if ( count ((getPos btc_cache_obj) nearObjects 10 select {"CBRN" in (typeOf _x)}) > 0 ) then 
 		{    _isCBRN = true;   };
 
+	if (isNil "btc_cache_obj") exitWith {};
+	if (isNull btc_cache_obj) exitWith {};
 	
 	_markerName = ("Weapon Cache");  
 	_markerPos = getPos btc_cache_obj;  
@@ -91,13 +93,8 @@ _aceAction = [
 	"Show Hideouts, Caches and IEDs for 120s (clientside only)",            //  * 1: Name of the action shown in the menu <STRING>
 	"",                          //  * 2: Icon <STRING> "\A3\ui_f\data\igui\cfg\simpleTasks\types\backpack_ca.paa"
 	_code,                            //  * 3: Statement <CODE>
-	{cvo_zeus_debug_map_markers_available},     //  * 4: Condition <CODE>
-	{},                          //  * 5: Insert children code <CODE> (Optional)
-	[],                          //  * 6: Action parameters <ANY> (Optional)
-	[0,0,0],         				//  * 7: Position (Position array, Position code or Selection Name) <ARRAY>, <CODE> or <STRING> (Optional)
-	20,                            //  * 8: Distance <NUMBER> (Optional)
-	[],                            //  * 9: Other parameters [showDisabled,enableInside,canCollapse,runOnHover,doNotCheckLOS] <ARRAY> (Optional)
-	{}                            //  * 10: Modifier function <CODE> (Optional)
+	{cvo_zeus_debug_map_markers_available}
+	
 ] call ace_interact_menu_fnc_createAction;
 
 [
