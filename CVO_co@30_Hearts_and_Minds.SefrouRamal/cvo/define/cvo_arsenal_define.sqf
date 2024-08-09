@@ -211,7 +211,7 @@ CVO_A_BASE append  ["ACRE_PRC343"];
 // Uniforms 
 CVO_A_BASE append [
 	//mgp g3 uniforms 
-	"milgp_u_g3_field_set_3cd",
+	/*"milgp_u_g3_field_set_3cd",
 	"milgp_u_g3_field_set_aor1",
 	"milgp_u_g3_field_set_atacsau",
 	"milgp_u_g3_field_set_khk",
@@ -225,6 +225,7 @@ CVO_A_BASE append [
 	"milgp_u_tshirt_g3_field_pants_atacsau",
 	"milgp_u_tshirt_g3_field_pants_khk",
 	"milgp_u_tshirt_g3_field_pants_mcarid",
+	*/
 	//Low Vis Clothing
 	"WSLV_Black_gn_black_Camo",
 	"WSLV_Black_black_Camo",
@@ -487,11 +488,12 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"ACE_VMM3","ACE_VMH3", 
 		"ACE_wirecutter", "ToolKit", 
 		"ACE_Fortify", "ACE_DefusalKit",
-		/*
+		
+		//M4 Shotgun
 		"sgun_M4_F",
 		"8Rnd_12Gauge_Slug",
 		"8Rnd_12Gauge_Pellets",
-		*/
+		
 		// Explosives
 		"tsp_breach_popper_mag",
 		"tsp_breach_popper_auto_mag",
@@ -507,8 +509,8 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 	//SS-77 Vektor
 		"LMG_S77_Desert_lxWS",
 		"LMG_S77_lxWS",
-		//"LMG_S77_Compact_lxWS",
-		//"LMG_S77_Compact_Snakeskin_lxWS",
+		"LMG_S77_Compact_lxWS",
+		"LMG_S77_Compact_Snakeskin_lxWS",
 		//100 rnd belts
 		"100Rnd_762x51_S77_Red_lxWS",
 		"100Rnd_762x51_S77_lxWS",
@@ -528,15 +530,15 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		//"launch_B_Titan_short_F",
 		//"Titan_AT",
 		//GM6 Lynx
-		//"srifle_GM6_F",
-		//"srifle_GM6_snake_lxWS",
-		//"optic_VRCO_RF",
-		//"optic_VRCO_tan_RF",
-		//"optic_Hamr",
-		//"optic_Hamr_snake_lxWS",
-		//"optic_Hamr_sand_lxWS",
-		//"greenmag_ammo_127x108_basic_30Rnd",
-		//"5Rnd_127x108_APDS_Mag,"
+		"srifle_GM6_F",
+		"srifle_GM6_snake_lxWS",
+		"optic_VRCO_RF",
+		"optic_VRCO_tan_RF",
+		"optic_Hamr",
+		"optic_Hamr_snake_lxWS",
+		"optic_Hamr_sand_lxWS",
+		"greenmag_ammo_127x108_basic_30Rnd",
+		"5Rnd_127x108_APDS_Mag,"
 		//FAL GL and ammo
 		"arifle_SLR_GL_lxWS",
 		"arifle_SLR_V_GL_lxWS",
@@ -546,21 +548,21 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 	{}]],
 	["Marksman", [[
 		//HADES H6 rifle
-		//"srifle_h6_blk_rf",
-		//"srifle_h6_tan_rf",		
-		//"suppressor_l_lxWS",
-		//"suppressor_l_sand_lxWS",		
-		//"bipod_02_F_arid",
-		//"bipod_01_F_snd",
-		//"bipod_02_F_tan",
-		//"bipod_03_F_blk",
-		//"bipod_02_F_blk",
-		//"bipod_01_F_blk",
+		"srifle_h6_blk_rf",
+		"srifle_h6_tan_rf",		
+		"suppressor_l_lxWS",
+		"suppressor_l_sand_lxWS",		
+		"bipod_02_F_arid",
+		"bipod_01_F_snd",
+		"bipod_02_F_tan",
+		"bipod_03_F_blk",
+		"bipod_02_F_blk",
+		"bipod_01_F_blk",
 		//ammo
-		//"greenmag_ammo_556x45_basic_60Rnd",
-		//"greenmag_ammo_556x45_basic_30Rnd",
-		//"10Rnd_556x45_AP_Stanag_red_RF",
-		//"10Rnd_556x45_AP_Stanag_red_Tan_RF",
+		"greenmag_ammo_556x45_basic_60Rnd",
+		"greenmag_ammo_556x45_basic_30Rnd",
+		"10Rnd_556x45_AP_Stanag_red_RF",
+		"10Rnd_556x45_AP_Stanag_red_Tan_RF",
 		//accessories
 		"optic_DMS",
 		"optic_DMS_snake_lxWS",
