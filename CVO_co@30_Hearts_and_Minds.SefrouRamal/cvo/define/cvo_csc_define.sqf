@@ -32,15 +32,12 @@
 */
 
 
-
-
-
-_cvo_csc_source = "Land_Cargo10_military_green_F";
+private _cvo_csc_source = cvo_csc_source;
 
 
 [
-	_cvo_csc_source, 
-	"Basic Ammo Package",
+	_cvo_csc_source, 		// source obj/class
+	"Basic Ammo Package",	// Name String
 	[
 		["Aegis_20Rnd_762x51_slr_reload_tracer_red_lxWS",10],
 		["1Rnd_40mm_HE_lxWS",10],
@@ -61,8 +58,10 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 		["greenmag_ammo_9x21_basic_60Rnd",5],
 
 		["greenmag_item_speedloader", 4]
-	],
-	"Box_NATO_Ammo_F"
+	],						// Array
+	"Box_NATO_Ammo_F",		// Class of Crate
+	[],						// Array of Backpacks
+	btc_create_object_point
 ] call CVO_CSC_fnc_addCSC;
 
 
@@ -84,7 +83,9 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 		["ACE_elasticBandage", 50]
 
 	],
-	"ACE_medicalSupplyCrate_advanced"
+	"ACE_medicalSupplyCrate_advanced",		// Class of Crate
+	[],						// Array of Backpacks
+	btc_create_object_point
 ] call CVO_CSC_fnc_addCSC;
 
 
@@ -118,7 +119,9 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 		["ACE_bodyBag", 10]
 
 	],
-	"Box_NATO_Equip_F"
+	"Box_NATO_Equip_F",		// Class of Crate
+	[],						// Array of Backpacks
+	btc_create_object_point
 ] call CVO_CSC_fnc_addCSC;
 
 /*
@@ -132,7 +135,9 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 		["greenmag_beltlinked_762x54_basic_100",20],
 		["greenmag_item_speedloader",1]
 	],
-	"Box_NATO_WpsSpecial_F"
+	"Box_NATO_WpsSpecial_F",		// Class of Crate
+	[],						// Array of Backpacks
+	btc_create_object_point
 ] call CVO_CSC_fnc_addCSC;
 */
 
@@ -146,7 +151,9 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 		["ace_compat_rhs_afrf3_mag_9M131F", 3],
 		["ace_compat_rhs_afrf3_mag_9M131M", 7]
 	],
-	"Box_NATO_WpsSpecial_F"						 
+	"Box_NATO_WpsSpecial_F",		// Class of Crate
+	[],						// Array of Backpacks
+	btc_create_object_point						 
 ] call CVO_CSC_fnc_addCSC;
 */
 
@@ -162,5 +169,6 @@ _cvo_csc_source = "Land_Cargo10_military_green_F";
 	"Box_NATO_Uniforms_F",									
 	[
 		["B_SCBA_01_F",4]
-	]
+	],	
+	btc_create_object_point
 ] call CVO_CSC_fnc_addCSC;
