@@ -571,7 +571,9 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"optic_DMS_snake_lxWS",
 		"suppressor_h_lxWS",
 		"suppressor_h_sand_lxWS",
-		"suppressor_h_snake_lxWS"
+		"suppressor_h_snake_lxWS",
+
+		"ACE_RangeCard"
 		], 
 	{}]],
 	["Drone Operator", [
