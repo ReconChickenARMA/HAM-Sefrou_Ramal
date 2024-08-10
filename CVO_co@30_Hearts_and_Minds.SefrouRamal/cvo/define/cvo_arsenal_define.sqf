@@ -168,6 +168,7 @@ CVO_A_BASE append [
 
 	"tsp_paperclip",
 
+	"ItemMap",
 	"ItemWatch",
 	"ItemCompass"];
 
