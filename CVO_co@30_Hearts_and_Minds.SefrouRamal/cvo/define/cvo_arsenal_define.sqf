@@ -636,7 +636,8 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"1Rnd_58mm_AT_lxWS",
 		//officer uniform
 		"U_lxWS_UN_Camo1",
-		"H_Beret_blk",
+		"lxWS_H_Beret_Colonel",
+
 		//officer tech
 		"optic_VRCO_RF",
 		"optic_VRCO_tan_RF",
@@ -658,7 +659,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 
 CVO_A_HASH_PlayerKit = createHashMapFromArray [
 	["_SP_PLAYER_", 		["Editor Debug", 	["ACE_Banana"],		{systemChat "CVO_A_Playerkit test Successful - ACE_Sandbag_empty Given"; 	["ACE_Sandbag_empty"]}		]	],	
-	["76561197970306509", 	["Zorn", 			["G_Spectacles_Tinted", "G_Balaclava_blk", "H_Beret_blk"],	{[]}	]],
+	["76561197970306509", 	["Zorn", 			["G_Spectacles_Tinted", "G_Balaclava_blk", "H_Beret_blk", "B_LegStrapBag_black_F", "WSLV_Brown_gn_black_Camo"],	{[]}	]],
 	["76561198090236234", 	["Recon", 			[],	{[]}	]],
 	["76561198147307775", 	["Clone", 			[],	{[]}	]] 	
 ];
