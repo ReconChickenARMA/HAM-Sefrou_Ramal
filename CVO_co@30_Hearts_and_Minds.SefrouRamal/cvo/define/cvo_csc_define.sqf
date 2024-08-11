@@ -37,7 +37,7 @@ private _cvo_csc_source = cvo_csc_source;
 
 [
 	_cvo_csc_source, 		// source obj/class
-	"Basic Ammo Package",	// Name String
+	"General Ammo Package",	// Name String
 	[
 		["Aegis_20Rnd_762x51_slr_reload_tracer_red_lxWS",10],
 		["1Rnd_40mm_HE_lxWS",10],
@@ -58,6 +58,7 @@ private _cvo_csc_source = cvo_csc_source;
 		["1Rnd_Smoke_Grenade_shell",5],
 		["100Rnd_762x51_S77_Red_lxWS",5],
 		["17Rnd_9x21_Mag",10],
+		["ACE_SpareBarrel", 2],
 		["greenmag_ammo_9x21_basic_60Rnd",5],
 
 		["greenmag_item_speedloader", 4]
@@ -70,7 +71,7 @@ private _cvo_csc_source = cvo_csc_source;
 
 [
 	_cvo_csc_source, 
-	"Medical Package",
+	"Medical Resupply Package",
 	[
 		["ACE_surgicalKit", 1],
 		["ACE_suture", 100],
