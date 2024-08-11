@@ -168,6 +168,7 @@ CVO_A_BASE append [
 
 	"tsp_paperclip",
 
+	"ItemMap",
 	"ItemWatch",
 	"ItemCompass"];
 
@@ -517,8 +518,10 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		//30rnd FAL mags
 		"30Rnd_762x51_slr_Snake_reload_tracer_Red_lxWS",
 		"Aegis_30Rnd_762x51_slr_reload_tracer_red_lxWS",
-		"30Rnd_762x51_slr_lxWS"
-		
+		"30Rnd_762x51_slr_lxWS",
+		// Greenmag
+		"greenmag_beltlinked_762x51_basic_100"
+
 		], 
 	{}]],
 	["Anti-Tank", [[		
@@ -568,7 +571,9 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"optic_DMS_snake_lxWS",
 		"suppressor_h_lxWS",
 		"suppressor_h_sand_lxWS",
-		"suppressor_h_snake_lxWS"
+		"suppressor_h_snake_lxWS",
+
+		"ACE_RangeCard"
 		], 
 	{}]],
 	["Drone Operator", [
@@ -631,7 +636,8 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"1Rnd_58mm_AT_lxWS",
 		//officer uniform
 		"U_lxWS_UN_Camo1",
-		"H_Beret_blk",
+		"lxWS_H_Beret_Colonel",
+
 		//officer tech
 		"optic_VRCO_RF",
 		"optic_VRCO_tan_RF",
@@ -653,7 +659,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 
 CVO_A_HASH_PlayerKit = createHashMapFromArray [
 	["_SP_PLAYER_", 		["Editor Debug", 	["ACE_Banana"],		{systemChat "CVO_A_Playerkit test Successful - ACE_Sandbag_empty Given"; 	["ACE_Sandbag_empty"]}		]	],	
-	["76561197970306509", 	["Zorn", 			["G_Spectacles_Tinted", "G_Balaclava_blk", "H_Beret_blk"],	{[]}	]],
+	["76561197970306509", 	["Zorn", 			["G_Spectacles_Tinted", "G_Balaclava_blk", "H_Beret_blk", "B_LegStrapBag_black_F", "WSLV_Brown_gn_black_Camo"],	{[]}	]],
 	["76561198090236234", 	["Recon", 			[],	{[]}	]],
 	["76561198147307775", 	["Clone", 			[],	{[]}	]] 	
 ];

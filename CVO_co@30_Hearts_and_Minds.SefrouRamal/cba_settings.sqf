@@ -119,8 +119,8 @@ acex_field_rations_hudType = 0;
 force acex_field_rations_hungerSatiated = 3;
 force acex_field_rations_terrainObjectActions = true;
 force acex_field_rations_thirstQuenched = 1;
-force acex_field_rations_timeWithoutFood = 480;
-force acex_field_rations_timeWithoutWater = 48;
+force acex_field_rations_timeWithoutFood = 48;
+force acex_field_rations_timeWithoutWater = 18;
 force acex_field_rations_waterSourceActions = 2;
 
 // ACE Fire
@@ -213,7 +213,7 @@ force ace_cargo_paradropTimeCoefficent = 2;
 force ace_rearm_distance = 20;
 force ace_rearm_enabled = true;
 force ace_rearm_level = 2;
-force ace_rearm_supply = 0;
+force ace_rearm_supply = 1;
 force ace_refuel_cargoRate = 10;
 force ace_refuel_hoseLength = 30;
 force ace_refuel_progressDuration = 2;
@@ -740,7 +740,7 @@ crowsza_zeus_text_CBA_Setting_zeusTextLine2 = true;
 crowsza_zeus_text_CBA_Setting_zeusTextLine3 = true;
 
 // CVO
-force CVO_CBA_musicDelayMin = 4.97159;
+force CVO_CBA_musicDelayMin = 5;
 force CVO_CBA_musicDelayRandom = 60;
 CVO_CBA_musicDisplay = false;
 CVO_CBA_musicDisplayLow = true;
@@ -748,7 +748,7 @@ CVO_CBA_musicDisplayString = "NAME";
 force CVO_SET_loadPlayerLoadoutOnRespawn = true;
 force CVO_SET_savePlayerLoadoutAtArsenalClose = true;
 force CVO_SET_savePlayerLoadoutAtStartBool = true;
-force CVO_SET_savePlayerLoadoutAtStartDelay = 10.1368;
+force CVO_SET_savePlayerLoadoutAtStartDelay = 10;
 
 // Death && Hit Reactions
 force WBK_DeathAnimMod_Death_Chance = "66";
