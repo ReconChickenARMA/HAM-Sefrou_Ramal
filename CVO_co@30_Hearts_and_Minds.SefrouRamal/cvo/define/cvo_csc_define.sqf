@@ -41,9 +41,9 @@ private _cvo_csc_source = cvo_csc_source;
 	[
 		["Aegis_20Rnd_762x51_slr_reload_tracer_red_lxWS",10],
 		["1Rnd_40mm_HE_lxWS",10],
-		["3Rnd_UGL_FlareWhite_F",5],
+		//["3Rnd_UGL_FlareWhite_F",5], // <- not part of the arsenal as of now?
 		["1Rnd_50mm_Smoke_lxWS",5],
-		["3Rnd_HE_Grenade_shell",5],
+		//["3Rnd_HE_Grenade_shell",5], // <- not part of the arsenal as of now?
 
 		["greenmag_ammo_762x51_basic_60Rnd",10],
 		["greenmag_beltlinked_762x51_basic_100",5],
