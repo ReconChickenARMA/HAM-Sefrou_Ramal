@@ -399,6 +399,9 @@ CVO_A_BASE append  [
 
 // Pistols
 CVO_A_BASE append [
+	"acc_flashlight_pistol",
+	"hgun_Rook40_F",
+	"hgun_P07_F",
 	"hgun_G17_F",
 	"16Rnd_9x21_Mag_v2",
 	"hgun_Rook40_F",
@@ -545,6 +548,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"optic_Hamr_sand_lxWS",
 		"greenmag_ammo_127x108_basic_30Rnd",
 		"5Rnd_127x108_APDS_Mag",
+		"ACE_Tripod",
 		//FAL GL and ammo
 		"arifle_SLR_GL_lxWS",
 		"arifle_SLR_V_GL_lxWS",
@@ -575,7 +579,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"suppressor_h_lxWS",
 		"suppressor_h_sand_lxWS",
 		"suppressor_h_snake_lxWS",
-
+		"ACE_Tripod",
 		"ACE_RangeCard"
 		], 
 	{}]],
@@ -631,6 +635,9 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"3Rnd_HEDP_Grenade_shell",
 		"3Rnd_HE_Grenade_shell",
 		*/
+		//FAL para 
+		"arifle_SLR_Para_lxWS",
+		"arifle_SLR_Para_snake_lxWS",
 		//FAL GL and ammo
 		"arifle_SLR_GL_lxWS",
 		"arifle_SLR_V_GL_lxWS",
