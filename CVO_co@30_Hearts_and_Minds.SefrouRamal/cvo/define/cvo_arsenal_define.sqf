@@ -521,7 +521,9 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"Aegis_30Rnd_762x51_slr_reload_tracer_red_lxWS",
 		"30Rnd_762x51_slr_lxWS",
 		// Greenmag
-		"greenmag_beltlinked_762x51_basic_100"
+		"greenmag_beltlinked_762x51_basic_100",
+
+		"ACE_SpareBarrel"
 
 		], 
 	{}]],
