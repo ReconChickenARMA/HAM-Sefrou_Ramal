@@ -580,13 +580,13 @@ btc_construction_array =
         }),
         [
             //"Ammobox"
-            "Land_WoodenBox_F"
+            "Land_WoodenBox_F",
+            "ACE_medicalSupplyCrate_advanced",
+            "Box_NATO_Ammo_F",
+            "Box_NATO_Equip_F",
+            "Box_NATO_Uniforms_F"
 
-        ] + (_allClassSorted select {
-            _x isKindOf "ReammoBox_F" &&
-            {!(_x isKindOf "Slingload_01_Base_F")} &&
-            {!(_x isKindOf "Pod_Heli_Transport_04_base_F")}
-        }),
+        ],
         [
             //"Containers"
 

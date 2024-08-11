@@ -403,8 +403,9 @@ CVO_A_BASE append [
 	"hgun_Rook40_F",
 	"hgun_P07_F",
 	"hgun_G17_F",
+	"16Rnd_9x21_Mag_v2",
+	"hgun_Rook40_F",
 	"17Rnd_9x21_Mag"
-	
 	];
 
 // Handgrenades and Throwables
@@ -523,7 +524,9 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"Aegis_30Rnd_762x51_slr_reload_tracer_red_lxWS",
 		"30Rnd_762x51_slr_lxWS",
 		// Greenmag
-		"greenmag_beltlinked_762x51_basic_100"
+		"greenmag_beltlinked_762x51_basic_100",
+
+		"ACE_SpareBarrel"
 
 		], 
 	{}]],
