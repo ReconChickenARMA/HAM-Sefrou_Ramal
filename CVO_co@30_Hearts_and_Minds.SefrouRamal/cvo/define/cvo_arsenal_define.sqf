@@ -400,8 +400,10 @@ CVO_A_BASE append  [
 // Pistols
 CVO_A_BASE append [
 	"hgun_G17_F",
-	"17Rnd_9x21_Mag",
+	"16Rnd_9x21_Mag_v2",
+
 	"hgun_Rook40_F"
+	"17Rnd_9x21_Mag",
 	];
 
 // Handgrenades and Throwables
