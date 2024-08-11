@@ -45,6 +45,9 @@ private _cvo_csc_source = cvo_csc_source;
 		["1Rnd_50mm_Smoke_lxWS",5],
 		//["3Rnd_HE_Grenade_shell",5], // <- not part of the arsenal as of now?
 
+		["1Rnd_RC40_HE_shell_RF", 3],
+		["1Rnd_RC40_shell_RF", 3],
+
 		["greenmag_ammo_762x51_basic_60Rnd",10],
 		["greenmag_beltlinked_762x51_basic_100",5],
 		//["greenmag_ammo_556x45_basic_60Rnd",5],
