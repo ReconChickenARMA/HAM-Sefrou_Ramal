@@ -22,47 +22,45 @@ if (!hasInterface) exitWith {};
 
 //// ################# DEFINE #################
 
-// Init Languages
-["arab", "Arabic"]       call acre_api_fnc_babelAddLanguageType;
+cvo_babel_allLanguages = [
+    ["arab", "Arabic"],
+    ["en", "English"]
+];
 
-["en", "English"]       call acre_api_fnc_babelAddLanguageType;
+cvo_babel_sideLanguages = createHashMapFromArray [
+    ["WEST", ["en"]],
+    ["EAST", ["arab"]],
+    ["GUER", ["arab"]],
+    ["CIV", ["arab"]]
+];
 
-["un", "Unconscious"]   call acre_api_fnc_babelAddLanguageType;
 
-private _cvo_babel_playerDefault = "en";
-private _cvo_babel_localLanguage = "arab";
+cvo_babel_playerDefault = "en";
+cvo_babel_localLanguage = "arab";
 
-cvo_babel_zeusLanguages = ["arab", "en"];
+
 
 //// ################# CODE #################
 
-cvo_babel_localPlayerLanguages = [];
+cvo_babel_zeusLanguages = cvo_babel_allLanguages apply {_x select 0};
+{ _x   call acre_api_fnc_babelAddLanguageType } forEach cvo_babel_allLanguages + ["un", "Unconscious"];
+
 // Local Language
+cvo_babel_localPlayerLanguages = [];
 
 
 // Player Languages
 //    _cvo_babel_player getVariable ["CVO_Player_Languages", []];
 
 // Default Language for everyone
-    cvo_babel_localPlayerLanguages pushBackUnique _cvo_babel_playerDefault;
+    cvo_babel_localPlayerLanguages pushBackUnique cvo_babel_playerDefault;
 
 // Local Languages via Translator
     if (player getVariable ["interpreter", false]) then {
-        cvo_babel_localPlayerLanguages pushBackUnique _cvo_babel_localLanguage;
+        cvo_babel_localPlayerLanguages pushBackUnique cvo_babel_localLanguage;
     };
 
-/*
-// Custom Languages via Custom Player
-    {
-        if (_x in _cvo_babel_player) then {
-            cvo_babel_localPlayerLanguages pushBackUnique _x;
-        };
-    } forEach ["alt","en"];
-*/
-
-
 //// APPLY
-
 // Set spoken
 cvo_babel_localPlayerLanguages call acre_api_fnc_babelSetSpokenLanguages;
 
@@ -96,14 +94,99 @@ cvo_babel_localPlayerLanguages call acre_api_fnc_babelSetSpokenLanguages;
 ["featureCamera", {
     params ["_unit", "_newCamera"];
 
-    if (_newCamera == "" && {ACE_player getVariable ["ACE_isUnconscious", false]}) then {
-        ["un"] call acre_api_fnc_babelSetSpokenLanguages;
-    } else {
-        if (player != ace_player) then {
-            cvo_babel_zeusLanguages call acre_api_fnc_babelSetSpokenLanguages;
-        } else {
-            cvo_babel_localPlayerLanguages call acre_api_fnc_babelSetSpokenLanguages;
+    switch (true) do {
+        case (_newCamera == "" && {ACE_player getVariable ["ACE_isUnconscious", false]}): { ["un"] call acre_api_fnc_babelSetSpokenLanguages; }; // Uncon
+        case (player != ace_player): {
+
+            private _sideStr = str side ace_player;
+            private _array = cvo_babel_sideLanguages getOrDefault [_sideStr,[]];
+
+            //failback to default player lanugage
+            if (count _array == 0) then {_array pushBack cvo_babel_playerDefault };
+            _array call acre_api_fnc_babelSetSpokenLanguages;
         };
+
+        default { cvo_babel_localPlayerLanguages call acre_api_fnc_babelSetSpokenLanguages; };
     };
 }, false] call CBA_fnc_addPlayerEventHandler;
 diag_log "[CVO] [ACRE] (Acre Unconcious) - Init End";
+
+//add action to remote controlled unit to change languages
+
+private _aceAction = [
+    "cvo_babel_setLangauge",         // * 0: Action name <STRING>
+    "Babel: Set Spoken Language to",        //  * 1: Name of the action shown in the menu <STRING>
+    "",                             //  * 2: Icon <STRING> "\A3\ui_f\data\igui\cfg\simpleTasks\types\backpack_ca.paa"
+    {},                       //  * 3: Statement <CODE>
+    {player != ace_player},      //  * 4: Condition <CODE>
+    {                            //  * 5: Insert children code <CODE> (Optional)
+        params ["_target", "_player", "_params"];
+
+        private _actions = [];
+        {
+            private ["_languageName", "_languageArray"];
+            if (_x == "ALL") then {
+                _languageName = "All Languages";
+                _languageArray = cvo_babel_zeusLanguages;
+            } else {
+                _languageName = [_x] call acre_api_fnc_babelGetLanguageName;
+                _languageArray = [_x];
+            };
+
+            private _actionID = (["cvo","babel","setLangauge"] + _languageArray) joinString "_";
+            private _actionTitle = format ["%1", _languageName];
+            private _icon = "";
+            private _statement = {
+                params ["_target", "_player", "_params"];
+                _params params ["_languageName", "_languageArray"];
+
+                _languageArray call acre_api_fnc_babelSetSpokenLanguages;
+                systemChat format ["CVO Babel - Given Langauge: %1", _array apply {[_x] call acre_api_fnc_babelGetLanguageName;}];
+
+            };
+            private _condition = {
+                    params ["_target", "_player", "_params"];
+                    _params params ["_languageName", "_languageArray"];
+                    private _currentlySpoken = [] call acre_sys_core_fnc_getSpokenLanguages;
+                    //(_this#2#1 call BIS_fnc_sortAlphabetically)  isNotEqualTo ([] call acre_sys_core_fnc_getSpokenLanguages call BIS_fnc_sortAlphabetically)
+                    (_languageArray call BIS_fnc_sortAlphabetically) isNotEqualTo (_currentlySpoken call BIS_fnc_sortAlphabetically);
+            };
+            private _params = [_languageName,_languageArray];
+            
+            private _action = [_actionID, _actionTitle, _icon, _statement, _condition, {}, _params] call ace_interact_menu_fnc_createAction;
+            _actions pushBack [_action, [], _target]; // New action, it's children, and the action's target
+        } forEach ["ALL"] + (acre_sys_core_languages apply {_x select 0}) - ["un"];
+        _actions
+    },
+    []                          //  * 6: Action parameters <ANY> (Optional)
+
+
+
+] call ace_interact_menu_fnc_createAction;
+
+
+[
+    ace_player,              		// * 0: Object the action should be assigned to <OBJECT>
+    1,                         		// * 1: Type of action, 0 for actions, 1 for self-actions <NUMBER>
+    ["ACE_SelfActions"],        	// * 2: Parent path of the new action <ARRAY> (Example: `["ACE_SelfActions", "ACE_Equipment"]`)
+    _aceAction	         			// * 3: Action <ARRAY>    
+] call ace_interact_menu_fnc_addActionToObject;
+
+
+/*
+[
+    "CAManBase",
+    1,
+    []
+] call ace_interact_menu_fnc_addActionToClass;
+
+/*
+ * Argument:
+ * 0: TypeOf of the class <STRING>
+ * 1: Type of action, 0 for actions, 1 for self-actions <NUMBER>
+ * 2: Parent path of the new action <ARRAY>
+ * 3: Action <ARRAY>
+ * 4: Use Inheritance (Default: False) <BOOL><OPTIONAL>
+ * 5: Classes excluded from inheritance (children included) (Default: []) <ARRAY><OPTIONAL>
+ */
+ 
