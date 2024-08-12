@@ -821,11 +821,11 @@ btc_door_breaking_time = 60;
 btc_flag_textures = [
     "cvo\img\voron_flag_olive.paa",
     "cvo\img\voron_flag_red.paa",
-    "cvo\img\unaflag.paa"
+    "cvo\img\unaflag.paa",
     "\A3\Data_F\Flags\flag_red_CO.paa",
     "\A3\Data_F\Flags\flag_green_CO.paa",
     "\A3\Data_F\Flags\flag_blue_CO.paa",
-    '#(argb,8,8,3)color(0.9,0.9,0,1)',
+    '#(argb,8,8,3)color(0.9,0.9,0,1)'
 ];
 
 //Respawn
