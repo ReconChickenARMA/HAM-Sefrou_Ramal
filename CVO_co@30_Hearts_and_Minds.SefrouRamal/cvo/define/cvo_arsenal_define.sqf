@@ -493,7 +493,20 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"ACE_VMM3","ACE_VMH3", 
 		"ACE_wirecutter", "ToolKit", 
 		"ACE_Fortify", "ACE_DefusalKit",
-		
+
+		/*
+		//aa12
+		"sgun_aa40_lxWS",
+		"sgun_aa40_tan_lxWS",
+		"sgun_aa40_snake_lxWS",
+		"8Rnd_12Gauge_AA40_Slug_lxWS",
+		"8Rnd_12Gauge_AA40_Slug_Snake_lxWS",
+		"8Rnd_12Gauge_AA40_Slug_Tan_lxWS",
+		"8Rnd_12Gauge_AA40_Pellets_lxWS",
+		"8Rnd_12Gauge_AA40_Pellets_Snake_lxWS",
+		"8Rnd_12Gauge_AA40_Pellets_Tan_lxWS",
+		*/
+
 		//M4 Shotgun
 		"sgun_M4_F",
 		"8Rnd_12Gauge_Slug",
@@ -511,7 +524,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		], 
 		{}]],
 	["Machinegunner", [[
-	//SS-77 Vektor
+		//SS-77 Vektor
 		"LMG_S77_Desert_lxWS",
 		"LMG_S77_lxWS",
 		"LMG_S77_Compact_lxWS",
@@ -617,7 +630,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 	["Officer", [
 		[
 		//GLX grenade launcher and ammo
-		/*"glaunch_GLX_snake_lxWS",
+		"glaunch_GLX_snake_lxWS",
 		"glaunch_GLX_lxWS",
 		"glaunch_GLX_tan_lxWS",
 		"3Rnd_UGL_FlareGreen_F",
@@ -632,9 +645,6 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"3Rnd_Smoke_Grenade_shell",
 		"3Rnd_SmokeYellow_Grenade_shell",
 		"3Rnd_Pellets_Grenade_shell",
-		"3Rnd_HEDP_Grenade_shell",
-		"3Rnd_HE_Grenade_shell",
-		*/
 		//FAL para 
 		"arifle_SLR_Para_lxWS",
 		"arifle_SLR_Para_snake_lxWS",
