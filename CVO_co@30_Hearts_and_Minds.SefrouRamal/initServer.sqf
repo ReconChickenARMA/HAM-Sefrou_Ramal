@@ -1,14 +1,12 @@
 // Manages the CSC Source object
 {
+    // to be executed on server only
     [_x, -1] call ace_cargo_fnc_setSize;
     [_x, -1] call ace_cargo_fnc_setSpace;
     _x setVariable ["ace_cargo_noRename", true, true];
 } forEach [cvo_csc_source];
 
-// Add Custom Eventhandler Eventhandler
-
-// private _id = ["tag_testEvent", {systemChat str _this}] call CBA_fnc_addEventHandler;
-
+// Add Custom Eventhandler
 // Allows the CSC spawned boxes to be deleted by the black tarp
 ["cvo_csc_Event_crateSpawnedServer", {
     params ["_box", "_name"];

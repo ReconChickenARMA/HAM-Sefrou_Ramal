@@ -455,7 +455,7 @@ force ace_repair_fullRepairLocation = 3;
 force ace_repair_fullRepairRequiredItems = ["ace_repair_anyToolKit"];
 force ace_repair_locationsBoostTraining = true;
 force ace_repair_miscRepairRequiredItems = ["ace_repair_anyToolKit"];
-force ace_repair_miscRepairTime = 15;
+force ace_repair_miscRepairTime = 10;
 force ace_repair_patchWheelEnabled = 0;
 force ace_repair_patchWheelLocation = ["ground","vehicle"];
 force ace_repair_patchWheelMaximumRepair = 0;
@@ -463,7 +463,7 @@ force ace_repair_patchWheelRequiredItems = [];
 force ace_repair_patchWheelTime = 0.1;
 force ace_repair_repairDamageThreshold = 0.6;
 force ace_repair_repairDamageThreshold_engineer = 0.4;
-force ace_repair_timeCoefficientFullRepair = 1.5;
+force ace_repair_timeCoefficientFullRepair = 1;
 force ace_repair_wheelChangeTime = 1;
 force ace_repair_wheelRepairRequiredItems = [];
 
