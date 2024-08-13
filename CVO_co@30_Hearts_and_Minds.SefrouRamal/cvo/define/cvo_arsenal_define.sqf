@@ -598,6 +598,8 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 	{}]],
 	["Drone Operator", [
 		[
+		//gunbag
+		"ace_gunbag_Tan",
 		//AR-2 Darter 
 		"ION_UAV_01_backpack_lxWS",
 		//GLX grenade launcher and ammo
@@ -619,6 +621,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"muzzle_antenna_02_f",
 		//drone terminal
 		"B_UavTerminal",
+		
 		//LR radio
 		"ACRE_PRC148"],
 	{}]],
