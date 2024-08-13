@@ -923,6 +923,8 @@ tsp_cba_radio_vests = "[]";
 force tsp_cba_breach = true;
 force force tsp_cba_breach_ace = true;
 force tsp_cba_breach_ammo = "[
+""B_12Gauge_Slug"",""B_12Gauge_Pellets_Submunition_Cartridge"",
+""B_12gauge_Pellets_Cartridge_lxWS"",""B_12gauge_Slug_Cartridge_lxWS"",
 ""B_12Gauge_Slug_NoCartridge"",""B_12Gauge_Pellets_Submunition"",
 ""rhs_ammo_12g_slug"",""rhs_ammo_12g_00buckshot"",""rhs_ammo_m576_buckshot"",
 ""UK3CB_BAF_B_12Gauge_Slug"",""UK3CB_BAF_B_12Gauge_Pellets"",
