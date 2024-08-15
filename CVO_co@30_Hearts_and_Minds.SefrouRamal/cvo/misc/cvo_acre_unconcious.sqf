@@ -39,8 +39,13 @@ cvo_babel_playerDefault = "en";
 cvo_babel_localLanguage = "arab";
 
 
+//// ############## DEFINE END #################
 
 //// ################# CODE #################
+//// ################# DONT #################
+//// ################# EDIT #################
+//// ################# BELOW ################
+//// ################# HERE #################
 
 cvo_babel_zeusLanguages = cvo_babel_allLanguages apply {_x select 0};
 { _x   call acre_api_fnc_babelAddLanguageType } forEach cvo_babel_allLanguages + [["un", "Unconscious"]];
