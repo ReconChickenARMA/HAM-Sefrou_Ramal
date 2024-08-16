@@ -692,9 +692,10 @@ CVO_A_HASH_PlayerKit = createHashMapFromArray [
 	["76561198147307775", 	["Clone", 			[],	{[]}	]] 	
 ];
 
-diag_log ("[CVO] [Arsenal_Define] - completed");
 
-
+////////////////////////////////////////////
+///////////// Default Loadouts /////////////
+////////////////////////////////////////////
 
 
 [
@@ -706,3 +707,6 @@ diag_log ("[CVO] [Arsenal_Define] - completed");
 	"Rifleman - Basic",
 	[[["arifle_SLR_V_lxWS","","","optic_r1_high_lxWS",["20Rnd_762x51_slr_lxWS",20],[],""],[],[],["U_lxWS_UN_Camo3",[["ACE_packingBandage",10],["ACE_fieldDressing",10],["ACE_morphine",2],["ACE_epinephrine",1],["ACE_tourniquet",2],["ACE_splint",1],["ACE_CableTie",2],["ACE_EarPlugs",2],["ACE_MapTools",1],["ACE_Chemlight_Shield",1],["ACE_bodyBag",2],["acex_intelitems_notepad",1,1],["ACE_Chemlight_Orange",2,1]]],["PLP_UNA_V_CarrierRigKBT_01_light_F",[["ACRE_PRC343",1],["ACE_SpraypaintRed",1],["SmokeShell",2,1],["HandGrenade",2,1],["Aegis_20Rnd_762x51_slr_reload_tracer_red_lxWS",7,20]]],["B_AssaultPackSpec_cbr",[["greenmag_item_speedloader",1],["greenmag_ammo_762x51_basic_60Rnd",5],["ACE_bodyBag",2],["ACE_personalAidKit",1],["ACE_EntrenchingTool",1],["ACE_Humanitarian_Ration",2],["ACE_WaterBottle",2],[selectRandom _rations,1],["ACE_salineIV_500",2],["ace_marker_flags_red",5],["ACE_EarPlugs",2],["Aegis_20Rnd_762x51_slr_reload_tracer_red_lxWS",3,20],["SmokeShell",2,1]]],"PLP_UNA_H_Cap","",["Binocular","","","",[],[],""],["ItemMap","ItemAndroid","","ItemCompass","ItemWatch",""]],[["ace_arsenal_insignia","CVO_insignia_11_PVT"],["grad_slingHelmet","PLP_UNA_H_HelmetB"]]]
 ] call ace_arsenal_fnc_addDefaultLoadout;
+
+
+diag_log ("[CVO] [Arsenal_Define] - completed");
