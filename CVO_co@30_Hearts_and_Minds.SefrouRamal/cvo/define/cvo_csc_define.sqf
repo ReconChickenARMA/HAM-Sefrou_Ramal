@@ -179,22 +179,6 @@ private _cvo_csc_source = cvo_csc_source;
 
 
 [
-	_cvo_csc_source, 		// source obj/class
-	"Vehicle Ammo Package",	// Name String
-	[],						// Array
-	"VirtualReammoBox_small_F",		// Class of Crate
-	[],						// Array of Backpacks
-	btc_create_object_point,
-	createHashMapFromArray [
-		["ace_rearm_source", true],
-		["ace_rearm_source_value", 50],
-
-		["ace_cargo_setSize", 2],
-		["ace_carry_canCarry", false]
-	]
-] call CVO_CSC_fnc_addCSC;
-
-[
 	_cvo_csc_source, 						// source obj/class
 	"Small Vehicle Ammo Package",			// Name String
 	[],										// Array
@@ -212,21 +196,35 @@ private _cvo_csc_source = cvo_csc_source;
 
 
 [
-	_cvo_csc_source, 		// source obj/class
+	_cvo_csc_source, 				// source obj/class
+	"Vehicle Ammo Package",			// Name String
+	[],								// Array
+	"VirtualReammoBox_small_F",		// Class of Crate
+	[],								// Array of Backpacks
+	btc_create_object_point,
+	createHashMapFromArray [
+		["ace_rearm_source", true],
+		["ace_rearm_source_value", 50],
+
+		["ace_cargo_setSize", 2],
+		["ace_carry_canCarry", false]
+	]
+] call CVO_CSC_fnc_addCSC;
+
+
+[
+	_cvo_csc_source,		 		// source obj/class
 	"Vehicle Maintainance Package",	// Name String
-	[
-		["ToolKit", 1]
-	],								// Array
+	[["ToolKit", 1]],								// Array
 	"Land_WoodenCrate_01_F",		// Class of Crate
 	[],								// Array of Backpacks
 	btc_create_object_point,
 	createHashMapFromArray [
 		["ace_repair_vehicle", true],
 
-		["ace_refuel_source", true],
-		["ace_refuel_source_value", 20],
-
-		["ace_cargo_setSize", 2],
-		["ace_carry_canCarry", false]
+		["ace_cargo_setSize", 0],
+		["ace_carry_canCarry", false],
+		["ace_cargo_add_jerrycans", 1],
+		["ace_cargo_add_spareWheel",2]
 	]
 ] call CVO_CSC_fnc_addCSC;
