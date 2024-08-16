@@ -584,8 +584,10 @@ btc_construction_array =
             "ACE_medicalSupplyCrate_advanced",
             "Box_NATO_Ammo_F",
             "Box_NATO_Equip_F",
-            "Box_NATO_Uniforms_F"
-
+            "Box_NATO_Uniforms_F",
+            "Land_WoodenCrate_01_F",
+            "VirtualReammoBox_small_F",
+            "Land_Proxy_UsBasicAmmoBoxBig_F"
         ],
         [
             //"Containers"
