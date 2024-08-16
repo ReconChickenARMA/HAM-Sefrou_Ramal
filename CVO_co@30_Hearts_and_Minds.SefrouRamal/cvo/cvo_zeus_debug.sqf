@@ -105,3 +105,57 @@ _aceAction = [
 
 
 
+//////////////////////////////////////////////////
+///////////// ZEUS ACTION - REP CHANGE /////////////
+//////////////////////////////////////////////////
+
+
+private _steps = [ 100, 50, 25, 10, 5, -5, -10, -25, -50, -100 ];
+private _aceAction = [
+	"btc_zeus_reputation",         // * 0: Action name <STRING>
+	"Change Reputation",            //  * 1: Name of the action shown in the menu <STRING>
+	"",                          //  * 2: Icon <STRING> "\A3\ui_f\data\igui\cfg\simpleTasks\types\backpack_ca.paa"
+	{
+		"btc_global_reputation" remoteExec ["publicVariable",2];
+		[systemChat format ["Current Reputation: %1", missionNameSpace getVariable ["btc_global_reputation", "not found"]]] call CBA_fnc_execNextFrame;
+	},                            //  * 3: Statement <CODE>
+	{true},                      //  * 4: Condition <CODE>
+	{
+		params ["_target", "_player", "_params"];
+		private _actions = [];
+		{
+			private _action = [
+				["CVO_REP_ADJ",_x] joinString "_",
+				format ["%1 %2", ["-", "+"] select (_x > 0), -1 * _x max _x ],
+				"",
+				{
+                    private _value = missionNamespace getVariable ["btc_global_reputation", "404"];
+                    if (_value isEqualTo "404") exitWith {};
+                    private _valueNew = _value + _this#2;
+                    private _str = format ["GLOBAL REPUTATION ADJUSTED: %1 + %2 = %3", _value, _this#2, _valueNew];
+					systemChat _str;
+					diag_log _str;
+                    missionNamespace setVariable ["btc_global_reputation", _valueNew,true];
+			    },
+				{true},
+				{},
+				_x
+			] call ace_interact_menu_fnc_createAction;
+			_actions pushBack [_action, [], _target];
+		} forEach _params;
+		_actions
+	},                          //  * 5: Insert children code <CODE> (Optional)
+	_steps,
+	[0,0,0],
+	20,
+	[false,false,false,true,false]/*,
+	{
+		params ["_target", "_player", "_params", "_actionData"];
+	    // Modify the action - index 1 is the display name, 2 is the icon...
+    	_actionData set [1, format ["Current REP: %1", missionNamespace getVariable ["btc_global_reputation", "404"]]];
+	}*/
+] call ace_interact_menu_fnc_createAction;
+
+[["ACE_ZeusActions"], _aceAction] call ace_interact_menu_fnc_addActionToZeus;
+
+//////////////////////////////////////////////////
