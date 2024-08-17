@@ -59,6 +59,11 @@ corpseManagerMode = 0;
 
 disabledAI = 1;
 
+
+cba_settings_hasSettingsFile = 1;
+allowFunctionsLog = 1;
+
+
 class CfgFunctions {
     // add your own functions below
     #include "cvo\cbrn\CfgFunctions.hpp"
@@ -80,10 +85,6 @@ class zen_context_menu_actions {
         #include "cvo\cbrn\CfgContext.hpp"
     };
 };
-
-
-cba_settings_hasSettingsFile = 1;
-
 
 
 class ACE_Tags {
