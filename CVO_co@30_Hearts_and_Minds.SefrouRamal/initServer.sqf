@@ -25,7 +25,7 @@ private _layerNames = ["btc_vehicles", "Player Vehicles"];
         private _vehicleInventory = itemCargo _vehicle;
         {
             private _desiredItem = _x;
-            if (!_desiredItem in _vehicleInventory) then { _vehicle addItemCargoGlobal [_desiredItem, 1]; };
+            if !(_desiredItem in _vehicleInventory) then { _vehicle addItemCargoGlobal [_desiredItem, 1]; };
         } forEach _items;
     } forEach _vehicles;
 } forEach _layerNames;
