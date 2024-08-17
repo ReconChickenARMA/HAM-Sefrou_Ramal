@@ -763,6 +763,10 @@ force WBK_DeathAnimMod_Hit_Chance = "66";
 force WBK_DeathAnimMod_Hit_Chance_PLR = "33";
 force WBK_DeathAnimMod_Hit_PLR = true;
 
+// GRAD slingHelmet
+force GRAD_slingHelmet_additionalList = "";
+force GRAD_slingHelmet_allowAll = true;
+
 // GRAD Trenches
 force grad_trenches_functions_allowBigEnvelope = true;
 force grad_trenches_functions_allowCamouflage = true;
