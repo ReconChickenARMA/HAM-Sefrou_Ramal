@@ -50,8 +50,8 @@ private _cvo_csc_source = cvo_csc_source;
 
 		["greenmag_ammo_762x51_basic_60Rnd",10],
 		["greenmag_beltlinked_762x51_basic_100",5],
-		//["greenmag_ammo_556x45_basic_60Rnd",5],
-		//["greenmag_ammo_127x108_basic_60Rnd",5],
+		["greenmag_ammo_556x45_basic_60Rnd",5],
+		["greenmag_ammo_127x108_basic_60Rnd",5],
 
 		["HandGrenade",10],
 		["SmokeShell",5],
@@ -113,8 +113,8 @@ private _cvo_csc_source = cvo_csc_source;
 
 		["ACE_HandFlare_White", 20],
 		
-		//["greenmag_ammo_127x108_basic_60Rnd",5],
-		//["greenmag_ammo_556x45_basic_60Rnd",10],
+		["greenmag_ammo_127x108_basic_60Rnd",5],
+		["greenmag_ammo_556x45_basic_60Rnd",10],
 		["100Rnd_762x51_S77_Red_lxWS",5],
 		["Aegis_20Rnd_762x51_slr_reload_tracer_red_lxWS",20],
 		["greenmag_ammo_762x51_basic_60Rnd",10],

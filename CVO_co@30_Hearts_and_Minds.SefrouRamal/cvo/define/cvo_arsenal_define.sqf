@@ -385,13 +385,24 @@ CVO_A_BASE append  [
 	"arifle_SLR_D_lxWS",
 	"arifle_SLR_V_lxWS",	
 	//20rnd magazines
-	"Aegis_20Rnd_762x51_slr_reload_tracer_red_lxWS",
+	"Aegis_20Rnd_762x51_slr_tracer_red_lxWS",
 	"20Rnd_762x51_slr_lxWS",
 	"20Rnd_762x51_slr_desert_lxWS",
-	"20Rnd_762x51_slr_Snake_reload_tracer_Red_lxWS",
+	"20Rnd_762x51_slr_Snake_tracer_Red_lxWS",
 	//flashlight 
 	"acc_flashlight",
 	//basic optics
+	"optic_ACO_grn_desert_RF",
+	"optic_ACO_desert_RF",
+	"optic_ACO_grn",
+	"optic_Aco",
+	"optic_Holosight",
+	"optic_Holosight_blk_F",
+	"optic_Holosight_arid_F",
+	"optic_Holosight_snake_lxWS",
+	"Aegis_optic_ICO",
+	"Aegis_optic_ICO_sand",
+	"Aegis_optic_ROS",
 	"optic_r1_high_black_sand_lxWS",
 	"optic_r1_high_sand_lxWS",
 	"optic_r1_high_snake_lxWS",
@@ -499,7 +510,6 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"ACE_wirecutter", "ToolKit", 
 		"ACE_Fortify", "ACE_DefusalKit",
 
-		/*
 		//aa12
 		"sgun_aa40_lxWS",
 		"sgun_aa40_tan_lxWS",
@@ -510,8 +520,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"8Rnd_12Gauge_AA40_Pellets_lxWS",
 		"8Rnd_12Gauge_AA40_Pellets_Snake_lxWS",
 		"8Rnd_12Gauge_AA40_Pellets_Tan_lxWS",
-		*/
-
+		
 		//M4 Shotgun
 		"sgun_M4_F",
 		"8Rnd_12Gauge_Slug",
@@ -522,6 +531,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"tsp_breach_popper_auto_mag",
 		//"tsp_breach_silhouette_mag",
 		//"tsp_breach_stick_mag",
+		"ACE_Clacker",
 		"DemoCharge_Remote_Mag",	"ACE_DemoCharge_Remote_Mag_Throwable",
 		"SatchelCharge_Remote_Mag",	"ACE_SatchelCharge_Remote_Mag_Throwable"
 
@@ -538,8 +548,8 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"100Rnd_762x51_S77_Red_lxWS",
 		"100Rnd_762x51_S77_lxWS",
 		//30rnd FAL mags
-		"30Rnd_762x51_slr_Snake_reload_tracer_Red_lxWS",
-		"Aegis_30Rnd_762x51_slr_reload_tracer_red_lxWS",
+		"Aegis_30Rnd_762x51_slr_tracer_red_lxWS",
+		"30Rnd_762x51_slr_Snake_tracer_Red_lxWS",
 		"30Rnd_762x51_slr_lxWS",
 		// Greenmag
 		"greenmag_beltlinked_762x51_basic_100",
@@ -575,6 +585,12 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		], 
 	{}]],
 	["Marksman", [[
+		//Mk 14 EBR
+		"srifle_EBR_blk_lxWS",
+		"srifle_EBR_snake_lxWS",
+		"20Rnd_762x51_Mag_blk_lxWS",
+		"20Rnd_762x51_Mag_snake_lxWS",
+		"ace_20rnd_762x51_mag_tracer",
 		//HADES H6 rifle
 		"srifle_h6_blk_rf",
 		"srifle_h6_tan_rf",		
