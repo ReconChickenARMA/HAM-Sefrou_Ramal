@@ -12,3 +12,20 @@
     params ["_box", "_name"];
     btc_log_obj_created pushBackUnique _box;
 }] call CBA_fnc_addEventHandler;
+
+
+// Adds Items of the array to each vehicle in the layers of 2. array
+private _items = ["ToolKit"];
+private _layerNames = ["btc_vehicles", "Player Vehicles"];
+{
+    private _layerName = _x;
+    private _vehicles = getMissionLayerEntities _layerName # 0;
+    {
+        private _vehicle = _x;
+        private _vehicleInventory = itemCargo _vehicle;
+        {
+            private _desiredItem = _x;
+            if (!_desiredItem in _vehicleInventory) then { _vehicle addItemCargoGlobal [_desiredItem, 1]; };
+        } forEach _items;
+    } forEach _vehicles;
+} forEach _layerNames;
