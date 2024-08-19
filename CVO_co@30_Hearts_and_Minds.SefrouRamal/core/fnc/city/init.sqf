@@ -64,11 +64,14 @@ for "_id" from 0 to (count _locations - 1) do {
         if ((configName _current) in btc_city_blacklist) exitWith {};
 
         
-        if ((getMarkerPos "btc_base") inArea [_position, 500, 500, 0, false]) exitWith {};
-        if ((getMarkerPos "btc_base_1") inArea [_position, 500, 500, 0, false]) exitWith {};
-        if ((getMarkerPos "btc_base_2") inArea [_position, 500, 500, 0, false]) exitWith {};
-        if ((getMarkerPos "btc_base_3") inArea [_position, 500, 500, 0, false]) exitWith {};
-        if ((getMarkerPos "btc_base_4") inArea [_position, 500, 500, 0, false]) exitWith {};
+        private _markerArray = [];
+        _markerArray append (allMapMarkers select {"btc_base" in _x OR "savezone" in _x});
+
+        {
+            if ((getMarkerPos _x) inArea [_position, 500, 500, 0, false]) exitWith {};
+            
+        } forEach _markerArray;
+
         
         [_position, _type, _name, _cachingRadius, false, _id] call btc_city_fnc_create;
     };
