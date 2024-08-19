@@ -448,7 +448,7 @@ force ace_repair_autoShutOffEngineWhenStartingRepair = true;
 force ace_repair_consumeItem_toolKit = 0;
 ace_repair_displayTextOnRepair = true;
 force ace_repair_enabled = true;
-force ace_repair_engineerSetting_fullRepair = 2;
+force ace_repair_engineerSetting_fullRepair = 1;
 force ace_repair_engineerSetting_repair = 1;
 force ace_repair_engineerSetting_wheel = 0;
 force ace_repair_fullRepairLocation = 3;
@@ -461,9 +461,9 @@ force ace_repair_patchWheelLocation = ["ground","vehicle"];
 force ace_repair_patchWheelMaximumRepair = 0;
 force ace_repair_patchWheelRequiredItems = [];
 force ace_repair_patchWheelTime = 0.1;
-force ace_repair_repairDamageThreshold = 0.6;
-force ace_repair_repairDamageThreshold_engineer = 0.4;
-force ace_repair_timeCoefficientFullRepair = 1;
+force ace_repair_repairDamageThreshold = 0.75;
+force ace_repair_repairDamageThreshold_engineer = 0.25;
+force ace_repair_timeCoefficientFullRepair = 0.75;
 force ace_repair_wheelChangeTime = 1;
 force ace_repair_wheelRepairRequiredItems = [];
 
@@ -762,6 +762,10 @@ force WBK_DeathAnimMod_Hit_AI = true;
 force WBK_DeathAnimMod_Hit_Chance = "66";
 force WBK_DeathAnimMod_Hit_Chance_PLR = "33";
 force WBK_DeathAnimMod_Hit_PLR = true;
+
+// GRAD slingHelmet
+force GRAD_slingHelmet_additionalList = "";
+force GRAD_slingHelmet_allowAll = true;
 
 // GRAD Trenches
 force grad_trenches_functions_allowBigEnvelope = true;
