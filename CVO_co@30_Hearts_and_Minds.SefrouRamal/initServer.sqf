@@ -14,6 +14,14 @@
 }] call CBA_fnc_addEventHandler;
 
 
+["cvo_EVENT_executeUnitServer", {
+    params ["_unit", "_unitSide"];
+
+}] call CBA_fnc_addEventHandler;
+
+
+
+
 // Adds Items of the array to each vehicle in the layers of 2. array
 private _items = ["ToolKit"];
 private _layerNames = ["btc_vehicles", "Player Vehicles"];
