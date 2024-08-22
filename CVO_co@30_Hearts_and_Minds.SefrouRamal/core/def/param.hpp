@@ -261,7 +261,7 @@ class Params {
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_IED_PLACEMENT"]);
         values[]={2, -1, 3};
         texts[]={$STR_BTC_HAM_PARAM_IED_PLACEMENT_ROADSIDE,$STR_BTC_HAM_PARAM_IED_PLACEMENT_MIDDLE,$STR_3DEN_ATTRIBUTES_OBJECTTEXTURE_RANDOM_TEXT}; //texts[]={"Roadside", "Middle", "Random"};
-        default = 3;
+        default = 2;
     };
 	class btc_p_ied_power { // Power of IED explosion:
         title = __EVAL(format ["      %1", localize "STR_BTC_HAM_PARAM_IED_POWER"]);
