@@ -1,6 +1,7 @@
 cvo_ied_fnc_failedIED 		= compileScript	["cvo\IED\cvo_ied_fnc_failedIED.sqf", 				false, ""];
 cvo_ied_fnc_failedIED_fx 	= compileScript	["cvo\IED\cvo_ied_fnc_failedIED_fx.sqf", 			false, ""];
 cvo_ied_fnc_delay_fx        = compileScript ["cvo\IED\cvo_ied_fnc_delay_fx.sqf",                false, ""];
+cvo_ied_fnc_randomIEDs      = compileScript ["cvo\IED\cvo_ied_fnc_randomIEDs.sqf",              false, ""];
 
 /*
 CVO_weightedArrayIED = [
@@ -73,17 +74,6 @@ CVO_weightedArrayIED = [
 
 // Hand Grenades
 ["ACE_M14",		    	        false,   false,   [false,[0,0,0]], false, true,  false, false,  [false,7]], 2,
-["gm_handgrenade_frag_rgd5",	false,   false,   [false,[0,0,0]], false, true,  false, false,  [false,7]], 1,
-["gm_handgrenade_frag_m26",		false,   false,   [false,[0,0,0]], false, true,  false, false,  [false,7]], 1,
-["gm_handgrenade_frag_m26a1",	false,   false,   [false,[0,0,0]], false, true,  false, false,  [false,7]], 1,
-["gm_handgrenade_frag_m26",	    false,   false,   [false,[0,0,0]], false, true,  false, false,  [false,7]], 1,
-["gm_handgrenade_frag_dm51a1",	false,   false,   [false,[0,0,0]], false, true,  false, false,  [false,7]], 1,
-["gm_handgrenade_frag_dm51",	false,   false,   [false,[0,0,0]], false, true,  false, false,  [false,7]], 1,
-["gm_handgrenade_frag_dm41a1",	false,   false,   [false,[0,0,0]], false, true,  false, false,  [false,7]], 1,
-["gm_handgrenade_frag_dm41",	false,   false,   [false,[0,0,0]], false, true,  false, false,  [false,7]], 1,
-["gm_handgrenade_conc_dm51a1",	false,   false,   [false,[0,0,0]], false, true,  false, false,  [false,7]], 1,
-["gm_handgrenade_conc_dm51",	false,   false,   [false,[0,0,0]], false, true,  false, false,  [false,7]], 1,
-
 ["mini_Grenade",		    	false,   false,   [false,[0,0,0]], false, true,  false, false,  [false,7]], 4,
 ["GrenadeHand",	        		false,   false,   [false,[0,0,0]], false, true,  false, false,  [false,7]], 4
 ];
