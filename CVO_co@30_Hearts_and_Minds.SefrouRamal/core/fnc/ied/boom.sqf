@@ -18,6 +18,7 @@ Examples:
 
 Author:
     Giallustio
+    
 
 ---------------------------------------------------------------------------- */
 
@@ -31,10 +32,24 @@ if (btc_debug_log) then {
 };
 
 private _pos = getPos _ied;
+
 deleteVehicle _ied;
-btc_ied_power createVehicle _pos;
+
+
+if (btc_ied_power isEqualTo "RANDOM") then {
+
+    [_pos] spawn cvo_ied_fnc_randomIEDs;
+
+} else {
+
+    btc_ied_power createVehicle _pos;
+
+    [_pos] call btc_deaf_fnc_earringing;
+    [_pos] remoteExecCall ["btc_ied_fnc_effects", [0, -2] select isDedicated];
+
+};
+
 deleteVehicle _wreck;
 
-[_pos] call btc_deaf_fnc_earringing;
-[_pos] remoteExecCall ["btc_ied_fnc_effects", [0, -2] select isDedicated];
+// idk why this is called as a local event?!
 ["btc_ied_boom", [_pos]] call CBA_fnc_localEvent;

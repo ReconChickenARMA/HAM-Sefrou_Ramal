@@ -13,8 +13,8 @@ if (!canSuspend) exitWith {_this spawn cvo_ied_fnc_failedIED};
 params [
 	["_obj", 		player,	 			[objNull,[]],[2,3]	],				// object or location where the cookOff will be spawned
 	["_classname", 	"", 				["",[]]				],				// string or array of strings of the explosives that will be spawned (need to be self detonating)
-	["_meme", 		false, 				[false,0]			],
-	["_minimum",	20, 				[0]					]				// boolean or chance of meme to happen <0.01 low chance - 0.99 high chance>
+	["_minimum",	20, 				[0]					],				// boolean or chance of meme to happen <0.01 low chance - 0.99 high chance>
+	["_meme", 		false, 				[false,0]			]
 ];
 
 
@@ -30,7 +30,7 @@ private _arrayMeme = ["SmokeShellGreen", "F_40mm_White", "O_IRStrobe", "BombDemi
 
 if (_className isEqualTo "") then {
 	
-	_arrayGrenades = ["mini_Grenade","GrenadeHand", "rhs_charge_tnt_x2_mag", "rhs_charge_sb3kg_mag"];
+	_arrayGrenades = ["mini_Grenade","GrenadeHand"];
 
 } else {
 	if (_className isEqualType "") then {	_arrayGrenades pushBack _className;		};
