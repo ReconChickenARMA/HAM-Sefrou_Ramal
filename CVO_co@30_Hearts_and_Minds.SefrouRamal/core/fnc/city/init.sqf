@@ -65,12 +65,10 @@ for "_id" from 0 to (count _locations - 1) do {
 
         
         private _markerArray = [];
-        private _isSaveZone = false;
-        _markerArray append (allMapMarkers select {"btc_base" in _x OR "savezone" in _x});
+        private _isSafeZone = false;
+        _markerArray append (allMapMarkers select {"btc_base" in _x OR "safezone" in _x});
 
-        {
-            if ((getMarkerPos _x) inArea [_position, 500, 500, 0, false]) exitWith {_isSaveZone = true};
-        } forEach _markerArray;
+        { if ((getMarkerPos _x) inArea [_position, 500, 500, 0, false]) exitWith {_isSaveZone = true}; } forEach _markerArray;
         if _isSaveZone exitWith {};
         
         [_position, _type, _name, _cachingRadius, false, _id] call btc_city_fnc_create;
