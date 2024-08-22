@@ -1,6 +1,7 @@
 cvo_ied_fnc_failedIED 		= compileScript	["cvo\IED\cvo_ied_fnc_failedIED.sqf", 				false, ""];
 cvo_ied_fnc_failedIED_fx 	= compileScript	["cvo\IED\cvo_ied_fnc_failedIED_fx.sqf", 			false, ""];
 cvo_ied_fnc_delay_fx        = compileScript ["cvo\IED\cvo_ied_fnc_delay_fx.sqf",                false, ""];
+cvo_ied_fnc_randomIEDs      = compileScript ["cvo\IED\cvo_ied_fnc_randomIEDs.sqf",              false, ""];
 
 /*
 CVO_weightedArrayIED = [
