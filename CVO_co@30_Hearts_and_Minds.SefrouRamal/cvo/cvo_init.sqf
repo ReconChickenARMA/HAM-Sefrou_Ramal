@@ -46,6 +46,7 @@ execVM "cvo\map\cvo_map_init.sqf";
 // Init for CVO IED's
 execVM "cvo\IED\cvo_ied_init.sqf";
 
+// Init for CVO IED's
 execVM "cvo\logistics\cvo_fnc_airlift.sqf";
 
 // Define Misc Functions
