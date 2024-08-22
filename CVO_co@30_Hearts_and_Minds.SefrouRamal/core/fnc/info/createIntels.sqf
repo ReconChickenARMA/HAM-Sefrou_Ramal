@@ -37,7 +37,7 @@ private _intels = _houses apply {
         [btc_info_fnc_search_for_intel, [_target]] call CBA_fnc_execNextFrame;
     }, {true}] call ace_interact_menu_fnc_createAction;
     
-    [_intelOBJ, 0, ["ACE_MainActions"], _action] call ace_interact_menu_fnc_addActionToObject;
+    [_intelOBJ, 0, ["ACE_MainActions"], _action] remoteExec ["ace_interact_menu_fnc_addActionToObject", [-2,0] selectDedicated, _intelObj];
 };
 
 _city setVariable ["btc_city_intels", _intels];
