@@ -580,14 +580,14 @@ btc_construction_array =
         }),
         [
             //"Ammobox"
-            "Land_WoodenBox_F",
-            "ACE_medicalSupplyCrate_advanced",
+            "metalcrate",
             "Box_NATO_Ammo_F",
             "Box_NATO_Equip_F",
             "Box_NATO_Uniforms_F",
             "Land_WoodenCrate_01_F",
             "VirtualReammoBox_small_F",
-            "Land_Proxy_UsBasicAmmoBoxBig_F"
+            "Land_Proxy_UsBasicAmmoBoxBig_F",
+            "ACE_medicalSupplyCrate_advanced"
         ],
         [
             //"Containers"

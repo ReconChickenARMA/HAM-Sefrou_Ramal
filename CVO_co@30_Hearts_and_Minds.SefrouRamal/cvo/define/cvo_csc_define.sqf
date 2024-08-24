@@ -218,16 +218,17 @@ private _cvo_csc_source = cvo_csc_source;
 [
 	_cvo_csc_source,		 		// source obj/class
 	"Vehicle Maintainance Package",	// Name String
-	[["ToolKit", 1]],								// Array
-	"Land_WoodenCrate_01_F",		// Class of Crate
+	[["ToolKit", 1]],				// Array
+	"metalcrate",					// Class of Crate
 	[],								// Array of Backpacks
 	btc_create_object_point,
 	createHashMapFromArray [
-		["ace_repair_vehicle", true],
+		["ace_repair_facility", true],
 
 		["ace_cargo_setSize", 0],
 		["ace_carry_canCarry", false],
 		["ace_cargo_add_jerrycans", 1],
-		["ace_cargo_add_spareWheel",2]
+		["ace_cargo_add_spareWheels",2]
 	]
 ] call CVO_CSC_fnc_addCSC;
+
