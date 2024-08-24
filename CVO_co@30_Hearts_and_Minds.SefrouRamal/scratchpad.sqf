@@ -43,3 +43,20 @@ _result = [];
 diag_log _result;
 _result
 
+
+### 
+
+
+_condition = { daytime >= 5};                // condition - Needs to return bool
+_statement = {setTimeMultiplier 1};                // Code to be executed once condition true
+_timeout = -1;                  // if condition isnt true within this time in S, _timecode will be executed.
+[_condition, _statement, _parameter, _timeout] call CBA_fnc_waitUntilAndExecute;
+
+
+###
+
+private _helipad = createVehicle ["Land_HelipadCivil_F", [0,0,0]];
+_helipad attachTo [cursorObject, [0,0,1]];
+_helipad setVariable ["ace_isRepairFacility", 1, true];
+
+// if object gets deleted/destroyed i need to deletevehicle all attached objects of the "crate object"
