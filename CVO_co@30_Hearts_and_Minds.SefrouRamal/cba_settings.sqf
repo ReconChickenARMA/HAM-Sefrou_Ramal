@@ -2,7 +2,7 @@
 force ace_advanced_ballistics_ammoTemperatureEnabled = true;
 force ace_advanced_ballistics_barrelLengthInfluenceEnabled = true;
 force ace_advanced_ballistics_bulletTraceEnabled = true;
-force ace_advanced_ballistics_enabled = false;
+force ace_advanced_ballistics_enabled = true;
 force ace_advanced_ballistics_muzzleVelocityVariationEnabled = true;
 force ace_advanced_ballistics_simulationInterval = 0.05;
 
@@ -10,10 +10,10 @@ force ace_advanced_ballistics_simulationInterval = 0.05;
 force ace_advanced_fatigue_enabled = true;
 force ace_advanced_fatigue_enableStaminaBar = true;
 ace_advanced_fatigue_fadeStaminaBar = true;
-force ace_advanced_fatigue_loadFactor = 1;
-force ace_advanced_fatigue_performanceFactor = 1;
-force ace_advanced_fatigue_recoveryFactor = 1;
-force ace_advanced_fatigue_terrainGradientFactor = 1;
+force ace_advanced_fatigue_loadFactor = 0.8;
+force ace_advanced_fatigue_performanceFactor = 2;
+force ace_advanced_fatigue_recoveryFactor = 1.5;
+force ace_advanced_fatigue_terrainGradientFactor = 0.8;
 
 // ACE Advanced Throwing
 ace_advanced_throwing_enabled = true;
@@ -24,8 +24,8 @@ ace_advanced_throwing_showMouseControls = true;
 ace_advanced_throwing_showThrowArc = true;
 
 // ACE Advanced Vehicle Damage
-force ace_vehicle_damage_enableCarDamage = false;
-force ace_vehicle_damage_enabled = false;
+force ace_vehicle_damage_enableCarDamage = true;
+force ace_vehicle_damage_enabled = true;
 force ace_vehicle_damage_removeAmmoDuringCookoff = true;
 
 // ACE AI
@@ -64,7 +64,7 @@ ace_casings_enabled = true;
 ace_casings_maxCasings = 250;
 
 // ACE Common
-force ace_common_allowFadeMusic = true;
+force ace_common_allowFadeMusic = false;
 force ace_common_checkPBOsAction = 0;
 force ace_common_checkPBOsCheckAll = false;
 force ace_common_checkPBOsWhitelist = "[]";
@@ -80,13 +80,13 @@ ace_common_settingProgressBarLocation = 0;
 force ace_common_swayFactor = 1;
 
 // ACE Cook off
-force ace_cookoff_ammoCookoffDuration = 1;
-force ace_cookoff_destroyVehicleAfterCookoff = false;
+force ace_cookoff_ammoCookoffDuration = 3.5;
+force ace_cookoff_destroyVehicleAfterCookoff = true;
 force ace_cookoff_enable = 2;
 force ace_cookoff_enableAmmobox = true;
 force ace_cookoff_enableAmmoCookoff = true;
 force ace_cookoff_enableFire = true;
-force ace_cookoff_probabilityCoef = 1;
+force ace_cookoff_probabilityCoef = 2;
 
 // ACE Crew Served Weapons
 force ace_csw_ammoHandling = 2;
@@ -105,29 +105,29 @@ force ace_dragging_weightCoefficient = 1;
 // ACE Explosives
 ace_explosives_customTimerDefault = 30;
 force ace_explosives_customTimerMax = 900;
-force ace_explosives_customTimerMin = 5;
+force ace_explosives_customTimerMin = 30;
 force ace_explosives_explodeOnDefuse = true;
 force ace_explosives_punishNonSpecialists = true;
 force ace_explosives_requireSpecialist = false;
 
 // ACE Field Rations
 force acex_field_rations_affectAdvancedFatigue = true;
-force acex_field_rations_enabled = false;
+force acex_field_rations_enabled = true;
 acex_field_rations_hudShowLevel = 0;
 acex_field_rations_hudTransparency = -1;
 acex_field_rations_hudType = 0;
-force acex_field_rations_hungerSatiated = 1;
+force acex_field_rations_hungerSatiated = 3;
 force acex_field_rations_terrainObjectActions = true;
 force acex_field_rations_thirstQuenched = 1;
-force acex_field_rations_timeWithoutFood = 2;
-force acex_field_rations_timeWithoutWater = 2;
+force acex_field_rations_timeWithoutFood = 18;
+force acex_field_rations_timeWithoutWater = 8;
 force acex_field_rations_waterSourceActions = 2;
 
 // ACE Fire
-force ace_fire_dropWeapon = 1;
+force ace_fire_dropWeapon = 2;
 force ace_fire_enabled = true;
 force ace_fire_enableFlare = false;
-ace_fire_enableScreams = true;
+force ace_fire_enableScreams = true;
 
 // ACE Fortify
 force ace_fortify_markObjectsOnMap = 1;
@@ -137,17 +137,17 @@ acex_fortify_settingHint = 2;
 
 // ACE Fragmentation Simulation
 force ace_frag_enabled = true;
-force ace_frag_maxTrack = 10;
-force ace_frag_maxTrackPerFrame = 10;
-force ace_frag_reflectionsEnabled = false;
-force ace_frag_spallEnabled = false;
+force ace_frag_maxTrack = 20;
+force ace_frag_maxTrackPerFrame = 5;
+force ace_frag_reflectionsEnabled = true;
+force ace_frag_spallEnabled = true;
 
 // ACE G-Forces
 force ace_gforces_coef = 1;
-force ace_gforces_enabledFor = 1;
+force ace_gforces_enabledFor = 2;
 
 // ACE Goggles
-ace_goggles_effects = 2;
+force ace_goggles_effects = 2;
 ace_goggles_showClearGlasses = false;
 ace_goggles_showInThirdPerson = false;
 
@@ -155,11 +155,11 @@ ace_goggles_showInThirdPerson = false;
 force ace_grenades_convertExplosives = true;
 
 // ACE Headless
-force acex_headless_delay = 15;
-force acex_headless_enabled = false;
-force acex_headless_endMission = 0;
+force acex_headless_delay = 60;
+force acex_headless_enabled = true;
+force acex_headless_endMission = 2;
 force acex_headless_log = false;
-force acex_headless_transferLoadout = 0;
+force acex_headless_transferLoadout = 1;
 
 // ACE Hearing
 force ace_hearing_autoAddEarplugsToUnits = 1;
@@ -199,210 +199,6 @@ ace_interact_menu_textSize = 2;
 ace_interact_menu_useListMenu = true;
 ace_interact_menu_useListMenuSelf = false;
 
-// ACE Interaction Menu (Self) - More
-ace_interact_menu_more__ACE_Animations = false;
-ace_interact_menu_more__ACE_CheckAirTemperature = false;
-ace_interact_menu_more__ace_csw_deploy = false;
-ace_interact_menu_more__ACE_Equipment = false;
-ace_interact_menu_more__ACE_Explosives = false;
-ace_interact_menu_more__ace_field_rations = false;
-ace_interact_menu_more__ace_fortify = false;
-ace_interact_menu_more__ace_gestures = false;
-ace_interact_menu_more__ace_intelitems = false;
-ace_interact_menu_more__ACE_MapFlashlight = false;
-ace_interact_menu_more__ACE_MapGpsHide = false;
-ace_interact_menu_more__ACE_MapGpsShow = false;
-ace_interact_menu_more__ACE_MapTools = false;
-ace_interact_menu_more__ACE_Medical = false;
-ace_interact_menu_more__ACE_Medical_Menu = false;
-ace_interact_menu_more__ACE_MoveRallypoint = false;
-ace_interact_menu_more__ACE_PlottingBoard = false;
-ace_interact_menu_more__ACE_PlottingBoardHide = false;
-ace_interact_menu_more__ACE_RepackMagazines = false;
-ace_interact_menu_more__ace_sandbag_place = false;
-ace_interact_menu_more__ACE_StartSurrenderingSelf = false;
-ace_interact_menu_more__ACE_StopEscortingSelf = false;
-ace_interact_menu_more__ACE_StopSurrenderingSelf = false;
-ace_interact_menu_more__ACE_Tags = false;
-ace_interact_menu_more__ACE_TeamManagement = false;
-ace_interact_menu_more__ace_zeus_create = false;
-ace_interact_menu_more__ace_zeus_delete = false;
-ace_interact_menu_more__acex_sitting_Stand = false;
-ace_interact_menu_more__ACRE_Interact = false;
-ace_interact_menu_more__acre_sys_zeus_playerEars = false;
-ace_interact_menu_more__acre_sys_zeus_remoteEars = false;
-ace_interact_menu_more__greenmag_main_connectBelt = false;
-ace_interact_menu_more__greenmag_main_refill = false;
-ace_interact_menu_more__greenmag_main_unload = false;
-ace_interact_menu_more__greenmag_main_unpack = false;
-
-// ACE Interaction Menu (Self) - Move to Root
-ace_interact_menu_moveToRoot__ACE_Animations__ace_gestures_cat_gestures = false;
-ace_interact_menu_moveToRoot__ACE_Animations__ace_gestures_cat_gestures__ace_gestures_Advance = false;
-ace_interact_menu_moveToRoot__ACE_Animations__ace_gestures_cat_gestures__ace_gestures_CeaseFire = false;
-ace_interact_menu_moveToRoot__ACE_Animations__ace_gestures_cat_gestures__ace_gestures_Cover = false;
-ace_interact_menu_moveToRoot__ACE_Animations__ace_gestures_cat_gestures__ace_gestures_Engage = false;
-ace_interact_menu_moveToRoot__ACE_Animations__ace_gestures_cat_gestures__ace_gestures_Follow = false;
-ace_interact_menu_moveToRoot__ACE_Animations__ace_gestures_cat_gestures__ace_gestures_Forward = false;
-ace_interact_menu_moveToRoot__ACE_Animations__ace_gestures_cat_gestures__ace_gestures_Freeze = false;
-ace_interact_menu_moveToRoot__ACE_Animations__ace_gestures_cat_gestures__ace_gestures_Go = false;
-ace_interact_menu_moveToRoot__ACE_Animations__ace_gestures_cat_gestures__ace_gestures_Hold = false;
-ace_interact_menu_moveToRoot__ACE_Animations__ace_gestures_cat_gestures__ace_gestures_Point = false;
-ace_interact_menu_moveToRoot__ACE_Animations__ace_gestures_cat_gestures__ace_gestures_Regroup = false;
-ace_interact_menu_moveToRoot__ACE_Animations__ace_gestures_cat_gestures__ace_gestures_Stop = false;
-ace_interact_menu_moveToRoot__ACE_Animations__ace_gestures_cat_gestures__ace_gestures_Up = false;
-ace_interact_menu_moveToRoot__ACE_Animations__ace_gestures_cat_gestures__ace_gestures_Warning = false;
-ace_interact_menu_moveToRoot__ACE_Animations__ace_gestures_cat_gestures__tsp_animate_bang = false;
-ace_interact_menu_moveToRoot__ACE_Animations__ace_gestures_cat_gestures__tsp_animate_breach = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_cancel = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_dances = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_dances__tsp_animate_contact = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_dances__tsp_animate_duoIvan = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_dances__tsp_animate_duoStefan = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_dances__tsp_animate_kata = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_dances__tsp_animate_metal = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_dances__tsp_animate_pushups = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_dances__tsp_animate_squats = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_dances__tsp_animate_stefan = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_dances__tsp_animate_zozo = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_emotes = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_emotes__tsp_animate_bird = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_emotes__tsp_animate_dab = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_emotes__tsp_animate_horns = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_emotes__tsp_animate_jackoff = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_emotes__tsp_animate_loser = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_emotes__tsp_animate_mahalo = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_emotes__tsp_animate_ok = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_emotes__tsp_animate_paper = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_emotes__tsp_animate_peace = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_emotes__tsp_animate_rock = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_emotes__tsp_animate_scissors = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_inspect = false;
-ace_interact_menu_moveToRoot__ACE_Animations__tsp_animate_suicide = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_atragmx_open = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_attach_Attach = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_attach_Detach = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ACE_CheckDogtags = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ACE_Chemlights = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_dagr_menu = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_dagr_menu__ace_dagr_toggle = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_goggles_wipeGlasses = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_gunbag_actions = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_gunbag_actions__ace_gunbag_status = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_gunbag_actions__ace_gunbag_weaponOff = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_gunbag_actions__ace_gunbag_weaponSwap = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_gunbag_actions__ace_gunbag_weaponTo = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_huntir_open = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_interaction_weaponAttachments = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_kestrel4500_open = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_kestrel4500_open__ace_kestrel4500_hide = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_kestrel4500_open__ace_kestrel4500_show = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_marker_flags = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_microdagr_configure = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_microdagr_configure__ace_microdagr_close = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_microdagr_configure__ace_microdagr_show = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_minedetector_metalDetector = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_minedetector_metalDetector__ace_minedetector_activate = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_minedetector_metalDetector__ace_minedetector_connectHeadphones = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_minedetector_metalDetector__ace_minedetector_deactivate = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_minedetector_metalDetector__ace_minedetector_disconnectHeadphones = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_mk6mortar_rangetable = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_overheating_CheckTemperature = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_overheating_CheckTemperatureSpareBarrels = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_overheating_CoolWeaponWithItem = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_overheating_SwapBarrel = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_overheating_UnJam = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ACE_PutInEarplugs = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_rangecard_open = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_rangecard_open__ace_rangecard_makeCopy = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_rangecard_open__ace_rangecard_openCopy = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_reload_checkAmmo = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ACE_RemoveEarplugs = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_scopes_adjustZero = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_scopes_resetZero = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_spottingscope_place = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ACE_TacticalLadders = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_trenches = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_trenches__ace_trenches_digEnvelopeBig = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_trenches__ace_trenches_digEnvelopeSmall = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_trenches__grad_trenches_digEnvelopeGiant = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_trenches__grad_trenches_digEnvelopeLongNameEmplacment = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_trenches__grad_trenches_digEnvelopeShort = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_trenches__grad_trenches_digEnvelopeVehicle = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__ace_tripod_place = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__acre_sys_gsa_placeSpike = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__acre_sys_gsa_placeSpikeMast = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__GRAD_slingHelmet_sling = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__GRAD_slingHelmet_swap = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__GRAD_slingHelmet_unsling = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__immersion_pops_start_cig = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__immersion_pops_stop_cig = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__immersion_pops_take_cig_from_pack = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__murshun_cigs_start_cig = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__murshun_cigs_stop_cig = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__murshun_cigs_take_cig_from_pack = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__tsp_melee_ak_bayonet = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__tsp_melee_ak_knife = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__tsp_melee_m9s_bayonet = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__tsp_melee_m9s_knife = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__tsp_melee_m9s_knife_m27 = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__tsp_melee_okc3s_bayonet = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__tsp_melee_okc3s_knife = false;
-ace_interact_menu_moveToRoot__ACE_Equipment__tsp_melee_okc3s_knife_m27 = false;
-ace_interact_menu_moveToRoot__ACE_Explosives__ACE_Cellphone = false;
-ace_interact_menu_moveToRoot__ACE_Explosives__ACE_Place = false;
-ace_interact_menu_moveToRoot__ace_gestures__ace_gestures_Advance = false;
-ace_interact_menu_moveToRoot__ace_gestures__ace_gestures_CeaseFire = false;
-ace_interact_menu_moveToRoot__ace_gestures__ace_gestures_Cover = false;
-ace_interact_menu_moveToRoot__ace_gestures__ace_gestures_Engage = false;
-ace_interact_menu_moveToRoot__ace_gestures__ace_gestures_Follow = false;
-ace_interact_menu_moveToRoot__ace_gestures__ace_gestures_Forward = false;
-ace_interact_menu_moveToRoot__ace_gestures__ace_gestures_Freeze = false;
-ace_interact_menu_moveToRoot__ace_gestures__ace_gestures_Go = false;
-ace_interact_menu_moveToRoot__ace_gestures__ace_gestures_Hold = false;
-ace_interact_menu_moveToRoot__ace_gestures__ace_gestures_Point = false;
-ace_interact_menu_moveToRoot__ace_gestures__ace_gestures_Regroup = false;
-ace_interact_menu_moveToRoot__ace_gestures__ace_gestures_Stop = false;
-ace_interact_menu_moveToRoot__ace_gestures__ace_gestures_Up = false;
-ace_interact_menu_moveToRoot__ace_gestures__ace_gestures_Warning = false;
-ace_interact_menu_moveToRoot__ACE_MapTools__ACE_MapToolsAlign = false;
-ace_interact_menu_moveToRoot__ACE_MapTools__ACE_MapToolsAlign__ACE_MapToolsAlignCompass = false;
-ace_interact_menu_moveToRoot__ACE_MapTools__ACE_MapToolsAlign__ACE_MapToolsAlignNorth = false;
-ace_interact_menu_moveToRoot__ACE_MapTools__ACE_MapToolsAlign__ACE_MapToolsAlignToPlottingBoard = false;
-ace_interact_menu_moveToRoot__ACE_MapTools__ACE_MapToolsAlign__ACE_MapToolsAlignToPlottingBoardAcrylic = false;
-ace_interact_menu_moveToRoot__ACE_MapTools__ACE_MapToolsAlign__ACE_MapToolsAlignToPlottingBoardRuler = false;
-ace_interact_menu_moveToRoot__ACE_MapTools__ACE_MapToolsHide = false;
-ace_interact_menu_moveToRoot__ACE_MapTools__ACE_MapToolsShowNormal = false;
-ace_interact_menu_moveToRoot__ACE_MapTools__ACE_MapToolsShowSmall = false;
-ace_interact_menu_moveToRoot__ACE_Medical__ACE_ArmLeft = false;
-ace_interact_menu_moveToRoot__ACE_Medical__ACE_ArmRight = false;
-ace_interact_menu_moveToRoot__ACE_Medical__ACE_Head = false;
-ace_interact_menu_moveToRoot__ACE_Medical__ACE_LegLeft = false;
-ace_interact_menu_moveToRoot__ACE_Medical__ACE_LegRight = false;
-ace_interact_menu_moveToRoot__ACE_Medical__ACE_Torso = false;
-ace_interact_menu_moveToRoot__ACE_Medical__ACE_Torso__TriageCard = false;
-ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardAlign = false;
-ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardAlign__ACE_PlottingBoardAlignAcrylic = false;
-ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardAlign__ACE_PlottingBoardAlignAcrylic__ACE_PlottingBoardAlignAcrylicMaptool = false;
-ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardAlign__ACE_PlottingBoardAlignAcrylic__ACE_PlottingBoardAlignAcrylicUp = false;
-ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardAlign__ACE_PlottingBoardAlignBoard = false;
-ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardAlign__ACE_PlottingBoardAlignBoard__ACE_PlottingBoardAlignBoardMaptool = false;
-ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardAlign__ACE_PlottingBoardAlignBoard__ACE_PlottingBoardAlignBoardUp = false;
-ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardAlign__ACE_PlottingBoardAlignRuler = false;
-ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardAlign__ACE_PlottingBoardAlignRuler__ACE_PlottingBoardAlignRulerMaptool = false;
-ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardAlign__ACE_PlottingBoardAlignRuler__ACE_PlottingBoardAlignRulerUp = false;
-ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardRulerHide = false;
-ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardRulerShow = false;
-ace_interact_menu_moveToRoot__ACE_PlottingBoardHide__ACE_PlottingBoardWipe = false;
-ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_BecomeLeader = false;
-ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_JoinTeamBlue = false;
-ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_JoinTeamGreen = false;
-ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_JoinTeamRed = false;
-ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_JoinTeamYellow = false;
-ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_LeaveGroup = false;
-ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_LeaveTeam = false;
-ace_interact_menu_moveToRoot__ACE_TeamManagement__ACE_RenameGroup = false;
-
 // ACE Kill Tracker
 force ace_killtracker_trackAI = true;
 
@@ -411,13 +207,13 @@ ace_cargo_carryAfterUnload = true;
 force ace_cargo_enable = true;
 force ace_cargo_enableDeploy = true;
 ace_cargo_enableRename = true;
-force ace_cargo_loadTimeCoefficient = 5;
+force ace_cargo_loadTimeCoefficient = 3;
 ace_cargo_openAfterUnload = 0;
 force ace_cargo_paradropTimeCoefficent = 2.5;
 force ace_rearm_distance = 20;
 force ace_rearm_enabled = true;
-force ace_rearm_level = 0;
-force ace_rearm_supply = 0;
+force ace_rearm_level = 2;
+force ace_rearm_supply = 1;
 force ace_refuel_cargoRate = 10;
 force ace_refuel_hoseLength = 12;
 force ace_refuel_progressDuration = 2;
@@ -439,7 +235,7 @@ force ace_map_BFT_ShowPlayerNames = false;
 force ace_map_DefaultChannel = -1;
 force ace_map_mapGlow = true;
 force ace_map_mapIllumination = true;
-force ace_map_mapLimitZoom = false;
+force ace_map_mapLimitZoom = true;
 force ace_map_mapShake = true;
 force ace_map_mapShowCursorCoordinates = false;
 ace_markers_moveRestriction = 0;
@@ -473,9 +269,9 @@ force ace_medical_ai_enabledFor = 2;
 force ace_medical_ai_requireItems = 0;
 force ace_medical_AIDamageThreshold = 1.5;
 force ace_medical_bleedingCoefficient = 0.7;
-force ace_medical_blood_bloodLifetime = 900;
+force ace_medical_blood_bloodLifetime = 2400;
 force ace_medical_blood_enabledFor = 2;
-force ace_medical_blood_maxBloodObjects = 500;
+force ace_medical_blood_maxBloodObjects = 2000;
 force ace_medical_deathChance = 0.3;
 force ace_medical_dropWeaponUnconsciousChance = 0.05;
 force ace_medical_enableVehicleCrashes = true;
@@ -496,8 +292,8 @@ force ace_medical_statemachine_cardiacArrestBleedoutEnabled = true;
 force ace_medical_statemachine_cardiacArrestTime = 420;
 force ace_medical_statemachine_fatalInjuriesAI = 0;
 force ace_medical_statemachine_fatalInjuriesPlayer = 0;
-force ace_medical_treatment_advancedBandages = 1;
-force ace_medical_treatment_advancedDiagnose = 1;
+force ace_medical_treatment_advancedBandages = 2;
+force ace_medical_treatment_advancedDiagnose = 2;
 force ace_medical_treatment_advancedMedication = true;
 force ace_medical_treatment_allowBodyBagUnconscious = true;
 force ace_medical_treatment_allowGraveDigging = 1;
@@ -507,7 +303,7 @@ force ace_medical_treatment_allowSelfPAK = 1;
 force ace_medical_treatment_allowSelfStitch = 1;
 force ace_medical_treatment_allowSharedEquipment = 0;
 force ace_medical_treatment_bandageEffectiveness = 1.2;
-ace_medical_treatment_bandageRollover = true;
+force ace_medical_treatment_bandageRollover = true;
 force ace_medical_treatment_clearTrauma = 1;
 force ace_medical_treatment_consumePAK = 1;
 force ace_medical_treatment_consumeSurgicalKit = 2;
@@ -516,13 +312,13 @@ force ace_medical_treatment_cprSuccessChanceMax = 0.85;
 force ace_medical_treatment_cprSuccessChanceMin = 0.15;
 force ace_medical_treatment_graveDiggingMarker = true;
 force ace_medical_treatment_holsterRequired = 2;
-force ace_medical_treatment_litterCleanupDelay = 600;
+force ace_medical_treatment_litterCleanupDelay = 1800;
 force ace_medical_treatment_locationEpinephrine = 0;
 force ace_medical_treatment_locationIV = 0;
 force ace_medical_treatment_locationPAK = 0;
 force ace_medical_treatment_locationsBoostTraining = true;
 force ace_medical_treatment_locationSurgicalKit = 0;
-force ace_medical_treatment_maxLitterObjects = 500;
+force ace_medical_treatment_maxLitterObjects = 2000;
 force ace_medical_treatment_medicEpinephrine = 0;
 force ace_medical_treatment_medicIV = 1;
 force ace_medical_treatment_medicPAK = 2;
@@ -568,7 +364,7 @@ ace_medical_gui_damageColor_9 = [0,0,1,1];
 ace_medical_gui_enableActions = 0;
 ace_medical_gui_enableMedicalMenu = 1;
 ace_medical_gui_enableSelfActions = true;
-ace_medical_gui_interactionMenuShowTriage = 1;
+force ace_medical_gui_interactionMenuShowTriage = 1;
 force ace_medical_gui_maxDistance = 3;
 ace_medical_gui_openAfterTreatment = true;
 ace_medical_gui_peekMedicalInfoReleaseDelay = 1;
@@ -576,7 +372,7 @@ ace_medical_gui_peekMedicalOnHit = false;
 ace_medical_gui_peekMedicalOnHitDuration = 1;
 force ace_medical_gui_showBleeding = 2;
 force ace_medical_gui_showBloodlossEntry = true;
-force ace_medical_gui_showDamageEntry = false;
+force ace_medical_gui_showDamageEntry = true;
 ace_medical_gui_tourniquetWarning = false;
 
 // ACE Name Tags
@@ -606,28 +402,28 @@ force ace_nightvision_noiseScaling = 0.542355;
 force ace_nightvision_shutterEffects = true;
 
 // ACE Overheating
-force ace_overheating_cookoffCoef = 1;
-force ace_overheating_coolingCoef = 1;
-ace_overheating_displayTextOnJam = true;
+force ace_overheating_cookoffCoef = 1.5;
+force ace_overheating_coolingCoef = 0.9;
+force ace_overheating_displayTextOnJam = true;
 force ace_overheating_enabled = true;
-force ace_overheating_heatCoef = 1;
+force ace_overheating_heatCoef = 0.9;
 force ace_overheating_jamChanceCoef = 1;
 force ace_overheating_overheatingDispersion = true;
 force ace_overheating_overheatingRateOfFire = true;
-ace_overheating_particleEffectsAndDispersionDistance = 3000;
+force ace_overheating_particleEffectsAndDispersionDistance = 3000;
 ace_overheating_showParticleEffects = true;
 ace_overheating_showParticleEffectsForEveryone = false;
-force ace_overheating_suppressorCoef = 1;
+force ace_overheating_suppressorCoef = 0.75;
 force ace_overheating_unJamFailChance = 0.1;
 force ace_overheating_unJamOnreload = false;
 force ace_overheating_unJamOnSwapBarrel = false;
 
 // ACE Pointing
-force ace_finger_enabled = false;
-ace_finger_indicatorColor = [0.83,0.68,0.21,0.75];
-ace_finger_indicatorForSelf = true;
-force ace_finger_maxRange = 4;
-force ace_finger_proximityScaling = false;
+force ace_finger_enabled = true;
+force ace_finger_indicatorColor = [0.83,0,0,0.814609];
+force ace_finger_indicatorForSelf = true;
+force ace_finger_maxRange = 6.5;
+force ace_finger_proximityScaling = true;
 force ace_finger_sizeCoef = 1;
 
 // ACE Pylons
@@ -644,10 +440,10 @@ force ace_quickmount_distance = 3;
 force ace_quickmount_enabled = true;
 ace_quickmount_enableMenu = 3;
 ace_quickmount_priority = 0;
-force ace_quickmount_speed = 18;
+force ace_quickmount_speed = 10;
 
 // ACE Repair
-force ace_repair_addSpareParts = true;
+force ace_repair_addSpareParts = false;
 force ace_repair_autoShutOffEngineWhenStartingRepair = true;
 force ace_repair_consumeItem_toolKit = 0;
 force ace_repair_displayTextOnRepair = true;
@@ -659,16 +455,16 @@ force ace_repair_fullRepairLocation = 3;
 force ace_repair_fullRepairRequiredItems = ["ace_repair_anyToolKit"];
 force ace_repair_locationsBoostTraining = true;
 force ace_repair_miscRepairRequiredItems = ["ace_repair_anyToolKit"];
-force ace_repair_miscRepairTime = 15;
+force ace_repair_miscRepairTime = 10;
 force ace_repair_patchWheelEnabled = 0;
 force ace_repair_patchWheelLocation = ["ground","vehicle"];
-force ace_repair_patchWheelMaximumRepair = 0.3;
-force ace_repair_patchWheelRequiredItems = ["ace_repair_anyToolKit"];
+force ace_repair_patchWheelMaximumRepair = 0;
+force ace_repair_patchWheelRequiredItems = [];
 force ace_repair_patchWheelTime = 5;
 force ace_repair_repairDamageThreshold = 0.6;
-force ace_repair_repairDamageThreshold_engineer = 0.4;
-force ace_repair_timeCoefficientFullRepair = 1.5;
-force ace_repair_wheelChangeTime = 10;
+force ace_repair_repairDamageThreshold_engineer = 0.3;
+force ace_repair_timeCoefficientFullRepair = 1;
+force ace_repair_wheelChangeTime = 5;
 force ace_repair_wheelRepairRequiredItems = [];
 
 // ACE Respawn
@@ -880,10 +676,6 @@ acre_sys_zeus_zeusCanSpectate = true;
 acre_sys_zeus_zeusCommunicateViaCamera = true;
 acre_sys_zeus_zeusDefaultVoiceSource = false;
 
-// Advanced Developer Tools
-force DBUG_alwaysShowConsole = false;
-force DBUG_replaceDebugConsole = true;
-
 // Advanced Urban Rappelling
 force AUR_ADVANCED_RAPPELING_ITEMS_NEEDED = 0;
 force AUR_ADVANCED_RAPPELING_NEW_ACTION = false;
@@ -992,7 +784,7 @@ force WBK_DeathAnimMod_Hit_PLR = true;
 
 // GRAD slingHelmet
 force GRAD_slingHelmet_additionalList = "";
-force GRAD_slingHelmet_allowAll = false;
+force GRAD_slingHelmet_allowAll = true;
 
 // GRAD Trenches
 force grad_trenches_functions_allowBigEnvelope = true;
@@ -1071,7 +863,7 @@ storm_fx_particle_SET_PlayerCoef = 1;
 // TSP Animate
 force tsp_cba_animate_attachment = false;
 tsp_cba_animate_Bang = true;
-tsp_cba_animate_Bird = true;
+force tsp_cba_animate_Bird = false;
 tsp_cba_animate_black = "[""optic_tws_mg""]";
 tsp_cba_animate_Breach = true;
 tsp_cba_animate_Cancel = true;
@@ -1088,7 +880,7 @@ force tsp_cba_animate_grenade = false;
 tsp_cba_animate_Horns = true;
 tsp_cba_animate_Inspect = true;
 tsp_cba_animate_Ivan = true;
-tsp_cba_animate_Jackoff = true;
+force tsp_cba_animate_Jackoff = false;
 tsp_cba_animate_Kata = true;
 force tsp_cba_animate_ladder = false;
 tsp_cba_animate_Loser = true;
@@ -1107,7 +899,7 @@ tsp_cba_animate_Rock = true;
 tsp_cba_animate_Scissors = true;
 force tsp_cba_animate_shake = 0;
 force tsp_cba_animate_sling = false;
-tsp_cba_animate_sling_add = false;
+force tsp_cba_animate_sling_add = false;
 tsp_cba_animate_sling_pos = "[[0.1, 0.8, 0.15], [-90, 40, 70]]";
 tsp_cba_animate_sling_scroll = true;
 force tsp_cba_animate_sling_sprint = false;
@@ -1115,7 +907,7 @@ tsp_cba_animate_sound = 0.5;
 force tsp_cba_animate_sprint = false;
 tsp_cba_animate_Squats = true;
 tsp_cba_animate_Stefan = true;
-tsp_cba_animate_Suicide = true;
+force tsp_cba_animate_Suicide = false;
 tsp_cba_animate_tactical = true;
 tsp_cba_animate_tap = true;
 force tsp_cba_animate_throw = true;
@@ -1126,7 +918,7 @@ tsp_cba_animate_walk_max = 1.6;
 force tsp_cba_animate_watch = false;
 tsp_cba_animate_Zozo = true;
 force tsp_cba_radio = true;
-tsp_cba_radio_aiming = true;
+force tsp_cba_radio_aiming = true;
 tsp_cba_radio_headsets = "[""G_WirelessEarpiece_F""]";
 tsp_cba_radio_helmets = "[""NCR_Helmet15th"",""NCR_Helmet15thBlack"",""NCR_Helmet15thWhite"",""NCR_CVCHelmet15th"",""NCR_CVCHelmet15thBlack"",""NCR_CVCHelmet15thGogglesBlack"",""NCR_CVCHelmet15thGoggles"",""NCR_CVCHelmet15thWhite"",""NCR_CVCHelmet15thGogglesWhite"",""NCR_CVCHelmet15th_Allfather"",""NCR_CVCHelmet15th_Foxo"",""NCR_CVCHelmet15th_Lance"",""NCR_CVCHelmet15th_Roe"",""NCR_CVCHelmet15th_Sunny"",""NCR_CVCHelmet15th_Tato"",""NCR_CVCHelmet15th_Tex"",""NCR_ReconHelmet"",""NCR_ReconHelmetBrown"",""NCR_ReconHelmetGray"",""RA_Slater_helmet"",""RA_Marine_helmet"",""RA_Ranger_helmet"",""power_armor_helmet_t45d_dow""]";
 tsp_cba_radio_preference_acre_bf888s = "Model";
@@ -1301,7 +1093,7 @@ zen_camera_followTerrain = true;
 force zen_common_ascensionMessages = false;
 force zen_common_autoAddObjects = true;
 force zen_common_cameraBird = false;
-zen_common_darkMode = false;
+force zen_common_darkMode = true;
 force zen_common_disableGearAnim = true;
 zen_common_preferredArsenal = 1;
 zen_compat_ace_hideModules = true;
@@ -1318,8 +1110,8 @@ zen_editor_randomizeCopyPaste = false;
 zen_editor_removeWatermark = true;
 zen_editor_unitRadioMessages = 0;
 zen_placement_enabled = false;
-zen_remote_control_cameraExitPosition = 2;
-zen_visibility_enabled = 0;
+zen_remote_control_cameraExitPosition = 4;
+force zen_visibility_enabled = 2;
 zen_visibility_maxDistance = 5000;
 zen_vision_enableBlackHot = false;
 zen_vision_enableBlackHotGreenCold = false;
