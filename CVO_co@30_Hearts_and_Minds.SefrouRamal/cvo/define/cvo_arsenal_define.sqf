@@ -190,7 +190,7 @@ CVO_A_BASE append [
 CVO_A_BASE append [	
 	//actual nvgs
 	//"ACE_NVG_Gen4",
-	//"ACE_NVG_Gen4_WP",
+	"ACE_NVG_Gen3_WP",
 	//armbands
 	"Aegis_NV_G_Armband_Blu_Alt_F",
 	"Aegis_NV_G_Armband_Blu_F",
@@ -391,6 +391,14 @@ CVO_A_BASE append  [
 	"20Rnd_762x51_slr_Snake_tracer_Red_lxWS",
 	//flashlight 
 	"acc_flashlight",
+	//suppressors
+	"muzzle_snds_B",
+	"muzzle_snds_B_arid_F",
+	"muzzle_snds_B_snd_F",
+	"suppressor_h_lxWS",
+	"suppressor_h_arid_lxWS",
+	"suppressor_h_sand_lxWS",
+	"suppressor_h_snake_lxWS",
 	//basic optics
 	"optic_ACO_grn_desert_RF",
 	"optic_ACO_desert_RF",
