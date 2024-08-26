@@ -597,6 +597,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"20Rnd_762x51_Mag_blk_lxWS",
 		"20Rnd_762x51_Mag_snake_lxWS",
 		"ace_20rnd_762x51_mag_tracer",
+
 		//HADES H6 rifle
 		"srifle_h6_blk_rf",
 		"srifle_h6_tan_rf",		
@@ -608,27 +609,34 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"bipod_03_F_blk",
 		"bipod_02_F_blk",
 		"bipod_01_F_blk",
+
 		//ammo
 		"greenmag_ammo_556x45_basic_60Rnd",
 		"greenmag_ammo_556x45_basic_30Rnd",
 		"10Rnd_556x45_AP_Stanag_red_RF",
 		"10Rnd_556x45_AP_Stanag_red_Tan_RF",
+
 		//accessories
 		"optic_DMS",
 		"optic_DMS_snake_lxWS",
 		"suppressor_h_lxWS",
 		"suppressor_h_sand_lxWS",
 		"suppressor_h_snake_lxWS",
+		
+		//Utility
 		"ACE_Tripod",
-		"ACE_RangeCard"
+		"ACE_RangeCard",
+		"Rangefinder"
 		], 
 	{}]],
 	["Drone Operator", [
 		[
 		//gunbag
 		"ace_gunbag_Tan",
+
 		//AR-2 Darter 
 		"ION_UAV_01_backpack_lxWS",
+
 		//GLX grenade launcher and ammo
 		"glaunch_GLX_snake_lxWS",
 		"glaunch_GLX_lxWS",
