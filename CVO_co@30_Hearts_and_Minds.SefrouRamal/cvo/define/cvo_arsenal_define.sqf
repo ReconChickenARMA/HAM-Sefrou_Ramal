@@ -261,7 +261,9 @@ CVO_A_BASE append [
 
 // Vests
 CVO_A_BASE append [
+	
 	"Aegis_V_OCarrierLuchnik_Lite_blk_F",
+	"PLP_UNA_V_PlateCarrier2_F",
 	"PLP_UNA_V_TacVestIR",
 	"PLP_UNA_V_TacVest",
 	"PLP_UNA_V_CarrierRigKBT_01_light_F"
