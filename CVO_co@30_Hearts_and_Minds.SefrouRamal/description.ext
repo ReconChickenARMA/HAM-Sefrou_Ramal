@@ -64,6 +64,18 @@ cba_settings_hasSettingsFile = 1;
 allowFunctionsLog = 1;
 
 
+disableChannels[] =
+{
+	{ 0, true, true }, // Global - Disabled Chat - Disabled voice
+	{ 1, true, true }, // Side
+	{ 2, true, true }, // Command
+	{ 3, false, true }, // Group
+	{ 5, false, true }, // Vehicle
+	{ 5, false, true }  // Direct
+};
+
+
+
 class CfgFunctions {
     // add your own functions below
     #include "cvo\cbrn\CfgFunctions.hpp"
