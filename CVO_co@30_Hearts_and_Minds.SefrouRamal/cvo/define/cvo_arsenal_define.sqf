@@ -181,10 +181,8 @@ CVO_A_BASE append [
 CVO_A_BASE append [
 	"Nikon_DSLR_HUD",
 	"Nikon_DSLR",
-	"Binocular",
-	"Laserdesignator",
-	"LaserdesignatorGPS_01",
-	"Laserbatteries"];
+	"Binocular"
+	];
 
 // NVGs
 CVO_A_BASE append [	
@@ -677,9 +675,11 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"3Rnd_Smoke_Grenade_shell",
 		"3Rnd_SmokeYellow_Grenade_shell",
 		"3Rnd_Pellets_Grenade_shell",
+
 		//FAL para 
 		"arifle_SLR_Para_lxWS",
 		"arifle_SLR_Para_snake_lxWS",
+
 		//FAL GL and ammo
 		"arifle_SLR_GL_lxWS",
 		"arifle_SLR_V_GL_lxWS",
@@ -697,6 +697,12 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"optic_Hamr_snake_lxWS",
 		"optic_Hamr_sand_lxWS",
 		"ItemcTab",
+
+		//Laser Designator
+		"Laserdesignator",
+		"LaserdesignatorGPS_01",
+		"Laserbatteries",
+
 		"ACRE_PRC148"
 		],
 		{}]]
