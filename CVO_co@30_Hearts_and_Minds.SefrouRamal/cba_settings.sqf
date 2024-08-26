@@ -120,7 +120,7 @@ force acex_field_rations_hungerSatiated = 3;
 force acex_field_rations_terrainObjectActions = true;
 force acex_field_rations_thirstQuenched = 1;
 force acex_field_rations_timeWithoutFood = 18;
-force acex_field_rations_timeWithoutWater = 8;
+force acex_field_rations_timeWithoutWater = 7;
 force acex_field_rations_waterSourceActions = 2;
 
 // ACE Fire
@@ -489,9 +489,9 @@ force acex_sitting_enable = true;
 
 // ACE Spectator
 force ace_spectator_enableAI = false;
-ace_spectator_maxFollowDistance = 5;
-force ace_spectator_restrictModes = 0;
-force ace_spectator_restrictVisions = 0;
+force ace_spectator_maxFollowDistance = 5;
+force ace_spectator_restrictModes = 1;
+force ace_spectator_restrictVisions = 1;
 
 // ACE Switch Units
 force ace_switchunits_enableSafeZone = true;

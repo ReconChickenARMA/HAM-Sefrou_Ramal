@@ -11,12 +11,8 @@ enabledebugconsole = 1;
 #include "core\fnc\debug\defines.hpp"
 
 
-
-
 #include "core\fnc\lift\rsc.hpp"
 #include "core\fnc\debug\dlg.hpp"
-
-
 
 
 #include "core\def\param.hpp"
@@ -48,10 +44,10 @@ class Extended_InitPost_EventHandlers {
 };
 
 respawn = 3;
-respawnDelay = 15;
+respawnDelay = 60;
 respawnDialog = 0;
 respawnOnStart = 0;
-respawnTemplates[] = {"Counter","Tickets", "Wave"};
+respawnTemplates[] = {"Counter","Tickets", "Wave","ace_spectator"};
 
 // Disable BI wreck system (H&M handle it internally)
 wreckManagerMode = 0;
