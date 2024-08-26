@@ -120,7 +120,7 @@ force acex_field_rations_hungerSatiated = 3;
 force acex_field_rations_terrainObjectActions = true;
 force acex_field_rations_thirstQuenched = 1;
 force acex_field_rations_timeWithoutFood = 18;
-force acex_field_rations_timeWithoutWater = 8;
+force acex_field_rations_timeWithoutWater = 7;
 force acex_field_rations_waterSourceActions = 2;
 
 // ACE Fire
