@@ -159,7 +159,7 @@ force acex_headless_delay = 60;
 force acex_headless_enabled = true;
 force acex_headless_endMission = 2;
 force acex_headless_log = false;
-force acex_headless_transferLoadout = 1;
+force acex_headless_transferLoadout = 0;
 
 // ACE Hearing
 force ace_hearing_autoAddEarplugsToUnits = 1;
