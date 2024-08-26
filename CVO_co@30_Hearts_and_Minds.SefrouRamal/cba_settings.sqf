@@ -120,7 +120,7 @@ force acex_field_rations_hungerSatiated = 3;
 force acex_field_rations_terrainObjectActions = true;
 force acex_field_rations_thirstQuenched = 1;
 force acex_field_rations_timeWithoutFood = 18;
-force acex_field_rations_timeWithoutWater = 8;
+force acex_field_rations_timeWithoutWater = 7;
 force acex_field_rations_waterSourceActions = 2;
 
 // ACE Fire
@@ -159,7 +159,7 @@ force acex_headless_delay = 60;
 force acex_headless_enabled = true;
 force acex_headless_endMission = 2;
 force acex_headless_log = false;
-force acex_headless_transferLoadout = 1;
+force acex_headless_transferLoadout = 0;
 
 // ACE Hearing
 force ace_hearing_autoAddEarplugsToUnits = 1;
@@ -306,7 +306,7 @@ force ace_medical_treatment_bandageEffectiveness = 1.2;
 force ace_medical_treatment_bandageRollover = true;
 force ace_medical_treatment_clearTrauma = 1;
 force ace_medical_treatment_consumePAK = 1;
-force ace_medical_treatment_consumeSurgicalKit = 2;
+force ace_medical_treatment_consumeSurgicalKit = 0;
 force ace_medical_treatment_convertItems = 0;
 force ace_medical_treatment_cprSuccessChanceMax = 0.85;
 force ace_medical_treatment_cprSuccessChanceMin = 0.15;
@@ -489,9 +489,9 @@ force acex_sitting_enable = true;
 
 // ACE Spectator
 force ace_spectator_enableAI = false;
-ace_spectator_maxFollowDistance = 5;
-force ace_spectator_restrictModes = 0;
-force ace_spectator_restrictVisions = 0;
+force ace_spectator_maxFollowDistance = 5;
+force ace_spectator_restrictModes = 1;
+force ace_spectator_restrictVisions = 1;
 
 // ACE Switch Units
 force ace_switchunits_enableSafeZone = true;
@@ -579,11 +579,11 @@ force ace_viewports_enabled = true;
 
 // ACE View Distance Limiter
 force ace_viewdistance_enabled = true;
-force ace_viewdistance_limitViewDistance = 10000;
-ace_viewdistance_objectViewDistanceCoeff = 0;
-ace_viewdistance_viewDistanceAirVehicle = 0;
-ace_viewdistance_viewDistanceLandVehicle = 0;
-ace_viewdistance_viewDistanceOnFoot = 0;
+force ace_viewdistance_limitViewDistance = 2500;
+force ace_viewdistance_objectViewDistanceCoeff = 0;
+force ace_viewdistance_viewDistanceAirVehicle = 2500;
+force ace_viewdistance_viewDistanceLandVehicle = 2000;
+force ace_viewdistance_viewDistanceOnFoot = 1750;
 
 // ACE View Restriction
 force acex_viewrestriction_mode = 0;
