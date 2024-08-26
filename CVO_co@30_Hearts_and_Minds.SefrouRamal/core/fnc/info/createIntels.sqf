@@ -33,7 +33,10 @@ private _intels = _houses apply {
 
     private _intelObj = createVehicle [selectRandom btc_info_intels, ASLToATL AGLToASL selectRandom (_x buildingPos -1), [], 0, "CAN_COLLIDE"];
     
-    [_intelOBJ] remoteExec ["btc_info_fnc_createIntels_remote", [0,-2] select isDedicated, _intelObj];
+    diag_log format ['[CVO](debug)(createIntels) _intelObj: %1', _intelObj];
+    diag_log format ['[CVO](debug)(createIntels) BTC_info_fnc_createIntels_remote: %1', BTC_info_fnc_createIntels_remote];
+
+    [_intelOBJ] remoteExecCall ["btc_info_fnc_createIntels_remote", [0,-2] select isDedicated, _intelObj];
 };
 
 _city setVariable ["btc_city_intels", _intels];
