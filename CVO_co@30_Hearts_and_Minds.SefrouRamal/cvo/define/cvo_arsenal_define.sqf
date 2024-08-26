@@ -564,7 +564,10 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 
 		], 
 	{}]],
-	["Anti-Tank", [[		
+	["Anti-Tank", [[
+		//gunbag
+		"ace_gunbag_Tan",		
+		
 		//RPG-32
 		//"launch_RPG32_tan_lxWS",
 		//"RPG32_F",
