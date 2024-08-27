@@ -42,12 +42,12 @@ _action = ["Interrogate_intel", localize "STR_BTC_HAM_ACTION_INTEL_INTERROGATE",
 
 
 // Adds search action to items
-/* // relocating this to when the individual intel objects are being created!
+ // relocating this to when the individual intel objects are being created!
+
 _action = ["Search_intel", localize "STR_A3_Showcase_Marksman_BIS_tskIntel_title", "\A3\ui_f\data\igui\cfg\simpleTasks\types\search_ca.paa", {
     [btc_info_fnc_search_for_intel, [_target]] call CBA_fnc_execNextFrame;
 }, {true}] call ace_interact_menu_fnc_createAction;
 {[_x, 0, ["ACE_MainActions"], _action, false] call ace_interact_menu_fnc_addActionToClass;} forEach btc_info_intels;
-*/
 
 
 //Log point
