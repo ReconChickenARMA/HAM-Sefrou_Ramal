@@ -66,8 +66,9 @@ disableChannels[] =
 	{ 1, true, true }, // Side
 	{ 2, true, true }, // Command
 	{ 3, false, true }, // Group
-	{ 5, false, true }, // Vehicle
+	{ 4, false, true }, // Vehicle
 	{ 5, false, true }  // Direct
+	// { 6, false, true }  // Direct
 };
 
 
