@@ -583,7 +583,7 @@ force ace_viewdistance_limitViewDistance = 2500;
 force ace_viewdistance_objectViewDistanceCoeff = 0;
 force ace_viewdistance_viewDistanceAirVehicle = 2500;
 force ace_viewdistance_viewDistanceLandVehicle = 2000;
-force ace_viewdistance_viewDistanceOnFoot = 1750;
+force ace_viewdistance_viewDistanceOnFoot = 2000;
 
 // ACE View Restriction
 force acex_viewrestriction_mode = 0;
