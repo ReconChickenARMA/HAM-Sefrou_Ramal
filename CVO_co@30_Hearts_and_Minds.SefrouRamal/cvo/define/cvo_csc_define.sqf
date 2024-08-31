@@ -34,6 +34,31 @@
 
 private _cvo_csc_source = cvo_csc_source;
 
+/*
+[
+	_cvo_csc_source, 
+	"Night Fight Kit",
+	[
+		[// GL Launcher or UnderBarrelLauncher Rifle, 1],
+		["3Rnd_UGL_FlareYellow_F", 20],
+
+		[// Handheld Flares, 40],
+		
+		["Chemlight_yellow", 25],
+		["ACE_Chemlight_Shield", 10],
+		
+		["ACE_Flashlight_KSF1", 10],
+		//["Handheld Lights", 5],
+		["acc_esd_01_flashlight", 5]
+
+	],
+	"Box_NATO_Equip_F",		// Class of Crate
+	[],						// Array of Backpacks
+	btc_create_object_point
+] call CVO_CSC_fnc_addCSC;
+*/
+
+
 
 [
 	_cvo_csc_source, 		// source obj/class
@@ -74,7 +99,7 @@ private _cvo_csc_source = cvo_csc_source;
 	"Medical Resupply Package",
 	[
 		["ACE_surgicalKit", 1],
-		["ACE_suture", 100],
+		// ["ACE_suture", 100],
 
 		["ACE_bodyBag", 25],
 		["ACE_personalAidKit", 15],
@@ -100,6 +125,8 @@ private _cvo_csc_source = cvo_csc_source;
 		["ACE_personalAidKit", 5],
 		["ACE_salineIV_500", 5],
 		["ACE_Humanitarian_Ration", 25],
+		["ACE_WaterBottle", 25],
+
 		["ACE_fieldDressing", 30],
 		["ACE_packingBandage", 30],
 		["ACE_elasticBandage", 10],
@@ -180,6 +207,21 @@ private _cvo_csc_source = cvo_csc_source;
 	btc_create_object_point
 ] call CVO_CSC_fnc_addCSC;
 
+[
+	_cvo_csc_source, 
+	"UAV Operator Package",
+	[
+		["ACE_UAVBattery", 5],
+		["ACRE_VHF30108SPIKE", 1],
+		["ACRE_VHF30108", 1],
+		["ACRE_VHF30108MAST", 1]
+	],
+	"Box_NATO_Equip_F",		// Class of Crate
+	[
+		["ION_UAV_01_backpack_lxWS", 5]
+	],						// Array of Backpacks
+	btc_create_object_point
+] call CVO_CSC_fnc_addCSC;
 
 [
 	_cvo_csc_source, 						// source obj/class
