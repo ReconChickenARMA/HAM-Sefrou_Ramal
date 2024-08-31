@@ -445,6 +445,8 @@ CVO_A_BASE append   [
 	"SmokeShellRed",
 	"SmokeShellYellow",
 	"MiniGrenade",
+	"Aegis_HandFlare_Green",
+	"Aegis_HandFlare_Red",
 	"ACE_HandFlare_Green",
 	"ACE_HandFlare_Yellow",
 	"ACE_HandFlare_Red",
