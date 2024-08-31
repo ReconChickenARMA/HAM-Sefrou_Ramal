@@ -44,7 +44,7 @@ class Extended_InitPost_EventHandlers {
 };
 
 respawn = 3;
-respawnDelay = 60;
+respawnDelay = 90;
 respawnDialog = 0;
 respawnOnStart = 0;
 respawnTemplates[] = {"Counter","Tickets", "Wave","ace_spectator"};
@@ -64,7 +64,7 @@ disableChannels[] =
 {
 	{ 0, true, true }, // Global - Disabled Chat - Disabled voice
 	{ 1, true, true }, // Side
-	{ 2, true, true }, // Command
+	{ 2, false, true }, // Command
 	{ 3, false, true }, // Group
 	{ 4, false, true }, // Vehicle
 	{ 5, false, true }  // Direct
