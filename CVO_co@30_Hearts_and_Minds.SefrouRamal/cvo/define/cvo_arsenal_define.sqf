@@ -445,6 +445,8 @@ CVO_A_BASE append   [
 	"SmokeShellRed",
 	"SmokeShellYellow",
 	"MiniGrenade",
+	"Aegis_HandFlare_Green",
+	"Aegis_HandFlare_Red",
 	"ACE_HandFlare_Green",
 	"ACE_HandFlare_Yellow",
 	"ACE_HandFlare_Red",
@@ -715,6 +717,12 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"Laserdesignator",
 		"LaserdesignatorGPS_01",
 		"Laserbatteries",
+
+		//ACRE GroundSpike and Mast
+		"ACRE_VHF30108SPIKE", 
+		"ACRE_VHF30108", 
+		"ACRE_VHF30108MAST",
+
 
 		"ACRE_PRC148"
 		],
