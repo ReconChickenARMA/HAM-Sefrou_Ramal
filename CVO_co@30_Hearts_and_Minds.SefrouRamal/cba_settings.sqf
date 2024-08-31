@@ -119,8 +119,8 @@ acex_field_rations_hudType = 0;
 force acex_field_rations_hungerSatiated = 3;
 force acex_field_rations_terrainObjectActions = true;
 force acex_field_rations_thirstQuenched = 1;
-force acex_field_rations_timeWithoutFood = 18;
-force acex_field_rations_timeWithoutWater = 7;
+force acex_field_rations_timeWithoutFood = 14;
+force acex_field_rations_timeWithoutWater = 6;
 force acex_field_rations_waterSourceActions = 2;
 
 // ACE Fire
@@ -268,7 +268,7 @@ ace_maptools_rotateModifierKey = 1;
 force ace_medical_ai_enabledFor = 2;
 force ace_medical_ai_requireItems = 0;
 force ace_medical_AIDamageThreshold = 1.5;
-force ace_medical_bleedingCoefficient = 0.7;
+force ace_medical_bleedingCoefficient = 0.35;
 force ace_medical_blood_bloodLifetime = 2400;
 force ace_medical_blood_enabledFor = 2;
 force ace_medical_blood_maxBloodObjects = 2000;
@@ -291,7 +291,7 @@ force ace_medical_statemachine_AIUnconsciousness = true;
 force ace_medical_statemachine_cardiacArrestBleedoutEnabled = true;
 force ace_medical_statemachine_cardiacArrestTime = 420;
 force ace_medical_statemachine_fatalInjuriesAI = 0;
-force ace_medical_statemachine_fatalInjuriesPlayer = 0;
+force ace_medical_statemachine_fatalInjuriesPlayer = 1;
 force ace_medical_treatment_advancedBandages = 2;
 force ace_medical_treatment_advancedDiagnose = 2;
 force ace_medical_treatment_advancedMedication = true;
@@ -631,7 +631,7 @@ force ace_zeus_zeusBird = false;
 // ACRE2
 force acre_sys_core_automaticAntennaDirection = true;
 acre_sys_core_defaultRadioVolume = 0.8;
-force acre_sys_core_fullDuplex = false;
+force acre_sys_core_fullDuplex = true;
 acre_sys_core_godVolume = 1;
 force acre_sys_core_ignoreAntennaDirection = false;
 force acre_sys_core_interference = false;
