@@ -34,21 +34,21 @@
 
 private _cvo_csc_source = cvo_csc_source;
 
-/*
 [
 	_cvo_csc_source, 
 	"Night Fight Kit",
 	[
-		[// GL Launcher or UnderBarrelLauncher Rifle, 1],
+		["glaunch_GLX_lxWS", 1],
 		["3Rnd_UGL_FlareYellow_F", 20],
 
-		[// Handheld Flares, 40],
+		["Aegis_HandFlare_Green",10],
+		["Aegis_HandFlare_Red",40],
 		
 		["Chemlight_yellow", 25],
 		["ACE_Chemlight_Shield", 10],
 		
 		["ACE_Flashlight_KSF1", 10],
-		//["Handheld Lights", 5],
+		["ACE_Flashlight_Maglite_ML300L", 5],
 		["acc_esd_01_flashlight", 5]
 
 	],
@@ -56,8 +56,6 @@ private _cvo_csc_source = cvo_csc_source;
 	[],						// Array of Backpacks
 	btc_create_object_point
 ] call CVO_CSC_fnc_addCSC;
-*/
-
 
 
 [
@@ -78,6 +76,9 @@ private _cvo_csc_source = cvo_csc_source;
 		["greenmag_ammo_556x45_basic_60Rnd",3],
 		["greenmag_ammo_127x108_basic_60Rnd",2],
 
+		["Aegis_HandFlare_Green",10],
+		["Aegis_HandFlare_Red",10],
+		
 		["HandGrenade",10],
 		["SmokeShell",5],
 		["1Rnd_Smoke_Grenade_shell",5],
