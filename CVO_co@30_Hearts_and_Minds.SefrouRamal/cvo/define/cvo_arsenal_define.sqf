@@ -716,6 +716,12 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"LaserdesignatorGPS_01",
 		"Laserbatteries",
 
+		//ACRE GroundSpike and Mast
+		"ACRE_VHF30108SPIKE", 
+		"ACRE_VHF30108", 
+		"ACRE_VHF30108MAST",
+
+
 		"ACRE_PRC148"
 		],
 		{}]]
