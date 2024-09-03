@@ -19,15 +19,17 @@ switch (_mode) do {
 	case "INIT": {
 		diag_log format["[CVO] [Map] (dateMarker) - Init Params: %1", _this];
 		
-		{
-			cvo_dateMarker = createMarkerLocal [_x, [(worldSize * 1.05), (worldSize - 100 * _foreachindex)];];
-			_x setMarkerTypeLocal   "EmptyIcon";
-			_x setMarkerColorLocal  "ColorBlack";
-			_x setMarkerShapeLocal  "ICON";
-			_x setMarkerShadowLocal true;
-			_x setMarkerTextLocal   "placeholder";
+		for "_i" from 1 to 4 do {
+			private _markerName = ["cvo_dateMarker",_i] joinString "_";
+			createMarkerLocal [ _markerName, [ (worldSize * 1.05), ( worldSize - ( 150 * (_i -1 ) ) ) ] ];
+			_markerName setMarkerTypeLocal   "EmptyIcon";
+			_markerName setMarkerSizeLocal   [1,1];
+			_markerName setMarkerColorLocal  "ColorBlack";
+			_markerName setMarkerShapeLocal  "ICON";
+			_markerName setMarkerShadowLocal true;
+			_markerName setMarkerTextLocal   "placeholder";
 
-		} forEach ["cvo_dateMarker_1", "cvo_dateMarker_2","cvo_dateMarker_3"];
+		};
 		
 		diag_log format["[CVO] [Map] (dateMarker) - %1", "marker placed."];
 
@@ -46,11 +48,10 @@ switch (_mode) do {
             _sunriseTime = [_sunriseTime, "HH:MM"] call BIS_fnc_timeToString;
             _sunsetTime = [_sunsetTime, "HH:MM"] call BIS_fnc_timeToString;
 			
-
-			"cvo_dateMarker_1" setMarkerText format ["Date: %1-%2-%3 - %4 Days since Campaign Start", date#0, date#1, date#2, _pastDays];
-			"cvo_dateMarker_2" setMarkerText format ["Time: %1 - Sunrise %2 - Sunset %3", _daytime,_sunriseTime, _sunsetTime];
-			"cvo_dateMarker_3" setMarkerText format ["Remaining Tickets: %7",[btc_player_side] call BIS_fnc_respawnTickets];
-
+			"cvo_dateMarker_1" setMarkerText format ["Date: %1-%2-%3 - %4", date#0, date#1, date#2, _daytime];
+			"cvo_dateMarker_2" setMarkerText format ["%1 Days since Campaign Start", _pastDays];
+			"cvo_dateMarker_3" setMarkerText format ["Sunrise at %1 - Sunset at %2", _sunriseTime, _sunsetTime];
+			"cvo_dateMarker_4" setMarkerText format ["Remaining Tickets: %1",[btc_player_side] call BIS_fnc_respawnTickets];
 
 		}, 60, _params] call CBA_fnc_addPerFrameHandler;
 	};
