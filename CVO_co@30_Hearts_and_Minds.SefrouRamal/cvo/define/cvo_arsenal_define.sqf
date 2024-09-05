@@ -271,6 +271,8 @@ CVO_A_BASE append [
 
 // Backpacks
 CVO_A_BASE append [
+	"ace_gunbag_Tan",
+
 	"B_LegStrapBag_coyote_F",
 	"B_AssaultPack_cbr",
 	"B_AssaultPackSpec_cbr",
@@ -503,8 +505,9 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"ACE_bloodIV",
 		"ACE_bloodIV_500",
 		"ACE_bloodIV_250",
-		"ACE_surgicalKit",
-		"ACE_suture"],
+		// "ACE_suture",
+		"ACE_surgicalKit"
+	],
 	{}]],
 	["Engineer", [[
 		"arifle_SLR_Para_lxWS",
@@ -569,32 +572,24 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		], 
 	{}]],
 	["Anti-Tank", [[
-		//gunbag
-		"ace_gunbag_Tan",		
-		
+
 		//RPG-32
 		//"launch_RPG32_tan_lxWS",
 		//"RPG32_F",
 		//"RPG32_HE_F",
+
 		//MPRL Compact
 		//"launch_B_Titan_short_F",
 		//"Titan_AT",
-		//GM6 Lynx
-		"srifle_GM6_F",
-		"srifle_GM6_snake_lxWS",
-		"optic_VRCO_RF",
-		"optic_VRCO_tan_RF",
-		"optic_Hamr",
-		"optic_Hamr_snake_lxWS",
-		"optic_Hamr_sand_lxWS",
-		"greenmag_ammo_127x108_basic_30Rnd",
-		"5Rnd_127x108_APDS_Mag",
-		"ACE_Tripod",
+
 		//FAL GL and ammo
 		"arifle_SLR_GL_lxWS",
 		"arifle_SLR_V_GL_lxWS",
 		"1Rnd_50mm_Smoke_lxWS",
-		"1Rnd_58mm_AT_lxWS"
+		"1Rnd_58mm_AT_lxWS",
+
+		// Single Use
+		"launch_NLAW_F"
 		], 
 	{}]],
 	["Marksman", [[
@@ -638,9 +633,6 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 	{}]],
 	["Drone Operator", [
 		[
-		//gunbag
-		"ace_gunbag_Tan",
-
 		//AR-2 Darter 
 		"ION_UAV_01_backpack_lxWS",
 
@@ -648,8 +640,10 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"glaunch_GLX_snake_lxWS",
 		"glaunch_GLX_lxWS",
 		"glaunch_GLX_tan_lxWS",
+
 		"1Rnd_RC40_HE_shell_RF",
 		"1Rnd_RC40_shell_RF",
+
 		"1Rnd_RC40_SmokeBlue_shell_RF",
 		"1Rnd_RC40_SmokeGreen_shell_RF",
 		"1Rnd_RC40_SmokeOrange_shell_RF",
@@ -674,33 +668,16 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 	{}]],
 	["Officer", [
 		[
-		//GLX grenade launcher and ammo
-		"glaunch_GLX_snake_lxWS",
-		"glaunch_GLX_lxWS",
-		"glaunch_GLX_tan_lxWS",
-		"3Rnd_UGL_FlareGreen_F",
-		"3Rnd_UGL_FlareRed_F",
-		"3Rnd_UGL_FlareWhite_F",
-		"3Rnd_UGL_FlareYellow_F",
-		"3Rnd_SmokeBlue_Grenade_shell",
-		"3Rnd_SmokeGreen_Grenade_shell",
-		"3Rnd_SmokeOrange_Grenade_shell",
-		"3Rnd_SmokePurple_Grenade_shell",
-		"3Rnd_SmokeRed_Grenade_shell",
-		"3Rnd_Smoke_Grenade_shell",
-		"3Rnd_SmokeYellow_Grenade_shell",
-		"3Rnd_Pellets_Grenade_shell",
-
 		//FAL para 
 		"arifle_SLR_Para_lxWS",
 		"arifle_SLR_Para_snake_lxWS",
 
-		//FAL GL and ammo
+		//FAL GL and Smoke-RifleGrenade
 		"arifle_SLR_GL_lxWS",
 		"arifle_SLR_V_GL_lxWS",
-		"1Rnd_40mm_HE_lxWS",
 		"1Rnd_50mm_Smoke_lxWS",
-		"1Rnd_58mm_AT_lxWS",
+
+
 		//officer uniform
 		"U_lxWS_UN_Camo1",
 		"lxWS_H_Beret_Colonel",
@@ -714,6 +691,8 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"ItemcTab",
 
 		//Laser Designator
+		"Rangefinder",
+
 		"Laserdesignator",
 		"LaserdesignatorGPS_01",
 		"Laserbatteries",
