@@ -63,10 +63,9 @@ private _cvo_csc_source = cvo_csc_source;
 	"General Ammo Package",	// Name String
 	[
 		["Aegis_20Rnd_762x51_slr_reload_tracer_red_lxWS",10],
-		//["3Rnd_UGL_FlareWhite_F",5], // <- not part of the arsenal as of now?
+
 		["1Rnd_50mm_Smoke_lxWS",5],
 		["1Rnd_58mm_AT_lxWS",5],
-		//["3Rnd_HE_Grenade_shell",5], // <- not part of the arsenal as of now?
 
 		["1Rnd_RC40_HE_shell_RF", 3],
 		["1Rnd_RC40_shell_RF", 3],
@@ -115,7 +114,11 @@ private _cvo_csc_source = cvo_csc_source;
 	],
 	"ACE_medicalSupplyCrate_advanced",		// Class of Crate
 	[],						// Array of Backpacks
-	btc_create_object_point
+	btc_create_object_point,
+	createHashMapFromArray [
+		["ace_medical_facility", true],
+		["ace_cargo_setSize", 2]
+	]
 ] call CVO_CSC_fnc_addCSC;
 
 
@@ -212,14 +215,14 @@ private _cvo_csc_source = cvo_csc_source;
 	_cvo_csc_source, 
 	"UAV Operator Package",
 	[
-		["ACE_UAVBattery", 5],
+		["ACE_UAVBattery", 10],
 		["ACRE_VHF30108SPIKE", 1],
 		["ACRE_VHF30108", 1],
 		["ACRE_VHF30108MAST", 1]
 	],
 	"Box_NATO_Equip_F",		// Class of Crate
 	[
-		["ION_UAV_01_backpack_lxWS", 5]
+		["ION_UAV_01_backpack_lxWS", 4]
 	],						// Array of Backpacks
 	btc_create_object_point
 ] call CVO_CSC_fnc_addCSC;
@@ -268,7 +271,7 @@ private _cvo_csc_source = cvo_csc_source;
 	createHashMapFromArray [
 		["ace_repair_facility", true],
 
-		["ace_cargo_setSize", 0],
+		["ace_cargo_setSize", 3],
 		["ace_carry_canCarry", false],
 		["ace_cargo_add_jerrycans", 1],
 		["ace_cargo_add_spareWheels",2]
