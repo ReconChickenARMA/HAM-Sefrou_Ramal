@@ -271,6 +271,8 @@ CVO_A_BASE append [
 
 // Backpacks
 CVO_A_BASE append [
+	"ace_gunbag_Tan",
+
 	"B_LegStrapBag_coyote_F",
 	"B_AssaultPack_cbr",
 	"B_AssaultPackSpec_cbr",
@@ -503,8 +505,9 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"ACE_bloodIV",
 		"ACE_bloodIV_500",
 		"ACE_bloodIV_250",
-		"ACE_surgicalKit",
-		"ACE_suture"],
+		// "ACE_suture",
+		"ACE_surgicalKit"
+	],
 	{}]],
 	["Engineer", [[
 		"arifle_SLR_Para_lxWS",
@@ -630,9 +633,6 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 	{}]],
 	["Drone Operator", [
 		[
-		//gunbag
-		"ace_gunbag_Tan",
-
 		//AR-2 Darter 
 		"ION_UAV_01_backpack_lxWS",
 
@@ -640,8 +640,10 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"glaunch_GLX_snake_lxWS",
 		"glaunch_GLX_lxWS",
 		"glaunch_GLX_tan_lxWS",
+
 		"1Rnd_RC40_HE_shell_RF",
 		"1Rnd_RC40_shell_RF",
+
 		"1Rnd_RC40_SmokeBlue_shell_RF",
 		"1Rnd_RC40_SmokeGreen_shell_RF",
 		"1Rnd_RC40_SmokeOrange_shell_RF",
@@ -670,6 +672,12 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"arifle_SLR_Para_lxWS",
 		"arifle_SLR_Para_snake_lxWS",
 
+		//FAL GL and Smoke-RifleGrenade
+		"arifle_SLR_GL_lxWS",
+		"arifle_SLR_V_GL_lxWS",
+		"1Rnd_50mm_Smoke_lxWS",
+
+
 		//officer uniform
 		"U_lxWS_UN_Camo1",
 		"lxWS_H_Beret_Colonel",
@@ -683,6 +691,8 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"ItemcTab",
 
 		//Laser Designator
+		"Rangefinder",
+
 		"Laserdesignator",
 		"LaserdesignatorGPS_01",
 		"Laserbatteries",
