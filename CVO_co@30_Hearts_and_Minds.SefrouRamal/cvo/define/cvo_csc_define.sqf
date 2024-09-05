@@ -63,9 +63,9 @@ private _cvo_csc_source = cvo_csc_source;
 	"General Ammo Package",	// Name String
 	[
 		["Aegis_20Rnd_762x51_slr_reload_tracer_red_lxWS",10],
-		["1Rnd_40mm_HE_lxWS",10],
 		//["3Rnd_UGL_FlareWhite_F",5], // <- not part of the arsenal as of now?
 		["1Rnd_50mm_Smoke_lxWS",5],
+		["1Rnd_58mm_AT_lxWS",5],
 		//["3Rnd_HE_Grenade_shell",5], // <- not part of the arsenal as of now?
 
 		["1Rnd_RC40_HE_shell_RF", 3],
