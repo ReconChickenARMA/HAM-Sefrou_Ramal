@@ -587,7 +587,9 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"arifle_SLR_V_GL_lxWS",
 		"1Rnd_50mm_Smoke_lxWS",
 		"1Rnd_58mm_AT_lxWS",
-
+		//FAL para 
+		"arifle_SLR_Para_lxWS",
+		"arifle_SLR_Para_snake_lxWS",
 		// Single Use
 		"launch_NLAW_F"
 		], 
