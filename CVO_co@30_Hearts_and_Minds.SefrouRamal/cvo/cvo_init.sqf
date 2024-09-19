@@ -9,7 +9,7 @@ diag_log ("[CVO] [INIT] (cvo_init.sqf) - START");
 
 
 // Init CVO fullHeal at Medical Cabinet
-["Land_PortableCabinet_01_medical_F"] call CVO_Others_fnc_fullHeal;
+["Land_PortableCabinet_01_medical_F"] call CVO_Common_fnc_fullHeal;
 
 
 // Init CVO Foritfy Preset
