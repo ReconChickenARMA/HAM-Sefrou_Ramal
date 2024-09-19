@@ -19,12 +19,12 @@ switch (_mode) do {
 	case "INIT": {
 		diag_log format["[CVO] [Map] (dateMarker) - Init Params: %1", _this];
 		
-		for "_i" from 1 to 4 do {
+		for "_i" from 1 to 5 do {
 			private _markerName = ["cvo_dateMarker",_i] joinString "_";
 			createMarkerLocal [ _markerName, [ (worldSize * 1.05), ( worldSize - ( 150 * (_i -1 ) ) ) ] ];
 			_markerName setMarkerTypeLocal   "EmptyIcon";
 			_markerName setMarkerSizeLocal   [1,1];
-			_markerName setMarkerColorLocal  "ColorBlack";
+			_markerName setMarkerColorLocal  "ColorEAST";
 			_markerName setMarkerShapeLocal  "ICON";
 			_markerName setMarkerShadowLocal true;
 			_markerName setMarkerTextLocal   "placeholder";
@@ -51,9 +51,11 @@ switch (_mode) do {
 			"cvo_dateMarker_1" setMarkerText format ["Date: %1-%2-%3 - %4", date#0, date#1, date#2, _daytime];
 			"cvo_dateMarker_2" setMarkerText format ["%1 Days since Campaign Start", _pastDays];
 			"cvo_dateMarker_3" setMarkerText format ["Sunrise at %1 - Sunset at %2", _sunriseTime, _sunsetTime];
-			"cvo_dateMarker_4" setMarkerText format ["Remaining Tickets: %1",[btc_player_side] call BIS_fnc_respawnTickets];
+			"cvo_dateMarker_4" setMarkerText format ["Time Acceleration: 1 RL Hour equals to %1 IG Hours", timeMultiplier];
+			"cvo_dateMarker_5" setMarkerText format ["Remaining Tickets: %1",[btc_player_side] call BIS_fnc_respawnTickets];
 
 		}, 60, _params] call CBA_fnc_addPerFrameHandler;
+
 	};
 
 	default { diag_log format["[CVO] [Map] (dateMarker) - %1", "No Mode Provided."]; };
