@@ -479,9 +479,9 @@ btc_g_civs = ["HandGrenade", "MiniGrenade", "ACE_M84", "ACE_M84"];
 btc_animals_type = ["Dromedary_01_lxWS", "Dromedary_04_lxWS", "Dromedary_03_lxWS", "Dromedary_02_lxWS", "Hen_random_F", "Cock_random_F", "Fin_random_F", "Alsatian_Random_F", "Goat_random_F", "Sheep_random_F"];
 
 //FOB
-btc_fob_mat = "Land_Cargo20_blue_F";
-btc_fob_structure = "Land_Cargo_HQ_V1_F";
-btc_fob_flag = "Flag_UNO_F";
+btc_fob_mat = "Box_Cargo_Green_RF";
+btc_fob_structure = "cvo_Flag_Olive";
+btc_fob_flag = "Land_MapBoard_F";
 btc_fob_id = 0;
 btc_fob_minDistance = 1500;
 
