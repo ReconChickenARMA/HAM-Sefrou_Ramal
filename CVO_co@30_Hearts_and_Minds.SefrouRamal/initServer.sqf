@@ -14,9 +14,20 @@
 }] call CBA_fnc_addEventHandler;
 
 
-["cvo_EVENT_executeUnitServer", {
+["cvo_common_EH_executeUnit", {
     params ["_unit", "_unitSide"];
 
+    private _value = switch (_unitSide) do {
+        case CIV:               { btc_rep_malus_civ_killed };
+        case btc_player_side:   { 0 };
+        case btc_enemy_side:    { btc_rep_bonus_mil_killed };
+        default                 { 0 };
+    };
+    if (_value == 0) exitWith {};
+
+    _value = _value * -1;
+
+    [_value] call btc_rep_fnc_change;
 }] call CBA_fnc_addEventHandler;
 
 

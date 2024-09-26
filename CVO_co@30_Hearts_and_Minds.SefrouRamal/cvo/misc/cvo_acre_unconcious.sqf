@@ -115,7 +115,6 @@ cvo_babel_localPlayerLanguages call acre_api_fnc_babelSetSpokenLanguages;
         default { cvo_babel_localPlayerLanguages call acre_api_fnc_babelSetSpokenLanguages; };
     };
 }, false] call CBA_fnc_addPlayerEventHandler;
-diag_log "[CVO] [ACRE] (Acre Unconcious) - Init End";
 
 //add action to remote controlled unit to change languages
 
@@ -175,3 +174,5 @@ diag_log "[CVO] [ACRE] (Acre Unconcious) - Init End";
     ["_type", 1, ["ACE_SelfActions"], _aceAction, true] call ace_interact_menu_fnc_addActionToClass;
 
 }] call CBA_fnc_addEventHandler;
+
+diag_log "[CVO] [ACRE] (Acre Unconcious) - Init End";
