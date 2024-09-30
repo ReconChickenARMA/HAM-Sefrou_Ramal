@@ -79,8 +79,8 @@ CVO_A_BASE = [];
 if (isClass (configfile >> "CfgPatches" >> "greenmag_main")) then {
 
 		CVO_A_BASE append [
-			//"greenmag_ammo_556x45_basic_60Rnd",
-			//"greenmag_ammo_556x45_basic_30Rnd",
+			"greenmag_ammo_556x45_basic_60Rnd",
+			"greenmag_ammo_556x45_basic_30Rnd",
 
 			"greenmag_ammo_762x51_basic_60Rnd",
 			"greenmag_ammo_762x51_basic_30Rnd",
@@ -382,6 +382,12 @@ CVO_A_BASE append [
 
 // Rifles
 CVO_A_BASE append  [
+	//HK416 11"
+	"arifle_SPAR_01_blk_F",
+	"arifle_SPAR_01_snd_F",
+	"30Rnd_556x45_Stanag_Tracer_Red",
+	"ace_30rnd_556x45_stanag_mk262_mag",
+	"ace_30rnd_556x45_stanag_tracer_dim",
 	// FALs
 	"arifle_SLR_lxWS",
 	"arifle_SLR_D_lxWS",
@@ -397,10 +403,16 @@ CVO_A_BASE append  [
 	"muzzle_snds_B",
 	"muzzle_snds_B_arid_F",
 	"muzzle_snds_B_snd_F",
+	"muzzle_snds_m_snd_F",
+	"muzzle_snds_M",
 	"suppressor_h_lxWS",
 	"suppressor_h_arid_lxWS",
 	"suppressor_h_sand_lxWS",
 	"suppressor_h_snake_lxWS",
+	"suppressor_l_lxWS",
+	"suppressor_l_arid_lxWS",
+	"suppressor_l_sand_lxWS",
+	"suppressor_l_snake_lxWS",	
 	//basic optics
 	"optic_ACO_grn_desert_RF",
 	"optic_ACO_desert_RF",
@@ -564,6 +576,8 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"Aegis_30Rnd_762x51_slr_tracer_red_lxWS",
 		"30Rnd_762x51_slr_Snake_tracer_Red_lxWS",
 		"30Rnd_762x51_slr_lxWS",
+		//75 rnd 556 mags 
+		"75Rnd_556x45_Stanag_red_lxWS",
 		// Greenmag
 		"greenmag_beltlinked_762x51_basic_100",
 
@@ -614,9 +628,10 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"bipod_02_F_blk",
 		"bipod_01_F_blk",
 
+		//HK416 14.5" 
+		"arifle_SPAR_02_snd_F",
+		"arifle_SPAR_02_blk_F",
 		//ammo
-		"greenmag_ammo_556x45_basic_60Rnd",
-		"greenmag_ammo_556x45_basic_30Rnd",
 		"10Rnd_556x45_AP_Stanag_red_RF",
 		"10Rnd_556x45_AP_Stanag_red_Tan_RF",
 
@@ -642,10 +657,10 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"glaunch_GLX_snake_lxWS",
 		"glaunch_GLX_lxWS",
 		"glaunch_GLX_tan_lxWS",
-
+		"ACE_40mm_Flare_ir",
+		"ACE_40mm_Flare_white",
 		"1Rnd_RC40_HE_shell_RF",
 		"1Rnd_RC40_shell_RF",
-
 		"1Rnd_RC40_SmokeBlue_shell_RF",
 		"1Rnd_RC40_SmokeGreen_shell_RF",
 		"1Rnd_RC40_SmokeOrange_shell_RF",
@@ -679,6 +694,18 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"arifle_SLR_V_GL_lxWS",
 		"1Rnd_50mm_Smoke_lxWS",
 
+		//HK416 11" gl 
+		"arifle_SPAR_01_GL_snd_F",
+		"arifle_SPAR_01_GL_blk_F",
+		"ACE_40mm_Flare_ir",
+		"ACE_40mm_Flare_white",
+		"1Rnd_RC40_HE_shell_RF",
+		"1Rnd_RC40_shell_RF",
+		"1Rnd_RC40_SmokeBlue_shell_RF",
+		"1Rnd_RC40_SmokeGreen_shell_RF",
+		"1Rnd_RC40_SmokeOrange_shell_RF",
+		"1Rnd_RC40_SmokeRed_shell_RF",
+		"1Rnd_RC40_SmokeWhite_shell_RF",
 
 		//officer uniform
 		"U_lxWS_UN_Camo1",
