@@ -48,3 +48,26 @@ private _layerNames = ["btc_vehicles", "Player Vehicles"];
         } forEach _items;
     } forEach _vehicles;
 } forEach _layerNames;
+
+
+
+// TIMEFREEZE
+
+[ { setTimeMultiplier 0.01; } , [], 30] call CBA_fnc_waitAndExecute;
+
+private _condition = { 
+    if (missionNamespace getVariable ["CVO_TIMEFREEZE_exit", false]) exitWith {};
+
+    systemTime params ["", "", "_day", "_hour", "_minute", "", ""];
+    21 >= _hour && { 00 >= _minute }
+};
+
+private _statement = {
+    if (missionNamespace getVariable ["CVO_TIMEFREEZE_exit", false]) exitWith {};
+    setTimeMultiplier 6;
+};
+
+private _parameter = [];
+private _timeout = 2 * 60 * 60;
+
+[_condition, _statement, _parameter, _timeout,_statement] call CBA_fnc_waitUntilAndExecute;
