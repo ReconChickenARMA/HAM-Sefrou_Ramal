@@ -59,7 +59,7 @@ private _condition = {
     if (missionNamespace getVariable ["CVO_TIMEFREEZE_exit", false]) exitWith {};
 
     systemTime params ["", "", "_day", "_hour", "_minute", "", ""];
-    21 >= _hour && { 00 >= _minute }
+    20 >= _hour && { 50 >= _minute }
 };
 
 private _statement = {
@@ -68,6 +68,6 @@ private _statement = {
 };
 
 private _parameter = [];
-private _timeout = 2 * 60 * 60;
+private _timeout = 3 * 60 * 60; // 3hours of timeout
 
 [_condition, _statement, _parameter, _timeout,_statement] call CBA_fnc_waitUntilAndExecute;
