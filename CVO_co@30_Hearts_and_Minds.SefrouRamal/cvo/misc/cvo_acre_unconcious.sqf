@@ -171,7 +171,7 @@ cvo_babel_localPlayerLanguages call acre_api_fnc_babelSetSpokenLanguages;
         }
     ] call ace_interact_menu_fnc_createAction;
 
-    ["_type", 1, ["ACE_SelfActions"], _aceAction, true] call ace_interact_menu_fnc_addActionToClass;
+    [_type, 1, ["ACE_SelfActions"], _aceAction, true] call ace_interact_menu_fnc_addActionToClass;
 
 }] call CBA_fnc_addEventHandler;
 
