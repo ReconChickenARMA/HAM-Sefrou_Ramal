@@ -82,8 +82,8 @@ if (isClass (configfile >> "CfgPatches" >> "greenmag_main")) then {
 			"greenmag_ammo_556x45_basic_60Rnd",
 			"greenmag_ammo_556x45_basic_30Rnd",
 
-			"greenmag_ammo_762x51_basic_60Rnd",
-			"greenmag_ammo_762x51_basic_30Rnd",
+			//"greenmag_ammo_762x51_basic_60Rnd",
+			//"greenmag_ammo_762x51_basic_30Rnd",
 
 			//"greenmag_ammo_545x39_basic_60Rnd",
 			//"greenmag_ammo_545x39_basic_30Rnd",
@@ -388,17 +388,20 @@ CVO_A_BASE append  [
 	"30Rnd_556x45_Stanag_Tracer_Red",
 	"ace_30rnd_556x45_stanag_mk262_mag",
 	"ace_30rnd_556x45_stanag_tracer_dim",
+
 	// FALs
-	"arifle_SLR_lxWS",
-	"arifle_SLR_D_lxWS",
-	"arifle_SLR_V_lxWS",	
+	//"arifle_SLR_lxWS",
+	//"arifle_SLR_D_lxWS",
+	//"arifle_SLR_V_lxWS",	
 	//20rnd magazines
-	"Aegis_20Rnd_762x51_slr_tracer_red_lxWS",
-	"20Rnd_762x51_slr_lxWS",
-	"20Rnd_762x51_slr_desert_lxWS",
-	"20Rnd_762x51_slr_Snake_tracer_Red_lxWS",
+	//"Aegis_20Rnd_762x51_slr_tracer_red_lxWS",
+	//"20Rnd_762x51_slr_lxWS",
+	//"20Rnd_762x51_slr_desert_lxWS",
+	//"20Rnd_762x51_slr_Snake_tracer_Red_lxWS",
 	//flashlight 
 	"acc_flashlight",
+	"saber_light_lxWS",
+	"ACE_DBAL_A3_Red",
 	//suppressors
 	"muzzle_snds_B",
 	"muzzle_snds_B_arid_F",
@@ -506,8 +509,8 @@ CVO_A_BASE append [
 
 CVO_A_HASH_RoleKit = createHashMapFromArray [
 	["Medic", [[
-		"arifle_SLR_Para_lxWS",
-		"arifle_SLR_Para_snake_lxWS",
+		//"arifle_SLR_Para_lxWS",
+		//"arifle_SLR_Para_snake_lxWS",
 		"ACE_quikclot", 
 		"ACE_elasticBandage", 
 		"ACE_adenosine", 
@@ -522,8 +525,8 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 	],
 	{}]],
 	["Engineer", [[
-		"arifle_SLR_Para_lxWS",
-		"arifle_SLR_Para_snake_lxWS",
+		//"arifle_SLR_Para_lxWS",
+		//"arifle_SLR_Para_snake_lxWS",
 		//Helmets and armor 
 		"Aegis_V_OCarrierLuchnik_CQB_blk_F",
 		"H_HelmetHeavy_White_RF",
@@ -565,17 +568,20 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		{}]],
 	["Machinegunner", [[
 		//SS-77 Vektor
-		"LMG_S77_Desert_lxWS",
-		"LMG_S77_lxWS",
-		"LMG_S77_Compact_lxWS",
-		"LMG_S77_Compact_Snakeskin_lxWS",
+		//"LMG_S77_Desert_lxWS",
+		//"LMG_S77_lxWS",
+		//"LMG_S77_Compact_lxWS",
+		//"LMG_S77_Compact_Snakeskin_lxWS",
 		//100 rnd belts
 		"100Rnd_762x51_S77_Red_lxWS",
 		"100Rnd_762x51_S77_lxWS",
 		//30rnd FAL mags
-		"Aegis_30Rnd_762x51_slr_tracer_red_lxWS",
-		"30Rnd_762x51_slr_Snake_tracer_Red_lxWS",
-		"30Rnd_762x51_slr_lxWS",
+		//"Aegis_30Rnd_762x51_slr_tracer_red_lxWS",
+	//	"30Rnd_762x51_slr_Snake_tracer_Red_lxWS",
+		//"30Rnd_762x51_slr_lxWS",
+		//416 14.5"
+		"arifle_SPAR_02_snd_F",
+		"arifle_SPAR_02_blk_F",
 		//75 rnd 556 mags 
 		"75Rnd_556x45_Stanag_red_lxWS",
 		// Greenmag
@@ -602,19 +608,19 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"1Rnd_50mm_Smoke_lxWS",
 		"1Rnd_58mm_AT_lxWS",
 		//FAL para 
-		"arifle_SLR_Para_lxWS",
-		"arifle_SLR_Para_snake_lxWS",
+		//"arifle_SLR_Para_lxWS",
+		//"arifle_SLR_Para_snake_lxWS",
 		// Single Use
 		"launch_NLAW_F"
 		], 
 	{}]],
 	["Marksman", [[
 		//Mk 14 EBR
-		"srifle_EBR_blk_lxWS",
-		"srifle_EBR_snake_lxWS",
-		"20Rnd_762x51_Mag_blk_lxWS",
-		"20Rnd_762x51_Mag_snake_lxWS",
-		"ace_20rnd_762x51_mag_tracer",
+		//"srifle_EBR_blk_lxWS",
+		//"srifle_EBR_snake_lxWS",
+		//"20Rnd_762x51_Mag_blk_lxWS",
+		//"20Rnd_762x51_Mag_snake_lxWS",
+		//"ace_20rnd_762x51_mag_tracer",
 
 		//HADES H6 rifle
 		"srifle_h6_blk_rf",
@@ -636,6 +642,8 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"10Rnd_556x45_AP_Stanag_red_Tan_RF",
 
 		//accessories
+		"optic_AMS",
+		"optic_AMS_snd",
 		"optic_DMS",
 		"optic_DMS_snake_lxWS",
 		"suppressor_h_lxWS",
@@ -679,20 +687,20 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"ACRE_PRC148"],
 	{}]],
 	["Interpreter", [[
-		"arifle_SLR_Para_lxWS",
-		"arifle_SLR_Para_snake_lxWS"		
+		//"arifle_SLR_Para_lxWS",
+		//"arifle_SLR_Para_snake_lxWS"		
 		],
 	{}]],
 	["Officer", [
 		[
 		//FAL para 
-		"arifle_SLR_Para_lxWS",
-		"arifle_SLR_Para_snake_lxWS",
+		//"arifle_SLR_Para_lxWS",
+		//"arifle_SLR_Para_snake_lxWS",
 
 		//FAL GL and Smoke-RifleGrenade
-		"arifle_SLR_GL_lxWS",
-		"arifle_SLR_V_GL_lxWS",
-		"1Rnd_50mm_Smoke_lxWS",
+		//"arifle_SLR_GL_lxWS",
+		//"arifle_SLR_V_GL_lxWS",
+		//"1Rnd_50mm_Smoke_lxWS",
 
 		//HK416 11" gl 
 		"arifle_SPAR_01_GL_snd_F",
@@ -706,6 +714,9 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"1Rnd_RC40_SmokeOrange_shell_RF",
 		"1Rnd_RC40_SmokeRed_shell_RF",
 		"1Rnd_RC40_SmokeWhite_shell_RF",
+		"1Rnd_Smoke_Grenade_shell",
+		"1Rnd_SmokeRed_Grenade_shell",
+		"1Rnd_SmokeGreen_Grenade_shell",
 
 		//officer uniform
 		"U_lxWS_UN_Camo1",
@@ -764,7 +775,7 @@ CVO_A_HASH_PlayerKit = createHashMapFromArray [
 
 [
 	"Rifleman - Basic",
-	[[["arifle_SLR_V_lxWS","","","optic_r1_high_lxWS",["20Rnd_762x51_slr_lxWS",20],[],""],[],[],["U_lxWS_UN_Camo3",[["ACE_packingBandage",10],["ACE_fieldDressing",10],["ACE_morphine",2],["ACE_epinephrine",1],["ACE_tourniquet",2],["ACE_splint",1],["ACE_CableTie",2],["ACE_EarPlugs",2],["ACE_MapTools",1],["ACE_Chemlight_Shield",1],["ACE_bodyBag",2],["acex_intelitems_notepad",1,1],["ACE_Chemlight_Orange",2,1]]],["PLP_UNA_V_CarrierRigKBT_01_light_F",[["ACRE_PRC343",1],["ACE_SpraypaintRed",1],["SmokeShell",2,1],["HandGrenade",2,1],["Aegis_20Rnd_762x51_slr_reload_tracer_red_lxWS",7,20]]],["B_AssaultPackSpec_cbr",[["greenmag_item_speedloader",1],["greenmag_ammo_762x51_basic_60Rnd",5],["ACE_bodyBag",2],["ACE_personalAidKit",1],["ACE_EntrenchingTool",1],["ACE_Humanitarian_Ration",2],["ACE_WaterBottle",2],[selectRandom _rations,1],["ACE_salineIV_500",2],["ace_marker_flags_red",5],["ACE_EarPlugs",2],["Aegis_20Rnd_762x51_slr_reload_tracer_red_lxWS",3,20],["SmokeShell",2,1]]],"PLP_UNA_H_Cap","",["Binocular","","","",[],[],""],["ItemMap","ItemAndroid","","ItemCompass","ItemWatch",""]],[["ace_arsenal_insignia","CVO_insignia_11_PVT"],["grad_slingHelmet","PLP_UNA_H_HelmetB"]]]
+	[[["arifle_SPAR_01_blk_F","","","optic_r1_high_lxWS",["ace_30rnd_556x45_stanag_mk262_mag",20],[],""],[],[],["U_lxWS_UN_Camo3",[["ACE_packingBandage",10],["ACE_fieldDressing",10],["ACE_morphine",2],["ACE_epinephrine",1],["ACE_tourniquet",2],["ACE_splint",1],["ACE_CableTie",2],["ACE_EarPlugs",2],["ACE_MapTools",1],["ACE_Chemlight_Shield",1],["ACE_bodyBag",2],["acex_intelitems_notepad",1,1],["ACE_Chemlight_Orange",2,1]]],["PLP_UNA_V_CarrierRigKBT_01_light_F",[["ACRE_PRC343",1],["ACE_SpraypaintRed",1],["SmokeShell",2,1],["HandGrenade",2,1],["ace_30rnd_556x45_stanag_mk262_mag",7,20]]],["B_AssaultPackSpec_cbr",[["greenmag_item_speedloader",1],["greenmag_ammo_556x45_basic_60Rnd",5],["ACE_bodyBag",2],["ACE_personalAidKit",1],["ACE_EntrenchingTool",1],["ACE_Humanitarian_Ration",2],["ACE_WaterBottle",2],[selectRandom _rations,1],["ACE_salineIV_500",2],["ace_marker_flags_red",5],["ACE_EarPlugs",2],["ace_30rnd_556x45_stanag_mk262_mag",3,20],["SmokeShell",2,1]]],"PLP_UNA_H_Cap","",["Binocular","","","",[],[],""],["ItemMap","ItemAndroid","","ItemCompass","ItemWatch",""]],[["ace_arsenal_insignia","CVO_insignia_11_PVT"],["grad_slingHelmet","PLP_UNA_H_HelmetB"]]]
 ] call ace_arsenal_fnc_addDefaultLoadout;
 
 
