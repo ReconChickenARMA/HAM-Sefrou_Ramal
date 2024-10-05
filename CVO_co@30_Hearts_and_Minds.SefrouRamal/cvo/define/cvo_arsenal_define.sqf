@@ -591,6 +591,13 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		// Greenmag
 		"greenmag_beltlinked_762x51_basic_100",
 
+		"bipod_02_F_arid",
+		"bipod_01_F_snd",
+		"bipod_02_F_tan",
+		"bipod_03_F_blk",
+		"bipod_02_F_blk",
+		"bipod_01_F_blk",
+
 		"ACE_SpareBarrel"
 
 		], 
