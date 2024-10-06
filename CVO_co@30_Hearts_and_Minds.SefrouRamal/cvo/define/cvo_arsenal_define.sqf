@@ -185,15 +185,22 @@ CVO_A_BASE append [
 	"Binocular"
 	];
 
+
+
 // NVGs
 CVO_A_BASE append [	
 	//actual nvgs
-	//"ACE_NVG_Gen4",
-	"ACE_NVG_Gen3_WP",
+	
+    //"NVGoggles_OPFOR",
+    //"NVGoggles",
+    "ACE_NVGoggles_OPFOR_WP",
+    "ACE_NVGoggles_WP",
+
 	//armbands
 	"Aegis_NV_G_Armband_Blu_Alt_F",
 	"Aegis_NV_G_Armband_Blu_F",
-	//cigs and lollipop
+	
+    //cigs and lollipop
 	"immersion_cigs_cigar0_nv",
 	"murshun_cigs_cig0_nv"
 ];
@@ -782,5 +789,6 @@ CVO_A_HASH_PlayerKit = createHashMapFromArray [
 	[[["arifle_SPAR_01_blk_F","","","optic_r1_high_lxWS",["ace_30rnd_556x45_stanag_mk262_mag",20],[],""],[],[],["U_lxWS_UN_Camo3",[["ACE_packingBandage",10],["ACE_fieldDressing",10],["ACE_painkillers",1],["ACE_epinephrine",1],["ACE_tourniquet",2],["ACE_splint",1],["ACE_CableTie",2],["ACE_EarPlugs",2],["ACE_MapTools",1],["ACE_Chemlight_Shield",1],["ACE_bodyBag",2],["acex_intelitems_notepad",1,1],["ACE_Chemlight_Orange",2,1]]],["PLP_UNA_V_CarrierRigKBT_01_light_F",[["ACRE_PRC343",1],["ACE_SpraypaintRed",1],["SmokeShell",2,1],["HandGrenade",2,1],["ace_30rnd_556x45_stanag_mk262_mag",7,20]]],["B_AssaultPackSpec_cbr",[["greenmag_item_speedloader",1],["greenmag_ammo_556x45_basic_60Rnd",5],["ACE_bodyBag",2],["ACE_personalAidKit",1],["ACE_EntrenchingTool",1],["ACE_Humanitarian_Ration",2],["ACE_WaterBottle",2],[selectRandom _rations,1],["ACE_salineIV_500",2],["ace_marker_flags_red",5],["ACE_EarPlugs",2],["ace_30rnd_556x45_stanag_mk262_mag",3,20],["SmokeShell",2,1]]],"PLP_UNA_H_Cap","",["Binocular","","","",[],[],""],["ItemMap","ItemAndroid","","ItemCompass","ItemWatch",""]],[["ace_arsenal_insignia","CVO_insignia_11_PVT"],["grad_slingHelmet","PLP_UNA_H_HelmetB"]]]
 ] call ace_arsenal_fnc_addDefaultLoadout;
 
-
 diag_log ("[CVO] [Arsenal_Define] - completed");
+
+
