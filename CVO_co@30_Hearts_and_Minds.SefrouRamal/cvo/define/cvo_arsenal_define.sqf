@@ -112,7 +112,8 @@ CVO_A_BASE append [
 	"ACE_fieldDressing",
 	"ACE_tourniquet", 
 	"ACE_splint",
-	"ACE_morphine",
+	//"ACE_morphine", medic only
+	"ACE_painkillers",
 	"ACE_epinephrine", 
 	"ACE_salineIV", 
 	"ACE_salineIV_500",
@@ -518,6 +519,9 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 	["Medic", [[
 		//"arifle_SLR_Para_lxWS",
 		//"arifle_SLR_Para_snake_lxWS",
+
+		"ACE_morphine",
+
 		"ACE_quikclot", 
 		"ACE_elasticBandage", 
 		"ACE_adenosine", 
@@ -593,6 +597,13 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"75Rnd_556x45_Stanag_red_lxWS",
 		// Greenmag
 		"greenmag_beltlinked_762x51_basic_100",
+
+		"bipod_02_F_arid",
+		"bipod_01_F_snd",
+		"bipod_02_F_tan",
+		"bipod_03_F_blk",
+		"bipod_02_F_blk",
+		"bipod_01_F_blk",
 
 		"ACE_SpareBarrel"
 
@@ -764,9 +775,9 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 
 CVO_A_HASH_PlayerKit = createHashMapFromArray [
 	["_SP_PLAYER_", 		["Editor Debug", 	["ACE_Banana"],		{systemChat "CVO_A_Playerkit test Successful - ACE_Sandbag_empty Given"; 	["ACE_Sandbag_empty"]}		]	],	
-	["76561197970306509", 	["Zorn", 			["G_Spectacles_Tinted", "G_Balaclava_blk", "H_Beret_blk", "B_LegStrapBag_black_F", "WSLV_Brown_gn_black_Camo", "ACE_SpraypaintBlack", "cvo_Kitbag_blk", "cvo_LegStrapBag_black"],	{[]}	]],
-	["76561198090236234", 	["Recon", 			[],	{[]}	]],
-	["76561198147307775", 	["Clone", 			[],	{[]}	]] 	
+	["76561197970306509", 	["Zorn", 			["G_Spectacles_Tinted", "G_Balaclava_blk", "H_Beret_blk", "B_LegStrapBag_black_F", "WSLV_Brown_gn_black_Camo", "ACE_SpraypaintBlack", "CVO_Kitbag_blk", "CVO_LegStrapBag_black"],	{[]}	]],
+	["76561198090236234", 	["Recon", 			[],	{[]} ]],
+	["76561198147307775", 	["Clone", 			[],	{[]} ]] 	
 ];
 
 
@@ -777,12 +788,12 @@ CVO_A_HASH_PlayerKit = createHashMapFromArray [
 
 [
 	"Rifleman - Empty",
-	[[[],[],[],["U_lxWS_UN_Camo3",[["ACE_packingBandage",10],["ACE_fieldDressing",10],["ACE_morphine",2],["ACE_epinephrine",1],["ACE_tourniquet",2],["ACE_splint",1],["ACE_CableTie",2],["ACE_EarPlugs",2],["ACE_MapTools",1],["ACE_Chemlight_Shield",1],["ACE_bodyBag",2],["acex_intelitems_notepad",1,1],["ACE_Chemlight_Orange",2,1]]],["PLP_UNA_V_CarrierRigKBT_01_light_F",[["ACRE_PRC343",1],["ACE_SpraypaintRed",1],["SmokeShell",2,1],["HandGrenade",2,1]]],["B_LegStrapBag_coyote_F",[["ACE_WaterBottle",2],[selectRandom _rations,1],["ACE_bodyBag",1],["ACE_personalAidKit",1],["ACE_salineIV_250",1],["greenmag_item_speedloader",1],["SmokeShell",2,1]]],"PLP_UNA_H_Cap","",["Binocular","","","",[],[],""],["ItemMap","ItemAndroid","","ItemCompass","ItemWatch",""]],[["ace_arsenal_insignia","CVO_insignia_11_PVT"],["grad_slingHelmet","PLP_UNA_H_HelmetB"]]]
+	[[[],[],[],["U_lxWS_UN_Camo3",[["ACE_packingBandage",10],["ACE_fieldDressing",10],["ACE_painkillers",1],["ACE_epinephrine",1],["ACE_tourniquet",2],["ACE_splint",1],["ACE_CableTie",2],["ACE_EarPlugs",2],["ACE_MapTools",1],["ACE_Chemlight_Shield",1],["ACE_bodyBag",2],["acex_intelitems_notepad",1,1],["ACE_Chemlight_Orange",2,1]]],["PLP_UNA_V_CarrierRigKBT_01_light_F",[["ACRE_PRC343",1],["ACE_SpraypaintRed",1],["SmokeShell",2,1],["HandGrenade",2,1]]],["B_LegStrapBag_coyote_F",[["ACE_WaterBottle",2],[selectRandom _rations,1],["ACE_bodyBag",1],["ACE_personalAidKit",1],["ACE_salineIV_250",1],["greenmag_item_speedloader",1],["SmokeShell",2,1]]],"PLP_UNA_H_Cap","",["Binocular","","","",[],[],""],["ItemMap","ItemAndroid","","ItemCompass","ItemWatch",""]],[["ace_arsenal_insignia","CVO_insignia_11_PVT"],["grad_slingHelmet","PLP_UNA_H_HelmetB"]]]
 ] call ace_arsenal_fnc_addDefaultLoadout;
 
 [
-	"Rifleman - 556 - MK416",
-	[[["arifle_SPAR_01_blk_F","","","Aegis_optic_ICO",["30Rnd_556x45_Stanag_Tracer_Red",30],[],""],[],[],["U_lxWS_UN_Camo3",[["ACE_packingBandage",10],["ACE_fieldDressing",10],["ACE_morphine",2],["ACE_epinephrine",1],["ACE_tourniquet",2],["ACE_splint",1],["ACE_CableTie",2],["ACE_EarPlugs",2],["ACE_MapTools",1],["ACE_Chemlight_Shield",1],["ACE_bodyBag",2],["acex_intelitems_notepad",1,1],["ACE_Chemlight_Orange",2,1]]],["PLP_UNA_V_CarrierRigKBT_01_light_F",[["ACE_SpraypaintRed",1],["ACRE_PRC343",1],["SmokeShell",2,1],["HandGrenade",2,1],["30Rnd_556x45_Stanag_Tracer_Red",10,30]]],["B_LegStrapBag_coyote_F",[["ACE_WaterBottle",2],["ACE_MRE_ChickenHerbDumplings",1],["ACE_bodyBag",1],["ACE_personalAidKit",1],["ACE_salineIV_250",1],["greenmag_item_speedloader",1],["greenmag_ammo_556x45_basic_60Rnd",2],["SmokeShell",2,1]]],"PLP_UNA_H_Cap","",["Binocular","","","",[],[],""],["ItemMap","ItemAndroid","","ItemCompass","ItemWatch",""]],[["ace_arsenal_insignia","CVO_insignia_10_COY_RFL"],["grad_slingHelmet","PLP_UNA_H_HelmetB"]]]
+	"Rifleman - Basic",
+	[[["arifle_SPAR_01_blk_F","","","optic_r1_high_lxWS",["ace_30rnd_556x45_stanag_mk262_mag",20],[],""],[],[],["U_lxWS_UN_Camo3",[["ACE_packingBandage",10],["ACE_fieldDressing",10],["ACE_painkillers",1],["ACE_epinephrine",1],["ACE_tourniquet",2],["ACE_splint",1],["ACE_CableTie",2],["ACE_EarPlugs",2],["ACE_MapTools",1],["ACE_Chemlight_Shield",1],["ACE_bodyBag",2],["acex_intelitems_notepad",1,1],["ACE_Chemlight_Orange",2,1]]],["PLP_UNA_V_CarrierRigKBT_01_light_F",[["ACRE_PRC343",1],["ACE_SpraypaintRed",1],["SmokeShell",2,1],["HandGrenade",2,1],["ace_30rnd_556x45_stanag_mk262_mag",7,20]]],["B_AssaultPackSpec_cbr",[["greenmag_item_speedloader",1],["greenmag_ammo_556x45_basic_60Rnd",5],["ACE_bodyBag",2],["ACE_personalAidKit",1],["ACE_EntrenchingTool",1],["ACE_Humanitarian_Ration",2],["ACE_WaterBottle",2],[selectRandom _rations,1],["ACE_salineIV_500",2],["ace_marker_flags_red",5],["ACE_EarPlugs",2],["ace_30rnd_556x45_stanag_mk262_mag",3,20],["SmokeShell",2,1]]],"PLP_UNA_H_Cap","",["Binocular","","","",[],[],""],["ItemMap","ItemAndroid","","ItemCompass","ItemWatch",""]],[["ace_arsenal_insignia","CVO_insignia_11_PVT"],["grad_slingHelmet","PLP_UNA_H_HelmetB"]]]
 ] call ace_arsenal_fnc_addDefaultLoadout;
 
 diag_log ("[CVO] [Arsenal_Define] - completed");
