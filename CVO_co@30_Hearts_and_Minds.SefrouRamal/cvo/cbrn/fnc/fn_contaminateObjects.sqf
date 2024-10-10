@@ -16,6 +16,8 @@
 			[player_1, player_2] call cvo_cbrn_fnc_contaminateObjects;
 */
 
+if !(isServer) exitWith {};
+
 if ((count _this) < 1) throw "Error: invalid argument (null)";
 
 if (cvo_debug) then {
