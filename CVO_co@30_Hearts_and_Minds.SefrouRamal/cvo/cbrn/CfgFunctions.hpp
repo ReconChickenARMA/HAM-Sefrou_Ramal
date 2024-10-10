@@ -4,6 +4,7 @@ class CVO_CBRN {
 	class Misc {
 		file = "cvo\cbrn\fnc";
 
+        class contaminateObject_reduced;
 		class contaminateObject;
 		class contaminateObjects;
 		class decontaminateObject;
