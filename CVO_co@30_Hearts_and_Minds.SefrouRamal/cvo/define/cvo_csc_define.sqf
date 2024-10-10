@@ -107,7 +107,7 @@ private _cvo_csc_source = cvo_csc_source;
 		["ACE_surgicalKit", 1],
 		// ["ACE_suture", 100],
 
-		["ACE_painkillers", 5];
+		["ACE_painkillers", 5],
 
 		["ACE_bodyBag", 25],
 		["ACE_personalAidKit", 15],
