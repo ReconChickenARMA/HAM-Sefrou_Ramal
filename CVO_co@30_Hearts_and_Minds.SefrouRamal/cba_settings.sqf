@@ -119,8 +119,8 @@ acex_field_rations_hudType = 0;
 force acex_field_rations_hungerSatiated = 3;
 force acex_field_rations_terrainObjectActions = true;
 force acex_field_rations_thirstQuenched = 1;
-force acex_field_rations_timeWithoutFood = 14;
-force acex_field_rations_timeWithoutWater = 6;
+force acex_field_rations_timeWithoutFood = 10;
+force acex_field_rations_timeWithoutWater = 3;
 force acex_field_rations_waterSourceActions = 2;
 
 // ACE Fire
