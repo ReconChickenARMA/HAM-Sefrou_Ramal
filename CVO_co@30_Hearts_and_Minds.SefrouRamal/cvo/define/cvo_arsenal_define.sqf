@@ -579,6 +579,10 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		], 
 		{}]],
 	["Machinegunner", [[
+		//LWMMG
+		"MMG_02_black_F",
+		"MMG_02_sand_F",
+		"130Rnd_338_Mag",
 		//SS-77 Vektor
 		//"LMG_S77_Desert_lxWS",
 		//"LMG_S77_lxWS",
@@ -597,7 +601,11 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		//75 rnd 556 mags 
 		"75Rnd_556x45_Stanag_red_lxWS",
 		// Greenmag
+		"greenmag_beltlinked_338_basic_100",
 		//"greenmag_beltlinked_762x51_basic_100",
+		"ACE_muzzle_mzls_338",
+		"muzzle_snds_338_black",
+		"muzzle_snds_338_sand",
 
 		"bipod_02_F_arid",
 		"bipod_01_F_snd",
