@@ -9,10 +9,12 @@
 * None
 *
 * Example:
-* ['something', player] call cvo_fnc_sth
+* [this, 0.1] call cvo_cbrn_fnc_contaminateObject_reduced;
 *
 * Public: Yes
 */
+
+if !(isServer) exitWith {};
 
 params [
     ["_obj",    objNull,    [objNull]   ],
@@ -21,7 +23,11 @@ params [
 ];
 
 
+
+
 private _helper = createVehicle ["Sign_Sphere25cm_F", [0,0,0]];
+
+_helper hideObjectGlobal true;
 
 [ { [_this] call cvo_cbrn_fnc_contaminateObjects;} , _helper, 5] call CBA_fnc_waitAndExecute;
 
