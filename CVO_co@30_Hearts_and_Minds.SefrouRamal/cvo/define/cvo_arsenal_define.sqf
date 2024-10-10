@@ -521,6 +521,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		//"arifle_SLR_Para_snake_lxWS",
 
 		"ACE_morphine",
+		"ACE_painkillers",
 
 		"ACE_quikclot", 
 		"ACE_elasticBandage", 
@@ -584,8 +585,8 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		//"LMG_S77_Compact_lxWS",
 		//"LMG_S77_Compact_Snakeskin_lxWS",
 		//100 rnd belts
-		"100Rnd_762x51_S77_Red_lxWS",
-		"100Rnd_762x51_S77_lxWS",
+		//"100Rnd_762x51_S77_Red_lxWS",
+		//"100Rnd_762x51_S77_lxWS",
 		//30rnd FAL mags
 		//"Aegis_30Rnd_762x51_slr_tracer_red_lxWS",
 	//	"30Rnd_762x51_slr_Snake_tracer_Red_lxWS",
@@ -596,7 +597,7 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		//75 rnd 556 mags 
 		"75Rnd_556x45_Stanag_red_lxWS",
 		// Greenmag
-		"greenmag_beltlinked_762x51_basic_100",
+		//"greenmag_beltlinked_762x51_basic_100",
 
 		"bipod_02_F_arid",
 		"bipod_01_F_snd",
