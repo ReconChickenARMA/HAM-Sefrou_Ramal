@@ -32,6 +32,7 @@
 */
 
 
+
 private _cvo_csc_source = cvo_csc_source;
 
 [
@@ -62,7 +63,14 @@ private _cvo_csc_source = cvo_csc_source;
 	_cvo_csc_source, 		// source obj/class
 	"General Ammo Package",	// Name String
 	[
-		["Aegis_20Rnd_762x51_slr_reload_tracer_red_lxWS",10],
+
+		["ace_30rnd_556x45_stanag_mk262_mag", 10],
+		["30Rnd_556x45_Stanag_red", 10],
+		["greenmag_ammo_556x45_basic_60Rnd",15],
+
+
+		//["Aegis_20Rnd_762x51_slr_reload_tracer_red_lxWS",10],
+		//["greenmag_ammo_762x51_basic_60Rnd",10],
 
 		["1Rnd_50mm_Smoke_lxWS",5],
 		["1Rnd_58mm_AT_lxWS",5],
@@ -70,10 +78,8 @@ private _cvo_csc_source = cvo_csc_source;
 		["1Rnd_RC40_HE_shell_RF", 3],
 		["1Rnd_RC40_shell_RF", 3],
 
-		["greenmag_ammo_762x51_basic_60Rnd",10],
-		["greenmag_beltlinked_762x51_basic_100",5],
-		["greenmag_ammo_556x45_basic_60Rnd",3],
-		["greenmag_ammo_127x108_basic_60Rnd",2],
+		//["greenmag_beltlinked_762x51_basic_100",5],
+		//["greenmag_ammo_127x108_basic_60Rnd",2],
 
 		["Aegis_HandFlare_Green",10],
 		["Aegis_HandFlare_Red",10],
@@ -81,7 +87,7 @@ private _cvo_csc_source = cvo_csc_source;
 		["HandGrenade",10],
 		["SmokeShell",5],
 		["1Rnd_Smoke_Grenade_shell",5],
-		["100Rnd_762x51_S77_Red_lxWS",5],
+		//["100Rnd_762x51_S77_Red_lxWS",5],
 		["17Rnd_9x21_Mag",10],
 		["ACE_SpareBarrel", 2],
 		["greenmag_ammo_9x21_basic_60Rnd",5],
@@ -100,6 +106,8 @@ private _cvo_csc_source = cvo_csc_source;
 	[
 		["ACE_surgicalKit", 1],
 		// ["ACE_suture", 100],
+
+		["ACE_painkillers", 5];
 
 		["ACE_bodyBag", 25],
 		["ACE_personalAidKit", 15],
@@ -144,14 +152,13 @@ private _cvo_csc_source = cvo_csc_source;
 
 		["ACE_HandFlare_White", 20],
 		
-		["greenmag_ammo_127x108_basic_60Rnd",2],
-		["greenmag_ammo_556x45_basic_60Rnd",3],
+		["greenmag_ammo_556x45_basic_60Rnd", 10],
 
-		["100Rnd_762x51_S77_Red_lxWS",3],
-		["greenmag_beltlinked_762x51_basic_100",10],
+		//["100Rnd_762x51_S77_Red_lxWS",3],
+		//["greenmag_beltlinked_762x51_basic_100",10],
 
-		["Aegis_20Rnd_762x51_slr_reload_tracer_red_lxWS",10],
-		["greenmag_ammo_762x51_basic_60Rnd",10],
+		//["Aegis_20Rnd_762x51_slr_reload_tracer_red_lxWS",10],
+		//["greenmag_ammo_762x51_basic_60Rnd",10],
 
 		["ACE_bodyBag", 10],
 		["greenmag_item_speedloader", 1]
