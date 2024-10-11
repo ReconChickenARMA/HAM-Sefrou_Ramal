@@ -71,3 +71,11 @@ private _parameter = [];
 private _timeout = 3 * 60 * 60; // 3hours of timeout
 
 [_condition, _statement, _parameter, _timeout,_statement] call CBA_fnc_waitUntilAndExecute;
+
+
+// HEATWAVE - Serverside define of CVO_temperatureShift and Broadcast to playerclients and JIP Compatible
+
+[ { 
+    CVO_temperatureShift = 15 + round random 10;
+    publicVariable "CVO_temperatureShift";
+} , [], 7] call CBA_fnc_waitAndExecute;
