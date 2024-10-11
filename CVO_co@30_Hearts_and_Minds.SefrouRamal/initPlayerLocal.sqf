@@ -14,3 +14,8 @@ if !(isNil "texture_01") then {
 
     texture_01 setObjectTexture [0, _texture]; 
 };
+
+// Function to control overwrite ace_weather_temperatureShift to simulate heat wave
+_condition = { ! isNil "ACE_weather_temperatureShift" && { ! isNil "ACE_weather_temperatureShift" } };                // condition - Needs to return bool
+_statement = { [ { ACE_weather_temperatureShift = ACE_weather_temperatureShift + CVO_temperatureShift; } , [], 10] call CBA_fnc_waitAndExecute; };                // Code to be executed once condition true
+[_condition, _statement, [], 120, _statement] call CBA_fnc_waitUntilAndExecute;
