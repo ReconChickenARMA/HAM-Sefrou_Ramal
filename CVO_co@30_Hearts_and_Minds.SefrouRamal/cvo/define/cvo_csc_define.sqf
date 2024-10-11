@@ -67,6 +67,7 @@ private _cvo_csc_source = cvo_csc_source;
 		["ace_30rnd_556x45_stanag_mk262_mag", 10],
 		["30Rnd_556x45_Stanag_red", 10],
 		["greenmag_ammo_556x45_basic_60Rnd",15],
+		["greenmag_beltlinked_338_basic_100",5],
 
 
 		//["Aegis_20Rnd_762x51_slr_reload_tracer_red_lxWS",10],
@@ -153,6 +154,8 @@ private _cvo_csc_source = cvo_csc_source;
 		["ACE_HandFlare_White", 20],
 		
 		["greenmag_ammo_556x45_basic_60Rnd", 10],
+
+		["greenmag_beltlinked_338_basic_100",5],
 
 		//["100Rnd_762x51_S77_Red_lxWS",3],
 		//["greenmag_beltlinked_762x51_basic_100",10],
