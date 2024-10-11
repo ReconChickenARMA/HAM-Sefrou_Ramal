@@ -29,3 +29,4 @@ TOV_fnc_SimpleConvoy = {
         {(vehicle _x) setConvoySeparation _convoySeparation;} forEach (units _convoyGroup);
 	}; 
 };
+

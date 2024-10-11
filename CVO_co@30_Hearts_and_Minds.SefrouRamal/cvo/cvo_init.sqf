@@ -58,3 +58,6 @@ cvo_debug = false;
 //cvo_misc_fnc_eq = compile preprocessFile "cvo\misc\cvo_eq.sqf";
 
 diag_log ("[CVO] [INIT] (cvo_init.sqf) - END");
+
+
+cvo_fnc_leaflet = compileScript ["cvo\misc\cvo_leaflet.sqf"];
