@@ -94,6 +94,9 @@ if (isClass (configfile >> "CfgPatches" >> "greenmag_main")) then {
 			"greenmag_ammo_9x21_basic_60Rnd",
 			"greenmag_ammo_9x21_basic_30Rnd",
 
+			"greenmag_ammo_9x19_basic_60Rnd",
+			"greenmag_ammo_9x19_basic_30Rnd",
+
 			//"greenmag_ammo_45ACP_basic_30Rnd",
 			//"greenmag_ammo_45ACP_basic_60Rnd",
 		
@@ -448,6 +451,14 @@ CVO_A_BASE append  [
 
 // Pistols
 CVO_A_BASE append [
+	//g19x
+	"hgun_Glock19_RF",
+	"hgun_Glock19_Tan_RF",
+	"optic_MRD",
+	"optic_MRD_black",
+	"optic_MRD_tan_RF",
+	"17Rnd_9x19_Mag_RF",
+	"17Rnd_9x19_red_Mag_RF",
 	"acc_flashlight_pistol",
 	"hgun_Rook40_F",
 	"hgun_P07_F",
@@ -630,10 +641,10 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		//"Titan_AT",
 
 		//FAL GL and ammo
-		"arifle_SLR_GL_lxWS",
-		"arifle_SLR_V_GL_lxWS",
-		"1Rnd_50mm_Smoke_lxWS",
-		"1Rnd_58mm_AT_lxWS",
+		//"arifle_SLR_GL_lxWS",
+		//"arifle_SLR_V_GL_lxWS",
+		//"1Rnd_50mm_Smoke_lxWS",
+		//"1Rnd_58mm_AT_lxWS",
 		//FAL para 
 		//"arifle_SLR_Para_lxWS",
 		//"arifle_SLR_Para_snake_lxWS",
