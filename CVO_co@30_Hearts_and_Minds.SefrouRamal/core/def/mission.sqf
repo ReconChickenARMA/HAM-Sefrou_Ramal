@@ -708,8 +708,7 @@ btc_enemy_side = east;//_allclasse select 0;
 btc_type_units = [//SFIA 
 "O_SFIA_medic_lxWS", 
 "O_SFIA_exp_lxWS", 
-"O_SFIA_HeavyGunner_lxWS", 
-"O_SFIA_soldier_at_lxWS", 
+"O_SFIA_HeavyGunner_lxWS",
 "O_SFIA_soldier_lxWS", 
 "O_SFIA_sharpshooter_lxWS", 
 "O_SFIA_Soldier_TL_lxWS",
@@ -731,6 +730,7 @@ btc_type_motorized = [//SFIA Cars
 "O_SFIA_Truck_02_transport_lxWS", 
 "O_SFIA_Truck_02_fuel_lxWS",
 "O_SFIA_Offroad_lxWS",
+"O_SFIA_Offroad_AT_lxWS",
 //Tura Cars
 "O_Tura_Pickup_01_RF", 
 "O_Tura_Offroad_armor_lxWS", 
