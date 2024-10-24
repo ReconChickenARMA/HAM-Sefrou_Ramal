@@ -55,7 +55,10 @@ private _cvo_csc_source = cvo_csc_source;
 	],
 	"Box_NATO_Equip_F",		// Class of Crate
 	[],						// Array of Backpacks
-	btc_create_object_point
+	btc_create_object_point,
+	createHashMapFromArray [
+		["ace_cargo_setSize", 1]
+	]
 ] call CVO_CSC_fnc_addCSC;
 
 
@@ -97,7 +100,10 @@ private _cvo_csc_source = cvo_csc_source;
 	],						// Array
 	"Box_NATO_Ammo_F",		// Class of Crate
 	[],						// Array of Backpacks
-	btc_create_object_point
+	btc_create_object_point,
+	createHashMapFromArray [
+		["ace_cargo_setSize", 1]
+	]
 ] call CVO_CSC_fnc_addCSC;
 
 
@@ -126,7 +132,7 @@ private _cvo_csc_source = cvo_csc_source;
 	btc_create_object_point,
 	createHashMapFromArray [
 		["ace_medical_facility", true],
-		["ace_cargo_setSize", 2]
+		["ace_cargo_setSize", 1]
 	]
 ] call CVO_CSC_fnc_addCSC;
 
@@ -169,7 +175,10 @@ private _cvo_csc_source = cvo_csc_source;
 	],
 	"Box_NATO_Equip_F",		// Class of Crate
 	[],						// Array of Backpacks
-	btc_create_object_point
+	btc_create_object_point,
+	createHashMapFromArray [
+		["ace_cargo_setSize", 1]
+	]
 ] call CVO_CSC_fnc_addCSC;
 
 /*
@@ -218,7 +227,10 @@ private _cvo_csc_source = cvo_csc_source;
 	[
 		["B_SCBA_01_F",4]
 	],	
-	btc_create_object_point
+	btc_create_object_point,
+	createHashMapFromArray [
+		["ace_cargo_setSize", 1]
+	]
 ] call CVO_CSC_fnc_addCSC;
 
 [
@@ -234,7 +246,10 @@ private _cvo_csc_source = cvo_csc_source;
 	[
 		["ION_UAV_01_backpack_lxWS", 4]
 	],						// Array of Backpacks
-	btc_create_object_point
+	btc_create_object_point,
+	createHashMapFromArray [
+		["ace_cargo_setSize", 1]
+	]
 ] call CVO_CSC_fnc_addCSC;
 
 [
@@ -265,7 +280,7 @@ private _cvo_csc_source = cvo_csc_source;
 		["ace_rearm_source", true],
 		["ace_rearm_source_value", 50],
 
-		["ace_cargo_setSize", 2],
+		["ace_cargo_setSize", 1],
 		["ace_carry_canCarry", false]
 	]
 ] call CVO_CSC_fnc_addCSC;
@@ -281,7 +296,7 @@ private _cvo_csc_source = cvo_csc_source;
 	createHashMapFromArray [
 		["ace_repair_facility", true],
 
-		["ace_cargo_setSize", 3],
+		["ace_cargo_setSize", 1],
 		["ace_carry_canCarry", false],
 		["ace_cargo_add_jerrycans", 1],
 		["ace_cargo_add_spareWheels",2]
