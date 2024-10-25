@@ -42,8 +42,12 @@ private _cvo_csc_source = cvo_csc_source;
 		["glaunch_GLX_lxWS", 1],
 		["3Rnd_UGL_FlareYellow_F", 20],
 
-		["Aegis_HandFlare_Green",10],
-		["Aegis_HandFlare_Red",40],
+
+
+		["ACE_HandFlare_Yellow",10],
+		["ACE_HandFlare_Red",40],
+//		["Aegis_HandFlare_Green",10],
+//		["Aegis_HandFlare_Red",40],
 		
 		["Chemlight_yellow", 25],
 		["ACE_Chemlight_Shield", 10],
@@ -85,8 +89,10 @@ private _cvo_csc_source = cvo_csc_source;
 		//["greenmag_beltlinked_762x51_basic_100",5],
 		//["greenmag_ammo_127x108_basic_60Rnd",2],
 
-		["Aegis_HandFlare_Green",10],
-		["Aegis_HandFlare_Red",10],
+		["ACE_HandFlare_Yellow",10],
+		["ACE_HandFlare_Red",10],
+//		["Aegis_HandFlare_Green",10],
+//		["Aegis_HandFlare_Red",10],
 		
 		["HandGrenade",10],
 		["SmokeShell",5],
