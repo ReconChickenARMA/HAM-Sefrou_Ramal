@@ -1,20 +1,20 @@
 /*
 * Author: Zorn
-* This function is to identify and shedule the muezzin calls on WS terrains
+* This function is to schedule the muezzin calls on WS terrains
+* Simply execute on mission start.
+*
+* using SkipTime or sth along these lines might fuck shit up - use brain advised.
 *
 * Arguments:
+* none
 *
 * Return Value:
-* None
+* array - when the calls will be scheduled for that day.
 *
-* Example:
-* [] call cvo_misc_fnc_init_muezzin.sqf
-*
-* Public: Yes
 */
 
-if !(isServer) exitWith {};
 
+if !(isServer) exitWith {};
 
 date call BIS_fnc_sunriseSunsetTime params ["_sunriseTime", "_sunsetTime"]; // [5.28382,18.7162]
 
@@ -23,28 +23,28 @@ date call BIS_fnc_sunriseSunsetTime params ["_sunriseTime", "_sunsetTime"]; // [
 private _statement = { [3 + ceil random 7, selectRandom [1,2]] call lxWS_fnc_StartMuezzin; };
 private _currentDaytime = dayTime;
 
-private _middayTime = _sunriseTime + (_sunsetTime -_sunriseTime) / 2;
-private _midAfternoon = _middayTime + (_sunsetTime - _middayTime) / 2;
+private _return = [];
+private _prayerTimes = [];
 
 // 1. Prayer: Sunrise
-private _timeToCall = _sunriseTime;
-if (_currentDaytime < _timeToCall) then { _condition = { daytime > _this }; [_condition, _statement, _timeToCall] call CBA_fnc_waitUntilAndExecute; };
-
+_prayerTimes pushBack _sunriseTime;
 
 // 2. Prayer: Midpoint between sunrise and sunset
-private _timeToCall = _middayTime;
-if (_currentDaytime < _timeToCall) then { _condition = { daytime > _this }; [_condition, _statement, _timeToCall] call CBA_fnc_waitUntilAndExecute; };
-
+private _middayTime = _sunriseTime + (_sunsetTime -_sunriseTime) / 2;
+_prayerTimes pushBack _middayTime;
 
 // 3. Prayer: Midpoint between Midday and Sunset
-private _timeToCall = _midAfternoon;
-if (_currentDaytime < _timeToCall) then { _condition = { daytime > _this }; [_condition, _statement, _timeToCall] call CBA_fnc_waitUntilAndExecute; };
+private _midAfternoon = _middayTime + (_sunsetTime - _middayTime) / 2;
+_prayerTimes pushBack _midAfternoon;
 
 // 4. Prayer: Sunset
-private _timeToCall = _sunsetTime;
-if (_currentDaytime < _timeToCall) then { _condition = { daytime > _this }; [_condition, _statement, _timeToCall] call CBA_fnc_waitUntilAndExecute; };
+_prayerTimes pushBack _sunsetTime;
 
+// 5. Prayer: After sun has been fully set.  // 5% of daylength so far seem to be the best ratio
+_prayerTimes pushBack ( _sunsetTime + ( _sunsetTime - _sunriseTime ) * 0.05 );
 
-// 5. Prayer: After sun has been fully set. ( lets just do 1.5 hours later)
-private _timeToCall = _sunsetTime + 1.5;
-if (_currentDaytime < _timeToCall) then { _condition = { daytime > _this }; [_condition, _statement, _timeToCall] call CBA_fnc_waitUntilAndExecute; };
+{
+    if (_currentDaytime < _x) then { _condition = { daytime > _this }; [_condition, _statement, _x] call CBA_fnc_waitUntilAndExecute; _return pushBack _x} else { _return pushBack false};
+} forEach _prayerTimes;
+
+_return
