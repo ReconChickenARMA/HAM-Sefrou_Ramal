@@ -79,3 +79,5 @@ private _timeout = 3 * 60 * 60; // 3hours of timeout
     CVO_temperatureShift = 15 + round random 10;
     publicVariable "CVO_temperatureShift";
 } , [], 7] call CBA_fnc_waitAndExecute;
+
+[ { [compileScript ["cvo\misc\cvo_init_muezzin.sqf"]] call CBA_fnc_directCall; } , [], 60 * 30 ] call CBA_fnc_waitAndExecute;
