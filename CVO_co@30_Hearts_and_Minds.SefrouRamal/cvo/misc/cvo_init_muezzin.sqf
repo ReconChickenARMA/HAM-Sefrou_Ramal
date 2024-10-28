@@ -20,7 +20,7 @@ date call BIS_fnc_sunriseSunsetTime params ["_sunriseTime", "_sunsetTime"]; // [
 
 // [<NUMBER> Amount of calls, <NUMBER> Type of Call (1 or 2, default is 1) ] call lxWS_fnc_StartMuezzin;
 
-private _statement = { [3 + ceil random 7, selectRandom [1,2]] call lxWS_fnc_StartMuezzin; };
+private _statement = { [1, 1] call lxWS_fnc_StartMuezzin; };
 private _currentDaytime = dayTime;
 
 private _return = [];
