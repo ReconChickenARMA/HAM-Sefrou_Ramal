@@ -118,7 +118,7 @@ acex_field_rations_hudTransparency = -1;
 acex_field_rations_hudType = 0;
 force acex_field_rations_hungerSatiated = 3;
 force acex_field_rations_terrainObjectActions = true;
-force acex_field_rations_thirstQuenched = 1;
+force acex_field_rations_thirstQuenched = 2.5;
 force acex_field_rations_timeWithoutFood = 6;
 force acex_field_rations_timeWithoutWater = 2;
 force acex_field_rations_waterSourceActions = 2;
@@ -630,19 +630,20 @@ force ace_zeus_zeusBird = false;
 
 // ACRE2
 force acre_sys_core_automaticAntennaDirection = true;
-acre_sys_core_defaultRadioVolume = 0.8;
 force acre_sys_core_fullDuplex = true;
-acre_sys_core_godVolume = 1;
 force acre_sys_core_ignoreAntennaDirection = false;
 force acre_sys_core_interference = false;
-acre_sys_core_postmixGlobalVolume = 1;
-acre_sys_core_premixGlobalVolume = 1.31392;
 force acre_sys_core_revealToAI = 1;
-acre_sys_core_spectatorVolume = 1;
-force acre_sys_core_terrainLoss = 0.40031;
+force acre_sys_core_terrainLoss = 0.4;
 force acre_sys_core_ts3ChannelName = "ACRE - Server 1";
 force acre_sys_core_ts3ChannelPassword = "acre1337";
 force acre_sys_core_ts3ChannelSwitch = true;
+
+acre_sys_core_defaultRadioVolume = 0.8;
+acre_sys_core_godVolume = 1;
+acre_sys_core_postmixGlobalVolume = 1;
+acre_sys_core_premixGlobalVolume = 1.3;
+acre_sys_core_spectatorVolume = 1;
 acre_sys_core_unmuteClients = true;
 force acre_sys_radio_defaultRadio = "ACRE_PRC343";
 force acre_sys_signal_signalModel = 1;
