@@ -66,8 +66,8 @@
 
 		["ACE_HandFlare_Yellow",10],
 		["ACE_HandFlare_Red",10],
-//		["Aegis_HandFlare_Green",10],
-//		["Aegis_HandFlare_Red",10],
+        //		["Aegis_HandFlare_Green",10],
+        //		["Aegis_HandFlare_Red",10],
 		
 		["HandGrenade",10],
 		["SmokeShell",5],
@@ -287,5 +287,3 @@
     ,"Vehicle Maintainance Package"
 */
 ];
-
-
