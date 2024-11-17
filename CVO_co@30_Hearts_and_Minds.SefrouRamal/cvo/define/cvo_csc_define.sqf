@@ -275,7 +275,7 @@
 
 { [cvo_csc_source, _x] call cvo_csc_fnc_link; } forEach [
     "General Ammo Package"
-/*    ,"Combat Patrol Package"
+    ,"Combat Patrol Package"
     ,"Night Fight Kit"
 
     ,"UAV Operator Package"
@@ -285,5 +285,4 @@
     ,"Small Vehicle Ammo Package"
     ,"Vehicle Ammo Package"
     ,"Vehicle Maintainance Package"
-*/
 ];
