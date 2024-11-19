@@ -393,6 +393,10 @@ CVO_A_BASE append [
 
 // Rifles
 CVO_A_BASE append  [
+	//XMS
+	"arifle_XMS_Base_Sand_lxWS",
+	"arifle_XMS_Base_lxWS",
+
 	//HK416 11"
 	"arifle_SPAR_01_blk_F",
 	"arifle_SPAR_01_snd_F",
@@ -548,6 +552,13 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 	],
 	{}]],
 	["Engineer", [[
+		//XMS SG
+		"arifle_XMS_Shot_lxWS",
+		"arifle_XMS_Shot_Sand_lxWS",
+		"6rnd_Smoke_Mag_lxWS",
+		"ACE_6Rnd_12Gauge_Pellets_No0_Buck",
+		"6Rnd_12Gauge_Slug",
+		//FAL Para
 		"arifle_SLR_Para_lxWS",
 		"arifle_SLR_Para_snake_lxWS",
 		//Helmets and armor 
@@ -571,11 +582,15 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		"8Rnd_12Gauge_AA40_Pellets_lxWS",
 		"8Rnd_12Gauge_AA40_Pellets_Snake_lxWS",
 		"8Rnd_12Gauge_AA40_Pellets_Tan_lxWS",
-		
+		"8Rnd_12Gauge_AA40_Smoke_Tan_lxWS",
+		"8Rnd_12Gauge_AA40_Smoke_Snake_lxWS",
+		"8Rnd_12Gauge_AA40_Smoke_lxWS",
+	
 		//M4 Shotgun
 		"sgun_M4_F",
 		"8Rnd_12Gauge_Slug",
 		"8Rnd_12Gauge_Pellets",
+		"Aegis_8Rnd_12Gauge_Smoke",
 		
 		// Explosives
 		"tsp_breach_popper_mag",
@@ -590,6 +605,10 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		], 
 		{}]],
 	["Machinegunner", [[
+		//XMS SW
+		"arifle_XMS_M_lxWS",
+		"arifle_XMS_M_Sand_lxWS",
+
 		//LWMMG
 		//"MMG_02_black_F",
 		//"MMG_02_sand_F",
@@ -653,6 +672,10 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 		], 
 	{}]],
 	["Marksman", [[
+		//XMS SW
+		"arifle_XMS_M_lxWS",
+		"arifle_XMS_M_Sand_lxWS",
+
 		//Mk 14 EBR
 		"srifle_EBR_blk_lxWS",
 		"srifle_EBR_snake_lxWS",
@@ -731,6 +754,10 @@ CVO_A_HASH_RoleKit = createHashMapFromArray [
 	{}]],
 	["Officer", [
 		[
+		//XMS Gl
+		"arifle_XMS_GL_lxWS",
+		"arifle_XMS_GL_Sand_lxWS",
+
 		//FAL para 
 		"arifle_SLR_Para_lxWS",
 		"arifle_SLR_Para_snake_lxWS",
