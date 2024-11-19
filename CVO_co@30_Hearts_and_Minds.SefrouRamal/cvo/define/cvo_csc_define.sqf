@@ -1,53 +1,36 @@
-// ################
-// EXAMPLE USAGE
-// 
-/*
-[
-	btc_create_object, 
-	"Monkey Care Package",
-	[
-		["Ace_banana", 100],
-		["Ace_banana", 100]
-	],
-	"Land_WoodenCrate_01_F"
-] call CVO_CSC_fnc_addCSC;
-*/
-// ################
-
-// ################
-// Vanilla Ammo Crates
-// ################
-/*
-"Box_NATO_Ammo_F", 
-"Box_NATO_Wps_F", 
-"Box_NATO_AmmoOrd_F", 
-"Box_NATO_Equip_F", 
-"Box_NATO_WpsSpecial_F", 
-"Box_NATO_WpsLaunch_F", 
-"Box_NATO_Uniforms_F", 
-"Box_NATO_Support_F", 
-"Box_NATO_AmmoVeh_F", 
-"B_CargoNet_01_ammo_F",
-"ACE_medicalSupplyCrate"
-*/
-
-
-
-private _cvo_csc_source = cvo_csc_source;
+//// DEFINE DEFAULTS
 
 [
-	_cvo_csc_source, 
-	"Night Fight Kit",
+    createHashMapFromArray [
+
+        ["normal_mode", "POS"], 
+        ["spawn_pos", btc_create_object_point],
+
+        ["box_empty", true],
+        ["box_class", "Box_NATO_Equip_F"],
+
+        ["airframe_class", "PLP_UNA_Heli_light_03_unarmed_F"],
+
+        ["airdrop_pos_start", [10250,10250,100]],
+        ["airdrop_pos_end", "RETURN"],
+
+
+		["ace_cargo_setSize", 1]
+    ]
+] call cvo_csc_fnc_defaultEntry;
+
+//// DEFINE CRATES
+
+// NIGHT FIGHT
+
+[
+    "Night Fight Kit",
 	[
 		["glaunch_GLX_lxWS", 1],
 		["3Rnd_UGL_FlareYellow_F", 20],
 
-
-
 		["ACE_HandFlare_Yellow",10],
 		["ACE_HandFlare_Red",40],
-//		["Aegis_HandFlare_Green",10],
-//		["Aegis_HandFlare_Red",40],
 		
 		["Chemlight_yellow", 25],
 		["ACE_Chemlight_Shield", 10],
@@ -55,20 +38,12 @@ private _cvo_csc_source = cvo_csc_source;
 		["ACE_Flashlight_KSF1", 10],
 		["ACE_Flashlight_Maglite_ML300L", 5],
 		["acc_esd_01_flashlight", 5]
-
-	],
-	"Box_NATO_Equip_F",		// Class of Crate
-	[],						// Array of Backpacks
-	btc_create_object_point,
-	createHashMapFromArray [
-		["ace_cargo_setSize", 1]
 	]
-] call CVO_CSC_fnc_addCSC;
+] call cvo_csc_fnc_register;
 
-
+// GENERAL AMMO
 [
-	_cvo_csc_source, 		// source obj/class
-	"General Ammo Package",	// Name String
+    "General Ammo Package",
 	[
 
 		["ace_30rnd_556x45_stanag_mk262_mag", 10],
@@ -91,8 +66,8 @@ private _cvo_csc_source = cvo_csc_source;
 
 		["ACE_HandFlare_Yellow",10],
 		["ACE_HandFlare_Red",10],
-//		["Aegis_HandFlare_Green",10],
-//		["Aegis_HandFlare_Red",10],
+        //		["Aegis_HandFlare_Green",10],
+        //		["Aegis_HandFlare_Red",10],
 		
 		["HandGrenade",10],
 		["SmokeShell",5],
@@ -103,19 +78,14 @@ private _cvo_csc_source = cvo_csc_source;
 		["greenmag_ammo_9x21_basic_60Rnd",5],
 
 		["greenmag_item_speedloader", 4]
-	],						// Array
-	"Box_NATO_Ammo_F",		// Class of Crate
-	[],						// Array of Backpacks
-	btc_create_object_point,
-	createHashMapFromArray [
-		["ace_cargo_setSize", 1]
 	]
-] call CVO_CSC_fnc_addCSC;
+] call cvo_csc_fnc_register;
 
+
+// MEDICAL
 
 [
-	_cvo_csc_source, 
-	"Medical Resupply Package",
+    "Medical Resupply Package",
 	[
 		["ACE_surgicalKit", 1],
 		// ["ACE_suture", 100],
@@ -130,22 +100,23 @@ private _cvo_csc_source = cvo_csc_source;
 
 		["ACE_fieldDressing",  40],
 		["ACE_packingBandage", 40],
-		["ACE_elasticBandage", 50]
+		["ACE_elasticBandage", 50],
+
+        ["ACE_Morphine",5],
+        ["ACE_Epinephrine",10]
 
 	],
-	"ACE_medicalSupplyCrate_advanced",		// Class of Crate
-	[],						// Array of Backpacks
-	btc_create_object_point,
-	createHashMapFromArray [
-		["ace_medical_facility", true],
-		["ace_cargo_setSize", 1]
-	]
-] call CVO_CSC_fnc_addCSC;
+    [],
+    createHashMapFromArray [
+        ["box_class", "ACE_medicalSupplyCrate_advanced"],
+        ["ace_medical_facility", true]
+    ]
+] call cvo_csc_fnc_register;
 
+// Combat Patrol
 
 [
-	_cvo_csc_source, 
-	"Combat Patrol Package",
+    "Combat Patrol Package",
 	[
 		["ACE_personalAidKit", 5],
 		["ACE_salineIV_500", 5],
@@ -178,134 +149,141 @@ private _cvo_csc_source = cvo_csc_source;
 		["ACE_bodyBag", 10],
 		["greenmag_item_speedloader", 1]
 
-	],
-	"Box_NATO_Equip_F",		// Class of Crate
-	[],						// Array of Backpacks
-	btc_create_object_point,
-	createHashMapFromArray [
-		["ace_cargo_setSize", 1]
 	]
-] call CVO_CSC_fnc_addCSC;
+] call cvo_csc_fnc_register;
 
-/*
-[
-	_cvo_csc_source, 
-	"PKM Package",
-	[
-		["rhs_weap_pkm",1],
-		["rhs_100Rnd_762x54mmR", 5],
-		["rhs_100Rnd_762x54mmR_green", 5],
-		["greenmag_beltlinked_762x54_basic_100",20],
-		["greenmag_item_speedloader",1]
-	],
-	"Box_NATO_WpsSpecial_F",		// Class of Crate
-	[],						// Array of Backpacks
-	btc_create_object_point
-] call CVO_CSC_fnc_addCSC;
-*/
 
-/*
-[
-	_cvo_csc_source, 
-	"Metis HAT Package",
-	[
-		["ACE_EntrenchingTool",1],
-		["ace_compat_rhs_afrf3_metis_carry", 1],
-		["ace_compat_rhs_afrf3_mag_9M131F", 3],
-		["ace_compat_rhs_afrf3_mag_9M131M", 7]
-	],
-	"Box_NATO_WpsSpecial_F",		// Class of Crate
-	[],						// Array of Backpacks
-	btc_create_object_point						 
-] call CVO_CSC_fnc_addCSC;
-*/
-
+// CBRN 
 
 [
-	_cvo_csc_source, 
-	"CBRN Package (4 Kits)",
+    "CBRN Package (4 Kits)",
 	[
 		["U_C_CBRN_Suit_01_Blue_F", 4],
 		["G_RegulatorMask_F", 4],
 		["ChemicalDetector_01_watch_F", 4]
 	],
-	"Box_NATO_Uniforms_F",									
 	[
 		["B_SCBA_01_F",4]
-	],	
-	btc_create_object_point,
-	createHashMapFromArray [
-		["ace_cargo_setSize", 1]
-	]
-] call CVO_CSC_fnc_addCSC;
+	],
+    createHashMapFromArray [
+        ["box_class", "Box_NATO_Uniforms_F"]
+    ]
+] call cvo_csc_fnc_register;
+
+
+// UAV
 
 [
-	_cvo_csc_source, 
-	"UAV Operator Package",
+    "UAV Operator Package",
 	[
 		["ACE_UAVBattery", 10],
 		["ACRE_VHF30108SPIKE", 1],
 		["ACRE_VHF30108", 1],
 		["ACRE_VHF30108MAST", 1]
 	],
-	"Box_NATO_Equip_F",		// Class of Crate
-	[
+    [
 		["ION_UAV_01_backpack_lxWS", 4]
-	],						// Array of Backpacks
-	btc_create_object_point,
-	createHashMapFromArray [
-		["ace_cargo_setSize", 1]
 	]
-] call CVO_CSC_fnc_addCSC;
+] call cvo_csc_fnc_register;
+
+
+// Vehicle Kits
 
 [
-	_cvo_csc_source, 						// source obj/class
 	"Small Vehicle Ammo Package",			// Name String
 	[],										// Array
-	"Land_Proxy_UsBasicAmmoBoxBig_F",		// Class of Crate
 	[],										// Array of Backpacks
-	btc_create_object_point,
 	createHashMapFromArray [
+        ["box_class", "Land_Proxy_UsBasicAmmoBoxBig_F"],
+
 		["ace_rearm_source", true],
 		["ace_rearm_source_value", 20],
 
-		["ace_cargo_setSize", 1],
 		["ace_carry_canCarry", true]
 	]
-] call CVO_CSC_fnc_addCSC;
+] call cvo_csc_fnc_register;
 
 
 [
-	_cvo_csc_source, 				// source obj/class
 	"Vehicle Ammo Package",			// Name String
 	[],								// Array
-	"VirtualReammoBox_small_F",		// Class of Crate
 	[],								// Array of Backpacks
-	btc_create_object_point,
 	createHashMapFromArray [
-		["ace_rearm_source", true],
-		["ace_rearm_source_value", 50],
+        ["box_class", "VirtualReammoBox_small_F"],
+		["ace_carry_canCarry", false],
 
-		["ace_cargo_setSize", 1],
-		["ace_carry_canCarry", false]
+		["ace_rearm_source", true],
+		["ace_rearm_source_value", 50]
 	]
-] call CVO_CSC_fnc_addCSC;
+] call cvo_csc_fnc_register;
 
 
 [
-	_cvo_csc_source,		 		// source obj/class
 	"Vehicle Maintainance Package",	// Name String
 	[["ToolKit", 1]],				// Array
-	"metalcrate",					// Class of Crate
 	[],								// Array of Backpacks
-	btc_create_object_point,
 	createHashMapFromArray [
+        ["box_class", "metalcrate"],
+
 		["ace_repair_facility", true],
 
-		["ace_cargo_setSize", 1],
 		["ace_carry_canCarry", false],
 		["ace_cargo_add_jerrycans", 1],
 		["ace_cargo_add_spareWheels",2]
 	]
-] call CVO_CSC_fnc_addCSC;
+] call cvo_csc_fnc_register;
 
+
+// SOF - Nightraid
+
+
+[
+	"SOF - Night Raid Kit",	            // Name String
+	[
+		["ACE_IR_Strobe_Item", 15],
+
+		["ACE_NVGoggles_OPFOR_WP", 15],
+
+		["muzzle_snds_L", 10],
+
+		["suppressor_h_lxWS", 10],
+		["suppressor_l_lxWS", 10],
+
+		["acc_flashlight_IR_pistol_RF", 15],
+		["acc_pointer_IR_pistol_RF", 15],
+		["ACE_DBAL_A3_Red", 15],
+		["ACE_40mm_Flare_ir", 15],
+		["optic_Hamr", 5],
+
+		["Laserdesignator",1],
+		["Laserbatteries",2],
+		["DemoCharge_Remote_Mag",5]
+    ],				                // Array
+	[],								// Array of Backpacks
+	createHashMapFromArray [
+        ["box_class", "Land_PlasticCase_01_medium_F"],
+
+		["ace_carry_canCarry", true],
+        ["ace_carry_ignoreWeight", true]
+	]
+] call cvo_csc_fnc_register;
+
+
+//////////// LINKING 
+
+
+
+{ [cvo_csc_source, _x] call cvo_csc_fnc_link; } forEach [
+    "General Ammo Package"
+/*    ,"Combat Patrol Package"
+    ,"Night Fight Kit"
+
+    ,"UAV Operator Package"
+    ,"Medical Resupply Package"
+    ,"CBRN Package (4 Kits)"
+
+    ,"Small Vehicle Ammo Package"
+    ,"Vehicle Ammo Package"
+    ,"Vehicle Maintainance Package"
+*/
+];
