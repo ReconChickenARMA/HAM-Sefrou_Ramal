@@ -109,6 +109,20 @@ if (isClass (configfile >> "CfgPatches" >> "greenmag_main")) then {
 };
 
 
+// Immersion Cigs
+CVO_A_BASE append [
+	"cigs_lighter",
+	"cigs_matches",
+	"cigs_morley_cigpack",
+	"cigs_eckstein_cigpack",
+	"cigs_craven_cigpack",
+	"cigs_lucky_strike_cigpack",
+	"cigs_cigars_cigar0",
+	"cigs_cigars_cigar0_nv",
+	"cigs_pops_poppack",
+	"cigs_crayons_crayonpack"
+];
+
 // Medical 
 CVO_A_BASE append [
 	"ACE_packingBandage",
@@ -142,13 +156,6 @@ CVO_A_BASE append [
 	"ChemicalDetector_01_watch_F",
 	"ItemAndroid",
 	"ItemcTabHCam",
-
-	"immersion_pops_poppack",
-	"murshun_cigs_cigpack",
-	"murshun_cigs_lighter",
-	"murshun_cigs_matches",
-	"immersion_cigs_cigar0",
-	"immersion_cigs_cigar0_nv",
 
 	"ACE_Humanitarian_Ration",
 
@@ -201,11 +208,7 @@ CVO_A_BASE append [
 
 	//armbands
 	"Aegis_NV_G_Armband_Blu_Alt_F",
-	"Aegis_NV_G_Armband_Blu_F",
-	
-    //cigs and lollipop
-	"immersion_cigs_cigar0_nv",
-	"murshun_cigs_cig0_nv"
+	"Aegis_NV_G_Armband_Blu_F"
 ];
 
 
@@ -383,11 +386,8 @@ CVO_A_BASE append [
 	"milgp_f_face_shield_shemagh_RGR",
 	//vanilla+ armbands
 	"Aegis_G_Armband_BLU_F",
-	"Aegis_G_Armband_BLU_alt_F",
-	//cigs and lollipop
-	"immersion_pops_pop0",
-	"murshun_cigs_cig0",
-	"immersion_cigs_cigar0"];
+	"Aegis_G_Armband_BLU_alt_F"
+];
 
 // ###### WEAPONS - MAIN ###### 
 
