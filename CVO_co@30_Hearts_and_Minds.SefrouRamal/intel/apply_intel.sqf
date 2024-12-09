@@ -125,23 +125,30 @@ Subject: FWD: Inquiery of Service - North Africa%1</font>
 Hey Avrakotos,%1
 it's been such a long time since the company party here in marocco! You should come by again soon, we all miss you!%1 But I know, I know...%1%1%1
 
-Oh well, I have a new Inquiry that came in today. Daltgreen Mining Limited. It sounds as boring as usual but they pay is good - let me know what you think!
+Oh well, I have a new Inquiry that came in today. Daltgreen Mining Limited. It sounds as boring as usual but their offer is extraordinary - let me know what you think!
 %1
 %1
 Best, Andrea
-
 %1
-> Our company has maintained a mine in the Sefrou-Ramal region for several years now, but the current security situation requires a more robust security presence than our company can provide.%1
-> We are interested in hiring a team of security personnel from ION, and are able to pay generously.%1The site will require approximately 30 security personnel, as well as vehicles and equipment for them.%1We have housing on-site, but ION will need to supply perishables, such as food and clean water.%1We hope that you are open to accepting this contract, and look forward to a fruitful partnership.%1
-> %1
-> S. Hereford, Daltgreen North Africa Director
+%1
+## FORWARDED MESSAGE ##%1
+%1
+Subject: Inquiery of Service - North Africa%1
+%1
+Our company has maintained a mine in the Sefrou-Ramal region for several years now, but the current security situation requires a more robust security presence than our company can provide.%1%1
+We are interested in hiring a team of security personnel from ION, and are able to pay generously.%1%1
+The site will require approximately 30 security personnel, as well as vehicles and equipment for them.%1%1
+We have housing on-site, but ION will need to supply perishables, such as food and clean water.%1%1
+We hope that you are open to accepting this contract, and look forward to a fruitful partnership.%1%1
+%1
+S. Hereford, Daltgreen North Africa Director%1
 %1
 %1
 %1
 <font size='12' face='EtelkaMonospacePro'>
 From:    manager@daltgreen.sefrouramal.site%1
 To:      g.avrakotos@ion.581.sierraromeo.security%1
-Subject: Q1 2036 Production Results %1</font>
+Subject: A Sensitive Matter %1</font>
 %1
 I appreciate the efforts you have made to turn around a disappointing mine, and your efforts have not gone unnoticed at the head office, but there is still an issue that needs to be resolved on your end.%1
 Daltgreen has limited contracts with hazardous materials disposal companies in the North Africa region, and as of recently, the UNA are keeping tabs on what Daltgreen ships in and out of the region.%1
@@ -212,7 +219,7 @@ Messenger App history with 'Dave':%1</font>%1
 
 private _intel_str_prisoner_cell = format [
 "
-<img width='500' image='%1'/>
+<img width='350' image='%1'/>
 ",
 getMissionPath "intel\IONdumpevidence.paa"
 ];
@@ -247,32 +254,32 @@ See what kinds of things they want in the future, and what we can get from them.
 
 private _intel_str_sfia_map = format [
 "
-<img width='500' image='%1'/>
+<img width='350' image='%1'/>
 ",
 getMissionPath "intel\handdrawnmapws.paa"
 ];
 
 private _intel_str_ion_photo_boys = format [
 "
-<img width='500' image='%1'/>
+<img width='350' image='%1'/>
 ",
 getMissionPath "intel\IONlostfriends.paa"
 ];
 
 private _intel_str_whiteboard_map = format [
 "
-<img width='500' image='%1'/>
+<img width='350' image='%1'/>
 ",
 getMissionPath "intel\whiteboard\whiteboard-overlay-map.paa"
 ];
 
 private _intel_str_whiteboard_science = format [
 "
-<img width='500' image='%2'/>%1
-<img width='500' image='%3'/>%1
-<img width='500' image='%4'/>%1
-<img width='500' image='%5'/>%1
-<img width='500' image='%6'/>%1
+<img width='350' image='%2'/>%1
+<img width='350' image='%3'/>%1
+<img width='350' image='%4'/>%1
+<img width='350' image='%5'/>%1
+<img width='350' image='%6'/>%1
 ",
 "<br />",
 getMissionPath "intel\whiteboard\graphic01.paa",
@@ -284,13 +291,13 @@ getMissionPath "intel\whiteboard\graphic05.paa"
 
 
 private _intelParameters = createHashMapFromArray [
-    [
+    [    
         "intel_laptop_daltgreen_manager",
         [
             true,                               // boolean for "_deleteOnPickup",
             "Search the Laptop for Intel",      // title/text that will show with the intel-action
             _soundPC,                           // Array of Strings - Classnames for _actionSounds - see comment above
-            30,                                 //duration in seconds
+            15,                                 //duration in seconds
             "Daltgreen Laptop: Manager",
             _intel_str_daltgreen_manager
         ]
@@ -301,7 +308,7 @@ private _intelParameters = createHashMapFromArray [
             true,
             "Search the Laptop for Intel",
             _soundPC,     // Array of Strings - Classnames for _actionSounds - see comment above
-            30,     //duration in seconds
+            15,     //duration in seconds
             "Daltgreen Laptop: Finance",
             _intel_str_daltgreen_finance
         ]
@@ -312,7 +319,7 @@ private _intelParameters = createHashMapFromArray [
             true,
             "Search the Cellphone for Intel",
             _soundPC,     // Array of Strings - Classnames for _actionSounds - see comment above
-            30,     //duration in seconds
+            15,     //duration in seconds
             "Daltgreen Cellphone: Unkown",
             _intel_str_daltgreen_cell_unkown
         ]
@@ -323,7 +330,7 @@ private _intelParameters = createHashMapFromArray [
             true,
             "Search the Cellphone for Intel",
             _soundPC,     // Array of Strings - Classnames for _actionSounds - see comment above
-            30,     //duration in seconds
+            15,     //duration in seconds
             "Daltgreen Cellphone: I. Menendez",
             _intel_str_daltgreen_cell_menendez
         ]
@@ -334,7 +341,7 @@ private _intelParameters = createHashMapFromArray [
             true,
             "Search the Laptop for Intel",
             _soundPC,     // Array of Strings - Classnames for _actionSounds - see comment above
-            30,     //duration in seconds
+            15,     //duration in seconds
             "ION Laptop: Manager",
             _intel_str_ion_laptop_manager
         ]
@@ -345,7 +352,7 @@ private _intelParameters = createHashMapFromArray [
             true,
             "Search the Cellphone for Intel",
             _soundPC,     // Array of Strings - Classnames for _actionSounds - see comment above
-            30,     //duration in seconds
+            15,     //duration in seconds
             "ION Cellphone: Manager",
             _intel_str_ion_cellphone
         ]
@@ -356,7 +363,7 @@ private _intelParameters = createHashMapFromArray [
             true,
             "Search the Laptop for Intel",
             _soundPC,     // Array of Strings - Classnames for _actionSounds - see comment above
-            30,     //duration in seconds
+            15,     //duration in seconds
             "Cellphone: Prisoner?",
             _intel_str_prisoner_cell
         ]
@@ -367,7 +374,7 @@ private _intelParameters = createHashMapFromArray [
             true,
             "Investigate the Paper",
             _soundBody,     // Array of Strings - Classnames for _actionSounds - see comment above
-            15,     //duration in seconds
+            3,     //duration in seconds
             "Handwritten Note: Unkown",
             _intel_str_elder_note
         ]
@@ -378,7 +385,7 @@ private _intelParameters = createHashMapFromArray [
             true,
             "Investigate the Paper",
             _soundBody,     // Array of Strings - Classnames for _actionSounds - see comment above
-            15,     //duration in seconds
+            3,     //duration in seconds
             "Memo: Barrels",
             _intel_str_ion_note_barrels
         ]
@@ -389,7 +396,7 @@ private _intelParameters = createHashMapFromArray [
             true,
             "Investigate the Paper",
             _soundBody,     // Array of Strings - Classnames for _actionSounds - see comment above
-            15,     //duration in seconds
+            3,     //duration in seconds
             "Memo: Weapons",
             _intel_str_ion_note_weapons
         ]
@@ -400,7 +407,7 @@ private _intelParameters = createHashMapFromArray [
             true,
             "Investigate the Handdrawn Map",
             _soundBody,     // Array of Strings - Classnames for _actionSounds - see comment above
-            15,     //duration in seconds
+            3,     //duration in seconds
             "Handdrawn Map",
             _intel_str_sfia_map
         ]
@@ -411,50 +418,49 @@ private _intelParameters = createHashMapFromArray [
             true,
             "Investigate the photograph",
             _soundBody,     // Array of Strings - Classnames for _actionSounds - see comment above
-            15,     //duration in seconds
+            3,     //duration in seconds
             "Photograph",
             _intel_str_ion_photo_boys
         ]
     ],
     [
-        "intel_whitebaord-map",
+        "intel_whiteboard_map",
         [
             true,
             "Take the Map from the Whiteboard",
             _soundBody,     // Array of Strings - Classnames for _actionSounds - see comment above
-            10,     //duration in seconds
+            7,     //duration in seconds
             "Whiteboard: Map",
-            _intel_str_whiteboard_map
+            _intel_str_whiteboard_map,
+            1
         ]
     ],
     [
-        "intel_whitebaord-science",
+        "intel_whiteboard_science",
         [
             true,
             "Take the Data from the Whiteboard",
             _soundBody,     // Array of Strings - Classnames for _actionSounds - see comment above
-            20,     //duration in seconds
+            15,     //duration in seconds
             "Whiteboard: Science Data",
-            _intel_str_whiteboard_science
+            _intel_str_whiteboard_science,
+            1
         ]
     ]
 ];
 
 {
     [{ 
-
         private _object = missionNamespace getVariable [_this#0, objNull];
-        _this#1 params ["_deleteOnPickup", "_actionText", "_actionSounds", "_duration", "_title", "_text"];
+        if ( is3DENPreview ) then { _str = format ["intel action added to: %1 - %2", _this#0, _object]; diag_log _str; systemChat _str; };
 
-        private _jipID = ["zen_modules_addIntelAction", [_object, 0, _deleteOnPickup, 0, _actionText, _actionSounds, _duration, _title, _text]] call CBA_fnc_globalEventJIP;
+        _this#1 params ["_deleteOnPickup", "_actionText", "_actionSounds", "_duration", "_title", "_text", ["_actionType", 1, [0]]];
+        if ( is3DENPreview ) then { _duration = 1; };
+        private _jipID = ["zen_modules_addIntelAction", [_object, 0, _deleteOnPickup, _actionType, _actionText, _actionSounds, _duration, _title, _text]] call CBA_fnc_globalEventJIP;
         [_jipID, _object] call CBA_fnc_removeGlobalEventJIP;
         
-    } , [_x,_y], _forEachIndex] call CBA_fnc_waitAndExecute;
+    } , [_x,_y], _forEachIndex + 1] call CBA_fnc_waitAndExecute;
 } forEach _intelParameters;
 
-/*
-// Example
-
-
-[, false, 0, "smol ima123ge", [], 1, "Shmol i123mmge", ]] call CBA_fnc_globalEventJIP;
-*/
+intel_whiteboard_map attachTo [intel_whiteboard, [-0.28,-0.005,0]];
+intel_whiteboard_science attachTo [intel_whiteboard, [0.2,-0.01,0]];
