@@ -21,23 +21,6 @@
 
 */
 
-/*
-#define SOUND_NAMES [ \
-// These are the titles for soundnames
-    "STR_A3_None", \
-    LSTRING(ModuleCreateIntel_LaptopKeyboard), \
-    LSTRING(ModuleCreateIntel_PCKeyboard), \
-    LSTRING(ModuleCreateIntel_SearchBody) \
-]
-
-// These are the sounds needed for _actionSound as a classname
-#define SOUND_CLASSES [ \
-    [], \
-    ["OMIntelGrabLaptop_01", "OMIntelGrabLaptop_02", "OMIntelGrabLaptop_03"], \
-    ["OMIntelGrabPC_01", "OMIntelGrabPC_02", "OMIntelGrabPC_03"], \
-    ["OMIntelGrabBody_01", "OMIntelGrabBody_02", "OMIntelGrabBody_03"] \
-]
-*/
 if !(isServer) exitWith {};
 
 // https://community.bistudio.com/wiki/Structured_Text
@@ -276,6 +259,29 @@ private _intel_str_ion_photo_boys = format [
 getMissionPath "intel\IONlostfriends.paa"
 ];
 
+private _intel_str_whiteboard_map = format [
+"
+<img width='500' image='%1'/>
+",
+getMissionPath "intel\whiteboard\whiteboard-overlay-map.paa"
+];
+
+private _intel_str_whiteboard_science = format [
+"
+<img width='500' image='%2'/>%1
+<img width='500' image='%3'/>%1
+<img width='500' image='%4'/>%1
+<img width='500' image='%5'/>%1
+<img width='500' image='%6'/>%1
+",
+"<br />",
+getMissionPath "intel\whiteboard\graphic01.paa",
+getMissionPath "intel\whiteboard\graphic02.paa",
+getMissionPath "intel\whiteboard\graphic03.paa",
+getMissionPath "intel\whiteboard\graphic04.paa",
+getMissionPath "intel\whiteboard\graphic05.paa"
+];
+
 
 private _intelParameters = createHashMapFromArray [
     [
@@ -409,10 +415,30 @@ private _intelParameters = createHashMapFromArray [
             "Photograph",
             _intel_str_ion_photo_boys
         ]
+    ],
+    [
+        "intel_whitebaord-map",
+        [
+            true,
+            "Take the Map from the Whiteboard",
+            _soundBody,     // Array of Strings - Classnames for _actionSounds - see comment above
+            10,     //duration in seconds
+            "Whiteboard: Map",
+            _intel_str_whiteboard_map
+        ]
+    ],
+    [
+        "intel_whitebaord-science",
+        [
+            true,
+            "Take the Data from the Whiteboard",
+            _soundBody,     // Array of Strings - Classnames for _actionSounds - see comment above
+            20,     //duration in seconds
+            "Whiteboard: Science Data",
+            _intel_str_whiteboard_science
+        ]
     ]
 ];
-
-
 
 {
     [{ 
