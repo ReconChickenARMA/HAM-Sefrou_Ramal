@@ -108,7 +108,7 @@ if (isClass (configfile >> "CfgPatches" >> "greenmag_main")) then {
 
 
 // Immersion Cigs
-CVO_A_BASE append call cigs_core_fnc_getAllItems;
+CVO_A_BASE append [] call cigs_core_fnc_getAllItems;
 
 
 // Medical 
