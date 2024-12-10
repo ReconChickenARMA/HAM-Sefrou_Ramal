@@ -206,11 +206,19 @@ If it got out that we were doing anything illegal with weapons, it could set bac
 private _intel_str_ion_cellphone = format [
 "
 <font size='14' face='EtelkaMonospacePro'>
-Messenger App history with 'Dave':%1</font>%1
+Messenger App history with 'Dave' - 7 days ago:%1</font>%1
 <font size='12' color='#2dc492' face='EtelkaMonospacePro'>Did you hear about the goat herders?</font>%1%1
 <font size='12' color='#2d97fa' face='EtelkaMonospacePro'>No, what stupid shit did they do now?</font>%1%1
 <font size='12' color='#2dc492' face='EtelkaMonospacePro'>Some of them are sick, and apparently the local elder has been chewing the gate guards ear off about it.%1Something about it being our fault?</font>%1%1
-<font size='12' color='#2d97fa' face='EtelkaMonospacePro'>Bullshit, our fault.%1I bet they were scrapping in that old military area again, and got more than they bargained for.</font>%1%1
+<font size='12' color='#2d97fa' face='EtelkaMonospacePro'>Bullshit, our fault.%1I bet they were scrapping in that old military area again, and got more than they bargained for.</font>%1%1%1%1
+<font size='14' face='EtelkaMonospacePro'>
+Messenger App history with 'Steve' - 30 minutes ago:%1</font>%1
+<font size='12' color='#2dc492' face='EtelkaMonospacePro'>Man.. the footballgame was dogshit last night...%1 at least the boss egave us the evening off so we could watch it with a couple of beers. - how was your shift?</font>%1%1
+<font size='12' color='#2d97fa' face='EtelkaMonospacePro'>Dude, i hope your hangover is fucking you up - i had to work since 3 in the morning over here at the pumphouse - my back hurts!</font>%1%1
+<font size='12' color='#2dc492' face='EtelkaMonospacePro'>Gotta go, there is some shit going on at the gate....%1 someone said something about UNA?</font>%1%1
+<font size='12' color='#2d97fa' face='EtelkaMonospacePro'>What? Shit... maybe they are onto us from the shit we pulled in the village?</font>%1%1
+<font size='12' color='#2dc492' face='EtelkaMonospacePro'>BRO!!!!!1111 YOU GOTTA BAIL! They are here to arrest us!</font>%1%1
+<font size='12' color='#2d97fa' face='EtelkaMonospacePro'>FUCK</font>%1%1
 ",
 "<br />"
 ];
@@ -347,7 +355,7 @@ private _intelParameters = createHashMapFromArray [
         ]
     ],
     [
-        "intel_cellphone_ion",
+        "intel_cellphone_ion_survivor",
         [
             true,
             "Search the Cellphone for Intel",
