@@ -73,18 +73,18 @@ More puzzles, every day…%1
 private _intel_str_sfia_science = format [
 "
 <font size='12' face='EtelkaMonospacePro'>
-From:     Dr. Ferhat, SFIA Science Division
-To:      Dr. Oulad, SFIA Science Division
+From:  Dr. Ferhat, SFIA Science Division%1
+To:  Dr. Oulad, SFIA Science Division%1
 Subject: Samples From Scouts %1</font>
 %1
 Dr. Farhan is requesting that we retrieve samples of the hazardous materials our scouts have been investigating for the past few days.%1
 He wants to try mixing some of it into some rations and feeding it to the locals, apparently he’s working on that new initiative that Central Command announced.%1
-1%
-1%
-1%
+%1
+%1
+%1
 <font size='12' face='EtelkaMonospacePro'>
-From:     Dr. Oulad, SFIA Science Division
-To:      Dr. Ferhat, SFIA Science Division
+From: Dr. Oulad, SFIA Science Division%1
+To:  Dr. Ferhat, SFIA Science Division%1
 Subject: Bad Batch %1</font>
 Last batch was too potent, according to those that observed the last field test.%1
 We need to reduce the dose by at least half, and make sure someone gets photos, this time.%1
