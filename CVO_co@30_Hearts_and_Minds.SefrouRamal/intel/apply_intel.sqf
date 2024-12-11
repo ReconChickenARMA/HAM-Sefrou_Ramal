@@ -29,8 +29,34 @@ if !(isServer) exitWith {};
 private _soundPC = ["OMIntelGrabPC_01", "OMIntelGrabPC_02", "OMIntelGrabPC_03","OMIntelGrabLaptop_01", "OMIntelGrabLaptop_02", "OMIntelGrabLaptop_03"];
 private _soundBody = ["OMIntelGrabBody_01", "OMIntelGrabBody_02", "OMIntelGrabBody_03"];
 
-private _intel_str_sfia_diet = format [
+private _intel_str_sfia_regionalCommand = format [
 "
+<font size='12' face='EtelkaMonospacePro'>
+From:     SFIA Intelligence Unit, Sefrou-Ramal
+To:      SFIA Regional Command, Sefrou-Ramal
+Subject: Interrogation Report - Urgent %1</font>
+%1
+Commander, we have gotten some interesting intel from a civilian we captured.%
+The civilian was in possession of a phone when he ran into the patrol that detained him, and was running from something out in the desert.%1
+Kept raving about black figures, shadows come to life.%1
+He showed us the picture, after some prodding, and it looks as though our neighbors to the north have been less than environmentally friendly in their waste disposal practices. %1
+we are holding him for now, he may still have more to tell us.%
+%1
+%1
+%1
+<font size='12' face='EtelkaMonospacePro'>
+From:     SFIA Central Command
+To:      SFIA Regional Command, Sefrou-Ramal
+Subject: A Statement of Intent from Central Command %1</font>
+%1
+The Sefrawi Freedom and Independence Army has always sought national sovereignty, and this policy extends to the natural resources of our beautiful nation.%1
+Unfortunately, roosting atop our national treasure is a den of desert rats, rats that must be driven back into the sands.%1
+We do not seek to kill these rats, but to prove to them that they are not welcome here.%1
+There will be casualties in this process, but we seek a humane solution to this issue, hoping to prevent as many unnecessary deaths as possible%1
+To that end, we will be distributing repurposed aid packages, optimized by our best scientists to drive the rats from their dens, without killing the lot of them.%1
+%1
+%1
+%1
 <font size='12' face='EtelkaMonospacePro'>
 From:     SFIA Central Command
 To:      SFIA Regional Command, Sefrou-Ramal
@@ -43,46 +69,7 @@ More puzzles, every day…%1
 ",
 "<br />"
 ];
-private _intel_str_sfia_badbatch = format [
-"
-<font size='12' face='PuristaMedium'>
-Last batch was too potent, according to those that observed the last field test.%1
-We need to reduce the dose by at least half, and make sure someone gets photos, this time.%1
-Make sure you are not seen by those blue clowns, we are trying to work discreetly.%1
-</font>
-",
-"<br />"
-];
-private _intel_str_sfia_manifesto = format [
-"
-<font size='12' face='EtelkaMonospacePro'>
-From:     SFIA Central Command
-To:      SFIA Regional Command, Sefrou-Ramal
-Subject: A Statement of Intent from Central Command %1</font>
-%1
-The Sefrawi Freedom and Independence Army has always sought national sovereignty, and this policy extends to the natural resources of our beautiful nation.%1
-Unfortunately, roosting atop our national treasure is a den of desert rats, rats that must be driven back into the sands.%1
-We do not seek to kill these rats, but to prove to them that they are not welcome here.%1
-There will be casualties in this process, but we seek a humane solution to this issue, hoping to prevent as many unnecessary deaths as possible%1
-To that end, we will be distributing repurposed aid packages, optimized by our best scientists to drive the rats from their dens, without killing the lot of them.%1
-</font>
-",
-"<br />"
-];
-private _intel_str_sfia_interrogation = format [
-"
-<font size='12' face='EtelkaMonospacePro'>
-From:     SFIA Intelligence Unit, Sefrou-Ramal
-To:      SFIA Regional Command, Sefrou-Ramal
-Subject: Interrogation Report - Urgent %1</font>
-%1
-The subject was in possession of a phone when he ran into the patrol that detained him, and was running from something out in the desert.%1
-Kept raving about black figures, shadows come to life.%1
-He showed us the picture, after some prodding, and it looks as though our neighbors to the north have been less than environmentally friendly in their waste disposal practices. %1
-</font>
-",
-"<br />"
-];
+
 private _intel_str_sfia_science = format [
 "
 <font size='12' face='EtelkaMonospacePro'>
@@ -92,7 +79,16 @@ Subject: Samples From Scouts %1</font>
 %1
 Dr. Farhan is requesting that we retrieve samples of the hazardous materials our scouts have been investigating for the past few days.%1
 He wants to try mixing some of it into some rations and feeding it to the locals, apparently he’s working on that new initiative that Central Command announced.%1
-</font>
+1%
+1%
+1%
+<font size='12' face='EtelkaMonospacePro'>
+From:     Dr. Oulad, SFIA Science Division
+To:      Dr. Ferhat, SFIA Science Division
+Subject: Bad Batch %1</font>
+Last batch was too potent, according to those that observed the last field test.%1
+We need to reduce the dose by at least half, and make sure someone gets photos, this time.%1
+Make sure you are not seen by those blue clowns, we are trying to work discreetly.%1
 ",
 "<br />"
 ];
@@ -407,7 +403,7 @@ private _intelParameters = createHashMapFromArray [
         ]
     ],
     [
-        "intel_cellphone_daltgreen_unkown",
+        "intel_cellphone_daltgreen_unknown",
         [
             true,
             "Search the Cellphone for Intel",
@@ -514,6 +510,40 @@ private _intelParameters = createHashMapFromArray [
             3,     //duration in seconds
             "Photograph",
             _intel_str_ion_photo_boys
+        ]
+    ],
+    [
+        "intel_laptop_sfia_regionalCommand",
+        [
+            true,
+            "Search the Laptop for Intel",
+            _soundPC,     // Array of Strings - Classnames for _actionSounds - see comment above
+            15,     //duration in seconds
+            "SFIA Laptop: Regional Commander",
+            _intel_str_sfia_regionalCommand
+        ]
+    ],
+
+    [
+        "intel_laptop_sfia_science",
+        [
+            true,
+            "Search the Laptop for Intel",
+            _soundPC,     // Array of Strings - Classnames for _actionSounds - see comment above
+            15,     //duration in seconds
+            "SFIA Laptop: Science Division",
+            _intel_str_sfia_science
+        ]
+    ],
+    [
+        "intel_cellphone_sfia",
+        [
+            true,
+            "Search the Cellphone for Intel",
+            _soundPC,     // Array of Strings - Classnames for _actionSounds - see comment above
+            15,     //duration in seconds
+            "SFIA Cellphone: Unknown",
+            _intel_str_sfia_cellphone
         ]
     ],
     [
