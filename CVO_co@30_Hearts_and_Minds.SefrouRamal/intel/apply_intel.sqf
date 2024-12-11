@@ -29,7 +29,92 @@ if !(isServer) exitWith {};
 private _soundPC = ["OMIntelGrabPC_01", "OMIntelGrabPC_02", "OMIntelGrabPC_03","OMIntelGrabLaptop_01", "OMIntelGrabLaptop_02", "OMIntelGrabLaptop_03"];
 private _soundBody = ["OMIntelGrabBody_01", "OMIntelGrabBody_02", "OMIntelGrabBody_03"];
 
+private _intel_str_sfia_diet = format [
+"
+<font size='12' face='EtelkaMonospacePro'>
+From:     SFIA Central Command
+To:      SFIA Regional Command, Sefrou-Ramal
+Subject: Special Diet %1</font>
+%1
+Our scientific division has further refined our new “special diet” and it should work as planned now.%1
+I don’t care how you do it, but get this food to the locals.%1
+It killed the subjects within hours of ingestion, we need to work to extend the onset, and decrease the presenting symptoms.%1
+More puzzles, every day…%1
+",
+"<br />"
+];
+private _intel_str_sfia_badbatch = format [
+"
+<font size='12' face='PuristaMedium'>
+Last batch was too potent, according to those that observed the last field test.%1
+We need to reduce the dose by at least half, and make sure someone gets photos, this time.%1
+Make sure you are not seen by those blue clowns, we are trying to work discreetly.%1
+</font>
+",
+"<br />"
+];
+private _intel_str_sfia_manifesto = format [
+"
+<font size='12' face='EtelkaMonospacePro'>
+From:     SFIA Central Command
+To:      SFIA Regional Command, Sefrou-Ramal
+Subject: A Statement of Intent from Central Command %1</font>
+%1
+The Sefrawi Freedom and Independence Army has always sought national sovereignty, and this policy extends to the natural resources of our beautiful nation.%1
+Unfortunately, roosting atop our national treasure is a den of desert rats, rats that must be driven back into the sands.%1
+We do not seek to kill these rats, but to prove to them that they are not welcome here.%1
+There will be casualties in this process, but we seek a humane solution to this issue, hoping to prevent as many unnecessary deaths as possible%1
+To that end, we will be distributing repurposed aid packages, optimized by our best scientists to drive the rats from their dens, without killing the lot of them.%1
+</font>
+",
+"<br />"
+];
+private _intel_str_sfia_interrogation = format [
+"
+<font size='12' face='EtelkaMonospacePro'>
+From:     SFIA Intelligence Unit, Sefrou-Ramal
+To:      SFIA Regional Command, Sefrou-Ramal
+Subject: Interrogation Report - Urgent %1</font>
+%1
+The subject was in possession of a phone when he ran into the patrol that detained him, and was running from something out in the desert.%1
+Kept raving about black figures, shadows come to life.%1
+He showed us the picture, after some prodding, and it looks as though our neighbors to the north have been less than environmentally friendly in their waste disposal practices. %1
+</font>
+",
+"<br />"
+];
+private _intel_str_sfia_science = format [
+"
+<font size='12' face='EtelkaMonospacePro'>
+From:     Dr. Ferhat, SFIA Science Division
+To:      Dr. Oulad, SFIA Science Division
+Subject: Samples From Scouts %1</font>
+%1
+Dr. Farhan is requesting that we retrieve samples of the hazardous materials our scouts have been investigating for the past few days.%1
+He wants to try mixing some of it into some rations and feeding it to the locals, apparently he’s working on that new initiative that Central Command announced.%1
+</font>
+",
+"<br />"
+];
+private _intel_str_sfia_cellphone = format [
+ "
+<img width='350' image='%1'/>
+",
+getMissionPath "intel\IONdumpevidence.paa"
+,
+"
 
+<font size='14' face='EtelkaMonospacePro'>
+Messenger App history with 'Unknown' - 1 year ago:%1</font>%1
+<font size='12' color='#2dc492' face='EtelkaMonospacePro'>This you?</font>%1%1
+<font size='12' color='#2d97fa' face='EtelkaMonospacePro'>How did you get this number? How did you get that picture?</font>%1%1
+<font size='12' color='#2dc492' face='EtelkaMonospacePro'>Neither of those things matter, at least not right now.%1What matters is that I have evidence of your crimes.%1Conveniently, I am a reasonable man, and I am willing to deal.</font>%1%1
+<font size='12' color='#2d97fa' face='EtelkaMonospacePro'>Deal? Why would I deal with a dead man?</font>%1%1
+<font size='12' color='#2dc492' face='EtelkaMonospacePro'>Show this to your boss, or I will publish the photos now.%1I want to negotiate, but you seem unwilling.</font>%1%1
+<font size='12' color='#2d97fa' face='EtelkaMonospacePro'>Sure, whatever you say.%1But when a metric ton of whoopass lands on your head, don’t blame me.</font>%1%1
+",
+"<br />"
+];
 private _intel_str_daltgreen_manager = format [
 "
 <font size='12' face='EtelkaMonospacePro'>
@@ -84,7 +169,7 @@ G. Avrokotos - Security Chief - $60,000 - paid in cash%1
 "<br />"
 ];
 
-private _intel_str_daltgreen_cell_unkown = format [
+private _intel_str_daltgreen_cell_unknown = format [
 "
 <font size='12' face='EtelkaMonospacePro'>
 Message history:%1
@@ -123,7 +208,7 @@ To:      g.avrakotos@ion.581.sierraromeo.security%1
 Subject: FWD: Inquiery of Service - North Africa%1</font>
 %1
 Hey Avrakotos,%1
-it's been such a long time since the company party here in marocco! You should come by again soon, we all miss you!%1 But I know, I know...%1%1%1
+it's been such a long time since the company party here in Morrocco! You should come by again soon, we all miss you!%1 But I know, I know...%1%1%1
 
 Oh well, I have a new Inquiry that came in today. Daltgreen Mining Limited. It sounds as boring as usual but their offer is extraordinary - let me know what you think!
 %1
@@ -329,7 +414,7 @@ private _intelParameters = createHashMapFromArray [
             _soundPC,     // Array of Strings - Classnames for _actionSounds - see comment above
             15,     //duration in seconds
             "Daltgreen Cellphone: Unkown",
-            _intel_str_daltgreen_cell_unkown
+            _intel_str_daltgreen_cell_unknown
         ]
     ],
     [
