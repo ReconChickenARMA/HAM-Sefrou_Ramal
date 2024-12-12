@@ -32,7 +32,7 @@ private _soundBody = ["OMIntelGrabBody_01", "OMIntelGrabBody_02", "OMIntelGrabBo
 private _intel_str_sfia_regionalCommand = format [
 "
 <font size='12' face='EtelkaMonospacePro'>
-From:     SFIA Intelligence Unit, Sefrou-Ramal
+From:    SFIA Intelligence Unit, Sefrou-Ramal
 To:      SFIA Regional Command, Sefrou-Ramal
 Subject: Interrogation Report - Urgent %1</font>
 %1
@@ -92,14 +92,21 @@ Make sure you are not seen by those blue clowns, we are trying to work discreetl
 ",
 "<br />"
 ];
-private _intel_str_sfia_cellphone = format [
- "
-<img width='350' image='%1'/>
-",
-getMissionPath "intel\IONdumpevidence.paa"
-,
-"
 
+private _intel_str_office_cellphone_toilet = format [
+"
+<font size='14' face='EtelkaMonospacePro'>
+Messenger App History with 'Dad' - 1 year ago:%1</font>%1
+<font size='12' color='#2dc492' face='EtelkaMonospacePro'>Dad? Am I adopted?</font>%1%1
+<font size='12' color='#2d97fa' face='EtelkaMonospacePro'>Fuck no! Why the fuck whould I pick you?</font>%1%1
+<font size='12' color='#2dc492' face='EtelkaMonospacePro'>... :(</font>%1%1
+",
+"<br />"
+];
+
+private _intel_str_sfia_cellphone = format [
+"
+<img width='350' image='%2'/>%1%1
 <font size='14' face='EtelkaMonospacePro'>
 Messenger App history with 'Unknown' - 1 year ago:%1</font>%1
 <font size='12' color='#2dc492' face='EtelkaMonospacePro'>This you?</font>%1%1
@@ -109,8 +116,10 @@ Messenger App history with 'Unknown' - 1 year ago:%1</font>%1
 <font size='12' color='#2dc492' face='EtelkaMonospacePro'>Show this to your boss, or I will publish the photos now.%1I want to negotiate, but you seem unwilling.</font>%1%1
 <font size='12' color='#2d97fa' face='EtelkaMonospacePro'>Sure, whatever you say.%1But when a metric ton of whoopass lands on your head, don’t blame me.</font>%1%1
 ",
-"<br />"
+"<br />",
+getMissionPath "intel\IONdumpevidence.paa"
 ];
+
 private _intel_str_daltgreen_manager = format [
 "
 <font size='12' face='EtelkaMonospacePro'>
@@ -324,15 +333,15 @@ You found a handwritten note in the ION barracks under a bed:%1
 private _intel_str_ion_note_barrels = format [
 "
 You found a handwritten memo near some Barrels in a Warehouse:%1
-<font size='24' face='shaffilastri'>Take these over barrels over to the old military base, a patrol found a way through the mines finally.%1
-Theres some old busted domes, we are stowing barrels there until we can find a better solution.</font>%1
+<font size='24' face='shaffilastri'>Take these barrels over to the old military base, the other lads found a way through the minefield there - finally!%1
+Theres some old busted domes and an old dozer - we will be stowing barrels there until we can find a better solution.</font>%1
 ",
 "<br />"
 ];
 
 private _intel_str_ion_note_weapons = format [
 "
-You found a handwritten memo in the ION Vehicle Pool on the floor:%1
+You found a handwritten memo in the Daltgreen Office building near someones smoking spot:%1
 <font size='24' face='shaffilastri'>
 Theres a warehouse in M Semrir, south of the ore piles.%1
 Take a few cases of guns, and have a chat with the officer there.%1
@@ -361,6 +370,12 @@ private _intel_str_whiteboard_map = format [
 ",
 getMissionPath "intel\whiteboard\whiteboard-overlay-map.paa"
 ];
+private _intel_str_photo_a10 = format [
+"
+<img width='350' image='%1'/>
+",
+getMissionPath "intel\a10.paa"
+];
 
 private _intel_str_whiteboard_science = format [
 "
@@ -380,6 +395,17 @@ getMissionPath "intel\whiteboard\graphic05.paa"
 
 
 private _intelParameters = createHashMapFromArray [
+    [    
+        "intel_photo_ion_a10",
+        [
+            true,                               // boolean for "_deleteOnPickup",
+            "Investigate the Photograph",      // title/text that will show with the intel-action
+            _soundBody,                           // Array of Strings - Classnames for _actionSounds - see comment above
+            10,                                 //duration in seconds
+            "Photograph: A10",
+            _intel_str_photo_a10
+        ]
+    ],
     [    
         "intel_laptop_daltgreen_manager",
         [
@@ -450,10 +476,10 @@ private _intelParameters = createHashMapFromArray [
         "intel_cellphone_prisoner",
         [
             true,
-            "Search the Laptop for Intel",
+            "Search the Phone for Intel",
             _soundPC,     // Array of Strings - Classnames for _actionSounds - see comment above
             15,     //duration in seconds
-            "Cellphone: Prisoner?",
+            "Cellphone: Prisoner",
             _intel_str_prisoner_cell
         ]
     ],
@@ -567,6 +593,18 @@ private _intelParameters = createHashMapFromArray [
             15,     //duration in seconds
             "Whiteboard: Science Data",
             _intel_str_whiteboard_science,
+            1
+        ]
+    ],
+    [
+        "intel_cellphone_daltgreen_toilet",
+        [
+            true,
+            "Check the Phone from the Toilet",
+            _soundBody,     // Array of Strings - Classnames for _actionSounds - see comment above
+            15,     //duration in seconds
+            "Cellphone: Dad?",
+            _intel_str_office_cellphone_toilet,
             1
         ]
     ]
