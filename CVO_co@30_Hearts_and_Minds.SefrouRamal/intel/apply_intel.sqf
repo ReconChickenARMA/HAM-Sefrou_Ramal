@@ -623,5 +623,8 @@ private _intelParameters = createHashMapFromArray [
     } , [_x,_y], _forEachIndex + 1] call CBA_fnc_waitAndExecute;
 } forEach _intelParameters;
 
-intel_whiteboard_map attachTo [intel_whiteboard, [-0.28,-0.005,0]];
+intel_whiteboard_map     attachTo [intel_whiteboard, [-0.28,-0.005,0]];
 intel_whiteboard_science attachTo [intel_whiteboard, [0.2,-0.01,0]];
+
+intel_cellphone_ion_survivor attachTo [ion_survivor, [0.01, 0.16, 0.05], "Spine3", true];
+intel_cellphone_ion_survivor setVectorDirAndUp [[0, 0.0, -1], [0, 1, 0]];
