@@ -48,6 +48,6 @@ _statement = {
 
 
     [ { missionNamespace setVariable ["trigger_alarm_heli", true, true]; } , [], 15] call CBA_fnc_waitAndExecute;
-    [ { missionNamespace setVariable ["trigger_alarm_offroad", true, true]; } , [], 150] call CBA_fnc_waitAndExecute;
+    [ { missionNamespace setVariable ["trigger_alarm_offroad", true, true]; } , [], 90] call CBA_fnc_waitAndExecute;
 };                // Code to be executed once condition true
 [{ missionNamespace getVariable ["trigger_alarm", false] }, _statement, []] call CBA_fnc_waitUntilAndExecute;
