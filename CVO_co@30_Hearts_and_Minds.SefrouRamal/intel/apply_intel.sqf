@@ -58,8 +58,8 @@ To that end, we will be distributing repurposed aid packages, optimized by our b
 %1
 %1
 <font size='12' face='EtelkaMonospacePro'>
-From:     SFIA Central Command
-To:      SFIA Regional Command, Sefrou-Ramal
+From:  SFIA Central Command%1
+To:  SFIA Regional Command, Sefrou-Ramal%1
 Subject: Special Diet %1</font>
 %1
 Our scientific division has further refined our new “special diet” and it should work as planned now.%1
@@ -303,7 +303,7 @@ Messenger App history with 'Dave' - 7 days ago:%1</font>%1
 <font size='12' color='#2d97fa' face='EtelkaMonospacePro'>Bullshit, our fault.%1I bet they were scrapping in that old military area again, and got more than they bargained for.</font>%1%1%1%1
 <font size='14' face='EtelkaMonospacePro'>
 Messenger App history with 'Steve' - 30 minutes ago:%1</font>%1
-<font size='12' color='#2dc492' face='EtelkaMonospacePro'>Man.. the footballgame was dogshit last night...%1 at least the boss egave us the evening off so we could watch it with a couple of beers. - how was your shift?</font>%1%1
+<font size='12' color='#2dc492' face='EtelkaMonospacePro'>Man.. the footballgame was dogshit last night...%1 at least the boss gave us the evening off so we could watch it with a couple of beers. - how was your shift?</font>%1%1
 <font size='12' color='#2d97fa' face='EtelkaMonospacePro'>Dude, i hope your hangover is fucking you up - i had to work since 3 in the morning over here at the pumphouse - my back hurts!</font>%1%1
 <font size='12' color='#2dc492' face='EtelkaMonospacePro'>Gotta go, there is some shit going on at the gate....%1 someone said something about UNA?</font>%1%1
 <font size='12' color='#2d97fa' face='EtelkaMonospacePro'>What? Shit... maybe they are onto us from the shit we pulled in the village?</font>%1%1
