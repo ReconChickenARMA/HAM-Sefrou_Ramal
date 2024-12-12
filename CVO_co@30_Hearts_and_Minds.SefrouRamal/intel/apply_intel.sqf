@@ -227,7 +227,7 @@ Subject: Inquiery of Service - North Africa%1
 %1
 Our company has maintained a mine in the Sefrou-Ramal region for several years now, but the current security situation requires a more robust security presence than our company can provide.%1%1
 We are interested in hiring a team of security personnel from ION, and are able to pay generously.%1%1
-The site will require approximately 30 security personnel, as well as vehicles and equipment for them.%1%1
+The site will require approximately 10 security personnel, as well as vehicles and equipment for them.%1%1
 We have housing on-site, but ION will need to supply perishables, such as food and clean water.%1%1
 We hope that you are open to accepting this contract, and look forward to a fruitful partnership.%1%1
 %1
