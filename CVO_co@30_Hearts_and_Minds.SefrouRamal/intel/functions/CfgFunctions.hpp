@@ -11,5 +11,8 @@ class zrn
         class diary_getText {};
         class diary_setRecordText {};
         class diary_updateRecord {};
+
+        class switch_layers { postInit = 1; };
+        class trigger_alarm { postInit = 1; };
     };
 };
