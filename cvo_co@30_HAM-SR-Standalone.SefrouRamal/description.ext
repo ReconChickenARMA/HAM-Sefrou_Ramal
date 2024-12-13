@@ -1,0 +1,98 @@
+
+loadScreen = "cvo\img\HAMSplash.paa";
+author = "CVO HAM Sefrou Ramal - Standalone - Recon Chicken & Zorn";
+onLoadName = "CVO HAM SR Standalone";
+onLoadMission = "CVO HAM SR Standalone";
+enabledebugconsole = 1;
+
+// CBA XEH
+class Extended_PreInit_EventHandlers {
+    // #include "core\fnc\eh\xeh_PreInit_EH.hpp"
+
+    class CVO_CBRN_PreInit_EventHandler {
+        init = "call compileScript ['cvo\cbrn\XEH_PreInit.sqf'];";
+    };
+};
+/*
+class Extended_InitPost_EventHandlers {
+    class LandVehicle {
+        #include "core\fnc\eh\xeh_InitPost_EH_Vehicle.hpp"
+    };
+    class Air {
+        #include "core\fnc\eh\xeh_InitPost_EH_Vehicle.hpp"
+    };
+    class Ship {
+        #include "core\fnc\eh\xeh_InitPost_EH_Vehicle.hpp"
+    };
+};
+*/
+respawn = 3;
+respawnDelay = 90;
+respawnDialog = 0;
+respawnOnStart = 0;
+respawnTemplates[] = {"Counter","Tickets", "Wave","ace_spectator"};
+
+// Disable BI wreck system (H&M handle it internally)
+wreckManagerMode = 0;
+corpseManagerMode = 0;
+
+disabledAI = 1;
+
+
+cba_settings_hasSettingsFile = 1;
+allowFunctionsLog = 1;
+
+
+disableChannels[] =
+{
+	{ 0, true, true }, // Global - Disabled Chat - Disabled voice
+	{ 1, true, true }, // Side
+	{ 2, false, true }, // Command
+	{ 3, false, true }, // Group
+	{ 4, false, true }, // Vehicle
+	{ 5, false, true }  // Direct
+	// { 6, false, true }  // Direct
+};
+
+
+
+class CfgFunctions {
+    // add your own functions below
+    #include "cvo\cbrn\CfgFunctions.hpp"
+    #include "cvo\logistics\functions.hpp"
+    #include "intel\functions\CfgFunctions.hpp"
+};
+
+class CfgSounds {
+    sounds[] = {};
+    #include "cvo\cbrn\CfgSounds.hpp"
+};
+
+
+class zen_context_menu_actions {
+    class CVO_ZEN_HAM_ContextAction {
+        displayName = "Hearts and Minds";
+        icon = "\A3\Data_F_Orange\Logos\arma3_orange_picture_ca.paa";
+        priority = 29;
+
+        #include "cvo\cbrn\CfgContext.hpp"
+    };
+};
+
+
+class ACE_Tags {
+    class Black_UNA_Stencil {
+        displayName = "UNA Stencil";  // Name of your tag being displayed in the interaction menu
+        requiredItem = "ACE_SpraypaintBlack";  // Required item to have in the inventory to be able to spray your tag (eg. `"ACE_SpraypaintBlack"`, `"ACE_SpraypaintRed"`, `"ACE_SpraypaintGreen"`, `"ACE_SpraypaintBlue"` or any custom item from `CfgWeapons`)
+        textures[] = {"@cvo\img\una-stencil_black.paa"};  // List of texture variations (one is randomly selected when tagging)
+        materials[] = {}; // Optional: List of material variations (one is randomly selected). Keep empty if you don't need a custom material.
+        icon = "@cvo\img\una-stencil_black.paa";  // Icon being displayed in the interaction menu
+    };
+    class White_UNA_Stencil {
+        displayName = "UNA Stencil";  // Name of your tag being displayed in the interaction menu
+        requiredItem = "ACE_SpraypaintWhite";  // Required item to have in the inventory to be able to spray your tag (eg. `"ACE_SpraypaintBlack"`, `"ACE_SpraypaintRed"`, `"ACE_SpraypaintGreen"`, `"ACE_SpraypaintBlue"` or any custom item from `CfgWeapons`)
+        textures[] = {"@cvo\img\una-stencil_white.paa"};  // List of texture variations (one is randomly selected when tagging)
+        materials[] = {}; // Optional: List of material variations (one is randomly selected). Keep empty if you don't need a custom material.
+        icon = "@cvo\img\una-stencil_white.paa";  // Icon being displayed in the interaction menu
+    };
+};
