@@ -49,7 +49,7 @@ _statement = {
         }, _delay, [_codeToRun, _parameters, _exitCode, _condition]] call CBA_fnc_addPerFrameHandler;
 
 
-        [ { missionNamespace setVariable ["trigger_alarm_heli", true, true]; } , [], 15] call CBA_fnc_waitAndExecute;
+        [ { missionNamespace setVariable ["trigger_alarm_heli", true, true]; } , [], 60] call CBA_fnc_waitAndExecute;
         [ { missionNamespace setVariable ["trigger_alarm_quad", true, true]; } , [], 15] call CBA_fnc_waitAndExecute;
         [ { missionNamespace setVariable ["trigger_alarm_offroad", true, true]; } , [], 90] call CBA_fnc_waitAndExecute;
     };

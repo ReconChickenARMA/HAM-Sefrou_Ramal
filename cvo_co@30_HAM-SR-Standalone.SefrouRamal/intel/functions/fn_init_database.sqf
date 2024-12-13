@@ -18,11 +18,12 @@ intel_database = createHashMapFromArray [
     ["SFIA Base", [
         "intel_laptop_sfia_regionalCommand",
         "intel_laptop_sfia_science",
-        "intel_cellphone_sfia"
+        "intel_cellphone_sfia",
+        "intel_cellphone_prisoner"
 
     ]],
     ["Prisoner", [
-        "intel_cellphone_prisoner"
+        "intel_sfia_cellphone_prisoner_guards"
     
     ]],
     ["Ion Escapee",[
@@ -45,7 +46,7 @@ intel_database = createHashMapFromArray [
     
     ]],
     ["Daltgreen Quaters", [
-        "intel_cellphone_daltgreen_unkown",
+        "intel_cellphone_daltgreen_unknown",
         "intel_cellphone_daltgreen_shiftCaptain"
     ]],
     ["Daltgreen Pumphouse", [

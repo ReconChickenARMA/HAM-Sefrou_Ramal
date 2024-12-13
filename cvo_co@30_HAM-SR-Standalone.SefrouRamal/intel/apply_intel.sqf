@@ -29,6 +29,23 @@ if !(isServer) exitWith {};
 private _soundPC = ["OMIntelGrabPC_01", "OMIntelGrabPC_02", "OMIntelGrabPC_03","OMIntelGrabLaptop_01", "OMIntelGrabLaptop_02", "OMIntelGrabLaptop_03"];
 private _soundBody = ["OMIntelGrabBody_01", "OMIntelGrabBody_02", "OMIntelGrabBody_03"];
 
+
+private _intel_str_sfia_cellphone_prisoner_guards = format [
+"
+<font size='14' face='EtelkaMonospacePro'>
+Messenger App History with 'Boss' - 1 year ago:%1</font>%1
+<font size='12' color='#2dc492' face='EtelkaMonospacePro'>Hey Boss - Bad news - The prisoner died. I think we should have given some water. - Do you want us to wait for the ION guys?</font>%1%1
+<font size='12' color='#2d97fa' face='EtelkaMonospacePro'>Wait until the evening, otherwise just leave.</font>%1%1
+<font size='12' color='#2dc492' face='EtelkaMonospacePro'>We kinda like...got lost on the way here and the GPS ran out of batteries - can you give us the direciton? Jamal has a compass.</font>%1%1
+<font size='12' color='#2d97fa' face='EtelkaMonospacePro'>Seems like you guys outran your own wisdom again... Let me take a look...</font>%1%1
+<font size='12' color='#2d97fa' face='EtelkaMonospacePro'>Right... the coordinates we gave you are 1800 meters at bearing 350 from base.</font>%1%1
+",
+"<br />"
+];
+
+
+
+
 private _intel_str_sfia_regionalCommand = format [
 "
 <font size='12' face='EtelkaMonospacePro'>
@@ -291,7 +308,7 @@ If it got out that we were doing anything illegal with weapons, it could set bac
 ];
 
 // #63b4ff
-//#2d97fa
+// #2d97fa
 
 private _intel_str_ion_cellphone = format [
 "
@@ -468,7 +485,7 @@ private _intelParameters = createHashMapFromArray [
             "Search the Cellphone for Intel",
             _soundPC,     // Array of Strings - Classnames for _actionSounds - see comment above
             15,     //duration in seconds
-            "ION Cellphone: Manager",
+            "ION Cellphone: Escapee",
             _intel_str_ion_cellphone
         ]
     ],
@@ -481,6 +498,17 @@ private _intelParameters = createHashMapFromArray [
             15,     //duration in seconds
             "Cellphone: Prisoner",
             _intel_str_prisoner_cell
+        ]
+    ],
+    [
+        "intel_sfia_cellphone_prisoner_guards",
+        [
+            true,
+            "Search the Phone for Intel",
+            _soundPC,     // Array of Strings - Classnames for _actionSounds - see comment above
+            15,     //duration in seconds
+            "Cellphone: Prisoner Guards",
+            _intel_str_sfia_cellphone_prisoner_guards
         ]
     ],
     [
@@ -603,7 +631,7 @@ private _intelParameters = createHashMapFromArray [
             "Check the Phone from the Toilet",
             _soundBody,     // Array of Strings - Classnames for _actionSounds - see comment above
             15,     //duration in seconds
-            "Cellphone: Dad?",
+            "Cellphone: Toilet",
             _intel_str_office_cellphone_toilet,
             1
         ]

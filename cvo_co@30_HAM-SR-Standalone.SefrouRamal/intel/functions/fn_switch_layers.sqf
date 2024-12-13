@@ -41,4 +41,7 @@ if !(isServer) exitWith {};
 intel_cellphone_ion_survivor addEventHandler ["Deleted", {
     params ["_entities"];
     missionNamespace setVariable ["trigger_switch_layers", true, true];
+    setTimeMultiplier 8;
+
+    1200 setFog [0,0,0];
 }];
